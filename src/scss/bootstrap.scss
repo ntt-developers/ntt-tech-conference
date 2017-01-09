@@ -1,0 +1,33 @@
+.bd-masthead {
+  position: relative;
+  padding: 5rem 0;
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+  text-align: center;
+}
+
+.bd-footer {
+  position: relative;
+  padding: 3rem 0;
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+  text-align: left;
+}
+
+.lead {
+  line-height: 1.8em;
+}
+
+.nav-item {
+  width: 25%;
+  text-align: center;
+}
+
+.tab-content {
+  border: 1px solid transparent;
+  border-color: #fff #ddd #ddd #ddd;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
