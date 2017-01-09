@@ -6,8 +6,24 @@ a:hover {
   color: #0079ab;
 }
 
-iframe {
-  border: 0;
-  width: 100%;
-  height: 512px;
+.title {
+  color: #0079ab;
+  letter-spacing: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #b7ddf1;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+}
+
+.description {
+  line-height: 1.8em;
+}
+
+.separator {
+  border-top: 1px solid #b7ddf1;
+  width: 75%;
+  margin: 0 auto;
 }
