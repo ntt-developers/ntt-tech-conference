@@ -11,7 +11,7 @@
 
 #### Contributing
 
-    $ git clone git@github.com:hico-horiuchi/hico-horiuchi.github.io.git
+    $ git clone git@github.com:ntt-developers/ntt-tech-conference-01.git
     $ npm install
     $ gem install slim
     $ node_modules/bower/bin/bower install
