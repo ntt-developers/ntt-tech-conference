@@ -1,0 +1,12 @@
+---
+before_script:
+  - npm install
+  - gem install slim
+  - node_modules/bower/bin/bower install
+language: javascript
+script:
+  - gulp default
+cache:
+  directories:
+    - node_modules
+    - bower_components
