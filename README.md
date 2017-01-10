@@ -13,6 +13,7 @@
 
     $ git clone git@github.com:hico-horiuchi/hico-horiuchi.github.io.git
     $ npm install
+    $ gem install slim
     $ node_modules/bower/bin/bower install
     $ node_modules/gulp/bin/gulp.js default development
 
