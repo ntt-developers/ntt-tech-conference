@@ -18,7 +18,7 @@ config =
 
 gulp.task 'slim', ->
   gulp.src(config.input.slim)
-    .pipe($.slim())
+    .pipe($.slim({ pretty: true }))
     .pipe(gulp.dest(config.output.html))
 
 gulp.task 'scss', ->
