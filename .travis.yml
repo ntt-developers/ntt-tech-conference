@@ -6,3 +6,7 @@ before_script:
 language: javascript
 script:
   - gulp default
+cache:
+  directories:
+    - node_modules
+    - bower_components
