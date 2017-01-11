@@ -4,7 +4,9 @@ before_script:
   - npm install
 language: javascript
 script:
+  - mv index.html diff-index.html
   - npm run build
+  - diff index.html diff-index.html
 cache:
   directories:
     - node_modules
