@@ -5,8 +5,18 @@ before_script:
 language: javascript
 script:
   - mv index.html diff-index.html
+  - mv for-begginers.html diff-for-beginners.html
+  - mv conference.html diff-conference.html
+  - mv unconference.html diff-unconference.html
+  - mv timetable.html diff-timetable.html
+  - mv showcase.html diff-showcase.html
   - npm run build
   - diff index.html diff-index.html
+  - diff for-begginers.html diff-for-beginners.html
+  - diff conference.html diff-conference.html
+  - diff unconference.html diff-unconference.html
+  - diff timetable.html diff-timetable.html
+  - diff showcase.html diff-showcase.html
 cache:
   directories:
     - node_modules
