@@ -14,9 +14,8 @@
 #### Contributing
 
     $ git clone git@github.com:ntt-developers/ntt-tech-conference-01.git
-    $ npm install
     $ gem install slim
-    $ node_modules/bower/bin/bower install
-    $ node_modules/gulp/bin/gulp.js default development
+    $ npm install
+    $ npm run develop
 
 See `http://localhost:8000`.
