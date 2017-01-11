@@ -127,3 +127,10 @@
     margin: -55px 5px 0 0px;
   }
 }
+
+@media screen and (max-width:991px) {
+  .timeline > li .timeline_label > .col-sm {
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+}
