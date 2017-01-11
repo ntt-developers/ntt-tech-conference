@@ -18,7 +18,11 @@ config =
 
 gulp.task 'slim', ->
   gulp.src(config.input.slim)
-    .pipe($.slim({ pretty: true }))
+    .pipe($.slim({
+                   pretty: true,
+                   require: 'slim/include',
+                   options: 'include_dirs=["./src/slim"]'
+                 }))
     .pipe(gulp.dest(config.output.html))
 
 gulp.task 'scss', ->
