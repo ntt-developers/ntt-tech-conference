@@ -1,5 +1,6 @@
 #!/bin/bash
 # See https://medium.com/@nthgergo/publishing-gh-pages-with-travis-ci-53a8270e87db
+set -o xtrace
 set -o errexit
 
 declare -r SSH_FILE="$(mktemp -u $HOME/.ssh/XXXXX)"
@@ -18,9 +19,6 @@ chmod 600 "$SSH_FILE" \
 # config
 git config --global user.email "rintyo_@hotmail.com"
 git config --global user.name "Travis CI"
-
-# build
-npm run build
 
 # deploy
 mkdir tmp
