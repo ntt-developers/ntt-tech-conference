@@ -23,6 +23,7 @@ git config --global user.name "Travis CI"
 # deploy
 mkdir tmp
 mv *.html assets tmp
+mv images tmp/assets
 cd tmp
 git init
 git add *.html assets
