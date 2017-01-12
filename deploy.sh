@@ -22,10 +22,9 @@ git config --global user.name "Travis CI"
 
 # deploy
 mkdir tmp
-mv *.html assets tmp
-mv images tmp/assets
+mv *.html assets images tmp
 cd tmp
 git init
-git add *.html assets
+git add *.html assets images
 git commit -m "Automatic build by Travis CI"
 git push git@github.com:${GITHUB_REPO}.git master:gh-pages-test -f
