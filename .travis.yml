@@ -26,6 +26,7 @@ cache:
     - node_modules
     - bower_components
 deploy:
+  skip_cleanup: true
   provider: script
   script: ./deploy.sh
   on:

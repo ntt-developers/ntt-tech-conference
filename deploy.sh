@@ -19,9 +19,6 @@ chmod 600 "$SSH_FILE" \
 git config --global user.email "rintyo_@hotmail.com"
 git config --global user.name "Travis CI"
 
-# build
-npm run build
-
 # deploy
 mkdir tmp
 mv *.html assets tmp
