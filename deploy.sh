@@ -16,7 +16,7 @@ chmod 600 "$SSH_FILE" \
     "  LogLevel ERROR" >> ~/.ssh/config
 
 # config
-git config --global user.email "nobody@nobody.org"
+git config --global user.email "rintyo_@hotmail.com"
 git config --global user.name "Travis CI"
 
 # build
