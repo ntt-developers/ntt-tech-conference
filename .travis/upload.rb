@@ -1,32 +1,38 @@
 require 'aws-sdk'
 require 'json'
 
-cred = JSON.parse(File.open(ARGV[0], "r").read)
-Aws.config.update({
-  region: 'ap-northeast-1',
-  credentials: Aws::Credentials.new(cred['key'],
-                                    cred['secret'])
-})
+BUCKET = 'ntt-tech-conference-01'
+REGION = 'ap-northeast-1'
+TARGETS = ["assets/*/*", "images/*", "*.html"]
 
-def publish(s3, file)
-  hash = `git rev-parse HEAD`.chomp
-  File.open(file, "r") {|f|
-    filename = "#{hash}/#{file}"
-    s3.put_object(acl: 'public-read',
-                  storage_class: "REDUCED_REDUNDANCY",
-                  bucket: 'ntt-tech-conference-01',
-                  key: filename, body: f)
-    puts "#{filename} pushed"
-  }
+class AWSclient
+  def initialize(key, secret)
+    Aws.config.update({
+        region: REGION,
+        credentials: Aws::Credentials.new(key,
+                                          secret)
+    })
+    @s3 = Aws::S3::Client.new
+  end
+  def publish(file, s3key)
+    File.open(file, "r") {|f|
+      @s3.put_object(acl: 'public-read',
+                     storage_class: "REDUCED_REDUNDANCY",
+                     bucket: BUCKET,
+                     key: s3key, body: f)
+    }
+  end
 end
 
-targets = []
-targets.concat Dir.glob("assets/*/*")
-targets.concat Dir.glob("images/*")
-targets.concat Dir.glob("*.html")
+cred = JSON.parse(File.open(ARGV[0]).read)
+client = AWSclient.new(cred['key'], cred['secret'])
+base_path = "http://#{BUCKET}.s3-website-#{REGION}.amazonaws.com"
+hash = `git rev-parse HEAD`.chomp
 
-# upload file
-s3 = Aws::S3::Client.new
-targets.each{|t|
-  publish(s3, t)
+TARGETS.inject([]) {|t, path|
+  t.concat Dir.glob(path)
+}.each{|file|
+  s3key = "#{hash}/#{file}"
+  client.publish(file, s3key)
+  puts "uploaded: #{base_path}/#{s3key}"
 }
