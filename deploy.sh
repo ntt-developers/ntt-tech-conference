@@ -27,4 +27,4 @@ cd tmp
 git init
 git add *.html assets images
 git commit -m "Automatic build by Travis CI"
-git push git@github.com:${GITHUB_REPO}.git master:gh-pages-test -f
+git push git@github.com:${GITHUB_REPO}.git master:gh-pages -f
