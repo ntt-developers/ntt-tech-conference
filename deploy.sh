@@ -25,6 +25,7 @@ npm run build
 # deploy
 mkdir tmp
 mv *.html assets tmp
+mv images tmp/assets
 cd tmp
 git init
 git add *.html assets
