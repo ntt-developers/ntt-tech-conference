@@ -1,6 +1,6 @@
 ---
 before_script:
-  - gem install slim aws-sdk
+  - gem install slim aws-sdk --no-ri --no-rdoc
   - npm install
 language: javascript
 env:
