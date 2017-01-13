@@ -42,15 +42,15 @@ html lang="ja"
 
       ul.nav.nav-tabs
         li.nav-item
-          a.nav-link.active data-toggle="tab" href="#timetable" role="tab" タイムテーブル
+          a.nav-link.active#ttable data-toggle="tab" href="#timetable" role="tab" タイムテーブル
         li.nav-item
-          a.nav-link data-toggle="tab" href="#room301" role="tab" 301大会議室
+          a.nav-link#r301 data-toggle="tab" href="#room301" role="tab" 301大会議室
         li.nav-item
-          a.nav-link data-toggle="tab" href="#room302" role="tab" 302会議室
+          a.nav-link#r302 data-toggle="tab" href="#room302" role="tab" 302会議室
         li.nav-item
-          a.nav-link data-toggle="tab" href="#room401" role="tab" 401ホール
+          a.nav-link#r401 data-toggle="tab" href="#room401" role="tab" 401ホール
         li.nav-item
-          a.nav-link data-toggle="tab" href="#showcase" role="tab" 展示(401ホール)
+          a.nav-link#demo data-toggle="tab" href="#showcase" role="tab" 展示(401ホール)
 
       .tab-content.mb-5
         include timetable.slim
@@ -124,3 +124,4 @@ html lang="ja"
         | 2017 NTT Developers All Rights Reserved.
 
     script src="./assets/javascripts/bower_components.min.js" type="text/javascript"
+    script src="./assets/javascripts/application.min.js" type="text/javascript"
