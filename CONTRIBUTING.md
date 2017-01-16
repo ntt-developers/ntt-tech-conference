@@ -1,0 +1,15 @@
+# How to contribute this repository?
+
+Contributions are always welcome! If you have good ideas for improvements,
+please follow the guidelines to pull requests smoothly.
+
+## Pull requests
+* Perform all changes on a topic branch.
+* Modify and commit slim files instead of html files.
+  * html files will update automatically after merging.
+* Get two "LGTM" by organization members for merging.
+
+## Thank you
+ * We really appreciate your time and work!
+ * If you want to join our conference as contributor, please see [here](https://connpass.com/event/48115/)
+
