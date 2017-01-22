@@ -13,6 +13,7 @@ env:
     - secure: "lh9pTGbKf7Yn3O+YLZGo3yaTtKyd48FlpbEiFL55UvLSU1flehvkTf70NLpPvMNzkXCzf+psMSiGmCQIeJCBipqh1e7QIczqkyS8N4P+g3BjlNpNSYl5vDxgdoyeekt6xDPumYvlYQyzYpEZX7qBiluoOI4g0SQX/PorR/rsXQbAX4H+woYW93RwUGltzk8EtasZBjKmtCHuW/Q8p8poy56VQxd7SxaLa/npQH2SCoWxtvaXZJkEp8US5vAPkyCLhQHEcHbrPjBxiINjz/pld1KUkl9dzq1EmdwlAwGsgSnpRIXBMXAYMJ3A2iVIXBxwS+s6etiBRJI+t8v0PHo0Yp5oVurXxzOlR/ThOiIdFQmVufxl7LGGP8xZ5Np99qmK7X2vk0oi4Wg1Ib41fQSLWOP2KjZc1QQ8TKO2TDDlRGGrZtJIHHR1JM48maeOxyv4qqCtyDU6uyd9mMZw1BRrz6KodSvh9iqHtj+5Ih6rInITrAim6WcLE3e4lq6Z67XNLBgYPHZ2YxffSj4YJN2zIYg2RcAq41fDQ+A8Y+40kJiXsga9H3EwGBTlM6Yl2uC7FhEaODL8bQ/71pUnV7FPVg+wNLvODnoFkxTXaLWvRxju4n/Sl8Bkehfdqb4eHVSgllruj1LJIw6OSGEtdw3QGhstKKWbvC2YlYOS4CHuOHY="
 script:
   - npm run build
+after_success:
   - cd .travis
   - openssl aes-256-cbc -K $encrypted_f478ac20f201_key -iv $encrypted_f478ac20f201_iv -in cred.enc -out cred.json -d
   - cd ..
