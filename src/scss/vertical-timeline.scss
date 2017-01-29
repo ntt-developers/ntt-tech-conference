@@ -143,8 +143,17 @@
   }
 }
 
+img.photo {
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
 @mixin linkColor($color) {
      color: $color;
+     font-weight: bold;
      &:visited {
          color: darken($color, 45%);
      }
@@ -152,7 +161,6 @@
          color: darken($color, 45%);
          background : $color;
      }
-
 }
 
 .timeline > li a.external-link {
