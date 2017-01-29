@@ -142,3 +142,20 @@
       padding-bottom: 10px;
   }
 }
+
+@mixin linkColor($color) {
+     color: $color;
+     &:visited {
+         color: darken($color, 45%);
+     }
+     &:hover, &:active, &:focus {
+         color: darken($color, 45%);
+         background : $color;
+     }
+
+}
+
+.timeline > li a.external-link {
+  @include linkColor(#ff6);
+  text-decoration: underline;
+}
