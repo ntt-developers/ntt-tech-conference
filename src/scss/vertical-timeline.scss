@@ -142,3 +142,27 @@
       padding-bottom: 10px;
   }
 }
+
+img.photo {
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+@mixin linkColor($color) {
+     color: $color;
+     &:visited {
+         color: darken($color, 27%);
+     }
+     &:hover, &:active, &:focus {
+         color: darken($color, 45%);
+         background : $color;
+     }
+}
+
+.timeline > li a.external-link {
+  @include linkColor(#ff6);
+  text-decoration: underline;
+}
