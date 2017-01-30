@@ -153,9 +153,8 @@ img.photo {
 
 @mixin linkColor($color) {
      color: $color;
-     font-weight: bold;
      &:visited {
-         color: darken($color, 45%);
+         color: darken($color, 27%);
      }
      &:hover, &:active, &:focus {
          color: darken($color, 45%);
