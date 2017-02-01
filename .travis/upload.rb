@@ -4,7 +4,7 @@ require 'github_api'
 
 BUCKET = 'ntt-tech-conference-01'
 REGION = 'ap-northeast-1'
-TARGETS = ["assets/*/*", "images/*", "*.html"]
+TARGETS = ["assets/*/*", "images/*", "images/*/*", "*.html"]
 
 class AWSclient
   def initialize(key, secret)
@@ -31,11 +31,15 @@ base_path = "http://#{BUCKET}.s3-website-#{REGION}.amazonaws.com"
 hash = ENV['TRAVIS_COMMIT']
 
 TARGETS.inject([]) {|t, path|
-  t.concat Dir.glob(path)
+  t.concat Dir.glob(path).select{|entry| not File.directory? entry }
 }.each{|file|
   s3key = "#{hash}/#{file}"
-  client.publish(file, s3key)
-  puts "uploaded: #{base_path}/#{s3key}"
+  begin
+    client.publish(file, s3key)
+    puts "uploaded: #{base_path}/#{s3key}"
+  rescue => e
+    puts "failed to upload: #{base_path}/#{s3key} because #{e}"
+  end
 }
 
 pr = ENV['TRAVIS_PULL_REQUEST']
