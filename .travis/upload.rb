@@ -1,6 +1,7 @@
 require 'aws-sdk'
 require 'json'
 require 'github_api'
+require 'mime/types'
 
 BUCKET = 'ntt-tech-conference-01'
 REGION = 'ap-northeast-1'
@@ -20,7 +21,8 @@ class AWSclient
       @s3.put_object(acl: 'public-read',
                      storage_class: "REDUCED_REDUNDANCY",
                      bucket: BUCKET,
-                     key: s3key, body: f)
+                     key: s3key, body: f,
+                     content_type: MIME::Types.type_for(file)[0].to_s)
     }
   end
 end
