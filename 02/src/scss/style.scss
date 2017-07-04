@@ -1,0 +1,41 @@
+a {
+  color: #5cabce;
+}
+
+a.presenter {
+  color: white;
+}
+
+a.jump:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0079ab;
+}
+
+.title {
+  color: #0079ab;
+  letter-spacing: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #b7ddf1;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+}
+
+.description {
+  line-height: 1.8em;
+}
+
+.separator {
+  border-top: 1px solid #b7ddf1;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.info {
+  color: #f44;
+}

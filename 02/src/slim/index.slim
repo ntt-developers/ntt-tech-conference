@@ -1,0 +1,106 @@
+doctype html
+html lang="ja"
+  head
+    title NTT Tech Conference #02
+
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta property="og:title" content="NTT Tech Conference #1"
+    meta property="og:description" content="NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。"
+    meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference-02/"
+    meta property="og:image" content="https://ntt-developers.github.io/ntt-tech-conference-02/images/ntt-tech-logo.png"
+
+
+    link href="./assets/stylesheets/bower_components.min.css" rel="stylesheet"
+    link href="./assets/stylesheets/application.min.css" rel="stylesheet"
+    link rel="icon" type="image/png" href="./images/favicon.png"
+
+  body
+    .bd-masthead style="background-image: url(./images/graphy.png);"
+      .container
+        .row.justify-content-md-center
+          .col.col-md-6
+            img.img-fluid src="./images/ntt-tech-logo.png" alt="ntt-tech-logo.png"
+
+    .container
+      .row.justify-content-md-center.mb-2
+        .col.col-md-8
+          p.description.text-center.mb-0.info
+            |【2017.7.4更新】
+            br
+            |イベントページを公開しました。
+
+    .container
+      .text-center.my-5
+        h4.title NTT Tech Conferenceについて
+        span.subtitle ABOUT
+
+      .row.justify-content-md-center.mb-5
+        .col.col-md-8
+          p.description.text-justify.mb-0
+            | NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
+            | NTTグループ内には各種OSSのコミッタ、メンテナ、コントリビュータをはじめとしたソフトウェアエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みをNTTグループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+
+      .separator.mb-5
+
+      .text-center.mb-5
+        h4.title タイムテーブル
+        span.subtitle TIME TABLE
+
+      ul.nav.nav-tabs
+        li.nav-item
+          a.nav-link.active#ttable data-toggle="tab" href="#timetable" role="tab" タイムテーブル
+        li.nav-item
+          a.nav-link#r301 data-toggle="tab" href="#room301" role="tab" 301大会議室
+        li.nav-item
+          a.nav-link#r302 data-toggle="tab" href="#room302" role="tab" 302会議室
+        li.nav-item
+          a.nav-link#r302 data-toggle="tab" href="#room303" role="tab" 303会議室
+        li.nav-item
+          a.nav-link#r401 data-toggle="tab" href="#room401" role="tab" 401ホール
+
+      .tab-content.mb-5
+        include timetable.slim
+        include conference1.slim
+        include showcase.slim
+        include conference2.slim
+        include unconference.slim
+
+      .separator.mb-5
+
+      .text-center.mb-5
+        h4.title 参加登録
+        span.subtitle REGISTRATION
+
+      .row.justify-content-md-center.mb-5
+        .col.col-md-8
+          p.description.text-justify.mb-0
+            | 本イベントの参加登録は現在準備中です。
+
+      .separator.mb-5
+
+      .text-center.mb-5
+        h4.title アクセス
+        span.subtitle ACCESS
+
+      .row.justify-content-md-center.mb-5
+        .col.col-md-8
+          p.description.text-justify.mb-0
+            | グランパークプラザの
+            a.mx-05 href="http://www.granpark.jp/access/" target="_blank" アクセス
+            | をご覧ください。
+
+    .bd-footer style="background-image: url(./images/graphy.png);"
+      .container
+        | Copyright
+        i.fa.fa-copyright.mx-05
+        | 2017 NTT Developers All Rights Reserved.
+        br
+        | このイベントサイトは
+        a.mx-05 href="https://github.com/ntt-developers/ntt-tech-conference-02"
+          | GitHub上
+        | で作成しました。
+
+    script src="./assets/javascripts/bower_components.min.js" type="text/javascript"
+    script src="./assets/javascripts/application.min.js" type="text/javascript"

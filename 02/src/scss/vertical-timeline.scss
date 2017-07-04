@@ -1,0 +1,168 @@
+.timeline {
+  margin: 38px 20px 30px 20px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #b7ddf1;
+  left: 20%;
+  margin-left: -10px;
+}
+
+.timeline > li {
+  position: relative;
+}
+
+.timeline > li .timeline_time {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+
+.timeline > li .timeline_time span {
+  display: block;
+  text-align: right;
+}
+
+.timeline > li .timeline_time span:first-child {
+  color: #5cabce;
+}
+
+.timeline > li .timeline_time span:last-child {
+  font-size: 2em;
+  color: #0079ab;
+}
+
+.timeline > li .timeline_label {
+  margin: 0 20px 20px 25%;
+  background: #5cabce;
+  color: #fff;
+  padding: 1.5em;
+  position: relative;
+  border-radius: 5px;
+}
+
+.timeline > li .timeline_label h4 {
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.timeline > li .timeline_label p {
+  margin-bottom: 0;
+}
+
+.timeline > li .timeline_label:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #5cabce;
+  border-width: 10px;
+  top: 10px;
+}
+
+.timeline > li .timeline_icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  line-height: 40px;
+  position: absolute;
+  color: #fff;
+  background: #0079ab;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #b7ddf1;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .timeline:before {
+    display: none;
+  }
+
+  .timeline > li .timeline_time {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+
+  .timeline > li .timeline_time span {
+    text-align: left;
+  }
+
+  .timeline > li .timeline_label {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+  }
+
+  .timeline > li .timeline_label:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #5cabce;
+    top: -20px;
+  }
+
+  .timeline > li .timeline_icon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  ul.timeline {
+      margin: 10px;
+  }
+  .timeline > li .timeline_label.row {
+      padding: 10px;
+  }
+  .timeline > li .timeline_label > .col-sm {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+
+img.photo {
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+@mixin linkColor($color) {
+     color: $color;
+     &:visited {
+         color: darken($color, 27%);
+     }
+     &:hover, &:active, &:focus {
+         color: darken($color, 45%);
+         background : $color;
+     }
+}
+
+.timeline > li a.external-link {
+  @include linkColor(#ff6);
+  text-decoration: underline;
+}

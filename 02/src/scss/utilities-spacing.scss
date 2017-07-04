@@ -1,0 +1,28 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+// Margin
+
+.ma-05 { margin:        ($spacer * .5) !important; }
+.mt-05 { margin-top:    ($spacer-y * .5) !important; }
+.mr-05 { margin-right:  ($spacer-y * .5) !important; }
+.mb-05 { margin-bottom: ($spacer-y * .5) !important; }
+.ml-05 { margin-left:   ($spacer-y * .5) !important; }
+.mx-05 { margin-right:  ($spacer-x * .5) !important; margin-left:   ($spacer-x * .5) !important; }
+.my-05 { margin-top:    ($spacer-y * .5) !important; margin-bottom: ($spacer-y * .5) !important; }
+
+// Padding
+
+.pa-05 { padding:        ($spacer * .5) !important; }
+.pt-05 { padding-top:    ($spacer-y * .5) !important; }
+.pr-05 { padding-right:  ($spacer-y * .5) !important; }
+.pb-05 { padding-bottom: ($spacer-y * .5) !important; }
+.pl-05 { padding-left:   ($spacer-y * .5) !important; }
+.px-05 { padding-right:  ($spacer-x * .5) !important; padding-left:   ($spacer-x * .5) !important; }
+.py-05 { padding-top:    ($spacer-y * .5) !important; padding-bottom: ($spacer-y * .5) !important; }

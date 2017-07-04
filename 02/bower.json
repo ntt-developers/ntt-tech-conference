@@ -1,0 +1,14 @@
+{
+  "name": "ntt-tech-conference-02",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": ">= 4.0.x",
+    "fontawesome": ">= 4.7.x"
+  },
+  "devDependencies": {}
+}
