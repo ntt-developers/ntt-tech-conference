@@ -11,9 +11,10 @@
 
 #### Contributing
 
-    $ git clone git@github.com:ntt-developers/ntt-tech-conference-02.git
+    $ git clone git@github.com:ntt-developers/ntt-tech-conference.git
     $ gem install slim
-    $ npm install
-    $ npm run develop
+    $ npm install -g yarn
+    $ yarn install
+    $ yarn run develop
 
 See `http://localhost:8000`.

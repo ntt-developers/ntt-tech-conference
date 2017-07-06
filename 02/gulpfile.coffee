@@ -1,15 +1,18 @@
 gulp = require('gulp')
-mainBowerFiles = require('main-bower-files')
 $ = require('gulp-load-plugins')()
 
 app = '.'
 src = app + '/src'
+modules = app + '/node_modules'
 config =
   input:
     slim: src + '/slim/*.slim'
     scss: src + '/scss/*.scss'
     coffee: src + '/coffee/*.coffee'
-    font: app + '/bower_components/fontawesome/fonts/fontawesome-webfont.*'
+  node_modules:
+    scss: [ modules + '/bootstrap/**/*.scss', modules + '/fontawesome/**/*.scss' ]
+    js: [ modules + '/jquery/dist/jquery.js', modules + '/tether/dist/js/tether.js', modules + '/bootstrap/dist/js/bootstrap.js' ]
+    font: modules + '/**/fontawesome/fonts/fontawesome-webfont.*'
   output:
     html: app + '/'
     css: app + '/assets/stylesheets/'
@@ -39,21 +42,21 @@ gulp.task 'coffee', ->
     .pipe($.uglify())
     .pipe(gulp.dest(config.output.js))
 
-gulp.task 'bower_scss', ->
-  gulp.src(mainBowerFiles({ filter: '**/*.scss' }))
+gulp.task 'modules_scss', ->
+  gulp.src(config.node_modules.scss)
     .pipe($.sass())
-    .pipe($.concat('bower_components.min.css'))
+    .pipe($.concat('modules_components.min.css'))
     .pipe($.minifyCss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest(config.output.css))
 
-gulp.task 'bower_js', ->
-  gulp.src([mainBowerFiles({ filter: '**/jquery.js' })..., mainBowerFiles({ filter: '**/tether.js' })..., mainBowerFiles({ filter: '**/bootstrap.js' })...])
-    .pipe($.concat('bower_components.min.js'))
+gulp.task 'modules_js', ->
+  gulp.src(config.node_modules.js)
+    .pipe($.concat('modules_components.min.js'))
     .pipe($.uglify())
     .pipe(gulp.dest(config.output.js))
 
-gulp.task 'bower_font', ->
-  gulp.src(config.input.font)
+gulp.task 'modules_font', ->
+  gulp.src(config.node_modules.font)
     .pipe(gulp.dest(config.output.font))
 
 gulp.task 'watch', ->
@@ -69,9 +72,9 @@ gulp.task 'default', [
   'slim',
   'scss',
   'coffee',
-  'bower_scss',
-  'bower_js',
-  'bower_font'
+  'modules_scss',
+  'modules_js',
+  'modules_font'
 ]
 
 gulp.task 'development', [
