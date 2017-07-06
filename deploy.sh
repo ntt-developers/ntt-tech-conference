@@ -5,8 +5,8 @@ set -o errexit
 
 declare -r SSH_FILE="$(mktemp -u $HOME/.ssh/XXXXX)"
 openssl aes-256-cbc \
-    -K $encrypted_30975c018d00_key \
-    -iv $encrypted_30975c018d00_iv \
+    -K $encrypted_ad39244f6d19_key \
+    -iv $encrypted_ad39244f6d19_iv \
     -in ".travis/github_deploy_key.enc" \
     -out "$SSH_FILE" -d
 
@@ -29,6 +29,6 @@ cd ../02
 mv *.html assets images ../tmp/02
 cd ../tmp
 git init
-git add .
+git add :/
 git commit -m "Automatic build by Travis CI"
 git push git@github.com:${GITHUB_REPO}.git master:gh-pages -f
