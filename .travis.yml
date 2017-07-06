@@ -31,5 +31,6 @@ deploy:
   skip_cleanup: true
   provider: script
   script: ./deploy.sh
-  on:
-    branch: master
+#  on:
+#   branch: master  # master branch is automatically deployed
+#   all_branches: true  # for debug only
