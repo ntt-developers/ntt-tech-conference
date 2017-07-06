@@ -29,6 +29,6 @@ cd ../02
 mv *.html assets images ../tmp/02
 cd ../tmp
 git init
-git add .
+git add :/
 git commit -m "Automatic build by Travis CI"
 git push git@github.com:${GITHUB_REPO}.git master:gh-pages -f
