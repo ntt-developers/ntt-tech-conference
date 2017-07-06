@@ -3,7 +3,7 @@ require 'json'
 require 'github_api'
 require 'mime/types'
 
-BUCKET = 'ntt-tech-conference-01'
+BUCKET = 'ntt-tech-conference-02'
 REGION = 'ap-northeast-1'
 TARGETS = ["assets/*/*", "images/*", "images/*/*", "*.html"]
 
