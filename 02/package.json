@@ -1,20 +1,17 @@
 {
-  "name": "ntt-tech-conference-02",
+  "name": "ntt-tech-conference",
   "version": "0.0.1",
   "author": "ntt-developers",
   "license": "MIT",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ntt-developers/ntt-tech-conference-02.git"
-  },
+  "repository": "//github.com/ntt-developers/ntt-tech-conference.git",
   "scripts": {
-    "postinstall": "bower install",
     "build": "gulp",
     "develop": "gulp default development"
   },
   "dependencies": {
-    "bower": ">= 1.8.x",
+    "bootstrap": "4.0.0-alpha.6",
+    "fontawesome": "^4.7.2",
     "node-web-server": ">= 1.1.x"
   },
   "devDependencies": {
@@ -27,11 +24,12 @@
     "gulp-sass": ">= 3.0.x",
     "gulp-slim": ">= 0.3.x",
     "gulp-uglify": ">= 2.0.x",
-    "gulp-webserver": ">= 0.9.x",
-    "main-bower-files": ">= 2.13.x"
+    "gulp-webserver": ">= 0.9.x"
   },
   "engines": {
     "node": ">= 7.3.x",
     "npm": ">= 4.1.x"
-  }
+  },
+  "description": "NTT Tech Conference Web site",
+  "main": "index.html"
 }
