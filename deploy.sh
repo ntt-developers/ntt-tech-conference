@@ -23,6 +23,7 @@ git config --global user.name "Travis CI"
 # deploy
 mkdir -p tmp/01
 mkdir -p tmp/02
+cp README.md tmp/
 cd 01
 mv *.html assets images ../tmp/01
 cd ../02
