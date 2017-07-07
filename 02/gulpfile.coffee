@@ -10,9 +10,9 @@ config =
     scss: src + '/scss/*.scss'
     coffee: src + '/coffee/*.coffee'
   node_modules:
-    scss: [ modules + '/bootstrap/**/*.scss', modules + '/fontawesome/**/*.scss' ]
+    scss: [ modules + '/bootstrap/**/*.scss', modules + '/font-awesome/scss/*.scss' ]
     js: [ modules + '/jquery/dist/jquery.js', modules + '/tether/dist/js/tether.js', modules + '/bootstrap/dist/js/bootstrap.js' ]
-    font: modules + '/**/fontawesome/fonts/fontawesome-webfont.*'
+    font: modules + '/font-awesome/fonts/fontawesome-webfont.*'
   output:
     html: app + '/'
     css: app + '/assets/stylesheets/'

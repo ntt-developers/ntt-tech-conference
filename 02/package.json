@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
-    "fontawesome": "^4.7.2",
+    "font-awesome": "^4.7.0",
     "node-web-server": ">= 1.1.x"
   },
   "devDependencies": {
