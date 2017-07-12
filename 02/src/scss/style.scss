@@ -41,3 +41,9 @@ a:hover {
 .info {
   color: $info-color-normal;
 }
+
+.alert-info {
+  color: $info-color-normal;
+  border-color: $info-color-normal;
+  background-color: lighten($info-color-normal, 35%);
+}
