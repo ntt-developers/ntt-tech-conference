@@ -9,12 +9,13 @@
       .timeline_label.row
         .col-sm
           h4
-            a.jump jump-to-tab="ttable" target="#table-entry2" Apache Ambari と Apache Bigtop による Hadoop クラスタ構築容易化の試み
+            a.jump jump-to-tab="ttable" target="#table-entry2" Apache AmbariとApache BigtopによるHadoopクラスタ構築容易化の試み
           p
-            | Apache Bigtop は、Hadoop 関連プロダクトを各 OS の標準的な方法でインストールできるよう、deb や rpm といった形式でパッケージ化したファイルを提供している。
-            | しかし、これまではインストール手段が CLI しか提供されておらず、それらのファイルを用いて Hadoop クラスタを構築するのは若干敷居が高かった。
-            | 発表者は、Hadoop クラスタの運用管理プロダクトである Apache Ambari の機能を用いて、これらのパッケージを GUI からインストールしてクラスタを構築する手段を開発しようとしている。
-            | 本セッションでは、Ambari や Bigtop のプロダクト概要を説明するとともに、前述の GUI による Hadoop クラスタ構築機能を紹介する。
+            | Apache Bigtopは、Hadoop関連プロダクトを各OSの標準的な方法でインストールできるよう、debやrpmといった形式でパッケージ化したファイルを提供している。
+            | しかし、これまではインストール手段がCLIしか提供されておらず、それらのファイルを用いてHadoopクラスタを構築するのは若干敷居が高かった。
+            | 発表者は、Hadoopクラスタの運用管理プロダクトであるApache Ambariの機能を用いて、これらのパッケージをGUIからインストールしてクラスタを構築する手段を開発しようとしている。
+            | 本セッションでは、AmbariやBigtopのプロダクト概要を説明するとともに、前述のGUIによるHadoopクラスタ構築機能を紹介する。
+          br
           p
             | セッションレベル: 中級
           p
@@ -23,7 +24,7 @@
           p
             | 関 堅吾(
             a.presenter href="https://twitter.com/sekikn39" @sekikn39
-            |) - NTTデータ
+            | ) - NTTデータ
           p
             | NTTデータで、Hadoop関連のコンサルティング・システム構築・サポート業務などに従事。
             | コミュニティに投稿されたパッチの品質保証を行うプロダクトであるApache Yetusや、Hadoop関連プロダクトのパッケージング・相互運用性のテスト・構築自動化などを行うプロジェクトであるApache Bigtopのコミッタを務める。
@@ -44,6 +45,7 @@
             | このとき、設定や負荷のパターンは多岐にわたり、これを手動で行うのは困難であるから、検証を自動化するプラットフォームがよく用いられる。
             | しかし、設定や負荷のパターンや手順をうまく選ぶ方法については検証作業者のノウハウに依るところも多い。
             | このような性能見極め検証を効率的に行うため、探索空間の凸性を活用して負荷や装置設定のパターン選びを自動的に行う方法について検討し、市中OSSを活用してシーケンス及びアルゴリズムの一部実装をしたので、その報告をしたい。
+          br
           p
             | セッションレベル: 中級
           p
@@ -69,7 +71,8 @@
               i.fa.fa-external-link.mr-05 aria-hidden="true" title="資料"
               | http://qiita.com/h-hata/items/03a912bc3126750c351d
             br
-            | 上記の記事の内容．Windows環境においてDLLインジェクションを使って，プロセスを停止させずにバグを改修するオンライパッチ技術を実践して，DLLがどのような仕組みになっているのかを解説する．
+            | 上記の記事の内容、Windows環境においてDLLインジェクションを使って、プロセスを停止させずにバグを改修するオンライパッチ技術を実践して、DLLがどのような仕組みになっているのかを解説する。
+          br
           p
             | セッションレベル: 上級
           p
@@ -78,7 +81,7 @@
           p
             | 波多 浩昭 - NTTコムエンジニアリング
           p
-            | ソフトウェアツール開発センタ所属，プログラマ
+            | ソフトウェアツール開発センタ所属、プログラマ。
 
     li#conf3-4
       .timeline_time datetime="2017-08-10 15:15"
@@ -103,11 +106,12 @@
             a.jump jump-to-tab="ttable" target="#table-entry6" RSAで学ぶ暗号解析入門（CTF-crypt-RSA）
           p
             | RSA暗号や署名に関連するCTF問題を参加者の皆さんと解いていきます。
-            | 持ち込みPC上でも、CoCalc (SageMathやPandas等を使えるWebサービス,
-            a.external-link.mx-05 href="https://cocalc.com/" target="_blank"
+            | 持ち込みPC上でも、CoCalc (SageMathやPandas等を使えるWebサービス、
+            a.external-link href="https://cocalc.com/" target="_blank"
               i.fa.fa-external-link.mr-05 aria-hidden="true" title="CoCalc"
               | https://cocalc.com/
-            | )を利用して問題を解くことが出来ます。
+            | ) を利用して問題を解くことが出来ます。
+          br
           p
             | セッションレベル: 初級
           p
@@ -118,7 +122,7 @@
             a.presenter href="https://twitter.com/xagawa" @xagawa
             |) - 日本電信電話
           p
-            | 暗号屋見習い（2級）
+            | 暗号屋見習い(2級)。
 
     li#conf3-6
       .timeline_time datetime="2017-08-10 16:10"
@@ -131,16 +135,17 @@
           h4
             a.jump jump-to-tab="ttable" target="#table-entry7" E2D3の開発で気づいたOSSの効用(仮)
           p
-            | 可視化ツールであるE2D3を、OSSコミュティの枠組みで開発している。（カンファレンスのデモ展示もしている）
+            | 可視化ツールであるE2D3を、OSSコミュティの枠組みで開発している。(カンファレンスのデモ展示もしている)
             | OSSコミュニティとして進めていくことで得られる効用に気づき始めてきて、個人のメリットだけでなく、個人が所属する企業においてもメリットがあるのではないかと考えるようになった。
             | セッションを通じて、OSSのプロダクトの世界の面白さを体験する場としてE2D3を利用できることなどを話したい。
+          br
           p
             | セッションレベル: 初級
           p
             | Tags: Application, OSS, Community
           br
           p
-            | 講演者調整中
+            | 講演者調整中。
 
     li#conf3-7
       .timeline_time datetime="2017-08-10 16:45"
@@ -158,6 +163,7 @@
             | WebRTCで単にクライアントアプリケーションを実装する点においては、プロトコルレイヤの知識の重要性は低いですが、サーバサイドに着手したい場合や、単にWebRTCの通信の内部で何が起こっているのか、単に興味がある場合もあると思います。
             br
             | そこで、本セッションではWebRTCのプロトコルレイヤに絞り、ひたすらWebRTCの通信の仕組みについて解説します。WebRTCのAPIは頭に入っている前提でお話しますので、上級者向けのセッションとなります。
+          br
           p
             | セッションレベル: 上級
           p
