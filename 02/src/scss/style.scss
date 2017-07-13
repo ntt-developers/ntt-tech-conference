@@ -1,5 +1,7 @@
+@import 'variables';
+
 a {
-  color: #5cabce;
+  color: $main-color-normal;
 }
 
 a.presenter {
@@ -11,17 +13,17 @@ a.jump:hover {
 }
 
 a:hover {
-  color: #0079ab;
+  color: $main-color-dark;
 }
 
 .title {
-  color: #0079ab;
+  color: $main-color-dark;
   letter-spacing: 5px;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  color: #b7ddf1;
+  color: $main-color-light;
   font-size: 0.8rem;
   letter-spacing: 5px;
 }
@@ -31,11 +33,17 @@ a:hover {
 }
 
 .separator {
-  border-top: 1px solid #b7ddf1;
+  border-top: 1px solid $main-color-light;
   width: 75%;
   margin: 0 auto;
 }
 
 .info {
-  color: #f44;
+  color: $info-color-normal;
+}
+
+.alert-info {
+  color: $info-color-normal;
+  border-color: $info-color-normal;
+  background-color: lighten($info-color-normal, 35%);
 }

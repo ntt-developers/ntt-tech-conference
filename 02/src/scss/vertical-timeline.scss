@@ -1,3 +1,5 @@
+@import 'variables';
+
 .timeline {
   margin: 38px 20px 30px 20px;
   padding: 0;
@@ -11,7 +13,7 @@
   top: 0;
   bottom: 0;
   width: 10px;
-  background: #b7ddf1;
+  background: $main-color-light;
   left: 20%;
   margin-left: -10px;
 }
@@ -33,18 +35,18 @@
 }
 
 .timeline > li .timeline_time span:first-child {
-  color: #5cabce;
+  color: $main-color-normal;
 }
 
 .timeline > li .timeline_time span:last-child {
   font-size: 2em;
-  color: #0079ab;
+  color: $main-color-dark;
 }
 
 .timeline > li .timeline_label {
   margin: 0 20px 20px 25%;
-  background: #5cabce;
-  color: #fff;
+  background: $main-color-normal;
+  color: white;
   padding: 1.5em;
   position: relative;
   border-radius: 5px;
@@ -68,7 +70,7 @@
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-right-color: #5cabce;
+  border-right-color: $main-color-normal;
   border-width: 10px;
   top: 10px;
 }
@@ -79,10 +81,10 @@
   font-size: 1.4em;
   line-height: 40px;
   position: absolute;
-  color: #fff;
-  background: #0079ab;
+  color: white;
+  background: $main-color-dark;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #b7ddf1;
+  box-shadow: 0 0 0 8px $main-color-light;
   text-align: center;
   left: 20%;
   top: 0;
@@ -116,7 +118,7 @@
     right: auto;
     left: 20px;
     border-right-color: transparent;
-    border-bottom-color: #5cabce;
+    border-bottom-color: $main-color-normal;
     top: -20px;
   }
 
@@ -163,6 +165,6 @@ img.photo {
 }
 
 .timeline > li a.external-link {
-  @include linkColor(#ff6);
+  @include linkColor($external-color-normal);
   text-decoration: underline;
 }
