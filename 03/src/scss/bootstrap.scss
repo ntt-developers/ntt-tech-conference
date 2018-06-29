@@ -1,0 +1,43 @@
+@import 'variables';
+
+.bg-gold {
+  background-color: $gold-lighter !important;
+  border-color: $gold-light !important;
+}
+
+nav.navbar {
+  filter:alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.jumbotron {
+  border-radius: 0;
+}
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th,
+.table thead th {
+  border-color: $gold-light;
+}
+
+table.table {
+  thead {
+    th {
+      width: 22.5%;
+    }
+  }
+
+  tr {
+    th:first-child,
+    td:first-child {
+      width: 10%;
+      border-right-width: 2px;
+    }
+  }
+
+  th {
+    background-color: $gold-lighter;
+  }
+}
