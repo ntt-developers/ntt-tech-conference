@@ -7,6 +7,8 @@ before_script:
   - npm install
   - cd ../02
   - yarn install
+  - cd ../03
+  - yarn install
   - cd ..
 language: javascript
 rvm:
@@ -18,6 +20,7 @@ env:
 script:
   - cd 01 && npm run build && cd ..
   - cd 02 && yarn run build && cd ..
+  - cd 03 && yarn run build && cd ..
 after_success:
   - cd .travis
   - openssl aes-256-cbc -K $encrypted_ad39244f6d19_key -iv $encrypted_ad39244f6d19_iv -in github_deploy_key.enc -out github_deploy_key -d
