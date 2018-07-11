@@ -11,7 +11,7 @@ config =
     coffee: src + '/coffee/*.coffee'
   node_modules:
     scss: [ modules + '/bootstrap/**/*.scss', modules + '/bootswatch/dist/lumen/bootstrap.css', modules + '/font-awesome/scss/*.scss' ]
-    js: [ modules + '/bootstrap/dist/js/bootstrap.js' ]
+    js: [ modules + '/jquery/dist/jquery.js', modules + '/bootstrap/dist/js/bootstrap.js' ]
     font: [ modules + '/font-awesome/fonts/fontawesome-webfont.*' ]
   output:
     html: app + '/'
