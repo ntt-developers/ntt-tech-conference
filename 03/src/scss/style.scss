@@ -7,3 +7,11 @@ body {
 .about {
   line-height: 1.8rem;
 }
+
+a {
+  color: $gold-normal;
+}
+
+a:hover {
+  color: $gold-dark;
+}
