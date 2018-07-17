@@ -43,24 +43,25 @@ table.table {
 }
 
 .modal-dialog {
-  .card {
-    width: 100%;
-    border-color: $gold-light;
-
-    .card-header {
-      background-color: $gold-lighter;
+  .modal-content {
+    .card {
+      width: 100%;
       border-color: $gold-light;
-      padding: 1.5rem;
-    }
 
-    .card-header,
-    .card-body,
-    .card-footer {
-      padding: 1.5rem;
-    }
+      .card-header {
+        background-color: $gold-lighter;
+        border-color: $gold-light;
+        padding: 1.5rem;
+      }
 
-    .card-text {
-      line-height: 1.8rem;
+      .card-body,
+      .card-footer {
+        padding: 1.5rem;
+      }
+
+      .card-text {
+        line-height: 1.8rem;
+      }
     }
   }
 }
