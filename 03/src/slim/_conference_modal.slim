@@ -1,23 +1,326 @@
 .modal.fade#webauthnModal
   .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold 入門WebAuthn：安全・便利な新しいWeb認証方式
+        .card-body
+          p.card-text
+            | 3月にW3Cで勧告候補になったWeb Authentication仕様。
+            | 生体認証による利便性と、仕様レベルで組み込まれたフィッシング対策による安全性が特長の新しいWeb認証方式です。
+            br
+            | 如何にしてWebAuthn仕様が利便性と安全性を両立しているか、
+            | サーバーサイドをOSSライブラリとして実装して得られた知見を元に仕様を解説し、
+            | また、ブラウザ、認証デバイスの対応状況についても紹介します。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 能島 良和 - NTTコミュニケーションズ
+          p.card-text.mt-3
+            | VerioではApache CloudStackの開発、NTTコムウェアではSpringベースのWebアプリケーションフレームワーク導入PJ支援に従事。
+            br
+            | 現在はNTTコムでECL2.0というサービスの開発・運用に従事。休日プログラマー。
+
+
+.modal.fade#BlockChainModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold ブロックチェーンはどう役に立つのだろうか？
+        .card-body
+          p.card-text
+            | 仮想通貨取引の中核技術として昨今話題であるブロックチェーン技術については、
+            | 仮想通貨関連に留まらず、応用性と高いポテンシャルが世の中で期待されているものの、
+            | サービスとして確立しているものはまだまだ少ない印象です。そこで、
+            br
+            li そもそもどんな技術なのか（概要）
+            li どのようなメリットがあるのか（特徴）
+            li 今の世の中の動向（利用事例）
+            br
+            | を簡単にまとめるとともに
+            br
+            |・私個人でブロックチェーン技術を活用するならという視点で
+            br
+            | 実際試験的に実装してみた方法や環境、そこで得た気付きや課題をご紹介します。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 田所 貴弘 - NTTコムウェア
+          p.card-text.mt-3
+            | H22入社。NTTコムウェアで開発と営業をで経験（およそ半々）、現在は営業担当。
+            | ブロックチェーン技術に興味を持ち、個人で諸々調べたり実装したりしてます。
+
+
+.modal.fade#HomeComputingEnvironmentModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold 自宅のコンピューティング環境について-No.1M
+        .card-body
+          p.card-text
+            | IT系企業所属の社員の自宅のIT環境を公開し、業務もプライベートも充実しそうな何かを共有する。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 綿貫 順一
+          p.card-text.mt-3
+            | 昔はネットワーク系業務が多かったが、最近は何でも屋さん的になっている中年。
+
+
+.modal.fade#WebRTCModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold 細かくて伝わらないWebRTC API
+        .card-body
+          p.card-text
+            | W3C WebRTC APIの非常に細かい動作、イベントの発生について解説します。
+            | 必要に応じてブラウザのソースコードなどを参照しつつ解説します。
+            br
+            | WebRTCのAPIが頭に入っている前提であるため、上級者向けのセッションとなります。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 岩瀬 義昌 - NTTコミュニケーションズ
+          p.card-text.mt-3
+            | WebRTCのCPaaSであるSkyWayのTech Lead。インフラからWebRTCまでやる何でも屋。
+
+
+.modal.fade#SmileEnergyModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold 分かるIoTとサーバレス～太陽光発電設備の遠隔監視～
+        .card-body
+          p.card-text
+            | 太陽光発電設備の遠隔監視という事業を行っています。
+            | いわゆるIoTのセンサやサーバ、データサイエンス（広義的な"AI"を作ろうとしている）の領域に
+            | 携わっています。そこで、
+            br
+            |　・ビジネスモデルと、サービスのご紹介
+            br
+            |　・システムの設計（技術の話）のご紹介
+            | （プライベートクラウドとパブリッククラウドのハイブリッドで実装してます）
+            br
+            | をしたいと思います。
+            br
+            br
+            | サーバレスアーキテクチャやFaaS(Fanction as a service)について知らない方に、
+            | このアーキテクチャのメリットと、デメリット（課題と対策）について、
+            | 知っていただける機会になればと思っています。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 宮地 俊騎 - NTTスマイルエナジー
+          p.card-text.mt-3
+            | システム開発担当（太陽光発電関連）
+
+
+.modal.fade#SD-WAN-Modal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold Software-Defined時代のAPI開発の裏（SD-NS編）
+        .card-body
+          p.card-text
+            | NTTComでは自社サービスのAPI提供に力を入れており、沢山のAPIを提供しています。
+            br
+            | 今売り出し中のSD-WANサービス(SD-NS)では50個以上のAPIを提供(2018.6時点)この開発を通じ、API開発では、以下のようなものと戦う必要があることが分かりました。
+            br
+            li ポリシーが違う複数のバックエンドシステム
+            li 増減するパラメータへの迅速な追随
+            li 隠したいものは隠し、足りないものは補う、機微を伴う伝言ゲーム
+            li 内面よりも外面
+            li ラクダと蛇
+            br
+            | これらで得られた知見に関してご紹介します。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 渡邉 佑典 - NTTコミュニケーションズ
+          p.card-text.mt-3
+            | NTTComのSD-WANサービス(SD-NS)の開発を担当しています。
+
+
+.modal.fade#MakerModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold Makerのすすめ
+        .card-body
+          p.card-text
+            | 学生時代にハッカソンで開発したプロダクト「マッスルドーム」が
+            | 日本最大の”Maker”の祭典「Maker Faire Tokyo 2018」への出展が決定しました。
+            br
+            | 今回のセッションでは、「Maker Faire Tokyo」への出展を通して学んだことや、
+            | 趣味などでテクノロジーを使って面白いものを作る「Maker」の楽しさを広めていく話をしようと考えています。
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 原 啓介- NTTコミュニケーションズ
+          p.card-text.mt-3
+            | 新卒1年目 技術開発部所属 趣味はハッカソンに出ること
+
+
+.modal.fade#RENAT-Modal
+  .modal-dialog.modal-dialog-centered
     .card
       .card-header
-        button.close
+        button.close data-dismiss="modal" aria-label="Close"
           span
             i.fa.fa-times
-        span.font-weight-bold 入門WebAuthn：安全・便利な新しいWeb認証方式
+        span.font-weight-bold RENAT - ネットワーク検証自動化フレームワーク
       .card-body
         p.card-text
-          | 3月にW3Cで勧告候補になったWeb Authentication仕様。
-          | 生体認証による利便性と、仕様レベルで組み込まれたフィッシング対策による安全性が特長の新しいWeb認証方式です。
+          | RobotFramework(RF)はSW業界でよく使われているSW自動テスティング・フレームワークの一つである。
           br
-          | 如何にしてWebAuthn仕様が利便性と安全性を両立しているか、
-          | サーバーサイドをOSSライブラリとして実装して得られた知見を元に仕様を解説し、
-          | また、ブラウザ、認証デバイスの対応状況についても紹介します。
+          | ネットワーク検証の自動化をより効率的に実現するためRFを拡張し、RENATを開発した。
+          br
+          | RENATの特徴として簡易なシナリオより、多数の機種（ルータ、テスター、webアプライアンス、光スイッチ等）を操作し
+          | 、簡易にNW検証を自動化できることである。
+          br
+          | 本セッションではRENATのコンセプト、アーキテクチャの概要、ついて紹介及び簡単なデモを実施する。
       .card-footer
         img.rounded-circle src="http://via.placeholder.com/64x64"
-        span.ml-3 能島 良和 - NTTコミュニケーションズ
+        span.ml-3 グエン ホウ バツ- NTTコミュニケーションズ
         p.card-text.mt-3
-          | VerioではApache CloudStackの開発、NTTコムウェアではSpringベースのWebアプリケーションフレームワーク導入PJ支援に従事。
+          | ネットワークエンジニア（AS2914/AS4713）
+
+
+.modal.fade#KamueeModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold DPDKを用いた高速ソフトウェアルータKamueeの設計
+        .card-body
+          p.card-text
+            | KamueeはNTT Communications 技術開発部で開発をしているソフトウェアルータである.
+            | 本ソフトウェアはTCAM等の特別なハードウェアを用いず, 汎用のIAサーバアーキテクチャを採用し,
+            | DPDKとPoptrieによりフォワーディング性能と経路検索性能の向上を行なっている.
+            | これらにより, IPフォワーディングの性能はソフトウェアルータとして世界最高レベルを達成した.
+            br
+            br
+            | 本公演では, 汎用のIAサーバのみを用いて,
+            | 上記の高速なソフトウェアルータを実現したKamueeの設計と実装に関して紹介を行う.
+            | 特に, DPDKを用いて転送性能を向上させつつも, BGPやOSPFのプロトコルに対応させるためにいかにしてシステムの設計を行なっているか等の紹介も行う.
+        .card-footer
+          img.rounded-circle src="http://via.placeholder.com/64x64"
+          span.ml-3 城倉弘樹 (@slankdev) - NTTコミュニケーションズ
+          p.card-text.mt-3
+            | 学生時代から, DPDKを用いた高速通信ソフトウェアの研究開発に従事.
+            br
+            | 現在は, NTTコミュニケーションズ技術開発部にて,
+            | 100GbEソフトウェアルータであるKamueeの開発に従事.
+            br
+            | 高速通信の他にも解析ソフトウェアの開発等も行う.
+            br
+            | IPA未踏スーパークリエイター認定
+            br
+            | セキュリティキャンプ講師
+
+
+.modal.fade#NTTG-SecurityModal
+  .modal-dialog.modal-dialog-centered
+    .card
+      .card-header
+        button.close data-dismiss="modal" aria-label="Close"
+          span
+            i.fa.fa-times
+        span.font-weight-bold NTTグループセキュリティコンテストから始めるセキュリティ生活
+      .card-body
+        p.card-text
+          | NTTグループセキュリティコンテスト研修はご存知でしょうか。
+          | 毎年1月頃に行われるNTTグループに閉じたセキュリティ初級者・中級者向けの大会があります。
           br
-          | 現在はNTTコムでECL2.0というサービスの開発・運用に従事。休日プログラマー。
+          | 今年も第三回大会が開催されますが、そこでどんな事が行われているのか、
+          | また、その後どんなセキュリティの世界と繋がったのかを、実体験を元に紹介できる範囲で紹介します。
+      .card-footer
+        img.rounded-circle src="http://via.placeholder.com/64x64"
+        span.ml-3 岩崎 圭佑- NTTアドバンステクノロジ
+        p.card-text.mt-3
+          | 某国研でセキュリティオペレーションしている新米CISSP
+
+
+.modal.fade#ProgramingChallengeModal
+  .modal-dialog.modal-dialog-centered
+    .card
+      .card-header
+        button.close data-dismiss="modal" aria-label="Close"
+          span
+            i.fa.fa-times
+        span.font-weight-bold 競技プログラミングを体験してみよう！
+      .card-body
+        p.card-text
+          | 近年、エンジニアの実力を測る上で「競技プログラミング」というものが注目を集めています。
+          | このワークショップでは、競技プログラミングの世界のご紹介に加え、
+          | 実際に競技プログラミングを体験していただきます。
+          br
+          | 簡単な問題を2~3問程度、実際に解いていただき、競技プログラミングの世界に触れていただきます。
+          | 初心者向けを想定しています。
+          | これから競技プログラミングを始めてみたい！という方に是非ご参加いただきたいと思います。
+          br
+          | プログラミングに関する知識を多少要しますが、極力どんな方にもついてこられるよう、内容は工夫したいと思います。
+      .card-footer
+        img.rounded-circle src="http://via.placeholder.com/64x64"
+        span.ml-3 西田 尚平 - 日本電信電話
+        p.card-text.mt-3
+          | NTTソフトウェアイノベーションセンタ所属。
+          br
+          | IoTのシステム開発に従事。
+
+
+.modal.fade#CoffeeAskTheSpeakerModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold Coffee Break & Ask the Speaker
+        .card-body
+          p.card-text
+            | コーヒーやおやつを食べながら発表者へ質問する休憩時間です。
+            br
+            | 発表者が発表を行った部屋におりますので発表への質問や感想をぜひお伝えください。
+            br
+            | また、展示なども行っておりますのでぜひ302会議室へ足をお運びください。
+
+.modal.fade#AskTheSpeakerModal
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .card
+        .card-header
+          button.close data-dismiss="modal" aria-label="Close"
+            span
+              i.fa.fa-times
+          span.font-weight-bold Ask the Speaker
+        .card-body
+          p.card-text
+            | 発表者への質問時間です。
+            br
+            | 発表者が発表を行った部屋におりますので発表への質問や感想をぜひお伝えください。
