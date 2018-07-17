@@ -15,3 +15,8 @@ a {
 a:hover {
   color: $gold-dark;
 }
+
+.container>h3 {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
