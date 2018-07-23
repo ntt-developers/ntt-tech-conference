@@ -78,6 +78,11 @@ table.table {
   display: flex;
 }
 
+.rounded-circle {
+  height: 64px;
+  width: 64px;
+}
+
 img.photo {
   margin: 5px;
   width: 100%;
@@ -85,3 +90,4 @@ img.photo {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
+
