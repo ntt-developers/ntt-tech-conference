@@ -66,7 +66,28 @@ table.table {
   }
 }
 
+.route-guide {
+  padding: 1rem 0 1rem 0;
+}
+
+.access-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
 .rounded-circle {
   height: 64px;
   width: 64px;
 }
+
+img.photo {
+  margin: 5px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
