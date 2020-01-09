@@ -2,7 +2,7 @@
 dist: bionic
 sudo: false
 before_script:
-  #- gem install -N slim aws-sdk github_api mime-types
+  - gem install -N slim aws-sdk github_api mime-types
   - cd 01
   - npm install
   - cd ../02
