@@ -1,0 +1,12 @@
+// https://www.colourlovers.com/palette/2288678/Pink_Hibiscus
+$pink-dark: #FD4E6D;
+$pink-normal: #FC8A80;
+$pink-light: #ffbeb8;
+$green-light: #95C68F;
+$green-normal: #31827C;
+
+$pink-darken: darken($pink-dark, 40%);
+$pink-darker: darken($pink-dark, 20%);
+$pink-lighter: lighten($pink-light, 5%);
+$pink-lighten: lighten($pink-light, 40%);
+$green-lighter: lighten($green-light, 20%);

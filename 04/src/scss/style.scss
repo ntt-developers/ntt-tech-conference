@@ -1,0 +1,22 @@
+@import 'variables';
+
+body {
+  font-family: 'Ubuntu', 'Rounded Mplus 1c' !important;
+}
+
+.about {
+  line-height: 1.8rem;
+}
+
+a {
+  color: $pink-normal;
+}
+
+a:hover {
+  color: $pink-dark;
+}
+
+.container>h3 {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}

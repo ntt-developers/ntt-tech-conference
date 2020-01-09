@@ -1,0 +1,33 @@
+{
+  "name": "ntt-tech-conference",
+  "version": "0.0.1",
+  "main": "index.html",
+  "license": "MIT",
+  "description": "NTT Tech Conference Web site",
+  "repository": "//github.com/ntt-developers/ntt-tech-conference.git",
+  "author": "ntt-developers",
+  "private": true,
+  "scripts": {
+    "build": "gulp",
+    "develop": "gulp default development"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootswatch": "^4.4.1",
+    "coffeescript": "^2.5.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.7",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-slim": "^0.3.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}

@@ -1,0 +1,98 @@
+@import 'variables';
+
+.bg-pink {
+  background-color: $green-lighter !important;
+  border-color: $green-normal !important;
+}
+
+nav.navbar {
+  filter:alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.jumbotron {
+  border-radius: 0;
+  background-color: #ffffff;
+  img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th,
+.table thead th {
+  border-color: $green-normal;
+}
+
+table.table {
+  thead {
+    th {
+      width: 22.5%;
+    }
+  }
+
+  tr {
+    th:first-child,
+    td:first-child {
+      width: 10%;
+      border-right-width: 2px;
+    }
+  }
+
+  th {
+    background-color: $green-lighter;
+  }
+}
+
+.modal-dialog {
+  .modal-content {
+    .card {
+      width: 100%;
+      border-color: $green-normal;
+
+      .card-header {
+        background-color: $green-lighter;
+        border-color: $green-normal;
+        padding: 1.5rem;
+      }
+
+      .card-body,
+      .card-footer {
+        padding: 1.5rem;
+      }
+
+      .card-text {
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+.route-guide {
+  padding: 1rem 0 1rem 0;
+}
+
+.access-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.rounded-circle {
+  height: 64px;
+  width: 64px;
+}
+
+img.photo {
+  margin: 5px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+

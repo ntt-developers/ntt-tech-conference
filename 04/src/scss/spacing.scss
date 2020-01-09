@@ -1,0 +1,15 @@
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in ('05': .5, 10: 5) {
+    .#{$abbrev}a-#{$size} { #{$prop}:        ($spacer * $length) !important; }
+    .#{$abbrev}t-#{$size} { #{$prop}-top:    ($spacer-y * $length) !important; }
+    .#{$abbrev}r-#{$size} { #{$prop}-right:  ($spacer-y * $length) !important; }
+    .#{$abbrev}b-#{$size} { #{$prop}-bottom: ($spacer-y * $length) !important; }
+    .#{$abbrev}l-#{$size} { #{$prop}-left:   ($spacer-y * $length) !important; }
+    .#{$abbrev}x-#{$size} { #{$prop}-right:  ($spacer-x * $length) !important; #{$prop}-left:   ($spacer-x * $length) !important; }
+    .#{$abbrev}y-#{$size} { #{$prop}-top:    ($spacer-y * $length) !important; #{$prop}-bottom: ($spacer-y * $length) !important; }
+  }
+}
