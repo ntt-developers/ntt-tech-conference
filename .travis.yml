@@ -10,7 +10,9 @@ before_script:
   - cd ../03
   - yarn install
   - cd ..
-language: javascript
+language: node_js
+node_js:
+  - '8.12.0'
 # rvm:
 #   - 2.6.4
 env:
