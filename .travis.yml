@@ -1,5 +1,5 @@
 ---
-dist: trusty
+dist: bionic
 sudo: false
 before_script:
   - gem install slim aws-sdk github_api mime-types --no-ri --no-rdoc
@@ -12,9 +12,11 @@ before_script:
   - cd ../04
   - yarn install
   - cd ..
-language: javascript
-rvm:
-  - 2.3.1
+language: node_js
+node_js:
+  - '8.12.0'
+# rvm:
+#   - 2.6.4
 env:
   global:
     - GITHUB_REPO: "ntt-developers/ntt-tech-conference"
