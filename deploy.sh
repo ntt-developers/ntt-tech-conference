@@ -31,6 +31,8 @@ cd ../02
 mv *.html assets images ../tmp/02
 cd ../03
 mv *.html assets images ../tmp/03
+cd ../04
+mv *.html img css script ../tmp/04
 cd ../tmp
 git init
 git add :/
