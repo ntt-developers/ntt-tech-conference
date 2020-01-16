@@ -24,6 +24,7 @@ git config --global user.name "Travis CI"
 mkdir -p tmp/01
 mkdir -p tmp/02
 mkdir -p tmp/03
+mkdir -p tmp/04
 cp README.md tmp/
 cd 01
 mv *.html assets images ../tmp/01
