@@ -380,9 +380,9 @@ a {
 	}
 	&__close {
 		cursor: pointer;
-		position: absolute;
-		right: $base-margin;
-		top: $base-margin/2;
+		position: fixed;
+		right: calc(20% + #{$base-margin});
+		top: calc(10% + #{$base-margin}/2);
 		line-height: 1;
 		background: transparent;
 		border: none;
@@ -606,9 +606,9 @@ a {
 		}
 		&__close {
 			cursor: pointer;
-			position: absolute;
-			right: $base-margin/2;
-			top: $base-margin/3;
+			position: fixed;
+			right: calc(10% + #{$base-margin}/2);
+			top: calc(10% + #{$base-margin/3});
 			line-height: 1;
 			background: transparent;
 			border: none;

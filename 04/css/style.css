@@ -618,9 +618,9 @@ a {
 
 .modal__close {
   cursor: pointer;
-  position: absolute;
-  right: 2.7rem;
-  top: 1.35rem;
+  position: fixed;
+  right: calc(20% + 2.7rem);
+  top: calc(10% + 2.7rem/2);
   line-height: 1;
   background: transparent;
   border: none;
@@ -936,9 +936,9 @@ a {
   }
   .modal__close {
     cursor: pointer;
-    position: absolute;
-    right: 1.35rem;
-    top: 0.9rem;
+    position: fixed;
+    right: calc(10% + 2.7rem/2);
+    top: calc(10% + 0.9rem);
     line-height: 1;
     background: transparent;
     border: none;
