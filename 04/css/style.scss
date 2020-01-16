@@ -18,7 +18,7 @@ $base-txt: #333;
     height: 100%;
     font-size: 62.5%;
   }
-  
+
   body {
 		font-family: $base-font;
     margin: 0;
@@ -50,7 +50,7 @@ $base-txt: #333;
 	.hidden {
 		display: none !important;
 	}
-	
+
 // Reset
 div, section, article,
 h1, h2, h3, h4, h5, h6,
@@ -169,7 +169,7 @@ a {
 
 .hero {
 	height: 90%;
-	background: url("../img/hero_bg_ed.jpg") no-repeat center/cover;
+	background: url("../images/hero_bg_ed.jpg") no-repeat center/cover;
 	position: relative;
 	margin-top: -54px;
 	&__img {
@@ -595,7 +595,7 @@ a {
 			grid-column: 2 / 3;
 		}
 	}
-	
+
 	.venue2, .venue3 {
 		display: none;
 	}

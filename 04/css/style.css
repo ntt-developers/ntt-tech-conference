@@ -171,7 +171,7 @@ a {
 
 .hero {
   height: 90%;
-  background: url("../img/hero_bg_ed.jpg") no-repeat center/cover;
+  background: url("../images/hero_bg_ed.jpg") no-repeat center/cover;
   position: relative;
   margin-top: -54px;
 }
