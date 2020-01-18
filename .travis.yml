@@ -23,6 +23,10 @@ script:
   - cd 01 && npm run build && cd ..
   - cd 02 && yarn run build && cd ..
   - cd 03 && yarn run build && cd ..
+  # 案内画像のsymlinkを削除し実体に置き換える
+  - rm 02/images/access && cp -r images/access/granpark 02/images/access
+  - rm 03/images/access && cp -r images/access/granpark 03/images/access
+  - rm 04/images/access && cp -r images/access/granpark 04/images/access
 after_success:
   - cd .travis
   - openssl aes-256-cbc -K $encrypted_0e3c8325209d_key -iv $encrypted_0e3c8325209d_iv -in travis-integration-key.enc -out github_deploy_key -d
