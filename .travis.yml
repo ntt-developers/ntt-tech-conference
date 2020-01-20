@@ -1,8 +1,8 @@
 ---
-dist: trusty
+dist: bionic
 sudo: false
 before_script:
-  - gem install slim aws-sdk github_api mime-types --no-ri --no-rdoc
+  - gem install -N slim aws-sdk github_api mime-types
   - cd 01
   - npm install
   - cd ../02
@@ -10,9 +10,11 @@ before_script:
   - cd ../03
   - yarn install
   - cd ..
-language: javascript
-rvm:
-  - 2.3.1
+language: node_js
+node_js:
+  - '8.12.0'
+# rvm:
+#   - 2.6.4
 env:
   global:
     - GITHUB_REPO: "ntt-developers/ntt-tech-conference"
@@ -21,9 +23,13 @@ script:
   - cd 01 && npm run build && cd ..
   - cd 02 && yarn run build && cd ..
   - cd 03 && yarn run build && cd ..
+  # 案内画像のsymlinkを削除し実体に置き換える
+  - rm 02/images/access && cp -r images/access/granpark 02/images/access
+  - rm 03/images/access && cp -r images/access/granpark 03/images/access
+  - rm 04/images/access && cp -r images/access/granpark 04/images/access
 after_success:
   - cd .travis
-  - openssl aes-256-cbc -K $encrypted_ad39244f6d19_key -iv $encrypted_ad39244f6d19_iv -in github_deploy_key.enc -out github_deploy_key -d
+  - openssl aes-256-cbc -K $encrypted_0e3c8325209d_key -iv $encrypted_0e3c8325209d_iv -in travis-integration-key.enc -out github_deploy_key -d
   - cd ..
     #  - ruby .travis/upload.rb .travis/cred.json
 cache:
