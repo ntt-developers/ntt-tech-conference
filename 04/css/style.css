@@ -296,6 +296,18 @@ a {
   color: #1093FF;
 }
 
+.timeTable__innerList {
+  margin: 1.35rem 0;
+}
+
+.timeTable__innerItem {
+  list-style: none;
+}
+
+.timeTable__innerItem:not(:last-child) {
+  margin-bottom: 1.35rem;
+}
+
 .handson > span:first-child {
   display: block;
   font-size: 1.07143rem;

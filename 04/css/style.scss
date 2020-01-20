@@ -286,6 +286,15 @@ a {
 		cursor: pointer;
 		color: $link-color;
 	}
+	&__innerList {
+		margin: $base-margin/2 0;
+	}
+	&__innerItem {
+		list-style: none;
+		&:not(:last-child) {
+			margin-bottom: $base-margin/2;
+		}
+	}
 }
 
 .handson > span:first-child {
