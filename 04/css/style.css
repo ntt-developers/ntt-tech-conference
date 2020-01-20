@@ -294,6 +294,25 @@ a {
 .timeTable__link {
   cursor: pointer;
   color: #1093FF;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: all ease .3s;
+}
+
+.timeTable__link:hover {
+  border-bottom: 1px solid #1093FF;
+}
+
+.timeTable__innerList {
+  margin: 1.35rem 0;
+}
+
+.timeTable__innerItem {
+  list-style: none;
+}
+
+.timeTable__innerItem:not(:last-child) {
+  margin-bottom: 1.35rem;
 }
 
 .handson > span:first-child {
