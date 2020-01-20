@@ -294,6 +294,13 @@ a {
 .timeTable__link {
   cursor: pointer;
   color: #1093FF;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: all ease .3s;
+}
+
+.timeTable__link:hover {
+  border-bottom: 1px solid #1093FF;
 }
 
 .timeTable__innerList {
