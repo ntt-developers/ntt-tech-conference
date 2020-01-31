@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="NTT Tech Conference #4" property="og:title" />
+	<meta content="NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。" property="og:description" />
+	<meta content="https://ntt-developers.github.io/ntt-tech-conference-04/" property="og:url" />
+	<meta content="https://ntt-developers.github.io/ntt-tech-conference/04/images/NTTtechconf4_logo.png" property="og:image" />
+	<meta content="https://ntt-developers.github.io/ntt-tech-conference/04/images/NTTtechconf4_logo.png" property="og:image:secure_url" />
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<title>NTT Tech Conference #04</title>
+</head>
+
+<body>
+	<!-- Naviigation Area -->
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__item"><a href="#About" class="nav__link">About</a></li>
+			<li class="nav__item"><a href="#TimeTable" class="nav__link">Time Table</a></li>
+			<!-- <li class="nav__item"><a href="#Conference" class="nav__link">Conference</a></li> -->
+			<li class="nav__item"><a href="#Registration" class="nav__link">Registration</a></li>
+			<!-- <li class="nav__item"><a href="#AfterParty" class="nav__link">After Party</a></li> -->
+			<li class="nav__item"><a href="#Access" class="nav__link">Access</a></li>
+		</ul>
+	</nav>
+	<section class="hero">
+		<img src="./images/logo_2x.png" alt="NTT Tech Conference #4" class="hero__img">
+	</section>
+
+	<!-- Contents Area -->
+	<section class="contents">
+		<!-- About -->
+		<section class="about" id="About">
+			<h2 class="secHead">About</h2>
+			<p class="secTxt">NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。NTTグループ内には各種OSSのコミッタ、メンテナ、コントリビュータをはじめとしたソフトウェアエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みをNTTグループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。</p>
+		</section>
+
+		<!-- Time Table -->
+		<section class="timeTable" id="TimeTable">
+			<h2 class="secHead">Time Table</h2>
+			<!-- Tab -->
+			<span class="timeTable__tabTxt">Time Tableを見たい会場を選んでください。</span>
+			<ul class="timeTable__tabList">
+				<li class="timeTable__tabItem selected" id="tab1"><span>301</span></li>
+				<li class="timeTable__tabItem" id="tab2"><span>302</span></li>
+				<li class="timeTable__tabItem" id="tab3"><span>303</span></li>
+			</ul>
+			<div class="timeTable__grid">
+				<!-- Time -->
+					<div class="timeTable__item timeTable__head timeItem_1">時間</div>
+					<div class="timeTable__item timeTable__time timeItem_2"><span class="timeTable__time">9:30</span></div>
+					<div class="timeTable__item timeTable__time timeItem_3"><span class="timeTable__time">10:00</span></div>
+					<div class="timeTable__item timeTable__time timeItem_4"><span class="timeTable__time">11:50</span></div>
+					<div class="timeTable__item timeTable__time timeItem_5"><span class="timeTable__time">13:00</span></div>
+					<div class="timeTable__item timeTable__time timeItem_6"><span class="timeTable__time">13:30</span></div>
+					<div class="timeTable__item timeTable__time timeItem_7"><span class="timeTable__time">14:00</span></div>
+					<div class="timeTable__item timeTable__time timeItem_8"><span class="timeTable__time">14:40</span></div>
+					<div class="timeTable__item timeTable__time timeItem_9"><span class="timeTable__time">15:10</span></div>
+					<div class="timeTable__item timeTable__time timeItem_10"><span class="timeTable__time">15:40</span></div>
+					<div class="timeTable__item timeTable__time timeItem_11"><span class="timeTable__time">16:20</span></div>
+					<div class="timeTable__item timeTable__time timeItem_12"><span class="timeTable__time">17:00</span></div>
+					<div class="timeTable__item timeTable__time timeItem_13"><span class="timeTable__time">17:50</span></div>
+
+
+				<!-- 301 -->
+					<div class="timeTable__item timeTable__head venue1 venue1_1">301</div>
+					<div class="timeTable__item venue1 venue1_2"><span class="timeTable__txt">受付開始</span></div>
+					<div class="timeTable__item venue1 venue1_3 handson"><span class="timeTable__link">LEGOで学ぶクラフト機械学習</span></div>
+					<div class="timeTable__item venue1 venue1_4"><span class="timeTable__txt">昼休憩</span></div>
+					<div class="timeTable__item venue1 venue1_5"><span class="timeTable__txt">受付開始</span></div>
+					<div class="timeTable__item venue1 venue1_6"><span class="timeTable__txt">Open Keynote</span></div>
+					<div class="timeTable__item venue1 venue1_7"><span class="timeTable__link">Kubernetes基礎</span></div>
+					<div class="timeTable__item venue1 venue1_8"><span class="timeTable__link">入門Kubeflow ～Kubernetesで機械学習をはじめるために～</span></div>
+					<div class="timeTable__item venue1 venue1_9"><span class="timeTable__link">Coffee Break</span></div>
+					<div class="timeTable__item venue1 venue1_10"><span class="timeTable__link">React HooksとGraphQLで社内レガシーサービス巻き取ってみたらものすごくはかどった話</span></div>
+					<div class="timeTable__item venue1 venue1_11"><span class="timeTable__link">海外講演を通じて得られた知見(英語力＋α編)</span></div>
+					<div class="timeTable__item venue1 venue1_12"><span class="timeTable__txt">Lightning Talk</span>
+						<ul class="timeTable__innerList">
+							<li class="timeTable__innerItem"><span class="timeTable__link">パワポをよくしただけなのに〜デザインの力で会社に貢献するチームの紹介</span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">アジャイル開発手法における監視システム開発効率化の取り組み<span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">スタートアップチームで学んだエンジニアの心構え</span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">NTTデータのトップ技術者育成！「技統本塾」のご紹介</span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">Amazon EKS上でのVNF開発奮闘記</span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">Cisco ルータのログを Stackdriver に送って可視化してみた</span></li>
+						</ul>
+					</div>
+					<div class="timeTable__item venue1 venue1_13"><span class="timeTable__txt">Closing Keynote</span></div>
+
+				<!-- 302 -->
+					<div class="timeTable__item timeTable__head venue2 venue2_1">302</div>
+					<div class="timeTable__item venue2 venue2_2"><span class="timeTable__txt">受付開始</span></div>
+					<div class="timeTable__item venue2 venue2_3 handson"><span class="timeTable__link">超高校級の攻撃-さよならEmpire-</span></div>
+					<div class="timeTable__item venue2 venue2_4"><span class="timeTable__txt">昼休憩</span></div>
+					<div class="timeTable__item venue2 venue2_5"><span class="timeTable__txt">Close</span></div>
+					<div class="timeTable__item venue2 venue2_6"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue2 venue2_7">
+						<span class="timeTable__txt">Showcase (17:00まで)</span>
+						<ul class="timeTable__innerList">
+							<li class="timeTable__innerItem"><span class="timeTable__link">技術系業務自動化のエンジン展示</span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">Tableau+スクラッチでWEBアプリライクに可視化してみた<span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">WebAuthnを用いた多要素認証の実現</span></li>
+							<li class="timeTable__innerItem"><span class="timeTable__link">Kibana Canvasでオシャレに可視化してみたリターンズ</span></li>
+						</ul>
+					</div>
+					<div class="timeTable__item venue2 venue2_8"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue2 venue2_9"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue2 venue2_10"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue2 venue2_11"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue2 venue2_12"><span class="timeTable__txt">Close</span></div>
+					<div class="timeTable__item venue2 venue2_13"><span class="timeTable__txt"></span></div>
+
+
+				<!-- 303 -->
+					<div class="timeTable__item timeTable__head venue3 venue3_1">303</div>
+					<div class="timeTable__item venue3 venue3_2"><span class="timeTable__txt">受付開始</span></div>
+					<div class="timeTable__item venue3 venue3_3 handson"><span class="timeTable__link">エンジニアのキャリアをレゴで考えるワークショップ</span></div>
+					<div class="timeTable__item venue3 venue3_4"><span class="timeTable__txt">昼休憩</span></div>
+					<div class="timeTable__item venue3 venue3_5"><span class="timeTable__txt">Close</span></div>
+					<div class="timeTable__item venue3 venue3_6"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue3 venue3_7"><span class="timeTable__link">MLPerf Inference で比較するAIエッジデバイス</span></div>
+					<div class="timeTable__item venue3 venue3_8"><span class="timeTable__link">1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術</span></div>
+					<div class="timeTable__item venue3 venue3_9"><span class="timeTable__link">Coffee Break</span></div>
+					<div class="timeTable__item venue3 venue3_10 handson"><span class="timeTable__link">Grafana Loki による Kubernetes ロギング ハンズオン(17:30まで)</span></div>
+					<div class="timeTable__item venue3 venue3_11"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue3 venue3_12"><span class="timeTable__txt"></span></div>
+					<div class="timeTable__item venue3 venue3_13"><span class="timeTable__txt">Close</span></div>
+
+			</div>
+			<!-- Modal -->
+			<!-- 301 -->
+			<!-- Modal 1 -->
+			<!-- LEGOで学ぶクラフト機械学習 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">LEGOで学ぶクラフト機械学習</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: Machine Learning</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									流行りの機械学習をノンプログラミングで体験するプログラムです．
+								</p>
+								<p class="card__body">
+									今回は分類問題に焦点を当てレゴを通して機械学習の原理と利用する際の注意点を学びます．
+								</p>
+								<p class="card__body">
+									PoCを成功に導くためには営業系と開発系が力を合わせていく必要があるため，この研修を通して共通言語を獲得していただきます．
+								</p>
+								<h3 class="card__bodyHead">対象者</h3>
+								<ul class="card__bodyList">
+									<li class="card__bodyItem">営業系の方</li>
+									<li class="card__bodyItem">機械学習を始めた方/これから始める方</li>
+									<li class="card__bodyItem">マネージャー層で機械学習案件が必要となっている方</li>
+								</ul>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_TAKUYA_OKUNO.png" alt="Takuya Okuno">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">奥野 拓也</h2>
+										<p class="card__footerTxt">専門は時系列解析，マーケティング・サイエンスで統計モデルを用いたデータ解析。トップエスイーやスマートエスイー等で講師を務める。</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_YASUDA_Wataru.jpg" alt="Yasuda Wataru">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">安田 航</h2>
+										<p class="card__footerTxt">テクノクロスのITコンサルタント。AI時代のEnterprise Architecture（企業ITの都市計画的デザイン）を追い求めています。</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_Mikata_Toshiyuki.jpg" alt="Mikata Toshiyuki">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">三方 年之</h2>
+										<p class="card__footerTxt">主に映像符号化／画像処理系の研究開発に従事してきたエンジニア。動画像関連技術をAIやIoT分野で活かせるソリューションを模索中。</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_Oya_Hitomi.jpg" alt="Oya Hitomi">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">大家 眸美</h2>
+										<p class="card__footerTxt">働き方の変革を夢見るイントラプレナー兼機械学習エンジニア。時系列データと戯れる日々を送る。</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_Ejima_Takafumi.jpg" alt="Ejima Takafumi">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">江島 隆文</h2>
+										<p class="card__footerTxt">あだち充作品をこよなく愛するデータサイエンスの虚無僧。移ろう雲と行動ログを眺めて過ごしている。</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_YAMASHITA_jouji.jpg" alt="Yamashita Jouji">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">山下 城司</h2>
+										<p class="card__footerTxt">生産技術革新センター所属。Elastic Stackに対する愛を原動力に、各種技術支援を担当するプラットフォームエンジニア。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Kubernetes基礎 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Kubernetes基礎</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 中級</li>
+									<li class="card__headItem">Tags: Container</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									Kubernetesの初学者向けの基礎編
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">吉村 翔太</h2>
+										<p class="card__footerTxt">
+											技術開発部のデータサイエンスチームに所属。HadoopやKafka等のデータ分析基盤を触る傍でKubernetes等の新しい技術についても触れています。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 入門Kubeflow ～Kubernetesで機械学習をはじめるために～ -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">入門Kubeflow ～Kubernetesで機械学習をはじめるために～</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 中級</li>
+									<li class="card__headItem">Tags: Container, Machine Learning, OSS</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									"Kubeflowは、Kubernetesの上に機械学習基盤を構築してくれるツールキットです。
+								</p>
+								<p class="card__body">
+									2017年12月の「Kubecon NA」で発表されてから約3ヶ月に1度のアップデートが行われ、2020年1月にバージョン1.0のリリースを予定していますが、その機能やアーキテクチャについてまとめられている資料は少ないのが現状です。
+								</p>
+								<p class="card__body">
+									本セッションでは、GKEで構築したkubeflowのバージョン0.4以降の検証結果を元に、これまでの発展の歴史を挟みながら最新のKubeflowについて紹介します。"
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTD_Yuki_Nishizawa.jpg" alt="Nishizawa Yuki">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">西澤 勇紀</h2>
+										<p class="card__footerTxt">
+											社内インフラ・アーキテクト担当として従事。Kubernetesに興味を持ち、最近はKubernetesのソースコードリーディングを進めています。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Coffee Break -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Coffee Break</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: ??</li>
+									<li class="card__headItem">Tags: Coffee</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									コーヒーやおやつを食べながら発表者へ質問する休憩時間です。
+								</p>
+								<p class="card__body">
+									発表者が発表を行った部屋におりますので発表への質問や感想をぜひお伝えください。
+								</p>
+								<p class="card__body"></p>
+									また、展示なども行っておりますのでぜひ302会議室へ足をお運びください。
+								</p>
+							</div>
+							<div class="card__footerArea hidden">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">名前</h2>
+										<p class="card__footerTxt">自己紹介文</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- React HooksとGraphQLで社内レガシーサービス巻き取ってみたらものすごくはかどった話 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">React HooksとGraphQLで社内レガシーサービス巻き取ってみたらものすごくはかどった話</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 中級</li>
+									<li class="card__headItem">Tags: Application</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									社内レガシーサービスの巻取り開発を行う際に、思い切って最新のfrontend技術を投入したところ、開発が非常に加速し3ヶ月でリリースまでこぎつけられました。
+								</p>
+								<p class="card__body">
+								React HooksとGraphQLのecosystemと利便性が素晴らしかったので、開発で得られた知見とノウハウをご紹介します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTCom_Hiroki_Okui.png" alt="Hiroki Okui">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">奥井 寛樹</h2>
+										<p class="card__footerTxt">
+											技術開発部所属。伝送NWのSDNコントローラと業務アプリ開発を主にやっています。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 海外講演を通じて得られた知見(英語力＋α編) -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">海外講演を通じて得られた知見(英語力＋α編)</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: Engish, Global</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									海外講演をどう乗り越えてきたか？その後、英語力向上のために取り組んでいること、その他、大切にしていることなどをご紹介します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_Kambara_Kenichi.jpg" alt="Kambara Kenichi">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">神原 健一</h2>
+										<p class="card__footerTxt">
+											公私にわたってモバイルや新しい技術の世界に没頭。技術支援を行いつつ、講演や執筆などエバンジェリスト活動を実施中。
+										</p>
+										<p class="card__body">
+											最近のマイブームは、ランニング。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Lightning Talk -->
+			<!-- パワポをよくしただけなのに〜デザインの力で会社に貢献するチームの紹介 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">パワポをよくしただけなのに〜デザインの力で会社に貢献するチームの紹介</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: デザイン</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									パワポの改善から始まったものが、いつの間にかサービス立ち上げ支援やらイベント立ち上げやら色々やることになっていた、ちょっと変わったチームを紹介します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/SUZUKI-Masataka.JPG" alt="Suzuki Masataka">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">鈴木 雅貴</h2>
+										<p class="card__footerTxt">
+											NTTテクノクロス 営業推進部。社内デザイン支援チームD-Labの一員。Web標準技術を軸に活動しつつ、最近アクセシビリティに手を出している。アヒル好き。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- アジャイル開発手法における監視システム開発効率化の取り組み -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">アジャイル開発手法における監視システム開発効率化の取り組み</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 中級</li>
+									<li class="card__headItem">Tags: Operation, OSS, Use Case</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									現在自担当で開発している監視システムは、アジャイル開発で進めており短い開発サイクル・リリースを繰り返す形となっています。本システムのシステムデザインとして、役割別のコンポーネントを組み合わせた「組み合わせ可能な監視」を志向しており、環境に応じた構成変更、コンポーネント単位でのスケール性といった柔軟性を確保しています。
+								</p>
+								<p class="card__body"></p>
+									しかし、開発目線で見るとコンポーネント別の設定箇所が多く、デプロイ環境も複数パターン存在していることから、設定ファイルへの誤り混入や短い開発サイクルにおけるデプロイ作業の稼働面で課題が存在していました。本セッションでは、構成管理ツールやCI/CDを活用してこれらの課題への対応した事例について紹介します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">石田 瑛一</h2>
+										<p class="card__footerTxt">
+											NTTネットワークサービスシステム研究所にてOSSを活用したキャリア向け監視システムの研究開発に従事。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- スタートアップチームで学んだエンジニアの心構え -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">スタートアップチームで学んだエンジニアの心構え</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: 心構え</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									NTTComの新規事業であるSpoLiveの開発をしており、シリコンバレーのスタートアップにてインターンを経験したことのある登壇者が、エンジニアの心構え（コードが書ける以外のこと。HRTなど）について述べる。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/Hisayuki_Matsuki.png" alt="Hisayuki Matsuki">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">松木 久幸</h2>
+										<p class="card__footerTxt">
+											スポーツ解説アプリSpoLiveの開発を担当しているエンジニア。GoやPythonが好きですが、最近はReactNativeやfirebaseが多め。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- NTTデータのトップ技術者育成！「技統本塾」のご紹介 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">NTTデータのトップ技術者育成！「技統本塾」のご紹介</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: Skills Development</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									技術者の市場価値が高騰し、人財確保のための競争も激化している中、社内の技術者育成についても悩まれている方も多いのではないでしょうか？
+								</p>
+								<p class="card__body">
+									当セッションではNTTデータでトップ技術者の排出を目的として立ち上げた「技統本塾」の取り組みについてご紹介します。
+								</p>
+								<p class="card__body">
+									セッション後はぜひ参加者の皆様とも人材育成の悩みや取り組みについて意見交換させていただけますと幸いです。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTDATA_Tetsunosuke_Koizumi.png" alt="Tetsunosuke Koizumi">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">小泉 鉄之祐</h2>
+										<p class="card__footerTxt">
+											社内の技術人財育成施策である「技統本塾」の立ち上げから参画し、今年で3年目。OS、DB、コンテナなどインフラ系の技術を中心に育成施策を企画しています。
+										</p>
+										<p class="card__footerTxt"></p>
+											最近はコミュニティ運営にも興味を持ち、社内で組織横断な技術交流イベントを企画し、楽しくやっています。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Amazon EKS上でのVNF開発奮闘記 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Amazon EKS上でのVNF開発奮闘記</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 中級</li>
+									<li class="card__headItem">Tags: Container, Network, Use Case</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									ネットワーク仮想化(NFV;Network Function Vertualization)の世界にも、コンテナ技術の波が押し寄せてきています。
+								</p>
+								<p class="card__body">
+									我々のチームでは、AWSのkubernetesマネージドサービスであるEKS上で、NW装置の認証・認可機能であるRadiusの開発に取り組んでいます。
+								</p>
+								<p class="card__body">
+									AWS上での閉域網の構築や、RadiusのUDPトラフィックを扱うロードバランサ等の開発内容について紹介し、EKSを利用する上で苦労した事例についてお話します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">篠原 健太</h2>
+										<p class="card__footerTxt">
+											H22入社以来NS研勤務。NGN開発→サーバ系プラットフォーム研究→コンテナ(lxc,cgroupsまわり)の研究を経て現在はクラウドネイティブなNFV基盤の研究開発を担当。Appleとかガジェット大好き。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Cisco ルータのログを Stackdriver に送って可視化してみた -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Cisco ルータのログを Stackdriver に送って可視化してみた</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: Cloud, Operation</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									ルータのログは syslog で収集するのが定番ですが、管理や可視化の仕組みを自分で用意する必要がありました。
+								</p>
+								<p class="card__body">
+									ここでは Cisco EEM 機能を利用し、ルータ自身のログを Stackdriver に送ることで、クラウドの各種サービスを活用できるよう整備した事例を紹介します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTCom_TAJIMA_Teruhisa.jpg" alt="Tajima Teruhisa">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">田島 照久</h2>
+										<p class="card__footerTxt">
+											とあるSIerを経て2019年から現所属に。全社検証網でいろいろチャレンジする係。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 302 -->
+			<!-- 超高校級の攻撃-さよならEmpire- -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">超高校級の攻撃-さよならEmpire-</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 中級</li>
+									<li class="card__headItem">Tags: OSS, Security</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									<a href="https://github.com/EmpireProject/Empire" target="_blank">"Powershell Empire"</a>というOSSで提供されている攻撃ツールが2019年8月をもって更新終了となりました。
+								</p>
+								<p class="card__body">
+									実際の攻撃集団も用いていたPowerShell Empireとは何だったのか？セキュリティを知ったかしてる人も知ったかしてない人も絶望の淵に叩き落すかもしれない攻撃ツールの世界の一端を実際に仮想環境でPowerShell Empireを使って、仮想環境内のWindows10を攻撃します。
+								</p>
+								<p class="card__body">
+									※本ツールを使った攻撃を助長するものではございません。ツールを使ったことによる責任はご自身でとりましょう
+								</p>
+								<p class="card__body">
+									※本セッションはの内容が外部に流出した際の社会的影響を考慮し、SNS等での具体的内容の発信、録音、写真撮影はご遠慮願います。
+								</p>
+								<h3 class="card__bodyHead">対象者</h3>
+									<ul class="card__bodyList">
+										<li class="card__bodyItem">攻撃技術に対して興味のある方</li>
+									</ul>
+								<h3 class="card__bodyHead">あると好ましいもの</h3>
+								<ul class="card__bodyList">
+									<li class="card__bodyItem">寛容な心</li>
+								</ul>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTAT_Masahiro_Furuichi.png" alt="Masahiro_Furuichi">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">古市 昌弘</h2>
+										<p class="card__footerTxt">
+											もともとはソフトウェア開発や構築を担当していたが、なぜかセキュリティに飛ばされ今に至る。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Showcase -->
+			<!-- 技術系業務自動化のエンジン展示 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">技術系業務自動化のエンジン展示</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: -</li>
+									<li class="card__headItem">Tags: -</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									開発期間の短縮化などに応えるため、検証業務の自動化が求められていた。
+									また、自動化の対象のインタフェースは多様であったため、様々なカスタマイズが必要となるという課題があった。そのため自動化エンジンを作成して課題解決を行った。ここで作成したエンジンは、検証に限らずに様々な技術系業務に応用できるものになっており、その動態デモを行う。
+									</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTAT_Junichi_WATANUKI.png" alt="Junichi_WATANUKI">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">綿貫 順一</h2>
+										<p class="card__footerTxt">
+											AT社の元トライアスリート。最近では、自らコードを書くことも減ってきているので、スキルが低下しないように時々トレーニングをしています。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTAT_Toshihisa_IDEI.jpg" alt="Toshihisa_IDEI">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">出井 利尚</h2>
+										<p class="card__footerTxt">
+											ネットワーク系、開発系のエンジニアのチームです。20代前半から40代後半までの幅広いメンバーのチームで、業務改善の社内ツールを作成しました。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTAT_Kazuki_Sugano.png" alt="Kazuki_Sugano">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">菅野 和貴</h2>
+										<p class="card__footerTxt">
+											一昨年はVBA、昨年～今年にかけてはpythonを活用し、業務改善ツールの開発に従事しました。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTAT_Sho_YAMAMURO.jpeg" alt="Sho_YAMAMURO">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">山室 翔</h2>
+										<p class="card__footerTxt">
+											RPA案件、ネットワーク検証業務に従事していました。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tableau+スクラッチでWEBアプリライクに可視化してみた -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Tableau+スクラッチでWEBアプリライクに可視化してみた</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: -</li>
+									<li class="card__headItem">Tags: -</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									BIツール「Tableau」は共有プラットフォームTableau ServerにダッシュボードをアップすることでWEBブラウザベースで参照することができ、ここ最近ではホットな可視化ソリューションです。
+								</p>
+								<p class="card__body"></p>
+									ただ、ツール単体では機能・デザインで制限があり、要件にフィットしない場合があります。そこでTableauが提供するAPIを利用し、WEB画面にダッシュボード埋め込む構成をとることで、WEBアプリケーションライクな操作・デザインにした画面デモを展示します。
+								</p>
+								<p class="card__body">
+									本展示は、実際に代表者[高橋]が支援しているコニカミノルタ様※のWEBサービスでも採用している事例のノウハウ・TIPSを共有します。
+								</p>
+								<p class="card__body"></p>
+									※コニカミノルタ様への支援についての詳細は<a href="https://techplay.jp/eventreport/758380" target="_blank">こちら</a>
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">高橋 直道</h2>
+										<p class="card__footerTxt">-</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- WebAuthnを用いた多要素認証の実現 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">WebAuthnを用いた多要素認証の実現</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: -</li>
+									<li class="card__headItem">Tags: -</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									Web Authentication (WebAuthn)は、W3Cで2019年3月に勧告になったWebアプリケーションの新しいセキュアな認証方式仕様です。
+								</p>
+								<p class="card__body">
+									ローカル認証や公開鍵認証、Origin別の鍵管理を組み合わせることで、フィッシングなど認証プロセスに対する攻撃に対して堅固な認証を実現しています。
+									出展者はWebAuthnのJavaでのサーバーサイド実装としてWebAuthn4JというOSSを公開しており、RedHat SSOのupstreamであるKeycloakでも採用されるに至りました。
+								</p>
+								<p class="card__body">
+									本展示では、WebAuthnを組み込んだKeycloakやSpring Securityのデモや、Androidスマートフォンアプリを含めた各種認証デバイスを展示します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTWT_Yoshikazu_Nojima.jpg" alt="Nojima Yoshikazu">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">能島 良和</h2>
+										<p class="card__footerTxt">
+											NTT-CWでSpringを用いたPJ支援に従事した後、現在はNTT-WTでクラウドサービスの保守開発に従事。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Kibana Canvasでオシャレに可視化してみたリターンズ -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Kibana Canvasでオシャレに可視化してみたリターンズ</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: -</li>
+									<li class="card__headItem">Tags: -</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									NTT Tech Conference#3に展示したElastic Stackを利用して、本イベントのTwitterハッシュタグ(#NTTtech)を可視化するデモをリニューアルしてお届け！
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_Yuka_Kawasaki.jpg" alt="Kawasaki Yuka">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">川崎 裕香</h2>
+										<p class="card__footerTxt">
+											OSSを組み合わせて極めるマンを目指す。自分が楽になる技術が好き。Kibana Canvasかわいい♡アイアンマンをはじめ、マーベルも好き。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTTX_YAMASHITA_jouji.jpg" alt="Yamashita Joji">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">山下 城司</h2>
+										<p class="card__footerTxt">
+											いつの間にか4年目になっていた浦島太郎。普段はElastic Stackを採用するPJの支援などを担当している。I ♥ Elastic
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">大塚 一喜</h2>
+										<p class="card__footerTxt">
+											セキュリティエンジニア。Elastic Stackをセキュリティログ分析で活用するため日々試行錯誤中。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">西園 直人</h2>
+										<p class="card__footerTxt">
+											-
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 303 -->
+			<!-- エンジニアのキャリアをレゴで考えるワークショップ -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">エンジニアのキャリアをレゴで考えるワークショップ</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: レゴシリアスプレイ</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									レゴ®︎シリアスプレイ®︎は自身の内観をより深く考えるメソッドです。５年後の自身のキャリアをレゴの作品を通して考えていきます。
+								</p>
+								<h3 class="card__bodyHead">対象者</h3>
+									<ul class="card__bodyList">
+										<li class="card__bodyItem">自身の職種がエンジニアだと思っている方なら誰でも</li>
+									</ul>
+								<h3 class="card__bodyHead">あると好ましいもの</h3>
+								<ul class="card__bodyList">
+									<li class="card__bodyItem">新しいことにチャレンジしようと思う気持ちがあること</li>
+								</ul>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTCom_Yoshie_Sagata.jpg" alt="Sagata Yoshie">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">嵯峨田（そうとめ）良江
+										</h2>
+										<p class="card__footerTxt">
+											経営企画部　UXデザイナーとしての仕事の傍ら、レゴ®シリアスプレイ®ワークショップやグラフィックレコーディング活動中
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/Sawako_Uematsu.png" alt="Sawako Uematsu">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">上松 佐和子</h2>
+										<p class="card__footerTxt">
+											デザインの力で仕事をちょっと楽しくするために各種活動中
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- MLPerf Inference で比較するAIエッジデバイス -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">MLPerf Inference で比較するAIエッジデバイス</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: Machine Learning</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									AIの利用が一般化する中、エッジでのAI実行環境として各社から小型のデバイスが発売されています。
+								</p>
+								<p class="card__body"></p>
+								AI向けハードウェアの性能評価を目的として"MLPerf"というベンチマークソフトが開発されていますが、特に推論性能評価向けである"MLPerf Inference"を用いて各社のデバイスの性能測定にチャレンジして得られた知見をお話します。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/Aritomo_Kimura.jpg" alt="Aritomo Kimura">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">木村 有朝</h2>
+										<p class="card__footerTxt">
+											NTTコミュニケーションズ 技術開発部所属。社内向けGPU環境の整備のついでに評価などもする人。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/Michihiro_Naito.png" alt="Michihiro Naito">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">内藤 理大</h2>
+										<p class="card__footerTxt">
+											IoT-TUとAI-TUの兼務。IoTでは、Edge技術調査検証を、AIではNode-AIというwebサービスの内製開発のテックリードをやってます。
+										</p>
+									</div>
+								</div>
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/Ankit_Purohit.jpg" alt="Ankit Purohit">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">Ankit Purohit</h2>
+										<p class="card__footerTxt">
+											Ankit is software engineer working in NTT since 2016.
+											He is mainly involved in verification and evaluation of GPU servers using Deep learning and other HPC applications. Currently, he is working on Kubernetes (k8s) project to improve in-house k8s environment.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術 -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 上級</li>
+									<li class="card__headItem">Tags: OSS, Security, Linux</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									"Linuxカーネルの試験自動化技術について話します。<a href="https://qiita.com/fujiihda/items/e86c46c003cceb703a9c" target="_blank">こちら</a>の記載内容が近いです。
+								</p>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/NTTData_Hideyuki_Fujii.jpg" alt="Hideyuki Fujii">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">藤井 秀行</h2>
+										<p class="card__footerTxt">
+											Hinemos開発と某 OSSセンタで OS (Linux) 分野の専門性を磨いたインフラエンジニアです。
+										</p>
+										<p class="card__footerTxt">
+											趣味はセキュリティ技術です。最近では、技術コミュニティを設立する側や運営側に関わらせていただく機会も増えてきました。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Coffee Break -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Coffee Break</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: ??</li>
+									<li class="card__headItem">Tags: Coffee</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									コーヒーやおやつを食べながら発表者へ質問する休憩時間です。
+								</p>
+								<p class="card__body">
+									発表者が発表を行った部屋におりますので発表への質問や感想をぜひお伝えください。
+								</p>
+								<p class="card__body"></p>
+									また、展示なども行っておりますのでぜひ302会議室へ足をお運びください。
+								</p>
+							</div>
+							<div class="card__footerArea hidden">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="https://placehold.jp/eeeeee/999999/600x400.png?text=No%20Image" alt="dummy">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">名前</h2>
+										<p class="card__footerTxt">自己紹介文</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Grafana Loki による Kubernetes ロギング ハンズオン -->
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<div class="modal__card">
+							<span class="modal__close">×</span>
+							<div class="card__headArea">
+								<h2 class="card__head">Grafana Loki による Kubernetes ロギング ハンズオン</h2>
+								<ul class="card__headList">
+									<li class="card__headItem">Level: 初級</li>
+									<li class="card__headItem">Tags: Cloud, Container, Operation, OSS</li>
+								</ul>
+							</div>
+							<div class="card__bodyArea">
+								<h2 class="card__bodyHead">Overview</h2>
+								<p class="card__body">
+									"コンテナの数や配置が動的に変化しうるKubernetesの環境において、効率的にログ収集を行うにはどうすればよいのでしょうか。
+								</p>
+								<p class="card__body">
+									このセッションでは、Prometheusと高い親和性を持つOSSのロギングツール「Grafana Loki」のハンズオンを通じて、Kubernetesのクラスタレベルロギングについて学ぶことができます。
+								</p>
+								<p class="card__body">
+									クラウドネイティブな環境に不可欠となる「Observability」の概要の解説なども交えながら、Kubernetes初学者がより良いロギングについて考えるための基礎を身につけられることを目指しています。
+								</p>
+									<h3 class="card__bodyHead">対象者</h3>
+									<ul class="card__bodyList">
+										<li class="card__bodyItem">GCPの基本的な操作方法、およびKubernetesの代表的なリソースの名称/概要を理解していること"</li>
+									</ul>
+							</div>
+							<div class="card__footerArea">
+								<div class="card__footerFlex">
+									<div class="card__footerImg">
+										<img src="./images/speakers/masahiko_utsunomiya.jpg" alt="Usunomiya Masahiko">
+									</div>
+									<div class="card__footerIntro">
+										<h2 class="card__footerName">宇都宮　雅彦</h2>
+										<p class="card__footerTxt">
+											主にコンテナやサーバレスを扱っているインフラエンジニア。Observability の関連プロダクトを中心に、クラウドネイティブな技術に関心を持つ。<br>
+											Kubernetes のクラスタレベルロギングツール Grafana Loki のコントリビュータ。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- <section class="conference" id="Conference">
+				<h2 class="secHead">Conference</h2>
+		</section> -->
+
+		<!-- Registration -->
+		<section class="registration" id="Registration">
+			<h2 class="secHead">Registration</h2>
+			<p class="secTxt">
+				NTT Tech Conferenceへの参加へは事前登録が必要です。<br>
+				NTTグループのソフトウェアエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか？
+			</p>
+			<a class="registration__btn" href="https://ntt-techconf.connpass.com/event/161866/" target="_blank">事前登録をする</a>
+		</section>
+
+		<!-- After Party
+		<section class="afterParty" id="AfterParty">
+			<h2 class="secHead">After Party</h2>
+			<p class="secTxt">
+				懇親会の詳細は<a class="secTxtLink" href="#" target="_blank">こちら</a>から
+			</p>
+		</section> -->
+
+		<!-- Access -->
+		<section class="access" id="Access">
+			<h2 class="secHead">Access</h2>
+			<h3 class="secSubHead">Venue</h3>
+			<p class="secTxt">田町グランパークカンファレンス （詳細は<a href="https://granpark-c.com/access/" target="_blank">こちら</a>をご参照ください）</p>
+			<h3 class="secSubHead">Closest Station</h3>
+			<ul class="secList">
+				<li class="secListItem">JR山手線 田町駅（徒歩5分）</li>
+				<li class="secListItem">地下鉄都営浅草線・三田線 三田駅</li>
+			</ul>
+			<h3 class="secSubHead">Address</h3>
+			<p class="secTxt">
+				東京都港区芝浦3丁目4-1　田町グランパーク　プラザ棟3階
+			</p>
+
+			<!-- Map iframe -->
+			<div class="iframe__wrapper">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1PsQ3YrvLuNn3mMKuxKK73aYwkgC9w3cP&z=17" width="800" height="480" frameborder="0">
+				</iframe>
+			</div>
+
+			<h3 class="secSubHead">From 田町駅</h3>
+			<ul class="sbsList">
+				<li class="sbsItem"><img src="images/access/from_tamachi_st01.jpg" alt=""></li>
+				<li class="sbsItem"><img src="images/access/from_tamachi_st02.jpg" alt=""></li>
+				<li class="sbsItem"><img src="images/access/from_tamachi_st03.jpg" alt=""></li>
+				<li class="sbsItem"><img src="images/access/from_tamachi_st04.jpg" alt=""></li>
+			</ul>
+
+			<h3 class="secSubHead">From 藻塩橋</h3>
+			<ul class="sbsList">
+				<li class="sbsItem"><img src="images/access/from_moshiobashi01.jpg" alt=""></li>
+				<li class="sbsItem"><img src="images/access/from_moshiobashi02.jpg" alt=""></li>
+				<li class="sbsItem"><img src="images/access/from_moshiobashi03.jpg" alt=""></li>
+				<li class="sbsItem"><img src="" alt=""></li>
+				</ul>
+		</section>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+	<p class="footer__cr">
+		© 2019 NTT Developers
+	</p>
+</footer>
+
+
+<!-- Script -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="./script/script.js"></script>
+</body>
+</html>
