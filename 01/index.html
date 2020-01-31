@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>NTT Tech Conference #01</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="NTT Tech Conference #1" property="og:title" />
+    <meta content="NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。" property="og:description" />
+    <meta content="https://ntt-developers.github.io/ntt-tech-conference-01/" property="og:url" />
+    <meta content="https://ntt-developers.github.io/ntt-tech-conference-01/images/ntt-tech-logo.png" property="og:image" />
+    <link href="./assets/stylesheets/bower_components.min.css" rel="stylesheet" />
+    <link href="./assets/stylesheets/application.min.css" rel="stylesheet" />
+    <link href="./images/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <div class="bd-masthead" style="background-image: url(./images/graphy.png);">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-md-6">
+            <img alt="ntt-tech-logo.png" class="img-fluid" src="./images/ntt-tech-logo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center mb-2">
+        <div class="col col-md-8">
+          <p class="description text-center mb-0 info">
+            【2017.2.6更新】<br />本イベントは終了しました。多数のご来場ありがとうございました。<br />発表資料と写真を公開いたしました。
+          </p>
+        </div>
+      </div>
+      <div class="text-center my-5">
+        <h4 class="title">
+          総監督ごあいさつ
+        </h4>
+        <span class="subtitle">Thank You Messages</span>
+      </div>
+      <div class="row justify-content-md-center mb-5">
+        <div class="col col-md-8">
+          <p class="description text-justify mb-0">
+            講演いただいた皆様、ご参加いただいた皆様、そしてスタッフの皆様への御礼を申し上げます。<br />また、今回、直前でインフルエンザ等で参加を断念した方がいらっしゃいましたが、その方々にも、無事開催できたことを感謝しております。<br />今回、NTTグループ横断で有志が集まってワイワイと手作りしましたので、もし不手際などございましたら、アンケート等で忌憚のないご意見、コメントをいただければ幸いです。<br /><br />今回のイベントはソフトウェア開発者を中心に据えたイベントです。<br />キーノートスピーチでNTTコミュニケーションズの技術開発部長 山下からも言及させていただきましたが、NTTグループ横断で技術者たちが集まるイベントは他にもありますが、現場のソフトウェア開発者、ソフトウェア技術に関わる人を対象とした、初めてのイベントです。<br /><br />今、ソフトウェア、或いはSoftware Defined * と呼ばれるものが、ユーザだけでなく、企業や社会の様相まで変えてしまう流れがきています。それほどにソフトウェアの重要性が高まっています。<br /><br />プラットフォーム事業者にも、エコシステムとスピードが求められている時代になり、既に種々のソフトウェアのプラットフォームが整備され、エコシステムが構築され、様々なプレイヤーが従来よりも比較にならない速度で多様なサービスを展開しています。<br /><br />翻ってNTTグループでは、今でこそオープンソースのコミッター就任をニュースリリースしておりますが、冬の時代がありました。NWのIP系の人は昔からオープンに交流していましたが、ソフト系の人はNTTグループが背負ってきた様々な要因から、業務としてなかなか認められない時代がありました。しかし今やオープンソースが会社の重要な戦略の中に位置づけられてきています。<br /><br />そして今後はグループ内外とのコラボが大事な時代になります。<br />NTTグループとしても、このようなイベント含めた様々な活動を通して、より積極的にグループ内外とのコラボレーション、特にビジネスのコラボレーションを進めていくことが、今後非常に重要になると考えています。<br /><br />ご参加いただいた皆様は時代の流れの中核を担っていくエンジニアとして、このような場を発表や議論による知識の共有や仲間・人脈作りに大いに活用していただき、ステップアップしていただければと思います。また、今後とも、ライト、オープン、スピードとコラボレーションを心がけてイベントを企画していきますので、ぜひご参加いただければと思います。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-center my-5">
+        <h4 class="title">
+          NTT Tech Conferenceについて
+        </h4>
+        <span class="subtitle">ABOUT</span>
+      </div>
+      <div class="row justify-content-md-center mb-5">
+        <div class="col col-md-8">
+          <p class="description text-justify mb-0">
+            NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。NTTグループ内には各種OSSのコミッタ、メンテナ、コントリビュータをはじめとしたソフトウェアエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みをNTTグループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+          </p>
+        </div>
+      </div>
+      <div class="separator mb-5"></div>
+      <div class="text-center mb-5">
+        <h4 class="title">
+          タイムテーブル
+        </h4>
+        <span class="subtitle">TIME TABLE</span>
+      </div>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#timetable" id="ttable" role="tab">タイムテーブル</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#room301" id="r301" role="tab">301大会議室</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#room302" id="r302" role="tab">302会議室</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#room401" id="r401" role="tab">401ホール</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#showcase" id="demo" role="tab">展示(401ホール)</a>
+        </li>
+      </ul>
+      <div class="tab-content mb-5">
+        <div class="tab-pane active" id="timetable" role="tabpanel">
+          <ul class="timeline">
+            <li id="table-entry1">
+              <div class="timeline_time" datetime="2017-01-27 13:30">
+                <a class="jump" jump-to-tab="ttable"><span>13:30-14:00</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf0">Opening Keynote</a>
+                  </h4>
+                  <p>
+                    <a class="external-link" href="http://www.slideshare.net/td-nttcom/ntt-tech-conference-1-opening-keynote" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料1</a><br>発表資料2(非掲載)</br>
+                  </p>
+                  <img class="photo" src="images/photos/301_1.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="table-entry2">
+              <div class="timeline_time" datetime="2017-01-27 14:10">
+                <a class="jump" jump-to-tab="ttable"><span>14:10-14:30</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf1">Docker コミュニティ近況</a>
+                  </h4>
+                  <p>
+                    須田瑛大 - 日本電信電話株式会社<br /><a class="external-link" href="http://www.slideshare.net/AkihiroSuda/docker-71524595" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/301_2.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb1">NTT Database Summit - PostgreSQL 10: What to look for?</a>
+                  </h4>
+                  <p>
+                    Amit Langote - NTT OSSセンタ<br /><a class="external-link" href="http://www.slideshare.net/AmitLangote1/pg10-whattolookforamitlan2" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/302_2.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf1">NTT Developersが語る"DevOps"の今とこれから</a>
+                  </h4>
+                  <p>
+                    小倉真人 - NTTコミュニケーションズ
+                  </p>
+                  <p>
+                    石井久治 - 日本電信電話株式会社
+                  </p>
+                  <img class="photo" src="images/photos/401_2.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="table-entry3">
+              <div class="timeline_time" datetime="2017-01-27 14:40">
+                <a class="jump" jump-to-tab="ttable"><span>14:40-15:00</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf2">Building secure Docker containers</a>
+                  </h4>
+                  <p>
+                    Kunal Kushwaha - 日本電信電話株式会社<br /><a class="external-link" href="https://speakerdeck.com/kunalkushwaha/building-secure-docker-containers" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/301_3.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb2">NTT Database Summit - Database Security for PCIDSS</a>
+                  </h4>
+                  <p>
+                    大山真実 - NTT OSSセンタ<br /><a class="external-link" href="http://www.slideshare.net/ooyamams/database-security-for-pci-dss" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/302_3.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf1">NTT Developersが語る"DevOps"の今とこれから</a>
+                  </h4>
+                  <p>
+                    小倉真人 - NTTコミュニケーションズ
+                  </p>
+                  <p>
+                    石井久治 - 日本電信電話株式会社
+                  </p>
+                  <img class="photo" src="images/photos/401_3.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="table-entry4">
+              <div class="timeline_time" datetime="2017-01-27 15:20">
+                <a class="jump" jump-to-tab="ttable"><span>15:00-15:20</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf3">おやつタイム</a>
+                  </h4>
+                  <img class="photo" src="images/photos/301_4.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb3">NTT Database Summit - Free Discussion Time</a>
+                  </h4>
+                  <p>
+                    藤井 雅雄 - NTTデータ
+                  </p>
+                  <p>
+                    Amit Langote - NTT OSSセンタ
+                  </p>
+                  <p>
+                    大山真実 - NTT OSSセンタ
+                  </p>
+                  <p>
+                    澤田雅彦 - NTT OSSセンタ
+                  </p>
+                  <img class="photo" src="images/photos/302_4.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf2">おやつタイム</a>
+                  </h4>
+                  <img class="photo" src="images/photos/401_4.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="table-entry5">
+              <div class="timeline_time" datetime="2017-01-27 15:20">
+                <span>15:20-15:40</span>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf4">分散処理技術のスタンダードHadoopやSparkの本当のところを教えます！</a>
+                  </h4>
+                  <p>
+                    鯵坂明 - NTTデータ
+                  </p>
+                  <img class="photo" src="images/photos/301_5.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb4">シェル芸で学ぶDevOps実践入門</a>
+                  </h4>
+                  <p>
+                    石井久治 - 日本電信電話株式会社<br /><a class="external-link" href="https://github.com/hisaharu/shellgei/blob/master/slides/techconf1/lib/md/index.md" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/302_5.jpg" />
+                  </p>
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf3">NTTG新人座談会</a>
+                  </h4>
+                  <p>
+                    萬治渉 - NTTソフトウェア
+                  </p>
+                  <p>
+                    堀内晨彦 - NTTコミュニケーションズ
+                  </p>
+                  <img class="photo" src="images/photos/401_5.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="table-entry6">
+              <div class="timeline_time" datetime="2017-01-27 15:50">
+                <a class="jump" jump-to-tab="ttable"><span>15:50-16:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf5">Apache BigtopによるDockerコンテナ上へのHadoopソフトウェアスタックの導入</a>
+                  </h4>
+                  <p>
+                    関堅吾 - NTTデータ
+                  </p>
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb5">AWSのEC2 Container Service (ECS)とSpotFleetで新規ビジネスのトライアル</a>
+                  </h4>
+                  <p>
+                    須藤悠 - NTTソフトウェア<br /><a class="external-link" href="http://www.slideshare.net/sudoyu/ecsspotfleet" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/302_6.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf3">NTTG新人座談会</a>
+                  </h4>
+                  <p>
+                    萬治渉 - NTTソフトウェア
+                  </p>
+                  <p>
+                    堀内晨彦 - NTTコミュニケーションズ
+                  </p>
+                  <img class="photo" src="images/photos/401_6.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="table-entry7">
+              <div class="timeline_time" datetime="2017-01-27 16:20">
+                <a class="jump" jump-to-tab="ttable"><span>16:20-16:40</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf6">Deconstruction of Serverless and Blockchain</a>
+                  </h4>
+                  <p>
+                    林田貴宏 - NTTコムウェア<br /><a class="external-link" href="http://www.slideshare.net/TakahiroHayashida/deconstruction-of-serverless-and-blockchain" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/301_7.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb6">ブロックチェーンの仕組みと動向(入門編)</a>
+                  </h4>
+                  <p>
+                    北條真史 - NTTデータ<br /><a class="external-link" href="http://www.slideshare.net/hadoopxnttdata/ntt-tech-conf-01-blockchain-for-beginner" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/302_7.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf4">OSSコミッタの生活とその必要性</a>
+                  </h4>
+                  <p>
+                    市原裕史 - 日本電信電話株式会社<br /><a class="external-link" href="http://www.slideshare.net/hichihara/oss-71450183" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/401_7.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="table-entry8">
+              <div class="timeline_time" datetime="2017-01-27 16:50">
+                <a class="jump" jump-to-tab="ttable"><span>16:50-17:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf7">ドコモのビッグデータ分析環境の開発と運用を内製でやってる話</a>
+                  </h4>
+                  <p>
+                    伊吹勇郎 - NTTドコモ
+                  </p>
+                  <img class="photo" src="images/photos/301_8.jpg" />
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r302" target="#forb7">あなたとBot、今すぐChatOps</a>
+                  </h4>
+                  <p>
+                    堀内晨彦 - NTTコミュニケーションズ<br /><a class="external-link" href="https://esa-pages.io/p/sharing/4975/posts/55/c1098e81cfa3e924a46d-slides.html#/" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><span></span><a class="external-link" href="https://speakerdeck.com/ladicle/slack-bot" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="発表資料2"></i>発表資料2</a><img class="photo" src="images/photos/302_8.jpg" />
+                  </p>
+                </div>
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r401" target="#unconf4">OSSコミッタの生活とその必要性</a>
+                  </h4>
+                  <p>
+                    市原裕史 - 日本電信電話株式会社<br /><a class="external-link" href="http://www.slideshare.net/hichihara/oss-71450183" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/401_8.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="table-entry9">
+              <div class="timeline_time" datetime="2017-01-27 17:20">
+                <span>17:20-17:50</span>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="r301" target="#conf8">Closing Keynote</a>
+                  </h4>
+                  <p>
+                    <a class="external-link" href="http://www.slideshare.net/td-nttcom/ntt-tech-conference-1-closing-keynote" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/301_9.jpg" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="room301" role="tabpanel">
+          <ul class="timeline">
+            <li id="conf0">
+              <div class="timeline_time" datetime="2017-01-27 13:30">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry1"><span>13:30-14:00</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable">Opening Keynote</a>
+                  </h4>
+                  <p>
+                    <a class="external-link" href="http://www.slideshare.net/td-nttcom/ntt-tech-conference-1-opening-keynote" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料1</a><br />発表資料2(非掲載)
+                  </p>
+                  <img class="photo" src="images/photos/301_1.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="conf1">
+              <div class="timeline_time" datetime="2017-01-27 14:10">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry2"><span>14:10-14:30</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry2">Docker コミュニティ近況</a>
+                  </h4>
+                  <p>
+                    TechConf開催日のころにはDocker 1.13がリリースされている見込みです． また，新ランタイムcontainerdのコミュニティ移管や，分散ストレージInfinitのソースコード公開も2017年の早期に予定されています．こうした近況をお伝えするほか，Dockerへのパッチの投げ方，バグレポートの仕方もご案内します．
+                  </p>
+                  <br />須田瑛大(<a class="presenter" href="https://twitter.com/_AkihiroSuda_">@_AkihiroSuda_</a>) - 日本電信電話株式会社<br />Dockerメンテナ@SIC<br /><a class="external-link" href="http://www.slideshare.net/AkihiroSuda/docker-71524595" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/301_2.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="conf2">
+              <div class="timeline_time" datetime="2017-01-27 14:40">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry3"><span>14:40-15:00</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry3">Building secure Docker containers</a>
+                  </h4>
+                  <p>
+                    Docker containers uses various OS primitives like cgroup, namespace and secomp, SElinux etc for isolating and securing containers. By default docker containers may not be secure enough to run at your server. This talk will help to understand the security concerns in containers and how it can be avoided.
+                  </p>
+                  <br />Kunal Kushwaha(<a class="presenter" href="https://twitter.com/kunalkushwaha">@kunalkushwaha</a>) - 日本電信電話株式会社<br />Kunal works for NTT OSSC for Linux Containers community projects. He is also co-organizer of Docker Tokyo Meetups and gives talk in Container related events at Tokyo.<br /><a class="external-link" href="https://speakerdeck.com/kunalkushwaha/building-secure-docker-containers" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/301_3.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="conf3">
+              <div class="timeline_time" datetime="2017-01-27 15:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry4"><span>15:00-15:20</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry4">おやつタイム</a><img class="photo" src="images/photos/301_4.jpg" />
+                  </h4>
+                </div>
+              </div>
+            </li>
+            <li id="conf4">
+              <div class="timeline_time" datetime="2017-01-27 15:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry5"><span>15:20-15:40</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry5">分散処理技術のスタンダードHadoopやSparkの本当のところを教えます！</a>
+                  </h4>
+                  <p>
+                    Apache Hadoopが登場して10年が経ち、今や分散処理技術として重要なものになりました。Hadoopによって大量データの蓄積や分散処理による高速化の恩恵を受けてきました。そして、単純なログ集計から分析・機械学習といったより高度な活用を推進しています。高度な利用ではApache Sparkが欠かせない技術です。Sparkを利用することで、分析や機械学習を容易に扱えるようになり、これまで結果を得るために必要だった時間を大幅に削減することができるようになりました。本セッションでは、HadoopやSparkを利用する上での基礎的な仕組み、抑えておくべきポイントといった本当のところをお伝えします！
+                  </p>
+                  <br />鯵坂明(<a class="presenter" href="https://twitter.com/ajis_ka">@ajis_ka</a>) - NTTデータ<br />Akira Ajisaka is a software engineer working at NTT DATA, Japan. He belongs to OSS Professional Services team and deploys and operates Hadoop clusters for customers. He sometimes troubleshoots them by investigating source code and creating a patch. He is an Apache Hadoop committer/PMC member and he involves in various components of Hadoop for improving usability and supportability. He wrote blog posts about activities of the development of Apache Hadoop annually.<img class="photo" src="images/photos/301_5.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="conf5">
+              <div class="timeline_time" datetime="2017-01-27 15:50">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry6"><span>15:50-16:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry6">Apache BigtopによるDockerコンテナ上へのHadoopソフトウェアスタックの導入</a>
+                  </h4>
+                  <p>
+                    Hadoop やその周辺プロダクトを試してみたい人や、手っ取り早く動作確認するための環境が欲しい人向けに、Apache Bigtop を使って Docker コンテナ上に Hadoop ソフトウェアスタックを簡単に構築する方法を紹介します。以下の記事±αの内容を話します。
+                  </p>
+                  <a class="presenter" href="http://qiita.com/sekikn/items/18954e9b302c38eb5b55">http://qiita.com/sekikn/items/18954e9b302c38eb5b55</a><br />関堅吾(<a class="presenter" href="https://twitter.com/sekikn39">@sekikn39</a>) - NTTデータ<br />OSS プロフェッショナルサービスという担当で Apache Hadoop のサポート業務に従事. Apache Yetus committer & PMC member.
+                </div>
+              </div>
+            </li>
+            <li id="conf6">
+              <div class="timeline_time" datetime="2017-01-27 16:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry7"><span>16:20-16:40</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry7">Deconstruction of Serverless and Blockchain</a>
+                  </h4>
+                  <p>
+                    「Serverless」と「Blockchain」が注目されています．これらのテクノロジーを分解すると，その技術要素は多くの共通項を持ちます．コンテナ．分散．イベントドリブン．トランザクション．ワークフロー etc...  ServerlessとBlockchainを分解し，組み合わせることで見えてくる新しい地平は何か．そして作成したデモシステムについてご紹介します．<br />林田貴宏 - NTTコムウェア<br />技術開発部門スペシャリスト．クラウドサービスやテストツール開発，Scrum，LeSSの取り組みを経て，現在Serverless分野に注力．<br /><a class="external-link" href="http://www.slideshare.net/TakahiroHayashida/deconstruction-of-serverless-and-blockchain" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/301_7.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="conf7">
+              <div class="timeline_time" datetime="2017-01-27 16:50">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry8"><span>16:50-17:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry8">ドコモのビッグデータ分析環境の開発と運用を内製でやってる話</a>
+                  </h4>
+                  <p>
+                    NTTドコモのビッグデータ分析環境"IDAP"は、AWSの各種サービスを利用して内製で開発されています。 そこに至るまでの経緯と開発運用のスタイルについて紹介します。
+                  </p>
+                  <br />伊吹勇郎 - NTTドコモ<br />NTTドコモサービスイノベーションビッグデータ担当所属。入社以来データ分析およびデータ分析環境の構築に従事。<img class="photo" src="images/photos/301_8.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="conf8">
+              <div class="timeline_time" datetime="2017-01-27 17:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry9"><span>17:20-17:50</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry9">Closing Keynote</a>
+                  </h4>
+                  <p>
+                    <a class="external-link" href="http://www.slideshare.net/td-nttcom/ntt-tech-conference-1-closing-keynote" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a>
+                  </p>
+                  <img class="photo" src="images/photos/301_9.jpg" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="room302" role="tabpanel">
+          <ul class="timeline">
+            <li id="forb1">
+              <div class="timeline_time" datetime="2017-01-27 14:10">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry2"><span>14:10-14:30</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable">NTT Database Summit - PostgreSQL 10: What to look for?</a>
+                  </h4>
+                  <p>
+                    PostgreSQL 10 will be released sometime later this year.  Beside the change in the policy of version numbering, there are number of significant features in the pipeline.  As a development community member, I would like to highlight some of those features that have a good chance of being a part of this release - such as many new replication features, declarative partitioning, more FDW query push-down, enhanced parallelism and asynchronous execution capabilities, better statistics for query optimization, JIT-compiled expression evaluation, and many others.
+                    
+                    Most of the anticipated features in PostgreSQL 10 have been consistently requested by the wider developer community using PostgreSQL and their availability opens up the possibility of even widespread adoption of PostgreSQL.<br /><a class="external-link" href="http://www.slideshare.net/AmitLangote1/pg10-whattolookforamitlan2" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/302_2.jpg" /><br />Amit Langote(<a class="presenter" href="https://twitter.com/amitlan">@amitlan</a>) - NTT OSSセンタ<br />PostgreSQL developer
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="forb2">
+              <div class="timeline_time" datetime="2017-01-27 14:40">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry3"><span>14:40-15:00</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry3">NTT Database Summit - Database Security for PCIDSS</a>
+                  </h4>
+                  <p>
+                    国際的なセキュリティ標準である PCI DSS をベースに、データベースのセキュリティに関して、どのような観点での検討が必要なのかを考えます。これからセキュリティっぽいことを考えなければいけない皆様の一助となれば幸いです。
+                    なお、 発表は入門的な内容ですが、当方はセキュリティの専門家ではないので、詳しい方々からの優しいアドバイスを頂きたいと思っています。セキュリティに関して一家言ある皆様のご参加もお待ちしております。<br /><a class="external-link" href="http://www.slideshare.net/ooyamams/database-security-for-pci-dss" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><br />大山真実(<a class="presenter" href="https://twitter.com/ooyamams1987">@ooyamams1987</a>) - NTT OSSセンタ<br />2012年NTTデータ入社。OSSプロフェッショナルサービス配属。HadoopなどのOSS製品の検証・サポート業務を担当。2015年からNTT OSSセンタにてPostgreSQLの検証・サポート業務を担当中。<img class="photo" src="images/photos/302_3.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="forb3">
+              <div class="timeline_time" datetime="2017-01-27 15:00">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry4"><span>15:00-15:20</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry4">NTT Database Summit - Free Discussion Time</a>
+                  </h4>
+                  <p>
+                    「PostgreSQL 10: What to look for?」「Database Security for PCIDSS」に関する疑問質問、PostgreSQLやその他データベースに関する疑問質問をきっかけにみんなでディスカッションしようという時間です。おやつタイムも兼ねてます。様々なバックグラウンドを持つ技術者が集まる良い機会ですので、お気軽にご参加、ご発言ください！<br />藤井雅雄(<a class="presenter" href="https://twitter.com/fujii_masao">@fujii_masao</a>) - NTTデータ<br />PostgreSQL committer<br /><br />Amit Langote(<a class="presenter" href="https://twitter.com/amitlan">@amitlan</a>) - NTT OSSセンタ<br />PostgreSQL developer<br /><br />大山真実(<a class="presenter" href="https://twitter.com/ooyamams1987">@ooyamams1987</a>) - NTT OSSセンタ<br />2012年NTTデータ入社。OSSプロフェッショナルサービス配属。HadoopなどのOSS製品の検証・サポート業務を担当。2015年からNTT OSSセンタにてPostgreSQLの検証・サポート業務を担当中。<br /><br />澤田雅彦(<a class="presenter" href="https://twitter.com/sawada_masahiko">@sawada_masahiko</a>) - NTT OSSセンタ<br />PostgreSQL技術サポートを行う傍ら、PostgreSQL開発者としてPostgreSQLコミュニティに参画し、PostgreSQL本体の開発にも従事。<img class="photo" src="images/photos/302_4.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="forb4">
+              <div class="timeline_time" datetime="2017-01-27 15:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry5"><span>15:20-15:40</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry5">シェル芸で学ぶDevOps実践入門</a>
+                  </h4>
+                  <p>
+                    シェル芸とは、IT環境における各種計算・統計・テキスト処理等の課題解決に際し、１からプログラムを書き起こすのではなく、UNIX哲学に基づき、広く普及している既存コマンドの組み合わせによって、シェル上のワンライナーで即座に課題を解決してしまうテクニックのことです。
+                    昨今 DevOps が話題になっていますが、オフィスの空調・椅子・キーボード・エディタ・ネットワーク接続に恵まれたDev(プログラマ)に対し、客先のデータセンタで寒さに震え、椅子もなく、キーボードも固く、エディタも選べず、時にオフラインでの作業を強いられるOps(インフラエンジニア)にとって、イザという時に頼れるのは己の知恵と勇気とcoreutilsだけという場面も珍しくありません。
+                    このセッションでは、Software Design 2017年1月号に掲載されたシェル芸特集を題材に、明日から実践できるシェル芸の基礎をハンズオン形式で体感していただきます。<br /><a class="external-link" href="https://github.com/hisaharu/shellgei/blob/master/slides/techconf1/lib/md/index.md" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><br /><br />石井久治(<a class="presenter" href="https://twitter.com/hisaharu">@hisaharu</a>) - 日本電信電話株式会社<br />NTT SICにてDevOpsの普及啓蒙と実践を推進。日本唯一のシェルプログラミングコミュニティ「USP友の会」幹事<img class="photo" src="images/photos/302_5.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="forb5">
+              <div class="timeline_time" datetime="2017-01-27 15:50">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry6"><span>15:50-16:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry6">AWSのEC2 Container Service (ECS)とSpotFleetで新規ビジネスのトライアル</a>
+                  </h4>
+                  <p>
+                    NTTソフトウェア社内の新規ビジネス開拓制度(戦略ビジネス特区)で、今冬トライアルが開始されるWebサービスをAWS上に構築しました。
+                    EC2 Container Service (ECS)とSpotFleetを中心とした構成で、限られた時間の中でAWSの各種マネージドサービスも利用しましたので、その経験から得られたノウハウを、新規ビジネス開拓制度のご紹介も交えながら共有します。<br /><br />須藤悠 - NTTソフトウェア<br />ソフトウェア生産技術センター Grails推進室 "Grails Advocate" / ソフト道場 AWSチーム。技術研修の講師や、社内の「困った」に対する技術支援をしています。だいたいピザとGrailsとAWSで生きています。<br /><a class="external-link" href="http://www.slideshare.net/sudoyu/ecsspotfleet" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><img class="photo" src="images/photos/302_6.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="forb6">
+              <div class="timeline_time" datetime="2017-01-27 16:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry7"><span>16:20-16:40</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry7">ブロックチェーンの仕組みと動向(入門編)</a>
+                  </h4>
+                  <p>
+                    ここ最近、いろいろな業界で話題になってきたブロックチェーン。
+                    暗号、P2P、分散合意など面白い話題てんこ盛りなブロックチェーンについて、今回は、よく知らない人向けの入門的なお話をします。
+                    ご存知 Bitcoin を題材にしてブロックチェーンの仕組みを解説した後、昨今つぎつぎと登場する新たなブロックチェーン技術の動向についても簡単に説明します。<br /><a class="external-link" href="http://www.slideshare.net/hadoopxnttdata/ntt-tech-conf-01-blockchain-for-beginner" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><br /><br />北條真史 - NTTデータ<br />ブロックチェーン技術のインフラ/ミドルレイヤを見てます。<img class="photo" src="images/photos/302_7.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="forb7">
+              <div class="timeline_time" datetime="2017-01-27 16:50">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry8"><span>16:50-17:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a jump-to-tab="ttable" target="#table-entry8">あなたとBot、今すぐChatOps</a>
+                  </h4>
+                  <p>
+                    NTTグループ内では、内製化やアジャイル開発の流れを受けて、Slackなどのチャットが利用されるようになりました。チャットのあるところにBotあり。ということで、各社の現場で使われているBotや、行なわれているChatOpsの事例を紹介します。その後、Botの開発で困ったこと、ChatOpsで上手くいった/いかなかったこと、こんなことをやりたいなどのディスカッションを行います。<br /><a class="external-link" href="https://esa-pages.io/p/sharing/4975/posts/55/c1098e81cfa3e924a46d-slides.html#/" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="発表資料1"></i>発表資料1</a><span> </span><a class="external-link" href="https://speakerdeck.com/ladicle/slack-bot" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="発表資料2"></i>発表資料2</a><br />堀内晨彦(<a class="presenter" href="https://twitter.com/hico_horiuchi">@hico_horiuchi</a>) - NTTコミュニケーションズ<br />Enterprise Cloud 2.0のベアメタルの開発をしています。うどん大修士卒で研究はクラウドWeb鯖の負荷監視とオートスケールアルゴリズム。バイトでRailsとReact。JANOGスタッフ、Sensu TalksとHubot×ChatOps勉強会主催。Docker、Emacs、Golang、Itamae好き。<img class="photo" src="images/photos/302_8.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="room401" role="tabpanel">
+          <ul class="timeline">
+            <li id="unconf1">
+              <div class="timeline_time" datetime="2017-01-27 14:10">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry2"><span>14:10-15:00</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry2">NTT Developersが語る"DevOps"の今とこれから</a>
+                  </h4>
+                  <p>
+                    昨今巷で流行りの"DevOps"。
+                    そこもあそこも「これからはDevOpsだ！！」などと言ってますが、中には「DevOpsの定義を決めよう！」みたいな話や「え、これでDevOpsやってますとか言ってるの？」みたいな話しがちらほら・・・
+                    本セッションではNTTのDeveloperたちが”Dev”の視点から見ている”DevOps”の今と今後について語りあいます。
+                    ※Operatorの方もお待ちしております<br /><br />小倉真人(<a class="presenter" href="https://twitter.com/Mahito">@Mahito</a>) - NTTコミュニケーションズ<br />2014年にNTTコムウェアから現職へ本業は主夫。副業でIT芸人の活動として、OpenStackのコミュニティ活動をしつつコンテナやクラウドネイティブについても調べたり、勉強会を開いたりもしている。また、イベント対応、リクルータなども行っていてもはや何でも屋さん。<br /><br />石井久治(<a class="presenter" href="https://twitter.com/hisaharu">@hisaharu</a>) - 日本電信電話株式会社<br />NTT SICにてDevOpsの普及啓蒙と実践を推進。日本唯一のシェルプログラミングコミュニティ「USP友の会」幹事<img class="photo" src="images/photos/401_2.jpg" /><img class="photo" src="images/photos/401_3.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li id="unconf2">
+              <div class="timeline_time" datetime="2017-01-27 15:00">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry4"><span>15:00-15:20</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry4">おやつタイム</a>
+                  </h4>
+                  <img class="photo" src="images/photos/401_4.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="unconf3">
+              <div class="timeline_time" datetime="2017-01-27 15:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry5"><span>15:20-16:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry5">NTTG新人座談会</a>
+                  </h4>
+                  <p>
+                    NTTグループの新人(1~3年目程度を想定)を対象に、日々の業務や技術情報などを交換することを目的としたアンカンファレンスです。
+                  </p>
+                  <br />萬治渉 - NTTソフトウェア<br />新人 of NTTソフトウェアOpenStack,  Ansible,  StackStorm,  ...<br /><br />堀内晨彦(<a class="presenter" href="https://twitter.com/hico_horiuchi">@hico_horiuchi</a>) - NTTコミュニケーションズ<br />Enterprise Cloud 2.0のベアメタルの開発をしています。うどん大修士卒で研究はクラウドWeb鯖の負荷監視とオートスケールアルゴリズム。バイトでRailsとReact。JANOGスタッフ、Sensu TalksとHubot×ChatOps勉強会主催。Docker、Emacs、Golang、Itamae好き。<img class="photo" src="images/photos/401_5.jpg" /><img class="photo" src="images/photos/401_6.jpg" />
+                </div>
+              </div>
+            </li>
+            <li id="unconf4">
+              <div class="timeline_time" datetime="2017-01-27 16:20">
+                <a class="jump" jump-to-tab="ttable" target="#table-entry7"><span>16:20-17:10</span></a>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    <a class="jump" jump-to-tab="ttable" target="#table-entry7">OSSコミッタの生活とその必要性</a>
+                  </h4>
+                  <p>
+                    このセッションでは、普段OSSプロジェクトにフルコミットしている自分の生活や仕事のスタイルについて共有します。また、そのような特殊な人材をなぜ会社は雇って維持しなければいけないのかについて紹介し、聴講者からの質問を交えてディスカッションを行います。<br /><a class="external-link" href="http://www.slideshare.net/hichihara/oss-71450183" target="_blank"><i aria-hidden="true" class="fa fa-external-link" title="資料"></i>発表資料</a><br />市原裕史(<a class="presenter" href="https://twitter.com/hichihara33">@hichihara33</a>) - 日本電信電話株式会社<br />NTT ソフトウェアイノベーションセンタ所属。OpenStack NeutronプロジェクトのCore Reviewerとして業務の90%以上はOSSコミュニティでの活動を行っている。<img class="photo" src="images/photos/401_7.jpg" />
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="showcase" role="tabpanel">
+          <ul class="timeline">
+            <li>
+              <div class="timeline_time" datetime="2017-01-27 14:10">
+                <span>14:10 - 17:20</span>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    （招待プログラム）100G高速PCルーター Kamuee
+                  </h4>
+                  <p>
+                    Intel DPDKを利用してNTTComで内製開発しているルータソフトウェア Kamuee について展示。実機は田町5Fにあり、リモート接続でベンチマークのデモを見せる。
+                  </p>
+                  <p>
+                    BGPフルルート52万経路を検索しつつ、128Bイーサネットフレームを145Gbps分転送可能（120Mpps程度）。開発中ではあるが、BGPセッションを張りフルルートを受けつつ同程度の転送性能を発揮できるようになった。CLIなどを紹介。
+                  </p>
+                  <br />小原泰弘 - NTTコミュニケーションズ<br />GNU Zebra ospf6d 開発者。IEEE INFOCOM, USENIX FAST, ACM SIGCOMMに論文採録実績有り。北陸先端大助教、UCSCポスドクを経て2013年から現職（技術開発部）。<img class="photo" src="images/photos/sc_1.jpg" />
+                </div>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label row">
+                <div class="col-sm">
+                  <h4>
+                    FPGAアクセラレータを用いたスイッチレスネットワーク
+                  </h4>
+                  <p>
+                    C言語などからの高位合成処理エンジンの充実で、ソフトウェア開発者からもFPGA等を用いた高速信号処理が身近なものとなっている。
+                  </p>
+                  <p>
+                    今回、FPGA実装技術養成の一環として、PCIe接続したFPGAボードとOpenCLベースのプログラミング環境を用い、MPLS-TPパケット伝送機能の一部の実装を行った。
+                  </p>
+                  <p>
+                    デモではこれを用いてPC間をスイッチを用いずリング接続した構成を展示、得られた開発ノウハウ等を共有する。
+                  </p>
+                  <br />保米本徹(<a class="presenter" href="https://twitter.com/homelith">@homelith</a>)<br />岩下秀徳<br />- NTT ネットワークサービスシステム研究所<br />平素は長距離光通信を支える伝送装置の研究開発に従事し、高速信号処理に不可欠なディジタル回路実装技術、装置の高信頼性を保証するソフトエラー試験技術に取組んでいます。<img class="photo" src="images/photos/sc_2.jpg" />
+                </div>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    NFVにおいてセキュリティ機能をオートスケールするプロトタイプの紹介
+                  </h4>
+                  <p>
+                    ネットワーク機能仮想化（NFV）の世界では、キャリアネットワーク機能のオートヒーリングやオートスケーリングが自由自在にできるとの噂が囁かれています。
+                  </p>
+                  <p>
+                    ですが、それは果たして真実でしょうか？ この展示では、オートスケーリングのプロトタイピングを通じて得られた課題や技術のポイントを紹介したいと思います。
+                  </p>
+                  <br />中村哲朗<br />林裕平<br />大谷育生<br />木村明寛<br />- NTT ネットワークサービスシステム研究所<br />奥田兼三<br />- NTT ネットワーク基盤技術研究所<br />キャリアネットワークにおける仮想化に関する検討に従事しています。<img class="photo" src="images/photos/sc_3.jpg" />
+                </div>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    E2D3のデモ展示
+                  </h4>
+                  <p>
+                    　E2D3とは、表計算ソフトExcelのシート情報に対し、可視化ライブラリ「D3.js」の機能を適用することで、データドリブン設計のビジュアライゼーションを実現するツールです。
+                  </p>
+                  <p>
+                    　エンジニアでないと作成が難しい「D3.jsでのビジュアライゼーション」を、プログラマでない方にも簡単に実現できることが特徴です。
+                  </p>
+                  <br />
+                  <p>
+                    会場ではデモ用PC（または参加者の持ち込みPC）によりハンズオン体験ができます。
+                  </p>
+                  <p>
+                    （ハンズオン体験で必要なPCは、下記の環境が必要です）
+                  </p>
+                  <ol>
+                    <li>
+                      <p>
+                        ハンズオン体験に必要な環境<br />ExcelOnline または Excel2013以降が利用できること<br />インターネットに接続できること
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        利用チュートリアル<br /><a class="presenter" href="http://e2d3.org/ja/app-install/">チュートリアルへのリンク</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        利用者向けのFAQ<br /><a class="presenter" href="http://e2d3.org/ja/faq/">FAQページへのリンク</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        可視化テンプレート開発者向けマニュアル<br /><a class="presenter" href="https://github.com/e2d3/e2d3/wiki/Getting-Started_ja">可視化テンプレートの追加方法について</a>
+                      </p>
+                    </li>
+                    <p>
+                      当日は、アフター５にコミッタをしているグループ社員が、手厚く？サポートする予定です。
+                    </p>
+                    <img class="photo" src="images/photos/sc_4.jpg" />
+                  </ol>
+                </div>
+              </div>
+              <div class="timeline_icon">
+                <i class="fa fa-ship"></i>
+              </div>
+              <div class="timeline_label">
+                <div class="col-sm">
+                  <h4>
+                    Java 障害解析支援ツール HeapStats
+                  </h4>
+                  <p>
+                    Java Virtual Machine（JVM）が管理するヒープメモリの詳細な状況を、Javaアプリケーションの性能に極力影響を与えずに取得できるOSS（Open Source Software）の監視・解析ツールです。
+                    開発時のデバッグ・試験から運用時にいたるまで、迅速な問題解決を支援します。
+                  </p>
+                  <br />久保田祐史<br />山崎秀夫<br />- NTT OSSセンタ<br />Java, OpenJDK, HeapStats テクニカルサポート担当。主に Java に関する OSS コミュニティ活動や発表・登壇活動を行っています。Java に関するお悩みも随時お聞きいたします。<img class="photo" src="images/photos/sc_5.jpg" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="separator mb-5"></div>
+      <div class="text-center mb-5">
+        <h4 class="title">
+          参加登録
+        </h4>
+        <span class="subtitle">REGISTRATION</span>
+      </div>
+      <div class="row justify-content-md-center mb-5">
+        <div class="col col-md-8">
+          <p class="description text-justify mb-0">
+            本イベントは終了しました。<br />多数のご来場ありがとうございました。
+          </p>
+          <p>
+            このイベントサイトは<a class="mx-05" href="https://github.com/ntt-developers/ntt-tech-conference-01">GitHub上</a>で作成しました。
+          </p>
+        </div>
+      </div>
+      <div class="separator mb-5"></div>
+      <div class="text-center mb-5">
+        <h4 class="title">
+          アクセス
+        </h4>
+        <span class="subtitle">ACCESS</span>
+      </div>
+      <div class="row justify-content-md-center mb-5">
+        <div class="col col-md-8">
+          <p class="description text-justify mb-0">
+            グランパークプラザの<a class="mx-05" href="http://www.granpark.jp/access/" target="_blank">アクセス</a>をご覧ください。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bd-footer" style="background-image: url(./images/graphy.png);">
+      <div class="container">
+        Copyright<i class="fa fa-copyright mx-05"></i>2017 NTT Developers All Rights Reserved.
+      </div>
+    </div>
+    <script src="./assets/javascripts/bower_components.min.js" type="text/javascript"></script>
+    <script src="./assets/javascripts/application.min.js" type="text/javascript"></script>
+  </body>
+</html>
