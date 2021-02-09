@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ntt-developers/ntt-tech-conference/tree/master/05",
   "devDependencies": {
     "fibers": "^5.0.0",
+    "firebase-tools": "^9.3.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
