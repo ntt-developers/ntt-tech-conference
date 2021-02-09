@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title NTT Tech Conference #5
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kosugi"
+    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
+    link rel="stylesheet" type="text/css" href="app.min.css"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+  body
+    / This kit only work on below domains.
+    /   - ntt-developers.github.io
+    script src="https://kit.fontawesome.com/d6d7188204.js" crossorigin="anonymous"

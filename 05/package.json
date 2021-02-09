@@ -1,0 +1,29 @@
+{
+  "name": "ntt-tech-conference",
+  "version": "1.0.0",
+  "description": "https://ntt-developers.github.io/ntt-tech-conference/05/",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "deploy": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntt-developers/ntt-tech-conference.git"
+  },
+  "author": "NTT Developers",
+  "bugs": {
+    "url": "https://github.com/ntt-developers/ntt-tech-conference/issues"
+  },
+  "homepage": "https://github.com/ntt-developers/ntt-tech-conference/tree/master/05",
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "firebase-tools": "^9.3.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-slm": "^1.2.3",
+    "sass": "^1.32.6"
+  }
+}
