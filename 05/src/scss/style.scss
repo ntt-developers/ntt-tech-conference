@@ -1,3 +1,197 @@
+$primary-color: #4b0082;
+$secondary-color: #fff100;
+
+// https://getbootstrap.jp/docs/5.0/customize/color/
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// https://getbootstrap.jp/docs/5.0/layout/breakpoints/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// https://code-labo.com/snippet/2020/10/css-horizontal-line-39/
+.line-horizontal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.line-horizontal.line-horizontal-both {
+  text-align: center;
+}
+.line-horizontal.line-horizontal-left {
+  text-align: left;
+}
+.line-horizontal.line-horizontal-right {
+  text-align: right;
+}
+.line-horizontal.line-horizontal-both::before,
+.line-horizontal.line-horizontal-both::after,
+.line-horizontal.line-horizontal-left::before,
+.line-horizontal.line-horizontal-right::after {
+  background-color: $gray-100;
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+}
+.line-horizontal.line-horizontal-both::before,
+.line-horizontal.line-horizontal-left::before {
+  margin-right: 2rem;
+}
+.line-horizontal.line-horizontal-both::after,
+.line-horizontal.line-horizontal-right::after {
+  margin-left: 2rem;
+}
+
 *:not(i) {
-  font-family: 'Kosugi', sans-serif !important;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.navbar-secondary {
+  background-color: desaturate($secondary-color, 20%) !important;
+
+  .navbar-toggler {
+    i {
+      color: $gray-700;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $gray-700;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+}
+
+.btn-md {
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-secondary {
+  background-color: desaturate($secondary-color, 20%) !important;
+  border: none;
+  color: $gray-700;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken(desaturate($secondary-color, 20%), 10%) !important;
+    color: $gray-700;
+  }
+}
+
+.md-menu {
+  *:not(i) {
+    font-family: "Open Sans Condensed", sans-serif !important;
+    font-weight: 700;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}
+
+.lg-menu {
+  *:not(i) {
+    font-family: "Open Sans Condensed", sans-serif !important;
+    font-weight: 700;
+  }
+
+  left: 50%;
+  position: fixed;
+  top: 2rem;
+  transform: translate(-50%, 0);
+  z-index: 9999;
+}
+
+.hero {
+  background: linear-gradient(
+      135deg,
+      rgba(darken(desaturate($primary-color, 10%), 10%), 0.8),
+      rgba(darken(desaturate($secondary-color, 20%), 20%), 0.8)
+    ),
+    url(images/hero_background.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+
+  svg {
+    fill: #fff;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    svg {
+      width: 80vw;
+    }
+  }
+}
+
+.section-group {
+  background-color: $gray-800;
+  color: $gray-100;
+  padding-bottom: 5rem;
+
+  .section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+
+    .section-title {
+      font-family: "Open Sans Condensed", sans-serif !important;
+      letter-spacing: 0.1rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer {
+  background-color: $gray-900;
+  color: $gray-500;
 }

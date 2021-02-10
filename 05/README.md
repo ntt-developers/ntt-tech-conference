@@ -2,15 +2,19 @@
 
 https://ntt-techconf.connpass.com/event/203831/
 
-### How to deploy
+### How to build
 
 ```
 $ npm install
 $ npm run-script build
-$ npm run-script deploy
 ```
+
+### How to deploy
+
+See `.github/workflows`
 
 ### References
 
-- [Primer Design System](https://primer.style/)
+- [Bootstrap](https://getbootstrap.jp/)
 - [Font Awesome](https://fontawesome.com/)
+- [Photo of Orange Chairs](https://www.pexels.com/photo/photo-of-orange-chairs-722708/)
