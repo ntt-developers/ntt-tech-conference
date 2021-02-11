@@ -2,12 +2,105 @@ doctype html
 html
   head
     title NTT Tech Conference #5
-    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kosugi"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700"
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700"
+    link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
+    meta property="og:type" content="website"
+    meta property="og:title" content="NTT Tech Conference #5"
+    meta property="og:site_name" content="NTT Tech Conference #5"
+    meta property="og:description" content="NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。"
+    meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference/05/"
+    meta property="og:image" content="https://ntt-developers.github.io/ntt-tech-conference/05/images/banner.png"
   body
+    nav.md-menu.navbar.navbar-expand-md.navbar-secondary.shadow.fixed-top.d-lg-none
+      .container-fluid
+        span.navbar-brand
+        button.navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#md-menu"
+          i.fas.fa-lg.fa-bars
+        div.navbar-collapse.collapse.justify-content-center#md-menu
+          ul.navbar-nav
+            li.nav-item.me-3
+              a.nav-link href="#about"
+                i.fas.fa-lg.fa-comment-dots.me-2
+                | About
+            li.nav-item.me-3
+              a.nav-link href="#registration"
+                i.fas.fa-lg.fa-file-signature.me-2
+                | Registration
+            li.nav-item.me-3
+              a.nav-link href="#timetable"
+                i.fas.fa-lg.fa-calendar-alt.me-2
+                | Timetable
+            li.nav-item
+              a.nav-link href="#speakers"
+                i.fas.fa-lg.fa-users.me-2
+                | Speakers
+    nav.lg-menu.navbar.navbar-expand-lg.navbar-secondary.rounded-pill.shadow.px-4.d-none.d-lg-block
+      ul.navbar-nav
+        li.nav-item.me-3
+          a.nav-link href="#about"
+            i.fas.fa-lg.fa-comment-dots.me-2
+            | About
+        li.nav-item.me-3
+          a.nav-link href="#registration"
+            i.fas.fa-lg.fa-file-signature.me-2
+            | Registration
+        li.nav-item.me-3
+          a.nav-link href="#timetable"
+            i.fas.fa-lg.fa-calendar-alt.me-2
+            | Timetable
+        li.nav-item
+          a.nav-link href="#speakers"
+            i.fas.fa-lg.fa-users.me-2
+            | Speakers
+    .hero
+      svg
+        use xlink:href="images/logo.svg#main"
+    .section-group
+      .section.container#about
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-comment-dots.me-3
+          span.section-title About
+        p.lh-lg
+          | NTT Tech Conference は、NTT グループのソフトウェアエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
+          br
+          | NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+      .section.container#registration
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-file-signature.me-3
+          span.section-title Registration
+        p.lh-lg.mb-4
+          | NTT Tech Conference への参加には事前登録が必要です。
+          br
+          | NTT グループのソフトウェアエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか？
+        a.btn.btn-md.btn-secondary href="https://ntt-techconf.connpass.com/event/203831/" role="button" target="_blank" rel="noopener noreferrer"
+          span.fw-bold connpass で事前登録する
+          i.fas.fa-lg.fa-external-link-square-alt.ms-2
+      .section.container#timetable
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-calendar-alt.me-3
+          span.section-title Timetable
+        p.lh-lg
+          | Comming soon ...
+      .section.container#speakers
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-users.me-3
+          span.section-title Speakers
+        p.lh-lg
+          | Comming soon ...
+    .footer.text-center.p-4
+      i.far.fa-copyright.me-2
+      | 2021 NTT Developers
+    script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
     / This kit only work on below domains.
     /   - ntt-developers.github.io
+    /   - *.web.app (Firebase Hosting)
     script src="https://kit.fontawesome.com/d6d7188204.js" crossorigin="anonymous"
+    javascript:
+      const mdMenu = document.getElementById('md-menu')
+      const mdMenuCollapse = new bootstrap.Collapse(mdMenu, { toggle: false })
+      const navLinks = document.getElementsByClassName('nav-link')
+      Array.from(navLinks).forEach((navLink) => navLink.addEventListener('click', () => mdMenuCollapse.hide()))
