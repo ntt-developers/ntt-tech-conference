@@ -99,3 +99,8 @@ html
     /   - ntt-developers.github.io
     /   - *.web.app (Firebase Hosting)
     script src="https://kit.fontawesome.com/d6d7188204.js" crossorigin="anonymous"
+    javascript:
+      const mdMenu = document.getElementById('md-menu')
+      const mdMenuCollapse = new bootstrap.Collapse(mdMenu, { toggle: false })
+      const navLinks = document.getElementsByClassName('nav-link')
+      Array.from(navLinks).forEach((navLink) => navLink.addEventListener('click', () => mdMenuCollapse.hide()))
