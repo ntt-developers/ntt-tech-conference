@@ -546,6 +546,19 @@ html
                 p.mb-2
                   a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1630"
                     | Lightning Talk
+                ul.lh-lg.mb-0
+                  li
+                    | 論文翻訳ツールの紹介
+                    small （山田 真徳）
+                  li
+                    | Open Mobile Network Infra Community について
+                    small （西原 英臣）
+                  li
+                    | 社内でポッドキャストしてみたった 〜 視聴者 0 人から始める社内ポッドキャスト 〜
+                    small （古市 昌弘）
+                  li
+                    | ラック設計って面倒なので VR ってやつで何とかしてみた
+                    small （原田 和明）
             .modal.fade#modal-1630 tabindex="-1" aria-labelledby="modal-1630-label" aria-hidden="true"
               .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
                 .modal-content.shadow
@@ -562,17 +575,23 @@ html
                     ul.lh-lg
                       li
                         | 論文翻訳ツールの紹介
-                        ul
+                        ul.fa-ul
                           li
+                            span.fa-li
+                              i.fas.fa-tags
                             .badge.badge-light
                               i.fas.fa-hashtag.me-1
                               | Application
                           li
+                            span.fa-li
+                              i.fas.fa-user
                             | 山田 真徳
                       li
                         | Open Mobile Network Infra Community について
-                        ul
+                        ul.fa-ul
                           li
+                            span.fa-li
+                              i.fas.fa-tags
                             .badge.badge-light.me-2
                               i.fas.fa-hashtag.me-1
                               | Mobile
@@ -583,20 +602,28 @@ html
                               i.fas.fa-hashtag.me-1
                               | OSS
                           li
+                            span.fa-li
+                              i.fas.fa-user
                             | 西原 英臣（NTT 東日本）
                       li
                         | 社内でポッドキャストしてみたった 〜 視聴者 0 人から始める社内ポッドキャスト 〜
-                        ul
+                        ul.fa-ul
                           li
+                            span.fa-li
+                              i.fas.fa-tags
                             .badge.badge-light
                               i.fas.fa-hashtag.me-1
                               | Communication
                           li
+                            span.fa-li
+                              i.fas.fa-user
                             | 古市 昌弘
                       li
                         | ラック設計って面倒なので VR ってやつで何とかしてみた
-                        ul
+                        ul.fa-ul
                           li
+                            span.fa-li
+                              i.fas.fa-tags
                             .badge.badge-light.me-2
                               i.fas.fa-hashtag.me-1
                               | New-normal
@@ -604,6 +631,8 @@ html
                               i.fas.fa-hashtag.me-1
                               | VR
                           li
+                            span.fa-li
+                              i.fas.fa-user
                             | 原田 和明（NTT コミュニケーションズ）
         .row
           .col-md-2.mb-4 17:00 〜
