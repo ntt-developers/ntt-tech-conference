@@ -185,6 +185,17 @@ $grid-breakpoints: (
       letter-spacing: 0.1rem;
     }
 
+    .fa-ul {
+      .fa-li {
+        left: -3em;
+        width: 3em;
+
+        i {
+          color: desaturate($secondary-color, 20%);
+        }
+      }
+    }
+
     p {
       margin-bottom: 0;
     }
