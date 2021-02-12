@@ -222,15 +222,16 @@ p {
         border: none;
         border-radius: 0 0 0.5rem 0.5rem;
         color: $gray-100;
-      }
 
-      a {
-        color: $gray-100;
+        a {
+          color: $gray-100;
+          cursor: pointer;
 
-        &:active,
-        &:focus,
-        &:hover {
-          color: $gray-200;
+          &:active,
+          &:focus,
+          &:hover {
+            color: $gray-200;
+          }
         }
       }
     }
