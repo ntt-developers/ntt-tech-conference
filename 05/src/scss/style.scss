@@ -211,9 +211,35 @@ p {
       border-radius: 0.5rem;
 
       .card-header {
-        background-color: desaturate($secondary-color, 20%);
         border: none;
         border-radius: 0.5rem 0.5rem 0 0;
+      }
+
+      .card-header-primary {
+        background-color: desaturate($primary-color, 10%);
+        color: $gray-100;
+      }
+
+      .card-header-secondary {
+        background-color: desaturate($secondary-color, 20%);
+        color: $gray-700;
+      }
+
+      .card-header-gradation-1 {
+        background: linear-gradient(
+          90deg,
+          desaturate($primary-color, 10%) 40%,
+          desaturate($secondary-color, 20%)
+        );
+        color: $gray-100;
+      }
+
+      .card-header-gradation-2 {
+        background: linear-gradient(
+          90deg,
+          desaturate($secondary-color, 20%) 40%,
+          desaturate($primary-color, 10%)
+        );
         color: $gray-700;
       }
 

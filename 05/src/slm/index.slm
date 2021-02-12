@@ -108,7 +108,7 @@ html
           .col-md-2.mb-4 09:00 〜
           .col-md-10
             .card
-              .card-header
+              .card-header.card-header-primary
                 i.fas.fa-lg.fa-tools.me-2
                 span.fw-bold 09:00 〜 12:00
               .card-body
@@ -173,7 +173,7 @@ html
           .col-md-2.mb-4 10:00 〜
           .col-md-10
             .card
-              .card-header
+              .card-header.card-header-primary
                 i.fas.fa-lg.fa-tools.me-2
                 span.fw-bold 10:00 〜 11:00
               .card-body
@@ -217,7 +217,7 @@ html
           .col-md-2.mb-4 13:00 〜
           .col-md-10
             .card.mb-4
-              .card-header
+              .card-header.card-header-gradation-1
                 i.fas.fa-lg.fa-bullhorn.me-2
                 span.fw-bold 13:15 〜 13:25
               .card-body
@@ -226,7 +226,7 @@ html
                 p
                   small 小倉 真人（NTT コミュニケーションズ）
             .card
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 13:30 〜 13:55
               .card-body
@@ -284,7 +284,7 @@ html
           .col-md-2.mb-4 14:00 〜
           .col-md-10
             .card.mb-4
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 14:00 〜 14:25
               .card-body
@@ -335,7 +335,7 @@ html
                     p.lh-lg
                       | 細田 真道
             .card
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 14:30 〜 14:55
               .card-body
@@ -388,7 +388,7 @@ html
           .col-md-2.mb-4 15:00 〜
           .col-md-10
             .card.mb-4
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 15:00 〜 15:25
               .card-body
@@ -445,7 +445,7 @@ html
                     p.lh-lg
                       | 鈴ヶ嶺 聡哲（NTT コミュニケーションズ）
             .card
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 15:30 〜 15:55
               .card-body
@@ -486,7 +486,7 @@ html
           .col-md-2.mb-4 16:00 〜
           .col-md-10
             .card.mb-4
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 16:00 〜 16:25
               .card-body
@@ -539,7 +539,7 @@ html
                     p.lh-lg
                       | 花川 直己（NTTリミテッド・ジャパン）
             .card
-              .card-header
+              .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 16:30 〜 17:15
               .card-body
@@ -638,7 +638,7 @@ html
           .col-md-2.mb-4 17:00 〜
           .col-md-10
             .card
-              .card-header
+              .card-header.card-header-gradation-2
                 i.fas.fa-lg.fa-bullhorn.me-2
                 span.fw-bold 17:15 〜 17:25
               .card-body
