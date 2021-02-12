@@ -167,8 +167,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 古市 昌弘
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
         .row.mb-4
           .col-md-2.mb-4 10:00 〜
           .col-md-10
@@ -211,8 +214,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 綿貫 順一
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
         .row.mb-4
           .col-md-2.mb-4 13:00 〜
           .col-md-10
@@ -278,8 +284,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 平井 志久（日本電信電話）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
         .row.mb-4
           .col-md-2.mb-4 14:00 〜
           .col-md-10
@@ -332,8 +341,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 細田 真道
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
             .card
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
@@ -382,8 +394,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 神原 健一（NTT テクノクロス）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
         .row.mb-4
           .col-md-2.mb-4 15:00 〜
           .col-md-10
@@ -442,8 +457,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 鈴ヶ嶺 聡哲（NTT コミュニケーションズ）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
             .card
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
@@ -480,8 +498,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-users.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 川崎 裕香、大塚 一喜、山下 城司、諸星 隆輔、石黒 博之（NTT テクノクロス）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
         .row.mb-4
           .col-md-2.mb-4 16:00 〜
           .col-md-10
@@ -536,8 +557,11 @@ html
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
-                    p.lh-lg
+                    p.lh-lg.mb-4
                       | 花川 直己（NTTリミテッド・ジャパン）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
             .card
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
@@ -572,7 +596,7 @@ html
                       .badge.badge-secondary
                         i.fas.fa-layer-group.me-1
                         | 初級
-                    ul.lh-lg
+                    ul.lh-lg.mb-4
                       li
                         | 論文翻訳ツールの紹介
                         ul.fa-ul
@@ -634,6 +658,9 @@ html
                             span.fa-li
                               i.fas.fa-user
                             | 原田 和明（NTT コミュニケーションズ）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
         .row
           .col-md-2.mb-4 17:00 〜
           .col-md-10
