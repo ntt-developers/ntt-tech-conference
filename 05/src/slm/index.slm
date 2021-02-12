@@ -68,7 +68,7 @@ html
           | NTT Tech Conference は、NTT グループのソフトウェアエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
           br
           | NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
-        ul.fa-ul.lh-lg.ps-4
+        ul.fa-ul.lh-lg
           li
             span.fa-li
               i.fas.fa-lg.fa-scroll
@@ -76,7 +76,7 @@ html
           li
             span.fa-li
               i.fas.fa-lg.fa-calendar-day
-            | 日時：2021年2月26日（金） 13:30〜17:30
+            | 日時：2021年2月26日（金）13:30〜17:30
           li
             span.fa-li
               i.fas.fa-lg.fa-map-marked-alt

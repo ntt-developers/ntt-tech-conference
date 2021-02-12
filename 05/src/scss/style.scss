@@ -150,7 +150,7 @@ $grid-breakpoints: (
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 
   svg {
@@ -160,7 +160,7 @@ $grid-breakpoints: (
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 60vw;
   }
 
   @media screen and (max-width: map-get($grid-breakpoints, lg)) {
