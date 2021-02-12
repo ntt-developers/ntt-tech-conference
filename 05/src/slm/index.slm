@@ -18,7 +18,7 @@ html
     nav.md-menu.navbar.navbar-expand-md.navbar-secondary.shadow.fixed-top.d-lg-none
       .container-fluid
         span.navbar-brand
-        button.navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#md-menu"
+        button.navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#md-menu" aria-controls="md-menu" aria-expanded="false"
           i.fas.fa-lg.fa-bars
         div.navbar-collapse.collapse.justify-content-center#md-menu
           ul.navbar-nav
@@ -104,8 +104,519 @@ html
         h1.line-horizontal.line-horizontal-right.mb-4
           i.fas.fa-calendar-alt.me-3
           span.section-title Timetable
-        p.lh-lg
-          | Comming soon ...
+        .row.mb-4
+          .col-md-2.mb-4 09:00 〜
+          .col-md-10
+            .card
+              .card-header
+                i.fas.fa-lg.fa-tools.me-2
+                span.fw-bold 09:00 〜 12:00
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-0900"
+                    | 窃取転生 - ツール使って本気出す
+                p
+                  small 古市 昌弘
+            .modal.fade#modal-0900 tabindex="-1" aria-labelledby="modal-0900-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-0900-label
+                      | 窃取転生 - ツール使って本気出す
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Security
+                    p.lh-lg.mb-4
+                      | OSINT（Open Source Intelligence）という分野ではインターネット上にある情報をもとに情報の収集を行います。
+                      br
+                      | 今回はインターネットにあるツール及び各種サービスを用いてメールアドレスなどの情報収集を実施します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | Project iKy などのツールを使った OSINT 情報の収集方法
+                      li
+                        | 標的型攻撃の一連の流れにおける情報収集に対しての知識
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-laptop.me-2
+                      | 必要な機材
+                    ul.lh-lg.mb-4
+                      li
+                        | 8GB 程度、2 コア程度のスペックを仮想マシン（Linux）に与えることができる PC（発表者は Virtualbox 環境を用います）
+                      li
+                        a.me-2 href="https://gitlab.com/kennbroorg/iKy" target="_blank" rel="noopener noreferrer"
+                          | Project iKy
+                        | のインストールをお願いします
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-check-double.me-2
+                      | 参加の条件
+                    ul.lh-lg.mb-4
+                      li トラブルがあっても自分でも調べたりしてくじけない心
+                      li 寛容な心
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 古市 昌弘
+        .row.mb-4
+          .col-md-2.mb-4 10:00 〜
+          .col-md-10
+            .card
+              .card-header
+                i.fas.fa-lg.fa-tools.me-2
+                span.fw-bold 10:00 〜 11:00
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1000"
+                    | パケット生成ツールあれこれ
+                p
+                  small 綿貫 順一
+            .modal.fade#modal-1000 tabindex="-1" aria-labelledby="modal-1000-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1000-label
+                      | パケット生成ツールあれこれ
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Network
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Programming
+                    p.lh-lg.mb-4
+                      | 真心こめてパケットを作る際のあれこれ。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    p.lh-lg.mb-4
+                      | パケットを作成できるようになる。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 綿貫 順一
+        .row.mb-4
+          .col-md-2.mb-4 13:00 〜
+          .col-md-10
+            .card.mb-4
+              .card-header
+                i.fas.fa-lg.fa-bullhorn.me-2
+                span.fw-bold 13:15 〜 13:25
+              .card-body
+                p.mb-2
+                  span.fw-bold Opening Keynote
+                p
+                  small 小倉 真人（NTT コミュニケーションズ）
+            .card
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 13:30 〜 13:55
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1330"
+                    | 5G モバイルコア（5GC）を Kubernetes Operator を使って自律運用制御してみた
+                p
+                  small 平井 志久（日本電信電話）
+            .modal.fade#modal-1330 tabindex="-1" aria-labelledby="modal-1330-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1330-label
+                      | 5G モバイルコア（5GC）を Kubernetes Operator を使って自律運用制御してみた
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Container
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Network
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.lh-lg.mb-4
+                      | ここ数年、従来 VNF の発展形としてコンテナ技術＋マイクロサービスアーキテクチャを取り入れた Cloud-native Network Function（CNF）に注目が集まっています。
+                      br
+                      | しかし、クラウドネイティブ化の恩恵を享受するためには従来の NW 設計・構築・運用手法を見直す必要があります。
+                      br
+                      | 我々のチームでは CNF の代表例である 5G モバイルコア（5GC）を対象に Kubernetes 上での複雑なアプリケーション管理を可能とする Kubernetes Operator を実装し、NT 研技術の設計制御最適化エンジンと組み合わせた検証環境を構築しました。
+                      br
+                      | その検証環境についてご紹介します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | CNFとは
+                      li
+                        | Kubernetes Operator の実装方法
+                      li
+                        | 5G モバイルコア（5GC）について
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 平井 志久（日本電信電話）
+        .row.mb-4
+          .col-md-2.mb-4 14:00 〜
+          .col-md-10
+            .card.mb-4
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 14:00 〜 14:25
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1400"
+                    | PDF のコピペが文字化けするのはなぜか？ 〜 CID / GID と原ノ味フォント 〜
+                p
+                  small 細田 真道
+            .modal.fade#modal-1400 tabindex="-1" aria-labelledby="modal-1400-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1400-label
+                      | PDF のコピペが文字化けするのはなぜか？ 〜 CID / GID と原ノ味フォント 〜
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Application
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.lh-lg.mb-4
+                      | PDF の中には「見」や「高」などの文字が検索できなかったり、コピペすると似たような別の字に化けたりするものが結構あるのをご存じでしょうか。
+                      br
+                      | 住所を集計しようとしても長野の「長」や埼玉の「玉」がなどが化けてうまくいかなかったり、様々な文字で影響が出るもので、康熙部首・CJK 部首補助の文字化け問題と言われます。
+                      br
+                      | もちろん、これらの文字を使っていても化けない PDF もあります。
+                      br
+                      | しかし、広く使われている PDF 作成ツールとフォントで化ける場合があり、多くの PDF がこの問題を抱えています。
+                      br
+                      | 本セッションでは、なぜ化けるのか PDF やフォントの仕組みから紐解きます。
+                      br
+                      | そして、化けない PDF が作成できる日本語 TeX について、その対策とデフォルト和文フォントの原ノ味フォントを紹介します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    p.lh-lg.mb-4
+                      | PDF やフォントの仕組み。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 細田 真道
+            .card
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 14:30 〜 14:55
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1430"
+                    | アプリ開発スタートアップ with Tips
+                p
+                  small 神原 健一（NTT テクノクロス）
+            .modal.fade#modal-1430 tabindex="-1" aria-labelledby="modal-1430-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1430-label
+                      | Flutter アプリ開発スタートアップ with Tips
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Application
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Programming
+                    p.lh-lg.mb-4
+                      | Flutter はモバイル等アプリ開発フレームワークとして脚光を浴びています。
+                      br
+                      | Flutter の特徴・アプリ開発のはじめ方に加え、開発の基本要素をご説明します。
+                      br
+                      | さらに、効率良く開発を進めていくための Tips についても、デモを交えてご紹介します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | Flutter のはじめ方
+                      li
+                        | Flutter の基礎
+                      li
+                        | 効率的な開発の進め方
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 神原 健一（NTT テクノクロス）
+        .row.mb-4
+          .col-md-2.mb-4 15:00 〜
+          .col-md-10
+            .card.mb-4
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 15:00 〜 15:25
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1500"
+                    | macOS の仮想化技術について 〜 virtualization-rs Rust bindings for Virtualization.framework 〜
+                p
+                  small 鈴ヶ嶺 聡哲（NTT コミュニケーションズ）
+            .modal.fade#modal-1500 tabindex="-1" aria-labelledby="modal-1500-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1500-label
+                      | macOS の仮想化技術について 〜 virtualization-rs Rust bindings for Virtualization.framework 〜
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Container
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Virtualization / Hypervisor
+                    p.lh-lg.mb-4
+                      | 本セッションではまず仮想化技術についての基本的な背景をご説明し、macOS の仮想化技術の変遷や仮想化技術を支えるツールについてご紹介します。
+                      br
+                      | 特に注目する技術として、macOS 11 Big Sur から Intel ベースの Macや Apple Silicon ベースの Mac で VM を作成する Virtualization.framework という高レベル API が追加されました。
+                      br
+                      | Docker などは内部で低レベル API の Hypervisor.framework を使用した HyperKit を Virtualization.framework に置き換えつつあります。
+                      br
+                      | 最後に、この Virtualization.framework を Rust で binding するライブラリを作成したので、そのご紹介と Linux を boot するデモをしたいと思います。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | 仮想化技術・ハイパーバイザの基本について
+                      li
+                        | macOS の仮想化技術の変遷について
+                      li
+                        | macOS の仮想化を支える Hypervisor.framework, Virtualization.framework などの API や xhyve, HyperKit などのツールについて
+                      li
+                        | Rust で作る macOS アプリケーションについて
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 鈴ヶ嶺 聡哲（NTT コミュニケーションズ）
+            .card
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 15:30 〜 15:55
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1530"
+                    | Elastic Stack 注目トピック座談会
+                p
+                  small 川崎 裕香、大塚 一喜、山下 城司、諸星 隆輔、石黒 博之（NTT テクノクロス）
+            .modal.fade#modal-1530 tabindex="-1" aria-labelledby="modal-1530-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1530-label
+                      | Elastic Stack 注目トピック座談会
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.lh-lg.mb-4
+                      | Elastic Stack に関する最新のトピックスや気になるトピックスをわいわいお伝えします。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    p.lh-lg.mb-4
+                      | Elastic Stack に関する最新の技術動向や、座談会メンバの気になるトピックスについて。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-users.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 川崎 裕香、大塚 一喜、山下 城司、諸星 隆輔、石黒 博之（NTT テクノクロス）
+        .row.mb-4
+          .col-md-2.mb-4 16:00 〜
+          .col-md-10
+            .card.mb-4
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 16:00 〜 16:25
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1600"
+                    | この素晴らしい新入社員とペアプロを！
+                p
+                  small 花川 直己（NTTリミテッド・ジャパン）
+            .modal.fade#modal-1600 tabindex="-1" aria-labelledby="modal-1600-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1600-label
+                      | この素晴らしい新入社員とペアプロを！
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Programming
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | On-boarding
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Workstyle
+                    p.lh-lg.mb-4
+                      | 2020 年春、チームに新入社員がやってきました。
+                      br
+                      | フルリモートによるオンボーディングを 1 ヶ月ほど行って前線投入されましたが、12 月ごろに伸び悩んでいるように見えました。
+                      br
+                      | そこで、彼をパワーアップするべく講演者は立ち上がり、「癒着」と称したペアプログラミングを行い、2 つの大きめなバグ修正を通して様々なナレッジの共有を試みました。
+                      br
+                      | 本セッションでは、こういった状況下でチームとして初めて取り組んだペアプログラミングのやり方や知見の共有、及び課題の紹介をしたいと思います。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | オンボーディングにおけるペアプログラミングのやり方の一例
+                      li
+                        | リモートにおけるペアプログラミングの環境や知見
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    p.lh-lg
+                      | 花川 直己（NTTリミテッド・ジャパン）
+            .card
+              .card-header
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 16:30 〜 17:15
+              .card-body
+                p.mb-2
+                  a.modal-link.fw-bold data-bs-toggle="modal" data-bs-target="#modal-1630"
+                    | Lightning Talk
+            .modal.fade#modal-1630 tabindex="-1" aria-labelledby="modal-1630-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-4#modal-1630-label
+                      | Lightning Talk
+                    .lh-lg.mb-4
+                      .badge.badge-secondary
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                    ul.lh-lg
+                      li
+                        | 論文翻訳ツールの紹介
+                        ul
+                          li
+                            .badge.badge-light
+                              i.fas.fa-hashtag.me-1
+                              | Application
+                          li
+                            | 山田 真徳
+                      li
+                        | Open Mobile Network Infra Community について
+                        ul
+                          li
+                            .badge.badge-light.me-2
+                              i.fas.fa-hashtag.me-1
+                              | Mobile
+                            .badge.badge-light.me-2
+                              i.fas.fa-hashtag.me-1
+                              | Network
+                            .badge.badge-light
+                              i.fas.fa-hashtag.me-1
+                              | OSS
+                          li
+                            | 西原 英臣（NTT 東日本）
+                      li
+                        | 社内でポッドキャストしてみたった 〜 視聴者 0 人から始める社内ポッドキャスト 〜
+                        ul
+                          li
+                            .badge.badge-light
+                              i.fas.fa-hashtag.me-1
+                              | Communication
+                          li
+                            | 古市 昌弘
+                      li
+                        | ラック設計って面倒なので VR ってやつで何とかしてみた
+                        ul
+                          li
+                            .badge.badge-light.me-2
+                              i.fas.fa-hashtag.me-1
+                              | New-normal
+                            .badge.badge-light
+                              i.fas.fa-hashtag.me-1
+                              | VR
+                          li
+                            | 原田 和明（NTT コミュニケーションズ）
+        .row
+          .col-md-2.mb-4 17:00 〜
+          .col-md-10
+            .card
+              .card-header
+                i.fas.fa-lg.fa-bullhorn.me-2
+                span.fw-bold 17:15 〜 17:25
+              .card-body
+                p.mb-2
+                  span.fw-bold Closing Keynote
+                p
+                  small 小倉 真人（NTTコミュニケーションズ）
       .section.container#speakers
         h1.line-horizontal.line-horizontal-right.mb-4
           i.fas.fa-users.me-3
