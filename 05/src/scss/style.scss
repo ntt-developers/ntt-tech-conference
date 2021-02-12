@@ -28,15 +28,19 @@ $grid-breakpoints: (
   display: flex;
   justify-content: center;
 }
+
 .line-horizontal.line-horizontal-both {
   text-align: center;
 }
+
 .line-horizontal.line-horizontal-left {
   text-align: left;
 }
+
 .line-horizontal.line-horizontal-right {
   text-align: right;
 }
+
 .line-horizontal.line-horizontal-both::before,
 .line-horizontal.line-horizontal-both::after,
 .line-horizontal.line-horizontal-left::before,
@@ -46,10 +50,12 @@ $grid-breakpoints: (
   flex-grow: 1;
   height: 1px;
 }
+
 .line-horizontal.line-horizontal-both::before,
 .line-horizontal.line-horizontal-left::before {
   margin-right: 2rem;
 }
+
 .line-horizontal.line-horizontal-both::after,
 .line-horizontal.line-horizontal-right::after {
   margin-left: 2rem;
@@ -62,6 +68,10 @@ $grid-breakpoints: (
 
 .fw-bold {
   font-weight: 700;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .navbar-secondary {
@@ -119,10 +129,10 @@ $grid-breakpoints: (
 
   .navbar-toggler {
     border: none;
-  }
 
-  .navbar-toggler:focus {
-    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 
@@ -136,7 +146,7 @@ $grid-breakpoints: (
   position: fixed;
   top: 2rem;
   transform: translate(-50%, 0);
-  z-index: 9999;
+  z-index: 1;
 }
 
 .hero {
@@ -150,7 +160,7 @@ $grid-breakpoints: (
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 
   svg {
@@ -160,7 +170,7 @@ $grid-breakpoints: (
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 60vw;
   }
 
   @media screen and (max-width: map-get($grid-breakpoints, lg)) {
@@ -196,8 +206,111 @@ $grid-breakpoints: (
       }
     }
 
-    p {
-      margin-bottom: 0;
+    .card {
+      border: none;
+      border-radius: 0.5rem;
+
+      .card-header {
+        border: none;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+
+      .card-header-primary {
+        background-color: desaturate($primary-color, 10%);
+        color: $gray-100;
+      }
+
+      .card-header-secondary {
+        background-color: desaturate($secondary-color, 20%);
+        color: $gray-700;
+      }
+
+      .card-header-gradation-1 {
+        background: linear-gradient(
+          90deg,
+          desaturate($primary-color, 10%) 40%,
+          desaturate($secondary-color, 20%)
+        );
+        color: $gray-100;
+      }
+
+      .card-header-gradation-2 {
+        background: linear-gradient(
+          90deg,
+          desaturate($secondary-color, 20%) 40%,
+          desaturate($primary-color, 10%)
+        );
+        color: $gray-700;
+      }
+
+      .card-body {
+        background-color: $gray-700;
+        border: none;
+        border-radius: 0 0 0.5rem 0.5rem;
+        color: $gray-100;
+
+        a {
+          color: $gray-100;
+          cursor: pointer;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: $gray-200;
+          }
+        }
+      }
+    }
+
+    .modal {
+      .modal-content {
+        background-color: $gray-700;
+        border: none;
+        border-radius: 0.5rem;
+        color: $gray-100;
+
+        .btn-close {
+          background: transparent;
+          opacity: 1;
+        }
+
+        .btn-close,
+        a {
+          color: $secondary-color;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: darken($secondary-color, 10%);
+          }
+        }
+
+        p {
+          i {
+            color: desaturate($secondary-color, 20%);
+          }
+        }
+
+        .badge-secondary {
+          background-color: desaturate($secondary-color, 20%) !important;
+          color: $gray-700;
+        }
+
+        .badge-light {
+          background-color: $gray-100;
+          color: $gray-700;
+        }
+
+        .line-horizontal.line-horizontal-both::before,
+        .line-horizontal.line-horizontal-left::before {
+          margin-right: 1rem;
+        }
+
+        .line-horizontal.line-horizontal-both::after,
+        .line-horizontal.line-horizontal-right::after {
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }
