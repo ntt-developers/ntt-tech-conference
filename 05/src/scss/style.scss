@@ -315,6 +315,28 @@ p {
   }
 }
 
+#speakers {
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.tooltip {
+  .tooltip-arrow::before {
+    border-top-color: $gray-900;
+  }
+
+  .tooltip-inner {
+    background-color: $gray-900;
+    color: $gray-100;
+  }
+}
+
 .footer {
   background-color: $gray-900;
   color: $gray-500;
