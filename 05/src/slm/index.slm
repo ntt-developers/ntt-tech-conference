@@ -954,7 +954,7 @@ html lang="ja"
     script src="javascripts/wow.min.js"
     javascript:
       // https://wowjs.uk/docs.html
-      new WOW().init()
+      new WOW({ mobile: false }).init()
       // https://getbootstrap.com/docs/5.0/components/collapse/
       var mdMenu = document.getElementById('md-menu')
       var mdMenuCollapse = new bootstrap.Collapse(mdMenu, { toggle: false })
