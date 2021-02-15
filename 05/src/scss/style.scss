@@ -183,7 +183,7 @@ p {
 .section-group {
   background-color: $gray-800;
   color: $gray-100;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
 
   .section {
     padding-left: 3rem;
@@ -299,6 +299,13 @@ p {
         .badge-light {
           background-color: $gray-100;
           color: $gray-700;
+        }
+
+        .row {
+          img {
+            height: 80px;
+            width: 80px;
+          }
         }
 
         .line-horizontal.line-horizontal-both::before,
