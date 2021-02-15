@@ -2,9 +2,10 @@ doctype html
 html lang="ja"
   head
     title NTT Tech Conference #5
+    link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700"
     link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700"
-    link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
@@ -107,7 +108,7 @@ html lang="ja"
         .row.mb-4
           .col-md-2.mb-4 09:00 〜
           .col-md-10
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-primary
                 i.fas.fa-lg.fa-tools.me-2
                 span.fw-bold 09:00 〜 12:00
@@ -175,7 +176,7 @@ html lang="ja"
         .row.mb-4
           .col-md-2.mb-4 10:00 〜
           .col-md-10
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-primary
                 i.fas.fa-lg.fa-tools.me-2
                 span.fw-bold 10:00 〜 11:00
@@ -222,7 +223,7 @@ html lang="ja"
         .row.mb-4
           .col-md-2.mb-4 13:00 〜
           .col-md-10
-            .card.mb-4
+            .card.animate__animated.animate__fadeInRight.wow.mb-4
               .card-header.card-header-gradation-1
                 i.fas.fa-lg.fa-bullhorn.me-2
                 span.fw-bold 13:15 〜 13:25
@@ -231,7 +232,7 @@ html lang="ja"
                   span.fw-bold Opening Keynote
                 p
                   small 小倉 真人（NTT コミュニケーションズ）
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 13:30 〜 13:55
@@ -292,7 +293,7 @@ html lang="ja"
         .row.mb-4
           .col-md-2.mb-4 14:00 〜
           .col-md-10
-            .card.mb-4
+            .card.animate__animated.animate__fadeInRight.wow.mb-4
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 14:00 〜 14:25
@@ -346,7 +347,7 @@ html lang="ja"
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 14:30 〜 14:55
@@ -402,7 +403,7 @@ html lang="ja"
         .row.mb-4
           .col-md-2.mb-4 15:00 〜
           .col-md-10
-            .card.mb-4
+            .card.animate__animated.animate__fadeInRight.wow.mb-4
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 15:00 〜 15:25
@@ -462,7 +463,7 @@ html lang="ja"
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 15:30 〜 15:55
@@ -499,14 +500,14 @@ html lang="ja"
                       i.fas.fa-lg.fa-users.me-2
                       | 講演者
                     p.lh-lg.mb-4
-                      | 川崎 裕香、大塚 一喜、山下 城司、諸星 隆輔、石黒 博之（NTT テクノクロス）
+                      | 川崎 裕香、西園 直人、山下 城司、諸星 隆輔、石黒 博之（NTT テクノクロス）
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row.mb-4
           .col-md-2.mb-4 16:00 〜
           .col-md-10
-            .card.mb-4
+            .card.animate__animated.animate__fadeInRight.wow.mb-4
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 16:00 〜 16:25
@@ -562,7 +563,7 @@ html lang="ja"
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-secondary
                 i.fas.fa-lg.fa-microphone-alt.me-2
                 span.fw-bold 16:30 〜 17:15
@@ -664,7 +665,7 @@ html lang="ja"
         .row
           .col-md-2.mb-4 17:00 〜
           .col-md-10
-            .card
+            .card.animate__animated.animate__fadeInRight.wow
               .card-header.card-header-gradation-2
                 i.fas.fa-lg.fa-bullhorn.me-2
                 span.fw-bold 17:15 〜 17:25
@@ -687,7 +688,9 @@ html lang="ja"
     /   - ntt-developers.github.io
     /   - *.web.app (Firebase Hosting)
     script src="https://kit.fontawesome.com/d6d7188204.js" crossorigin="anonymous"
+    script src="javascripts/wow.min.js"
     javascript:
+      new WOW().init();
       const mdMenu = document.getElementById('md-menu')
       const mdMenuCollapse = new bootstrap.Collapse(mdMenu, { toggle: false })
       const navLinks = document.getElementsByClassName('nav-link')
