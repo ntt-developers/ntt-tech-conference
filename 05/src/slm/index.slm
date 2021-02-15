@@ -153,7 +153,7 @@ html lang="ja"
                       | 必要な機材
                     ul.lh-lg.mb-4
                       li
-                        | 8GB 程度、2 コア程度のスペックを仮想マシン（Linux）に与えることができる PC（発表者は Virtualbox 環境を用います）
+                        | 仮想マシン（Linux）に 2 コア・8GB 程度のスペックを与えることができる PC（講演者は Virtualbox 環境を用います）
                       li
                         a.me-2 href="https://gitlab.com/kennbroorg/iKy" target="_blank" rel="noopener noreferrer"
                           | Project iKy
