@@ -332,6 +332,13 @@ p {
       }
     }
   }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    .section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
 }
 
 .lightning-talk {
