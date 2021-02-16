@@ -183,7 +183,7 @@ p {
 .section-group {
   background-color: $gray-800;
   color: $gray-100;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
 
   .section {
     padding-left: 3rem;
@@ -301,6 +301,13 @@ p {
           color: $gray-700;
         }
 
+        .row {
+          img {
+            height: 80px;
+            width: 80px;
+          }
+        }
+
         .line-horizontal.line-horizontal-both::before,
         .line-horizontal.line-horizontal-left::before {
           margin-right: 1rem;
@@ -312,6 +319,28 @@ p {
         }
       }
     }
+  }
+}
+
+#speakers {
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.tooltip {
+  .tooltip-arrow::before {
+    border-top-color: $gray-900;
+  }
+
+  .tooltip-inner {
+    background-color: $gray-900;
+    color: $gray-100;
   }
 }
 

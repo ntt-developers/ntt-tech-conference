@@ -16,5 +16,7 @@ See `.github/workflows`
 ### References
 
 - [Bootstrap](https://getbootstrap.jp/)
+- [Animate.css](https://animate.style/)
+- [wow.js](https://wowjs.uk/)
 - [Font Awesome](https://fontawesome.com/)
 - [Photo of Orange Chairs](https://www.pexels.com/photo/photo-of-orange-chairs-722708/)
