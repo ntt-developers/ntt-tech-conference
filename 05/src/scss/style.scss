@@ -206,9 +206,21 @@ p {
       }
     }
 
+    .modal-link {
+      cursor: pointer;
+    }
+
     .card {
       border: none;
       border-radius: 0.5rem;
+
+      // https://web.havincoffee.com/css/css3/mediaqueries/feat-pointer.html
+      @media (hover: hover), (hover: none) and (pointer: none) {
+        &:hover {
+          transform: scale(1.05);
+          transition: all ease 0.15s;
+        }
+      }
 
       .card-header {
         border: none;
@@ -320,6 +332,45 @@ p {
       }
     }
   }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    .section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.lightning-talk {
+  border: 1px solid desaturate($secondary-color, 20%) !important;
+
+  &:hover {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .card-body {
+    background-color: $gray-800 !important;
+
+    .list-group {
+      border-radius: 0.5rem;
+
+      .list-group-item {
+        background-color: $gray-700;
+        border: none;
+        color: $gray-100;
+
+        // https://web.havincoffee.com/css/css3/mediaqueries/feat-pointer.html
+        @media (hover: hover), (hover: none) and (pointer: none) {
+          &:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            transform: scale(1.05);
+            transition: all ease 0.15s;
+          }
+        }
+      }
+    }
+  }
 }
 
 #speakers {
@@ -330,6 +381,14 @@ p {
   img {
     height: 80px;
     width: 80px;
+
+    // https://web.havincoffee.com/css/css3/mediaqueries/feat-pointer.html
+    @media (hover: hover), (hover: none) and (pointer: none) {
+      &:hover {
+        transform: scale(1.2);
+        transition: all ease 0.1s;
+      }
+    }
   }
 }
 
