@@ -590,7 +590,7 @@ html lang="ja"
                           span.fw-bold 川崎 裕香
                           small （NTT テクノクロス）
                         p
-                          small OSS を組み合わせて極めるマンを目指す。自分が楽になる技術が好き。Kibana Canvas かわいい♥アイアンマンをはじめ、マーベルも好き。
+                          small OSS を組み合わせて極めるマンを目指す。楽しいことと自分が楽になる技術が好き。Kibana Canvas かわいい♥アイアンマンをはじめマーベルも好き。
                     .row.mb-4
                       .col-3.text-end
                         img.rounded-circle src="images/speakers/naoto_nishizono.png" alt="Naoto Nishizono"
@@ -598,8 +598,8 @@ html lang="ja"
                         p
                           span.fw-bold 西園 直人
                           small （NTT テクノクロス）
-                        / p
-                        /   small
+                        p
+                          small Elastic Certified なエンジニア。日々 Elastic 製品と戯れています。
                     .row.mb-4
                       .col-3.text-end
                         img.rounded-circle src="images/speakers/joji_yamashita.jpg" alt="Joji Yamashita"
@@ -608,7 +608,7 @@ html lang="ja"
                           span.fw-bold 山下 城司
                           small （NTT テクノクロス）
                         p
-                          small いつの間にか5年目になっていた浦島太郎。普段は Elastic Stack を採用する PJ の支援などを担当している。I ♥ Elastic.
+                          small 三度の飯より Elastic Stack が好き。その昔、Elasticlover という Blog を運営してましたが、気づかぬうちに蒸発してしまいました。近所のショッピングモールのどこにどの店があるか覚えられなかったものの、最近は Escape From Tarkov の Interchange でどこにどの店があるのか覚えてきたので、やればできる人間。
                     .row.mb-4
                       .col-3.text-end
                         img.rounded-circle src="images/speakers/takasuke_morohoshi.png" alt="Takasuke Morohoshi"
@@ -616,17 +616,17 @@ html lang="ja"
                         p
                           span.fw-bold 諸星 隆輔
                           small （NTT テクノクロス）
-                        / p
-                        /   small
+                        p
+                          small ビジネスソリューション事業部。BI チーム。BI といいつつインフラとかのほうの作業がメイン。子供 3 人・うさぎ 2 羽・猫 1 匹。
                     .row.mb-4
                       .col-3.text-end
-                        img.rounded-circle src="http://placehold.jp/160x160.png?text=HI" alt="Hiroyuki Ishiguro"
+                        img.rounded-circle src="images/speakers/hiroyuki_ishiguro.jpg" alt="Hiroyuki Ishiguro"
                       .col-9
                         p
                           span.fw-bold 石黒 博之
                           small （NTT テクノクロス）
-                        / p
-                        /   small
+                        p
+                          small BI ツールを用いた分析システム開発を日々奮闘中。最近 Elasticsearch も始めました！
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
@@ -903,7 +903,7 @@ html lang="ja"
           a data-bs-toggle="modal" data-bs-target="#modal-1630-02"
             img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/hidetaka_nishihara.jpg" alt="Hidetaka Nishihara" title="西原 英臣<br><small>（NTT 東日本）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
           a data-bs-toggle="modal" data-bs-target="#modal-1530"
-            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="http://placehold.jp/160x160.png?text=HI" alt="Hiroyuki Ishiguro" title="石黒 博之<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.1s"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/hiroyuki_ishiguro.jpg" alt="Hiroyuki Ishiguro" title="石黒 博之<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.1s"
           a data-bs-toggle="modal" data-bs-target="#modal-1530"
             img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/joji_yamashita.jpg" alt="Joji Yamashita" title="山下 城司<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.2s"
           a data-bs-toggle="modal" data-bs-target="#modal-1000"
