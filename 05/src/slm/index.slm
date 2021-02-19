@@ -745,8 +745,10 @@ html lang="ja"
                       .col-3.text-end
                         img.rounded-circle src="images/speakers/masanori_yamada.png" alt="Masanori Yamada"
                       .col-9
-                        p
+                        p.mb-2
                           span.fw-bold 山田 真徳
+                        p
+                          small AI Security の研究者。趣味で株売買 AI 作ってます！
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
