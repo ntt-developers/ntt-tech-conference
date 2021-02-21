@@ -1,0 +1,957 @@
+doctype html
+html lang="ja"
+  head
+    title NTT Tech Conference #5
+    link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700"
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700"
+    link rel="stylesheet" type="text/css" href="app.min.css"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta property="og:type" content="website"
+    meta property="og:title" content="NTT Tech Conference #5"
+    meta property="og:site_name" content="NTT Tech Conference #5"
+    meta property="og:description" content="NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。"
+    meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference/05/"
+    meta property="og:image" content="https://ntt-developers.github.io/ntt-tech-conference/05/images/banner.png"
+  body
+    nav.md-menu.navbar.navbar-expand-md.navbar-secondary.shadow.fixed-top.d-lg-none
+      .container-fluid
+        span.navbar-brand
+        button.navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#md-menu" aria-controls="md-menu" aria-expanded="false"
+          i.fas.fa-lg.fa-bars
+        div.navbar-collapse.collapse.justify-content-center#md-menu
+          ul.navbar-nav
+            li.nav-item.me-3
+              a.nav-link href="#about"
+                i.fas.fa-lg.fa-comment-dots.me-2
+                | About
+            li.nav-item.me-3
+              a.nav-link href="#registration"
+                i.fas.fa-lg.fa-file-signature.me-2
+                | Registration
+            li.nav-item.me-3
+              a.nav-link href="#timetable"
+                i.fas.fa-lg.fa-calendar-alt.me-2
+                | Timetable
+            li.nav-item
+              a.nav-link href="#speakers"
+                i.fas.fa-lg.fa-users.me-2
+                | Speakers
+    nav.lg-menu.navbar.navbar-expand-lg.navbar-secondary.rounded-pill.shadow.px-4.d-none.d-lg-block
+      ul.navbar-nav
+        li.nav-item.me-3
+          a.nav-link href="#about"
+            i.fas.fa-lg.fa-comment-dots.me-2
+            | About
+        li.nav-item.me-3
+          a.nav-link href="#registration"
+            i.fas.fa-lg.fa-file-signature.me-2
+            | Registration
+        li.nav-item.me-3
+          a.nav-link href="#timetable"
+            i.fas.fa-lg.fa-calendar-alt.me-2
+            | Timetable
+        li.nav-item
+          a.nav-link href="#speakers"
+            i.fas.fa-lg.fa-users.me-2
+            | Speakers
+    .hero
+      svg
+        use xlink:href="images/logo.svg#main"
+    .section-group
+      .section.container#about
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-comment-dots.me-3
+          span.section-title About
+        p.lh-lg.mb-4
+          | NTT Tech Conference は、NTT グループのソフトウェアエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
+          br
+          | NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+        ul.fa-ul.lh-lg
+          li
+            span.fa-li
+              i.fas.fa-lg.fa-scroll
+            | 名称：NTT Tech Conference #5
+          li
+            span.fa-li
+              i.fas.fa-lg.fa-calendar-day
+            | 日時：2021年2月26日（金）13:30〜17:30
+          li
+            span.fa-li
+              i.fas.fa-lg.fa-map-marked-alt
+            | 会場：オンライン
+          li
+            span.fa-li
+              i.fas.fa-lg.fa-user-friends
+            | 主催：NTT Developers
+          li
+            span.fa-li
+              i.fas.fa-lg.fa-money-check-alt
+            | 参加費：無料（事前登録制）
+      .section.container#registration
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-file-signature.me-3
+          span.section-title Registration
+        p.lh-lg.mb-4
+          | NTT Tech Conference への参加には事前登録が必要です。
+          br
+          | NTT グループのソフトウェアエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか？
+        a.btn.btn-md.btn-secondary.shadow href="https://ntt-techconf.connpass.com/event/203831/" role="button" target="_blank" rel="noopener noreferrer"
+          span.fw-bold connpass で事前登録する
+          i.fas.fa-lg.fa-external-link-square-alt.ms-2
+      .section.container#timetable
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-calendar-alt.me-3
+          span.section-title Timetable
+        .row.mb-4
+          .col-md-2.mb-4 09:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-0900"
+              .card-header.card-header-primary
+                i.fas.fa-lg.fa-tools.me-2
+                span.fw-bold 09:00 〜 12:00
+              .card-body
+                p.mb-2
+                  span.fw-bold 窃取転生 - ツール使って本気出す
+                p
+                  small 古市 昌弘
+            .modal.fade#modal-0900 tabindex="-1" aria-labelledby="modal-0900-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-0900-label
+                      | 窃取転生 - ツール使って本気出す
+                    p.mb-4
+                      | 09:00 〜 12:00
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Security
+                    p.lh-lg.mb-4
+                      | OSINT（Open Source Intelligence）という分野ではインターネット上にある情報をもとに情報の収集を行います。
+                      br
+                      | 今回はインターネットにあるツール及び各種サービスを用いてメールアドレスなどの情報収集を実施します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | Project iKy などのツールを使った OSINT 情報の収集方法
+                      li
+                        | 標的型攻撃の一連の流れにおける情報収集に対しての知識
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-laptop.me-2
+                      | 必要な機材
+                    ul.lh-lg.mb-4
+                      li
+                        | 仮想マシン（Linux）に 2 コア・8GB 程度のスペックを与えることができる PC（講演者は Virtualbox 環境を用います）
+                      li
+                        a.me-2 href="https://gitlab.com/kennbroorg/iKy" target="_blank" rel="noopener noreferrer"
+                          | Project iKy
+                        | のインストールをお願いします
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-check-double.me-2
+                      | 参加の条件
+                    ul.lh-lg.mb-4
+                      li トラブルがあっても自分でも調べたりしてくじけない心
+                      li 寛容な心
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/masahiro_furuichi.png" alt="Masahiro Furuichi"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 古市 昌弘
+                        p
+                          small もともとは PoC とかの構築開発をしていたがいつのまにかセキュリティに。はたらけどはたらけど状態。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+        .row.mb-4
+          .col-md-2.mb-4 10:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1000"
+              .card-header.card-header-primary
+                i.fas.fa-lg.fa-tools.me-2
+                span.fw-bold 10:00 〜 11:00
+              .card-body
+                p.mb-2
+                  span.fw-bold パケット生成ツールあれこれ
+                p
+                  small 綿貫 順一
+            .modal.fade#modal-1000 tabindex="-1" aria-labelledby="modal-1000-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1000-label
+                      | パケット生成ツールあれこれ
+                    p.mb-4
+                      | 10:00 〜 11:00
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Network
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Programming
+                    p.lh-lg.mb-4
+                      | 真心こめてパケットを作る際のあれこれ。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    p.lh-lg.mb-4
+                      | パケットを作成できるようになる。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/junichi_watanuki.png" alt="Junichi Watanuki"
+                      .col-9
+                        p
+                          span.fw-bold 綿貫 順一
+                        / p
+                        /   small
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+        .row.mb-4
+          .col-md-2.mb-4 13:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow.mb-4 data-bs-toggle="modal" data-bs-target="#modal-1315"
+              .card-header.card-header-gradation-1
+                i.fas.fa-lg.fa-bullhorn.me-2
+                span.fw-bold 13:15 〜 13:25
+              .card-body
+                p.mb-2
+                  span.fw-bold Opening Keynote
+                p
+                  small 小倉 真人（NTT コミュニケーションズ）
+            .modal.fade#modal-1315 tabindex="-1" aria-labelledby="modal-1315-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1315-label
+                      | Opening Keynote
+                    p.mb-4
+                      | 13:15 〜 13:25
+                    .lh-lg.mb-4
+                      .badge.badge-secondary
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/mahito_ogura.jpg" alt="Mahito Ogura"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 小倉 真人
+                          small （NTT コミュニケーションズ）
+                        p
+                          small クラウド関連の OSS 調査／検証の傍ら、NTT グループのエンジニアたちとイベント開催やはたらき方の改善に取り組んでいます。最近は Chaos Engineering がお気に入り。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1330"
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 13:30 〜 13:55
+              .card-body
+                p.mb-2
+                  span.fw-bold 5G モバイルコア（5GC）を Kubernetes Operator を使って自律運用制御してみた
+                p
+                  small 平井 志久（日本電信電話）
+            .modal.fade#modal-1330 tabindex="-1" aria-labelledby="modal-1330-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1330-label
+                      | 5G モバイルコア（5GC）を Kubernetes Operator を使って自律運用制御してみた
+                    p.mb-4
+                      | 13:30 〜 13:55
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Container
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Network
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.lh-lg.mb-4
+                      | ここ数年、従来 VNF の発展形としてコンテナ技術＋マイクロサービスアーキテクチャを取り入れた Cloud-native Network Function（CNF）に注目が集まっています。
+                      br
+                      | しかし、クラウドネイティブ化の恩恵を享受するためには従来の NW 設計・構築・運用手法を見直す必要があります。
+                      br
+                      | 我々のチームでは CNF の代表例である 5G モバイルコア（5GC）を対象に Kubernetes 上での複雑なアプリケーション管理を可能とする Kubernetes Operator を実装し、NT 研技術の設計制御最適化エンジンと組み合わせた検証環境を構築しました。
+                      br
+                      | その検証環境についてご紹介します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | CNFとは
+                      li
+                        | Kubernetes Operator の実装方法
+                      li
+                        | 5G モバイルコア（5GC）について
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/shiku_hirai.png" alt="Shiku Hirai"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 平井 志久
+                          small （日本電信電話）
+                        p
+                          small NTT ネットワーク基盤技術研究所（NT 研）所属。2018 年入社以来、Cloud-native Network Function（CNF）の設計・制御最適化の研究開発に従事。海外サッカー好き。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+        .row.mb-4
+          .col-md-2.mb-4 14:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow.mb-4 data-bs-toggle="modal" data-bs-target="#modal-1400"
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 14:00 〜 14:25
+              .card-body
+                p.mb-2
+                  span.fw-bold PDF のコピペが文字化けするのはなぜか？ 〜 CID / GID と原ノ味フォント 〜
+                p
+                  small 細田 真道
+            .modal.fade#modal-1400 tabindex="-1" aria-labelledby="modal-1400-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1400-label
+                      | PDF のコピペが文字化けするのはなぜか？ 〜 CID / GID と原ノ味フォント 〜
+                    p.mb-4
+                      | 14:00 〜 14:25
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Application
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.lh-lg.mb-4
+                      | PDF の中には「見」や「高」などの文字が検索できなかったり、コピペすると似たような別の字に化けたりするものが結構あるのをご存じでしょうか。
+                      br
+                      | 住所を集計しようとしても長野の「長」や埼玉の「玉」がなどが化けてうまくいかなかったり、様々な文字で影響が出るもので、康熙部首・CJK 部首補助の文字化け問題と言われます。
+                      br
+                      | もちろん、これらの文字を使っていても化けない PDF もあります。
+                      br
+                      | しかし、広く使われている PDF 作成ツールとフォントで化ける場合があり、多くの PDF がこの問題を抱えています。
+                      br
+                      | 本セッションでは、なぜ化けるのか PDF やフォントの仕組みから紐解きます。
+                      br
+                      | そして、化けない PDF が作成できる日本語 TeX について、その対策とデフォルト和文フォントの原ノ味フォントを紹介します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    p.lh-lg.mb-4
+                      | PDF やフォントの仕組み。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/masamichi_hosoda.jpg" alt="Masamichi Hosoda"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 細田 真道
+                        p
+                          small
+                            | NTT グループのどこかで DX な仕事をしていますが、今回は仕事ではなく個人的にやっている OSS の話をします。
+                            ul.mt-2
+                              li 楽譜作成プログラム LilyPond コミッタ
+                              li GNU 公式文書フォーマット Texinfo コミッタ
+                              li 日本語 TeX デフォルト和文フォントの原ノ味フォント主催
+                              li 第 10 回 日本 OSS 奨励賞受賞
+                              li FIT2018 FIT 論文賞受賞
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1430"
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 14:30 〜 14:55
+              .card-body
+                p.mb-2
+                  span.fw-bold アプリ開発スタートアップ with Tips
+                p
+                  small 神原 健一（NTT テクノクロス）
+            .modal.fade#modal-1430 tabindex="-1" aria-labelledby="modal-1430-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1430-label
+                      | Flutter アプリ開発スタートアップ with Tips
+                    p.mb-4
+                      | 14:30 〜 14:55
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Application
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Programming
+                    p.lh-lg.mb-4
+                      | Flutter はモバイル等アプリ開発フレームワークとして脚光を浴びています。
+                      br
+                      | Flutter の特徴・アプリ開発のはじめ方に加え、開発の基本要素をご説明します。
+                      br
+                      | さらに、効率良く開発を進めていくための Tips についても、デモを交えてご紹介します。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | Flutter のはじめ方
+                      li
+                        | Flutter の基礎
+                      li
+                        | 効率的な開発の進め方
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/kenichi_kambara.jpg" alt="Kenichi Kambara"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 神原 健一
+                          small （NTT テクノクロス）
+                        p
+                          small 公私にわたってモバイルや新しい技術の世界に没頭。技術支援を行いつつ、講演や執筆などエバンジェリスト活動を実施中。マイブームは、英会話とランニング。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+        .row.mb-4
+          .col-md-2.mb-4 15:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow.mb-4 data-bs-toggle="modal" data-bs-target="#modal-1500"
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 15:00 〜 15:25
+              .card-body
+                p.mb-2
+                  span.fw-bold macOS の仮想化技術について 〜 virtualization-rs Rust bindings for Virtualization.framework 〜
+                p
+                  small 鈴ヶ嶺 聡哲（NTT コミュニケーションズ）
+            .modal.fade#modal-1500 tabindex="-1" aria-labelledby="modal-1500-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1500-label
+                      | macOS の仮想化技術について 〜 virtualization-rs Rust bindings for Virtualization.framework 〜
+                    p.mb-4
+                      | 15:00 〜 15:25
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 中級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Container
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Virtualization / Hypervisor
+                    p.lh-lg.mb-4
+                      | 本セッションではまず仮想化技術についての基本的な背景をご説明し、macOS の仮想化技術の変遷や仮想化技術を支えるツールについてご紹介します。
+                      br
+                      | 特に注目する技術として、macOS 11 Big Sur から Intel ベースの Macや Apple Silicon ベースの Mac で VM を作成する Virtualization.framework という高レベル API が追加されました。
+                      br
+                      | Docker などは内部で低レベル API の Hypervisor.framework を使用した HyperKit を Virtualization.framework に置き換えつつあります。
+                      br
+                      | 最後に、この Virtualization.framework を Rust で binding するライブラリを作成したので、そのご紹介と Linux を boot するデモをしたいと思います。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | 仮想化技術・ハイパーバイザの基本について
+                      li
+                        | macOS の仮想化技術の変遷について
+                      li
+                        | macOS の仮想化を支える Hypervisor.framework, Virtualization.framework などの API や xhyve, HyperKit などのツールについて
+                      li
+                        | Rust で作る macOS アプリケーションについて
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/sotetsu_suzugamine.jpg" alt="Sotetsu Suzugamine"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 鈴ヶ嶺 聡哲
+                          small （NTT コミュニケーションズ）
+                        p
+                          small イノベーションセンターテクノロジー部門所属。クラウド・ハイブリッドクラウドや機械学習基盤に関する業務に従事しております。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .card.modal-link.shadow.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1530"
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 15:30 〜 15:55
+              .card-body
+                p.mb-2
+                  span.fw-bold Elastic Stack 注目トピック座談会
+                p
+                  small 川崎 裕香、西園 直人、山下 城司、諸星 隆輔、石黒 博之（NTT テクノクロス）
+            .modal.fade#modal-1530 tabindex="-1" aria-labelledby="modal-1530-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1530-label
+                      | Elastic Stack 注目トピック座談会
+                    p.mb-4
+                      | 15:30 〜 15:55
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.lh-lg.mb-4
+                      | Elastic Stack に関する最新のトピックスや気になるトピックスをわいわいお伝えします。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    p.lh-lg.mb-4
+                      | Elastic Stack に関する最新の技術動向や、座談会メンバの気になるトピックスについて。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-users.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/yuka_kawasaki.png" alt="Yuka Kawasaki"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 川崎 裕香
+                          small （NTT テクノクロス）
+                        p
+                          small OSS を組み合わせて極めるマンを目指す。楽しいことと自分が楽になる技術が好き。Kibana Canvas かわいい♥アイアンマンをはじめマーベルも好き。
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/naoto_nishizono.png" alt="Naoto Nishizono"
+                      .col-9
+                        p
+                          span.fw-bold 西園 直人
+                          small （NTT テクノクロス）
+                        p
+                          small Elastic Certified なエンジニア。日々 Elastic 製品と戯れています。
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/joji_yamashita.jpg" alt="Joji Yamashita"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 山下 城司
+                          small （NTT テクノクロス）
+                        p
+                          small 三度の飯より Elastic Stack が好き。その昔、Elasticlover という Blog を運営してましたが、気づかぬうちに蒸発してしまいました。近所のショッピングモールのどこにどの店があるか覚えられなかったものの、最近は Escape From Tarkov の Interchange でどこにどの店があるのか覚えてきたので、やればできる人間。
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/takasuke_morohoshi.png" alt="Takasuke Morohoshi"
+                      .col-9
+                        p
+                          span.fw-bold 諸星 隆輔
+                          small （NTT テクノクロス）
+                        p
+                          small ビジネスソリューション事業部。BI チーム。BI といいつつインフラとかのほうの作業がメイン。子供 3 人・うさぎ 2 羽・猫 1 匹。
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/hiroyuki_ishiguro.jpg" alt="Hiroyuki Ishiguro"
+                      .col-9
+                        p
+                          span.fw-bold 石黒 博之
+                          small （NTT テクノクロス）
+                        p
+                          small BI ツールを用いた分析システム開発を日々奮闘中。最近 Elasticsearch も始めました！
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+        .row.mb-4
+          .col-md-2.mb-4 16:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow.mb-4 data-bs-toggle="modal" data-bs-target="#modal-1600"
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 16:00 〜 16:25
+              .card-body
+                p.mb-2
+                  span.fw-bold この素晴らしい新入社員とペアプロを！
+                p
+                  small 花川 直己（NTTリミテッド・ジャパン）
+            .modal.fade#modal-1600 tabindex="-1" aria-labelledby="modal-1600-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1600-label
+                      | この素晴らしい新入社員とペアプロを！
+                    p.mb-4
+                      | 16:00 〜 16:25
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Programming
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | On-boarding
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Workstyle
+                    p.lh-lg.mb-4
+                      | 2020 年春、チームに新入社員がやってきました。
+                      br
+                      | フルリモートによるオンボーディングを 1 ヶ月ほど行って前線投入されましたが、12 月ごろに伸び悩んでいるように見えました。
+                      br
+                      | そこで、彼をパワーアップするべく講演者は立ち上がり、「癒着」と称したペアプログラミングを行い、2 つの大きめなバグ修正を通して様々なナレッジの共有を試みました。
+                      br
+                      | 本セッションでは、こういった状況下でチームとして初めて取り組んだペアプログラミングのやり方や知見の共有、及び課題の紹介をしたいと思います。
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-graduation-cap.me-2
+                      | 学べること
+                    ul.lh-lg.mb-4
+                      li
+                        | オンボーディングにおけるペアプログラミングのやり方の一例
+                      li
+                        | リモートにおけるペアプログラミングの環境や知見
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/naoki_hanakawa.png" alt="Naoki Hanakawa"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 花川 直己
+                          small （NTTリミテッド・ジャパン）
+                        p
+                          small 企業向けクラウドサービスである ECL2.0 の Baremetal Server / Dedicated Hypervisor 開発チームに所属。日々物理サーバと戯れながら生きてます。趣味で社内イベントや研修などに首を突っ込んだりもしています。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .card.lightning-talk.animate__animated.animate__fadeInRight.wow
+              .card-header.card-header-secondary
+                i.fas.fa-lg.fa-microphone-alt.me-2
+                span.fw-bold 16:30 〜 17:15
+              .card-body
+                p.mb-2
+                  | Lightning Talk
+                ul.list-group.shadow.mb-2
+                  li.list-group-item.modal-link data-bs-toggle="modal" data-bs-target="#modal-1630-01"
+                    span.fw-bold 論文翻訳ツールの紹介
+                    small （山田 真徳）
+                ul.list-group.shadow.mb-2
+                  li.list-group-item.modal-link data-bs-toggle="modal" data-bs-target="#modal-1630-02"
+                    span.fw-bold Open Mobile Network Infra Community について
+                    small （西原 英臣）
+                ul.list-group.shadow.mb-2
+                  li.list-group-item.modal-link data-bs-toggle="modal" data-bs-target="#modal-1630-03"
+                    span.fw-bold 社内でポッドキャストしてみたった 〜 視聴者 0 人から始める社内ポッドキャスト 〜
+                    small （古市 昌弘）
+                ul.list-group.shadow.mb-0
+                  li.list-group-item.modal-link data-bs-toggle="modal" data-bs-target="#modal-1630-04"
+                    span.fw-bold ラック設計って面倒なので VR ってやつで何とかしてみた
+                    small （原田 和明）
+            .modal.fade#modal-1630-01 tabindex="-1" aria-labelledby="modal-1630-label-01" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1630-label-01
+                      | 論文翻訳ツールの紹介
+                    p.mb-4
+                      | 16:30 〜 17:15
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | Lightning Talk
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Application
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/masanori_yamada.png" alt="Masanori Yamada"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 山田 真徳
+                        p
+                          small AI Security の研究者。趣味で株売買 AI 作ってます！
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .modal.fade#modal-1630-02 tabindex="-1" aria-labelledby="modal-1630-label-02" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1630-label-02
+                      | Open Mobile Network Infra Community について
+                    p.mb-4
+                      | 16:30 〜 17:15
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | Lightning Talk
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Mobile
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | Network
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | OSS
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/hidetaka_nishihara.jpg" alt="Hidetaka Nishihara"
+                      .col-9
+                        p
+                          span.fw-bold 西原 英臣
+                          small （NTT 東日本）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .modal.fade#modal-1630-03 tabindex="-1" aria-labelledby="modal-1630-label-03" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1630-label-03
+                      | 社内でポッドキャストしてみたった 〜 視聴者 0 人から始める社内ポッドキャスト 〜
+                    p.mb-4
+                      | 16:30 〜 17:15
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | Lightning Talk
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | Communication
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/masahiro_furuichi.png" alt="Masahiro Furuichi"
+                      .col-9
+                        p
+                          span.fw-bold 古市 昌弘
+                        p
+                          small もともとは PoC とかの構築開発をしていたがいつのまにかセキュリティに。はたらけどはたらけど状態。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+            .modal.fade#modal-1630-04 tabindex="-1" aria-labelledby="modal-1630-label-04" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1630-label-04
+                      | ラック設計って面倒なので VR ってやつで何とかしてみた
+                    p.mb-4
+                      | 16:30 〜 17:15
+                    .lh-lg.mb-4
+                      .badge.badge-secondary.me-2
+                        i.fas.fa-layer-group.me-1
+                        | Lightning Talk
+                      .badge.badge-light.me-2
+                        i.fas.fa-hashtag.me-1
+                        | New-normal
+                      .badge.badge-light
+                        i.fas.fa-hashtag.me-1
+                        | VR
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/kazuaki_harada.png" alt="Kazuaki Harada"
+                      .col-9
+                        p
+                          span.fw-bold 原田 和明
+                          small （NTT コミュニケーションズ）
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+        .row
+          .col-md-2.mb-4 17:00 〜
+          .col-md-10
+            .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1715"
+              .card-header.card-header-gradation-2
+                i.fas.fa-lg.fa-bullhorn.me-2
+                span.fw-bold 17:15 〜 17:25
+              .card-body
+                p.mb-2
+                  span.fw-bold Closing Keynote
+                p
+                  small 小倉 真人（NTTコミュニケーションズ）
+            .modal.fade#modal-1715 tabindex="-1" aria-labelledby="modal-1715-label" aria-hidden="true"
+              .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content.shadow
+                  .modal-body.p-4
+                    .float-end
+                      button.btn-close type="button" data-bs-dismiss="modal" aria-label="close"
+                        i.fas.fa-lg.fa-times
+                    h5.fw-bold.mb-2#modal-1715-label
+                      | Closing Keynote
+                    p.mb-4
+                      | 17:15 〜 17:25
+                    .lh-lg.mb-4
+                      .badge.badge-secondary
+                        i.fas.fa-layer-group.me-1
+                        | 初級
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-user.me-2
+                      | 講演者
+                    .row.mb-4
+                      .col-3.text-end
+                        img.rounded-circle src="images/speakers/mahito_ogura.jpg" alt="Mahito Ogura"
+                      .col-9
+                        p.mb-2
+                          span.fw-bold 小倉 真人
+                          small （NTT コミュニケーションズ）
+                        p
+                          small クラウド関連の OSS 調査／検証の傍ら、NTT グループのエンジニアたちとイベント開催やはたらき方の改善に取り組んでいます。最近は Chaos Engineering がお気に入り。
+                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                      i.fas.fa-times.me-2
+                      | 閉じる
+      .section.container#speakers
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-users.me-3
+          span.section-title Speakers
+        p
+          a data-bs-toggle="modal" data-bs-target="#modal-1630-02"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/hidetaka_nishihara.jpg" alt="Hidetaka Nishihara" title="西原 英臣<br><small>（NTT 東日本）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+          a data-bs-toggle="modal" data-bs-target="#modal-1530"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/hiroyuki_ishiguro.jpg" alt="Hiroyuki Ishiguro" title="石黒 博之<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.1s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1530"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/joji_yamashita.jpg" alt="Joji Yamashita" title="山下 城司<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.2s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1000"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/junichi_watanuki.png" alt="Junichi Watanuki" title="綿貫 順一" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.3s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1630-04"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/kazuaki_harada.png" alt="Kazuaki Harada" title="原田 和明<br><small>（NTT コミュニケーションズ）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.4s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1430"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/kenichi_kambara.jpg" alt="Kenichi Kambara" title="神原 健一<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.5s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1315"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/mahito_ogura.jpg" alt="Mahito Ogura" title="小倉 真人<br><small>（NTT コミュニケーションズ）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.6s"
+          a data-bs-toggle="modal" data-bs-target="#modal-0900"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/masahiro_furuichi.png" alt="Masahiro Furuichi" title="古市 昌弘" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.7s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1400"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/masamichi_hosoda.jpg" alt="Masamichi Hosoda" title="細田 真道" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.8s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1630-01"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/masanori_yamada.png" alt="Masanori Yamada" title="山田 真徳" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="0.9s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1600"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/naoki_hanakawa.png" alt="Naoki Hanakawa" title="花川 直己<br><small>（NTTリミテッド・ジャパン）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="1s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1530"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/naoto_nishizono.png" alt="Naoto Nishizono" title="西園 直人<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="1.1s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1330"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/shiku_hirai.png" alt="Shiku Hirai" title="平井 志久<br><small>（日本電信電話）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="1.2s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1500"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/sotetsu_suzugamine.jpg" alt="Sotetsu Suzugamine" title="鈴ヶ嶺 聡哲<br><small>（NTT コミュニケーションズ）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="1.3s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1530"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4.me-4 src="images/speakers/takasuke_morohoshi.png" alt="Takasuke Morohoshi" title="諸星 隆輔<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="1.4s"
+          a data-bs-toggle="modal" data-bs-target="#modal-1530"
+            img.rounded-circle.shadow.animate__animated.animate__fadeInRight.wow.mb-4 src="images/speakers/yuka_kawasaki.png" alt="Yuka Kawasaki" title="川崎 裕香<br><small>（NTT テクノクロス）</small>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-wow-delay="1.5s"
+    .footer.text-center.p-4
+      i.far.fa-copyright.me-2
+      | 2021 NTT Developers
+    script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
+    / This kit only work on below domains.
+    /   - ntt-developers.github.io
+    /   - *.web.app (Firebase Hosting)
+    script src="https://kit.fontawesome.com/d6d7188204.js" crossorigin="anonymous"
+    script src="javascripts/wow.min.js"
+    javascript:
+      // https://wowjs.uk/docs.html
+      new WOW({ mobile: false }).init()
+      // https://getbootstrap.com/docs/5.0/components/collapse/
+      var mdMenu = document.getElementById('md-menu')
+      var mdMenuCollapse = new bootstrap.Collapse(mdMenu, { toggle: false })
+      var navLinks = [].slice.call(document.getElementsByClassName('nav-link'))
+      navLinks.map((navLink) => navLink.addEventListener('click', () => mdMenuCollapse.hide()))
+      // https://getbootstrap.com/docs/5.0/components/tooltips/
+      var touchable = window.ontouchstart !== undefined || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0
+      var tooltipTogglers = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      if (!touchable) { tooltipTogglers.map((tooltipToggler) => new bootstrap.Tooltip(tooltipToggler)) }

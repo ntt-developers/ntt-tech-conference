@@ -1,0 +1,9 @@
+// http://www.colourlovers.com/palette/321652/Goldenrod_seabreeze
+$gold-dark: #fca55d;
+$gold-normal: #f0b659;
+$gold-light: #f0e159;
+
+$gold-darken: darken($gold-dark, 40%);
+$gold-darker: darken($gold-dark, 20%);
+$gold-lighter: lighten($gold-light, 20%);
+$gold-lighten: lighten($gold-light, 40%);

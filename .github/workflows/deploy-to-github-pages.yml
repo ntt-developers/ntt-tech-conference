@@ -1,0 +1,54 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    env:
+      NUMBER: "05"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "15"
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles(format('{0}/package-lock.json', env.NUMBER)) }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: npm ci
+        run: |
+          npm ci
+        working-directory: ${{ env.NUMBER }}
+      - name: npm run build
+        run: |
+          npm run build
+        working-directory: ${{ env.NUMBER }}
+      - name: mkdir & cp
+        run: |
+          rm -rf ${NUMBER}_tmp
+          mkdir ${NUMBER}_tmp
+          cp -pr ${NUMBER}/public/* ${NUMBER}_tmp
+      - name: git config
+        run: |
+          git config --local user.email 'ntt-developers@googlegroups.com'
+          git config --local user.name 'NTT Developers'
+      - name: git fetch
+        run: |
+          git fetch origin gh-pages
+      - name: git checkout
+        run: |
+          git checkout gh-pages
+          git checkout ${GITHUB_SHA} README.md
+      - name: mv & git add & git commit
+        run: |
+          rm -rf ${NUMBER}
+          mv ${NUMBER}_tmp ${NUMBER}
+          git add README.md ${NUMBER}
+          git commit -a --amend -m 'Automatic build by GitHub Actions'
+      - name: git push
+        run: |
+          git push -f origin gh-pages:gh-pages

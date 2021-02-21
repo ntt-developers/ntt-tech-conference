@@ -1,0 +1,54 @@
+doctype html
+html lang="ja"
+  head
+    title NTT Tech Conference #03
+
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta property="og:title" content="NTT Tech Conference #3"
+    meta property="og:description" content="NTT Tech Conferenceは、NTTグループのソフトウェアエンジニアたちが一堂に会し、NTTグループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。"
+    meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference-03/"
+    meta property="og:image" content="https://ntt-developers.github.io/ntt-tech-conference/03/images/NTTtechconf3_logo.png"
+    meta property="og:image:secure_url" content="https://ntt-developers.github.io/ntt-tech-conference/03/images/NTTtechconf3_logo.png"
+
+
+    link href="./assets/stylesheets/modules_components.min.css" rel="stylesheet"
+    link href="./assets/stylesheets/application.min.css" rel="stylesheet"
+    link rel="icon" type="image/png" href="./images/favicon.png"
+
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top.bg-gold
+      .container
+        .collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link href="#about" About
+            li.nav-item
+              a.nav-link href="#workshop" Workshop
+            li.nav-item
+              a.nav-link href="#conference" Conference
+            li.nav-item
+              a.nav-link href="#registration" Registration
+            li.nav-item
+              a.nav-link href="#after-party" After Party
+            li.nav-item
+              a.nav-link href="#access" Access
+
+    include _jumbotron.slim
+    include _about.slim
+    include _workshop.slim
+    include _conference.slim
+    include _registration.slim
+    include _after_party.slim
+    include _access.slim
+    include _workshop_modal.slim
+    include _conference_modal.slim
+    include _showcase_modal.slim
+
+    .container.mb-5.text-center
+        | Copyright
+        i.fa.fa-copyright.mx-05
+        | 2018 NTT Developers All Rights Reserved.
+
+    script src="./assets/javascripts/modules_components.min.js" type="text/javascript"

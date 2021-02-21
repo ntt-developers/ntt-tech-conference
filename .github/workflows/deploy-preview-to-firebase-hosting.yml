@@ -1,0 +1,78 @@
+name: Deploy Preview to Firebase Hosting
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    env:
+      EXPIRES: 7d
+      NUMBER: "05"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "15"
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles(format('{0}/package-lock.json', env.NUMBER)) }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: npm ci
+        run: |
+          npm ci
+        working-directory: ${{ env.NUMBER }}
+      - name: npm run build
+        run: |
+          npm run build
+        working-directory: ${{ env.NUMBER }}
+      - name: firebase hosting:channel:create
+        continue-on-error: true
+        run: |
+          $(npm bin)/firebase hosting:channel:create ${{ github.head_ref }} --token ${{ secrets.FIREBASE_TOKEN }}
+        working-directory: ${{ env.NUMBER }}
+      - name: firebase hosting:channel:open
+        id: firebase_hosting_channel_open
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          url=$($(npm bin)/firebase hosting:channel:open ${channel} --token ${{ secrets.FIREBASE_TOKEN }} | awk '{ print $3 }')
+          echo "::set-output name=url::${url}"
+        working-directory: ${{ env.NUMBER }}
+      - name: sed
+        env:
+          URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
+        run: |
+          sed -i -e "s|https://ntt-developers.github.io/ntt-tech-conference/05|${URL}|g" index.html
+        working-directory: ${{ env.NUMBER }}/public
+      - name: firebase hosting:channel:deploy
+        run: |
+          $(npm bin)/firebase hosting:channel:deploy ${{ github.head_ref }} -e ${{ env.EXPIRES }} --token ${{ secrets.FIREBASE_TOKEN }}
+        working-directory: ${{ env.NUMBER }}
+      - uses: actions/github-script@v3
+        env:
+          URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
+        with:
+          script: |
+            const body = `Preview: ${process.env.URL}`
+
+            const options = github.issues.listComments.endpoint.merge({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            })
+
+            const comments = await github.paginate(options)
+            const comment = comments.find(c => c.body == body)
+
+            if (comment) {
+              return
+            }
+
+            await github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            })

@@ -1,0 +1,409 @@
+$primary-color: #4b0082;
+$secondary-color: #fff100;
+
+// https://getbootstrap.jp/docs/5.0/customize/color/
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// https://getbootstrap.jp/docs/5.0/layout/breakpoints/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// https://code-labo.com/snippet/2020/10/css-horizontal-line-39/
+.line-horizontal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.line-horizontal.line-horizontal-both {
+  text-align: center;
+}
+
+.line-horizontal.line-horizontal-left {
+  text-align: left;
+}
+
+.line-horizontal.line-horizontal-right {
+  text-align: right;
+}
+
+.line-horizontal.line-horizontal-both::before,
+.line-horizontal.line-horizontal-both::after,
+.line-horizontal.line-horizontal-left::before,
+.line-horizontal.line-horizontal-right::after {
+  background-color: $gray-100;
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+}
+
+.line-horizontal.line-horizontal-both::before,
+.line-horizontal.line-horizontal-left::before {
+  margin-right: 2rem;
+}
+
+.line-horizontal.line-horizontal-both::after,
+.line-horizontal.line-horizontal-right::after {
+  margin-left: 2rem;
+}
+
+*:not(i) {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.navbar-secondary {
+  background-color: desaturate($secondary-color, 20%) !important;
+
+  .navbar-toggler {
+    i {
+      color: $gray-700;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $gray-700;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+}
+
+.btn-md {
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-secondary {
+  background-color: desaturate($secondary-color, 20%) !important;
+  border: none;
+  color: $gray-700;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken(desaturate($secondary-color, 20%), 10%) !important;
+    color: $gray-700;
+  }
+}
+
+.md-menu {
+  *:not(i) {
+    font-family: "Open Sans Condensed", sans-serif !important;
+    font-weight: 700;
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.lg-menu {
+  *:not(i) {
+    font-family: "Open Sans Condensed", sans-serif !important;
+    font-weight: 700;
+  }
+
+  left: 50%;
+  position: fixed;
+  top: 2rem;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.hero {
+  background: linear-gradient(
+      135deg,
+      rgba(darken(desaturate($primary-color, 10%), 10%), 0.8),
+      rgba(darken(desaturate($secondary-color, 20%), 20%), 0.8)
+    ),
+    url(images/hero_background.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  svg {
+    fill: #fff;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    svg {
+      width: 80vw;
+    }
+  }
+}
+
+.section-group {
+  background-color: $gray-800;
+  color: $gray-100;
+  padding-bottom: 3.5rem;
+
+  .section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+
+    .section-title {
+      font-family: "Open Sans Condensed", sans-serif !important;
+      letter-spacing: 0.1rem;
+    }
+
+    .fa-ul {
+      .fa-li {
+        left: -3em;
+        width: 3em;
+
+        i {
+          color: desaturate($secondary-color, 20%);
+        }
+      }
+    }
+
+    .modal-link {
+      cursor: pointer;
+    }
+
+    .card {
+      border: none;
+      border-radius: 0.5rem;
+
+      // https://web.havincoffee.com/css/css3/mediaqueries/feat-pointer.html
+      @media (hover: hover), (hover: none) and (pointer: none) {
+        &:hover {
+          transform: scale(1.05);
+          transition: all ease 0.15s;
+        }
+      }
+
+      .card-header {
+        border: none;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+
+      .card-header-primary {
+        background-color: desaturate($primary-color, 10%);
+        color: $gray-100;
+      }
+
+      .card-header-secondary {
+        background-color: desaturate($secondary-color, 20%);
+        color: $gray-700;
+      }
+
+      .card-header-gradation-1 {
+        background: linear-gradient(
+          90deg,
+          desaturate($primary-color, 10%) 40%,
+          desaturate($secondary-color, 20%)
+        );
+        color: $gray-100;
+      }
+
+      .card-header-gradation-2 {
+        background: linear-gradient(
+          90deg,
+          desaturate($secondary-color, 20%) 40%,
+          desaturate($primary-color, 10%)
+        );
+        color: $gray-700;
+      }
+
+      .card-body {
+        background-color: $gray-700;
+        border: none;
+        border-radius: 0 0 0.5rem 0.5rem;
+        color: $gray-100;
+
+        a {
+          color: $gray-100;
+          cursor: pointer;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: $gray-200;
+          }
+        }
+      }
+    }
+
+    .modal {
+      .modal-content {
+        background-color: $gray-700;
+        border: none;
+        border-radius: 0.5rem;
+        color: $gray-100;
+
+        .btn-close {
+          background: transparent;
+          opacity: 1;
+        }
+
+        .btn-close,
+        a {
+          color: $secondary-color;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: darken($secondary-color, 10%);
+          }
+        }
+
+        p {
+          i {
+            color: desaturate($secondary-color, 20%);
+          }
+        }
+
+        .badge-secondary {
+          background-color: desaturate($secondary-color, 20%) !important;
+          color: $gray-700;
+        }
+
+        .badge-light {
+          background-color: $gray-100;
+          color: $gray-700;
+        }
+
+        .row {
+          img {
+            height: 80px;
+            width: 80px;
+          }
+        }
+
+        .line-horizontal.line-horizontal-both::before,
+        .line-horizontal.line-horizontal-left::before {
+          margin-right: 1rem;
+        }
+
+        .line-horizontal.line-horizontal-both::after,
+        .line-horizontal.line-horizontal-right::after {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    .section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.lightning-talk {
+  border: 1px solid desaturate($secondary-color, 20%) !important;
+
+  &:hover {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .card-body {
+    background-color: $gray-800 !important;
+
+    .list-group {
+      border-radius: 0.5rem;
+
+      .list-group-item {
+        background-color: $gray-700;
+        border: none;
+        color: $gray-100;
+
+        // https://web.havincoffee.com/css/css3/mediaqueries/feat-pointer.html
+        @media (hover: hover), (hover: none) and (pointer: none) {
+          &:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            transform: scale(1.05);
+            transition: all ease 0.15s;
+          }
+        }
+      }
+    }
+  }
+}
+
+#speakers {
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+
+    // https://web.havincoffee.com/css/css3/mediaqueries/feat-pointer.html
+    @media (hover: hover), (hover: none) and (pointer: none) {
+      &:hover {
+        transform: scale(1.2);
+        transition: all ease 0.1s;
+      }
+    }
+  }
+}
+
+.tooltip {
+  .tooltip-arrow::before {
+    border-top-color: $gray-900;
+  }
+
+  .tooltip-inner {
+    background-color: $gray-900;
+    color: $gray-100;
+  }
+}
+
+.footer {
+  background-color: $gray-900;
+  color: $gray-500;
+}
