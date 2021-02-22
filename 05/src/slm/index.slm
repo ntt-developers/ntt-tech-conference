@@ -214,12 +214,21 @@ html lang="ja"
                         i.fas.fa-hashtag.me-1
                         | Programming
                     p.lh-lg.mb-4
-                      | 真心こめてパケットを作る際のあれこれ。
+                      | IP 通信では動画、メール、Web など、様々な情報がやり取りされています。
+                      br
+                      | 障害発生の深堀作業においてアプリレイヤーで解決できなかった場合、パケットを真心こめて作成しなければならない局面に遭遇することが極めてまれに起こります。
+                      br
+                      | このセッションでは、真心こめてパケットを作成するツール類を紹介を行うことに加え、私たち開発者に親和性の高いパケット生成ツールの試用する段階までを紹介します。
+                      br
+                      | セッション中でのハンズオンを想定していますが、オンライン形式での制約のことから後日空いた時間でも独力で実施可能となるような内容とします。
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-graduation-cap.me-2
                       | 学べること
-                    p.lh-lg.mb-4
-                      | パケットを作成できるようになる。
+                    ul.lh-lg.mb-4
+                      li
+                        | Windows 10（GUI 環境）でのパケット生成ツール利用
+                      li
+                        | Linux 環境（CLI 環境）でのパケット生成ツール利用
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
@@ -227,10 +236,10 @@ html lang="ja"
                       .col-3.text-end
                         img.rounded-circle src="images/speakers/junichi_watanuki.png" alt="Junichi Watanuki"
                       .col-9
-                        p
+                        p.mb-2
                           span.fw-bold 綿貫 順一
-                        / p
-                        /   small
+                        p
+                          small 主に開発系業務に従事し、チームリーダでありながら自らコーディングすることもよくある。今回は対外活動申請が間に合わなかったため無所属であるが、詮索無用でお願いします。
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
@@ -783,9 +792,11 @@ html lang="ja"
                       .col-3.text-end
                         img.rounded-circle src="images/speakers/hidetaka_nishihara.jpg" alt="Hidetaka Nishihara"
                       .col-9
-                        p
+                        p.mb-2
                           span.fw-bold 西原 英臣
                           small （NTT 東日本）
+                        p
+                          small 高度化推進部 技術戦略部門にて無線・ローカル 5G の開発業務に従事。OSS の 5G モバイルコア（5GC）や無線アクセスネットワーク（RAN）に興味があります。
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
