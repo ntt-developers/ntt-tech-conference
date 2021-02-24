@@ -863,6 +863,8 @@ html lang="ja"
                         p
                           span.fw-bold 原田 和明
                           small （NTT コミュニケーションズ）
+                        p
+                          small 社内のk8s GPU基盤を運用しつつ新卒研修やイベント企画など色んな事にも顔を出したりしている。最近の悩みは趣味が多すぎて時間が足りない事。
                     button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
