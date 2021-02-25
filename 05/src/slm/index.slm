@@ -152,7 +152,7 @@ html lang="ja"
                         | 標的型攻撃の一連の流れにおける情報収集に対しての知識
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-laptop.me-2
-                      | 必要な機材
+                      | 必要なもの
                     ul.lh-lg.mb-4
                       li
                         | 仮想マシン（Linux）に 2 コア・8GB 程度のスペックを与えることができる PC（講演者は Virtualbox 環境を用います）
@@ -226,9 +226,19 @@ html lang="ja"
                       | 学べること
                     ul.lh-lg.mb-4
                       li
-                        | Windows 10（GUI 環境）でのパケット生成ツール利用
+                        | 【前編】Windows 10（GUI 環境）でのパケット生成ツール利用
                       li
-                        | Linux 環境（CLI 環境）でのパケット生成ツール利用
+                        | 【後編】Linux 環境（CLI 環境）でのパケット生成ツール利用
+                    p.line-horizontal.line-horizontal-right.mb-4
+                      i.fas.fa-lg.fa-laptop.me-2
+                      | 必要なもの
+                    ul.lh-lg.mb-4
+                      li
+                        | 【前編】Windows 10（事前に Wireshark・Win10Pcap・ipsendwin・Colasoft Packet Builder をインストールしておいてください）
+                      li
+                        | 【後編】Docker をインストールした端末を用意し、事前に次のコマンドでイメージのダウンロードをお願いします
+                        br
+                        tt docker pull jwat/ubuntu2004:latest
                     p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
