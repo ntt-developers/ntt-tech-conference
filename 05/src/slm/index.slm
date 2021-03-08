@@ -177,7 +177,7 @@ html lang="ja"
                           span.fw-bold 古市 昌弘
                         p
                           small もともとは PoC とかの構築開発をしていたがいつのまにかセキュリティに。はたらけどはたらけど状態。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row.mb-4
@@ -250,7 +250,7 @@ html lang="ja"
                           span.fw-bold 綿貫 順一
                         p
                           small 主に開発系業務に従事し、チームリーダでありながら自らコーディングすることもよくある。今回は対外活動申請が間に合わなかったため無所属であるが、詮索無用でお願いします。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row.mb-4
@@ -281,6 +281,12 @@ html lang="ja"
                         i.fas.fa-layer-group.me-1
                         | 初級
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-speaker-deck.me-2
+                      | 資料
+                    p.lh-lg.mb-4
+                      a href="https://speakerdeck.com/mahito/ntt-tech-conference-number-5-opening-keynote" target="_blank" rel="noopener noreferrer"
+                        | NTT Tech Conference #5 - Opening Keynote
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -292,7 +298,7 @@ html lang="ja"
                           small （NTT コミュニケーションズ）
                         p
                           small クラウド関連の OSS 調査／検証の傍ら、NTT グループのエンジニアたちとイベント開催やはたらき方の改善に取り組んでいます。最近は Chaos Engineering がお気に入り。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1330"
@@ -358,7 +364,7 @@ html lang="ja"
                           small （日本電信電話）
                         p
                           small NTT ネットワーク基盤技術研究所（NT 研）所属。2018 年入社以来、Cloud-native Network Function（CNF）の設計・制御最適化の研究開発に従事。海外サッカー好き。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row.mb-4
@@ -412,6 +418,16 @@ html lang="ja"
                     p.lh-lg.mb-4
                       | PDF やフォントの仕組み。
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-slideshare.me-2
+                      | 資料
+                    ul.lh-lg.mb-4
+                      li
+                        a href="https://www.slideshare.net/trueroad_jp/pdfcidgid" target="_blank" rel="noopener noreferrer"
+                          | PDF のコピペが文字化けするのはなぜか？ 〜 CID / GID と原ノ味フォント 〜
+                      li
+                        a href="https://github.com/trueroad/tr-NTTtech05" target="_blank" rel="noopener noreferrer"
+                          | 関連資料
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -429,7 +445,7 @@ html lang="ja"
                               li 日本語 TeX デフォルト和文フォントの原ノ味フォント主催
                               li 第 10 回 日本 OSS 奨励賞受賞
                               li FIT2018 FIT 論文賞受賞
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .card.shadow.modal-link.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1430"
@@ -438,7 +454,7 @@ html lang="ja"
                 span.fw-bold 14:30 〜 14:55
               .card-body
                 p.mb-2
-                  span.fw-bold アプリ開発スタートアップ with Tips
+                  span.fw-bold Flutter アプリ開発スタートアップ with Tips
                 p
                   small 神原 健一（NTT テクノクロス）
             .modal.fade#modal-1430 tabindex="-1" aria-labelledby="modal-1430-label" aria-hidden="true"
@@ -479,6 +495,12 @@ html lang="ja"
                       li
                         | 効率的な開発の進め方
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-speaker-deck.me-2
+                      | 資料
+                    p.lh-lg.mb-4
+                      a href="https://speakerdeck.com/korodroid/ntt-tech-conference-flutterahurikai-fa-sutatoatuhuwithtips" target="_blank" rel="noopener noreferrer"
+                        | [NTT Tech Conference] Flutter アプリ開発スタートアップ with Tips
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -490,7 +512,7 @@ html lang="ja"
                           small （NTT テクノクロス）
                         p
                           small 公私にわたってモバイルや新しい技術の世界に没頭。技術支援を行いつつ、講演や執筆などエバンジェリスト活動を実施中。マイブームは、英会話とランニング。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row.mb-4
@@ -550,6 +572,12 @@ html lang="ja"
                       li
                         | Rust で作る macOS アプリケーションについて
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-slideshare.me-2
+                      | 資料
+                    p.lh-lg.mb-4
+                      a href="https://www.slideshare.net/td-nttcom/macos-virtualizationrs-rust-bindings-for-virtualizationframework" target="_blank" rel="noopener noreferrer"
+                        | macOS の仮想化技術について 〜 virtualization-rs Rust bindings for Virtualization.framework 〜
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -561,7 +589,7 @@ html lang="ja"
                           small （NTT コミュニケーションズ）
                         p
                           small イノベーションセンターテクノロジー部門所属。クラウド・ハイブリッドクラウドや機械学習基盤に関する業務に従事しております。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .card.modal-link.shadow.animate__animated.animate__fadeInRight.wow data-bs-toggle="modal" data-bs-target="#modal-1530"
@@ -646,7 +674,7 @@ html lang="ja"
                           small （NTT テクノクロス）
                         p
                           small BI ツールを用いた分析システム開発を日々奮闘中。最近 Elasticsearch も始めました！
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row.mb-4
@@ -702,6 +730,12 @@ html lang="ja"
                       li
                         | リモートにおけるペアプログラミングの環境や知見
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-speaker-deck.me-2
+                      | 資料
+                    p.lh-lg.mb-4
+                      a href="https://speakerdeck.com/hanasuke/pair-programming-with-wonderful-newcomer" target="_blank" rel="noopener noreferrer"
+                        | この素晴らしい新入社員とペアプロを！ / Pair-programming with wonderful newcomer!
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -713,7 +747,7 @@ html lang="ja"
                           small （NTTリミテッド・ジャパン）
                         p
                           small 企業向けクラウドサービスである ECL2.0 の Baremetal Server / Dedicated Hypervisor 開発チームに所属。日々物理サーバと戯れながら生きてます。趣味で社内イベントや研修などに首を突っ込んだりもしています。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .card.lightning-talk.animate__animated.animate__fadeInRight.wow
@@ -768,7 +802,7 @@ html lang="ja"
                           span.fw-bold 山田 真徳
                         p
                           small AI Security の研究者。趣味で株売買 AI 作ってます！
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .modal.fade#modal-1630-02 tabindex="-1" aria-labelledby="modal-1630-label-02" aria-hidden="true"
@@ -807,7 +841,7 @@ html lang="ja"
                           small （NTT 東日本）
                         p
                           small 高度化推進部 技術戦略部門にて無線・ローカル 5G の開発業務に従事。OSS の 5G モバイルコア（5GC）や無線アクセスネットワーク（RAN）に興味があります。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .modal.fade#modal-1630-03 tabindex="-1" aria-labelledby="modal-1630-label-03" aria-hidden="true"
@@ -839,7 +873,7 @@ html lang="ja"
                           span.fw-bold 古市 昌弘
                         p
                           small もともとは PoC とかの構築開発をしていたがいつのまにかセキュリティに。はたらけどはたらけど状態。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
             .modal.fade#modal-1630-04 tabindex="-1" aria-labelledby="modal-1630-label-04" aria-hidden="true"
@@ -864,6 +898,12 @@ html lang="ja"
                         i.fas.fa-hashtag.me-1
                         | VR
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-speaker-deck.me-2
+                      | 資料
+                    p.lh-lg.mb-4
+                      a href="https://speakerdeck.com/khrd/ratukushe-ji-tutemian-dao-nafalsedevrtuteyatudehe-tokasitemita" target="_blank" rel="noopener noreferrer"
+                        | ラック設計って面倒なので VR ってやつで何とかしてみた
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -875,7 +915,7 @@ html lang="ja"
                           small （NTT コミュニケーションズ）
                         p
                           small 社内の k8s GPU 基盤を運用しつつ新卒研修やイベント企画など色んな事にも顔を出したりしている。最近の悩みは趣味が多すぎて時間が足りない事。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
         .row
@@ -906,6 +946,12 @@ html lang="ja"
                         i.fas.fa-layer-group.me-1
                         | 初級
                     p.line-horizontal.line-horizontal-right.mb-4
+                      i.fab.fa-lg.fa-speaker-deck.me-2
+                      | 資料
+                    p.lh-lg.mb-4
+                      a href="https://speakerdeck.com/mahito/ntt-tech-conference-number-5-closing-keynote" target="_blank" rel="noopener noreferrer"
+                        | NTT Tech Conference #5 - Closing Keynote
+                    p.line-horizontal.line-horizontal-right.mb-4
                       i.fas.fa-lg.fa-user.me-2
                       | 講演者
                     .row.mb-4
@@ -917,7 +963,7 @@ html lang="ja"
                           small （NTT コミュニケーションズ）
                         p
                           small クラウド関連の OSS 調査／検証の傍ら、NTT グループのエンジニアたちとイベント開催やはたらき方の改善に取り組んでいます。最近は Chaos Engineering がお気に入り。
-                    button.btn.btn-sm.btn-secondary type="button" data-bs-dismiss="modal" aria-label="close"
+                    button.btn.btn-sm.btn-secondary.shadow type="button" data-bs-dismiss="modal" aria-label="close"
                       i.fas.fa-times.me-2
                       | 閉じる
       .section.container#speakers
