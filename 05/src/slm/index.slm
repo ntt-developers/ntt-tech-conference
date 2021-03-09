@@ -32,6 +32,10 @@ html lang="ja"
                 i.fas.fa-lg.fa-file-signature.me-2
                 | Registration
             li.nav-item.me-3
+              a.nav-link href="#archive"
+                i.fas.fa-lg.fa-film.me-2
+                | Archive
+            li.nav-item.me-3
               a.nav-link href="#timetable"
                 i.fas.fa-lg.fa-calendar-alt.me-2
                 | Timetable
@@ -49,6 +53,10 @@ html lang="ja"
           a.nav-link href="#registration"
             i.fas.fa-lg.fa-file-signature.me-2
             | Registration
+        li.nav-item.me-3
+          a.nav-link href="#archive"
+            i.fas.fa-lg.fa-film.me-2
+            | Archive
         li.nav-item.me-3
           a.nav-link href="#timetable"
             i.fas.fa-lg.fa-calendar-alt.me-2
@@ -100,6 +108,17 @@ html lang="ja"
           | NTT グループのソフトウェアエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか？
         a.btn.btn-md.btn-secondary.shadow href="https://ntt-techconf.connpass.com/event/203831/" role="button" target="_blank" rel="noopener noreferrer"
           span.fw-bold connpass で事前登録する
+          i.fas.fa-lg.fa-external-link-square-alt.ms-2
+      .section.container#archive
+        h1.line-horizontal.line-horizontal-right.mb-4
+          i.fas.fa-film.me-3
+          span.section-title Archive
+        p.lh-lg.mb-4
+          | 講演の動画を YouTube で視聴可能です（講演の資料はタイムテーブルをご覧ください）。
+          br
+          | 現段階で公開されていないものについては講演者の意向により非公開となっております。
+        a.btn.btn-md.btn-secondary.shadow href="https://www.youtube.com/watch?v=y5AQbo8tMlE" role="button" target="_blank" rel="noopener noreferrer"
+          span.fw-bold YouTube で視聴する
           i.fas.fa-lg.fa-external-link-square-alt.ms-2
       .section.container#timetable
         h1.line-horizontal.line-horizontal-right.mb-4
