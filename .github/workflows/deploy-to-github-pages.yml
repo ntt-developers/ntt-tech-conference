@@ -21,7 +21,7 @@ jobs:
             ${{ runner.os }}-node-
       - name: npm ci
         run: |
-          npm ci
+          npm ci --production
         working-directory: ${{ env.NUMBER }}
       - name: npm run build
         run: |
