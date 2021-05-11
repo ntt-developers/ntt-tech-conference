@@ -16,14 +16,16 @@
     "url": "https://github.com/ntt-developers/ntt-tech-conference/issues"
   },
   "homepage": "https://github.com/ntt-developers/ntt-tech-conference/tree/master/05",
-  "devDependencies": {
+  "dependencies": {
     "fibers": "^5.0.0",
-    "firebase-tools": "^9.3.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-slm": "^1.2.3",
-    "sass": "^1.32.6"
+    "sass": "^1.32.12"
+  },
+  "devDependencies": {
+    "firebase-tools": "^9.10.0"
   }
 }
