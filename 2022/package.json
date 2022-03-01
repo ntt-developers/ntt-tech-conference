@@ -1,0 +1,39 @@
+{
+  "name": "ntt-tech-conference",
+  "version": "1.0.0",
+  "description": "https://ntt-developers.github.io/ntt-tech-conference/2022/",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "deploy": "",
+    "preview": "gulp preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntt-developers/ntt-tech-conference.git"
+  },
+  "author": "NTT Developers",
+  "bugs": {
+    "url": "https://github.com/ntt-developers/ntt-tech-conference/issues"
+  },
+  "homepage": "https://github.com/ntt-developers/ntt-tech-conference#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-slm": "^1.2.3",
+    "gulp-uglify": "^3.0.2",
+    "js-yaml": "^4.1.0",
+    "musubii": "^7.1.0",
+    "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^10.2.1",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
+    "glob-parent": "^5.1.2"
+  }
+}

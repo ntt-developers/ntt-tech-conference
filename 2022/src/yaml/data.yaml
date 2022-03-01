@@ -1,0 +1,171 @@
+---
+about:
+  date: 2022年3月23日 (水) 13:15 〜 18:00
+  description: |
+    NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
+    NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+  fee: 無料 (事前登録制)
+  organizer: NTT Developers
+  place: オンライン
+code_of_conduct:
+  description: |
+    以下の行為は禁止します。
+    これらに該当すると見なされる行為をされた場合、ご退場いただく場合がございますので、予めご確認ください。
+  policies:
+    - 個人、宗教団体、人材会社等による勧誘行為、宣伝行為、ヘッドハンティングまたはこれに類似する行為
+    - 営利を目的とした営業行為、宣伝行為、またはこれに類似する行為
+    - 過度な大声、騒音、各種ハラスメント等、他の参加者の迷惑になる行為
+    - 法令に違反する、またはそのおそれのある行為
+    - その他、不適切と主催者が判断する行為、目的での参加
+contact_us:
+  description: |
+    本イベントに関するお問い合わせ先は以下となります。
+  email_address: techconf-staff@ntt.com
+meta:
+  copyright: 2022 NTT Developers
+  numbering: 2022
+ogp:
+  description: NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
+  image: images/banner.png
+registration:
+  description: |
+    NTT Tech Conference への参加には事前登録が必要です。
+    NTT グループのエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか?
+  forms:
+    - session_types:
+        - Hands-on
+        - Workshop
+      url: https://ntt-techconf.connpass.com/event/241250/
+    - session_types:
+        - Presentation
+      url: https://ntt-techconf.connpass.com/event/241061/
+session_types:
+  - description: |
+      特定テーマに対して参加者に実際に手を動かしてもらうことで技術を学び取得する。
+    is_exclusive: true
+    name: Hands-on
+    timetable_style: list
+  - description: |
+      特定のテーマに対してグループワークを通じて学びを取得する。
+    is_exclusive: true
+    name: Workshop
+    timetable_style: list
+  - description: |
+      発表者による特定テーマに関する発表・質疑応答を行う。
+    is_exclusive: false
+    name: Presentation
+    timetable_style: table
+sessions:
+  - begin_at: 09:00
+    end_at: 12:00
+    name: Kerberos さんは、コミュ症です。
+    room: Hands-on 1
+    type: Hands-on
+  - begin_at: 09:30
+    end_at: 11:30
+    name: k8s 中級者向けハンズオン
+    room: Hands-on 2
+    type: Hands-on
+  - begin_at: 10:00
+    end_at: 11:05
+    name: デザイン思考の鍵「ペルソナ」をつくろう!
+    room: Workshop
+    type: Workshop
+  - begin_at: 13:15
+    end_at: null
+    name: Opening
+    room: Track 1
+    type: Presentation
+  - begin_at: 13:30
+    end_at: null
+    name: TBA
+    room: Track 1
+    type: Presentation
+  - begin_at: 14:05
+    end_at: 14:35
+    name: コロナ禍で失われた人の絆を取り戻せ! 社員が真剣に語り合う IC カタリバの取り組み
+    room: Track 1
+    type: Presentation
+  - begin_at: 14:05
+    end_at: 14:35
+    name: Docker から containerd への移行
+    room: Track 2
+    type: Presentation
+  - begin_at: 14:40
+    end_at: 15:10
+    name: 海外活動を通じて得た英語の学び方
+    room: Track 1
+    type: Presentation
+  - begin_at: 14:40
+    end_at: 15:10
+    name: COTOHA VA における GITOPS の取り組み
+    room: Track 2
+    type: Presentation
+  - begin_at: 15:15
+    end_at: 15:45
+    name: R&D プロジェクトでスクラムでのアジャイル開発を 1 年間やってみて良かった点と悪かった点
+    room: Track 1
+    type: Presentation
+  - begin_at: 15:15
+    end_at: 15:45
+    name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について
+    room: Track 2
+    type: Presentation
+  - begin_at: 15:50
+    end_at: 16:20
+    name: "LatteArt : テスト活動を収集・分析・可視化する NTT 発の OSS"
+    room: Track 1
+    type: Presentation
+  - begin_at: 15:50
+    end_at: 16:20
+    name: 大規模網の運用・検証業務改善を実現するネットワークコントローラの開発
+    room: Track 2
+    type: Presentation
+  - begin_at: 16:25
+    end_at: 16:55
+    name: SIer で幸せな技術キャリアを築くために
+    room: Track 1
+    type: Presentation
+  - begin_at: 16:25
+    end_at: 16:55
+    name: NW 運用におけるモデル定義と Reconciliation Loop への挑戦
+    room: Track 2
+    type: Presentation
+  - begin_at: 17:10
+    end_at: 17:40
+    name: とある AWS サービス の検証報告
+    room: Track 1
+    type: Presentation
+  - begin_at: 17:10
+    end_at: 17:40
+    name: Lightning Talks
+    room: Track 2
+    type: Presentation
+  - begin_at: 17:45
+    end_at: null
+    name: Closing
+    room: Track 1
+    type: Presentation
+timetable:
+  break_time_min: 5
+  rooms:
+    - name: Hands-on 1
+      used_by: Hands-on
+    - name: Hands-on 2
+      used_by: Hands-on
+    - name: Workshop
+      used_by: Workshop
+    - name: Track 1
+      used_by: Presentation
+    - name: Track 2
+      used_by: Presentation
+  windows:
+    - begin_at: 13:15
+    - begin_at: 13:30
+    - begin_at: 14:05
+    - begin_at: 14:40
+    - begin_at: 15:15
+    - begin_at: 15:50
+    - begin_at: 16:25
+    - begin_at: 17:10
+    - begin_at: 17:45
