@@ -17,3 +17,4 @@ See `.github/workflows`
 
 - [MUSUBii](https://musubii.qranoko.jp/)
 - [Font Awesome](https://fontawesome.com/)
+- [Tabby](https://github.com/cferdinandi/tabby)
