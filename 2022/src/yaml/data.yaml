@@ -1,10 +1,21 @@
 ---
 about:
-  date: 2022年3月23日 (水) 13:15 〜 18:00
+  date: 2022年3月23日 (水)
   description: |
     NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
     NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
   fee: 無料 (事前登録制)
+  parts:
+    - begin_at: 09:00
+      end_at: 12:00
+      session_types:
+        - Hands-on
+        - Workshop
+    - begin_at: 13:15
+      end_at: 18:00
+      session_types:
+        - Presentation
+      time: 13:15 〜 18:00
   organizer: NTT Developers
   place: オンライン
 code_of_conduct:

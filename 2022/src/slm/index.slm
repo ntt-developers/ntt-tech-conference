@@ -52,6 +52,10 @@ html lang="ja"
                     | 名称 : NTT Tech Conference ${this.meta.numbering}
                   li class="item"
                     | 日時 : ${this.about.date}
+                    ul class="list is-disc"
+                      - for part of this.about.parts
+                        li class="item"
+                          | ${part.session_types.join(" / ")} : ${part.begin_at} 〜 ${part.end_at}
                   li class="item"
                     | 会場 : ${this.about.place}
                   li class="item"
