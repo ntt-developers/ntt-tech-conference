@@ -29,7 +29,7 @@ ogp:
   image: images/banner.png
 registration:
   description: |
-    NTT Tech Conference への参加には事前登録が必要です。
+    NTT Tech Conference への参加には、事前に参加登録が必要です。
     NTT グループのエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか?
   forms:
     - session_types:

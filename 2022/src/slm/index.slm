@@ -75,7 +75,7 @@ html lang="ja"
               - for form of this.registration.forms
                 a class="button is-plain is-primary  is-margin-right" href="${form.url}" rel="noopener noreferrer" target="_blank"
                   span class="text is-strong"
-                    | ${form.session_types.join(" / ")} に事前登録する
+                    | ${form.session_types.join(" / ")} に参加登録する
                     i class="fa-solid fa-arrow-up-right-from-square is-margin-left-xs"
       / Timetable
       section class="section is-feature is-wide-lg"
