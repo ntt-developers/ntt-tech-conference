@@ -26,6 +26,8 @@ html lang="ja"
         div class="inner is-padding-horizontal"
           div class="grid is-center"
             div class="column"
+              h2 class="is-none"
+                | Logo
               svg class="image is-logo" viewBox="0 0 400 150"
                 use xlink:href="images/logo.svg#logo"
       / About
@@ -112,18 +114,19 @@ html lang="ja"
                     | ${session_type.name}
                   p class="text is-line-height-xl"
                     | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
-                  ul data-tabs=""
-                    - for room of rooms
-                      - if rooms.findIndex(r => r.name === room.name) === 0
-                        li
-                          a href="#${room.name.replace(' ', '-')}" data-tabby-default=""
-                            span class="text is-strong"
-                              | ${room.name}
-                      - else
-                        li
-                          a href="#${room.name.replace(' ', '-')}"
-                            span class="text is-strong"
-                              | ${room.name}
+                  nav
+                    ul data-tabs=""
+                      - for room of rooms
+                        - if rooms.findIndex(r => r.name === room.name) === 0
+                          li
+                            a href="#${room.name.replace(' ', '-')}" data-tabby-default=""
+                              span class="text is-strong"
+                                | ${room.name}
+                        - else
+                          li
+                            a href="#${room.name.replace(' ', '-')}"
+                              span class="text is-strong"
+                                | ${room.name}
                   - for room of rooms
                     div class="table-wrap" id="${room.name.replace(' ', '-')}"
                       table class="table is-border is-stripe"
@@ -137,19 +140,19 @@ html lang="ja"
                                 | セッション
                         tbody
                           - for window of this.timetable.windows
+                            - session = this.sessions.find(s => s.begin_at === window.begin_at && s.room === room.name)
                             tr
                               td
                                 span class="text is-nowrap"
                                   | ${window.begin_at}
-                                - session = this.sessions.find(s => s.begin_at === window.begin_at && s.room === room.name)
-                                - if session === undefined
-                                  td
-                                    span class="text is-nowrap"
-                                      | &mdash;
-                                - else
-                                  td
-                                    span class="text is-nowrap"
-                                      | ${session.name}
+                              - if session === undefined
+                                td
+                                  span class="text is-nowrap"
+                                    | &mdash;
+                              - else
+                                td
+                                  span class="text is-nowrap"
+                                    | ${session.name}
       / Code of Conduct
       section class="section is-feature is-wide-lg"
         div class="inner is-padding-horizontal"
@@ -197,7 +200,5 @@ html lang="ja"
               a href="https://github.com/ntt-developers/ntt-tech-conference/tree/master/${this.meta.numbering}" rel="noopener noreferrer" target="_blank"
                 i class="fa-brands fa-github is-margin-right-xs"
                 | GitHub
-javascript:
-  document.addEventListener("DOMContentLoaded", () => {
-    const tabs = new Tabby("[data-tabs]");
-  });
+    script
+      | document.addEventListener("DOMContentLoaded", () => new Tabby("[data-tabs]"));
