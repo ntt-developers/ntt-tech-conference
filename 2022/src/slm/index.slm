@@ -87,7 +87,7 @@ html lang="ja"
                   | Timetable
             div class="column is-12"
               div class="box"
-                ul class="list is-kome is-line-height-xl"
+                ul class="list is-kome"
                   li class="item is-padding-left-xs"
                     - exclusive_session_types = this.session_types.filter(s => s.is_exclusive)
                     | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つのみ参加可能です。
