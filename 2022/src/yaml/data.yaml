@@ -157,6 +157,15 @@ sessions:
     name: Closing
     room: Track 1
     type: Presentation
+settings:
+  fontawesome:
+    # domains:
+    #   - ntt-developers.github.io
+    #   - *.web.app (Firebase Hosting)
+    # format: svg
+    # plan: pro
+    # version: 6.x
+    kit: e298378c10
 timetable:
   break_time_min: 5
   rooms:

@@ -2,11 +2,11 @@ const toggleThemeIcon = (theme) => {
   const themeIcon = document.getElementById("theme-icon");
 
   if (theme === "light") {
-    themeIcon.classList.add("fa-regular");
-    themeIcon.classList.remove("fa-solid");
+    themeIcon.classList.remove("fa-sun-bright");
+    themeIcon.classList.add("fa-moon");
   } else if (theme === "dark") {
-    themeIcon.classList.add("fa-solid");
-    themeIcon.classList.remove("fa-regular");
+    themeIcon.classList.remove("fa-moon");
+    themeIcon.classList.add("fa-sun-bright");
   }
 };
 

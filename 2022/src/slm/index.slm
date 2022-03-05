@@ -13,17 +13,13 @@ html lang="ja"
     meta property="og:title" content="NTT Tech Conference ${this.meta.numbering}"
     meta property="og:type" content="website"
     meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference/${this.meta.numbering}/"
-    / This kit only work on below domains.
-    /   - ntt-developers.github.io
-    /   - *.web.app (Firebase Hosting)
-    script defer="" src="https://kit.fontawesome.com/d6d7188204.js"
+    script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
     script defer="" src="app.min.js"
   body
     header class="header is-padding-horizontal-safe"
       div class="box is-actions is-top-right"
         button class="button is-plain is-bg-body is-circle" onclick="toggleTheme()"
-          span class="text is-toggle-info"
-            i class="fa-regular fa-moon fa-lg" id="theme-icon"
+          i class="fa-solid fa-lg" id="theme-icon"
     main class="main is-padding-horizontal-safe"
       / Logo
       section class="section is-hero"
