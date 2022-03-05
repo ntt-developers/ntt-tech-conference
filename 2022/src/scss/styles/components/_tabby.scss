@@ -4,13 +4,11 @@
 //--------------------------------------------------
 
 [role="tablist"] {
-  border-bottom: $global-border-width solid $convert-border;
+  border-bottom: $button-border-width solid $button-outline-primary-border-color;
   list-style: none;
-  margin: 0;
-  padding: 0;
 
   li {
-    display: inline-block;
+    display: inline-flex;
 
     &:not(:first-child) {
       [role="tab"] {
@@ -21,24 +19,27 @@
 }
 
 [role="tab"] {
-  border: $global-border-width solid transparent;
-  border-top-left-radius: $radius-md;
-  border-top-right-radius: $radius-md;
-  display: inline-block;
-  margin-bottom: -$global-border-width;
-  padding: 0.5em 1em;
+  border: $button-border-width solid transparent;
+  border-top-left-radius: $button-border-radius;
+  border-top-right-radius: $button-border-radius;
+  color: $button-outline-primary-color;
+  display: inline-flex;
+  margin-bottom: -$button-border-width;
+  padding: $button-padding;
   text-decoration: none;
+  transition: $button-transition;
+
+  &:hover:not([aria-selected="true"]) {
+    background-color: $button-outline-primary-hover-background-color;
+    border-color: transparent;
+    color: $button-paint-color;
+  }
 
   &[aria-selected="true"] {
     border-bottom-color: $convert-body-background-color;
-    border-left-color: $convert-border;
-    border-right-color: $convert-border;
-    border-top-color: $convert-border;
-  }
-
-  &:hover:not([aria-selected="true"]) {
-    background-color: $convert-background-2;
-    border-color: $convert-border;
+    border-left-color: $button-outline-primary-border-color;
+    border-right-color: $button-outline-primary-border-color;
+    border-top-color: $button-outline-primary-border-color;
   }
 }
 

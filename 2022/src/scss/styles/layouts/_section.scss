@@ -14,10 +14,6 @@
         &[aria-selected="true"] {
           border-bottom-color: $convert-section-background-color-grey-wind;
         }
-
-        &:hover:not([aria-selected="true"]) {
-          background-color: $convert-body-background-color;
-        }
       }
     }
   }
