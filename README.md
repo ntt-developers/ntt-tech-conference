@@ -5,3 +5,4 @@
 * [NTT Tech Conference #03](https://ntt-developers.github.io/ntt-tech-conference/03/)
 * [NTT Tech Conference #04](https://ntt-developers.github.io/ntt-tech-conference/04/)
 * [NTT Tech Conference #05](https://ntt-developers.github.io/ntt-tech-conference/05/)
+* [NTT Tech Conference 2022](https://ntt-developers.github.io/ntt-tech-conference/2022/)

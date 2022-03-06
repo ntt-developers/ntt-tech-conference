@@ -1,0 +1,203 @@
+doctype html
+html lang="ja"
+  head
+    title NTT Tech Conference ${this.meta.numbering}
+    link rel="preconnect" href="https://fonts.gstatic.com"
+    link rel="stylesheet" type="text/css" href="app.min.css"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta property="og:description" content=this.ogp.description
+    meta property="og:image" content="https://ntt-developers.github.io/ntt-tech-conference/${this.meta.numbering}/${this.ogp.image}"
+    meta property="og:site_name" content="NTT Tech Conference ${this.meta.numbering}"
+    meta property="og:title" content="NTT Tech Conference ${this.meta.numbering}"
+    meta property="og:type" content="website"
+    meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference/${this.meta.numbering}/"
+    script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
+    script defer="" src="app.min.js"
+  body
+    header class="header is-padding-horizontal-safe"
+      div class="box is-actions is-top-right"
+        button class="button is-plain is-bg-body is-circle" onclick="toggleTheme()"
+          i class="fa-solid fa-lg" id="theme-icon"
+    main class="main is-padding-horizontal-safe"
+      / Logo
+      section class="section is-hero"
+        div class="inner is-padding-horizontal"
+          div class="grid is-center"
+            div class="column"
+              h2 class="is-none"
+                | Logo
+              svg class="image is-logo" viewBox="0 0 400 150"
+                use xlink:href="images/logo.svg#logo"
+      / About
+      section class="section is-feature is-wide-lg"
+        div class="inner is-padding-horizontal"
+          div class="grid is-gap-xl"
+            div class="column is-12"
+              div class="box"
+                h2 class="text is-strong is-xl"
+                  | About
+            div class="column is-12 is-desktop-6"
+              div class="box is-space"
+                - for line of this.about.description.trim().split(/\r\n|\n/)
+                  p class="text is-line-height-xl"
+                    | ${line}
+            div class="column is-12 is-desktop-6"
+              div class="box"
+                ul class="list is-disc"
+                  li class="item"
+                    | 名称 : NTT Tech Conference ${this.meta.numbering}
+                  li class="item"
+                    | 日時 : ${this.about.date}
+                    ul class="list is-disc"
+                      - for part of this.about.parts
+                        li class="item"
+                          | ${part.session_types.join(" / ")} : ${part.begin_at} 〜 ${part.end_at}
+                  li class="item"
+                    | 会場 : ${this.about.place}
+                  li class="item"
+                    | 主催 : ${this.about.organizer}
+                  li class="item"
+                    | 参加費 : ${this.about.fee}
+      / Registration
+      section class="section is-feature is-wide-lg"
+        div class="inner is-padding-horizontal"
+          div class="grid is-gap-xl"
+            div class="column is-12"
+              div class="box"
+                h2 class="text is-strong is-xl"
+                  | Registration
+            div class="column is-12 is-desktop-6"
+              div class="box is-space"
+                - for line of this.registration.description.trim().split(/\r\n|\n/)
+                  p class="text is-line-height-xl"
+                    | ${line}
+            div class="column is-12 is-desktop-6 is-space"
+              - for form of this.registration.forms
+                a class="button is-plain is-primary  is-margin-right" href="${form.url}" rel="noopener noreferrer" target="_blank"
+                  span class="text is-strong"
+                    | ${form.session_types.join(" / ")} に参加登録する
+                    i class="fa-solid fa-arrow-up-right-from-square is-margin-left-xs"
+      / Timetable
+      section class="section is-feature is-wide-lg"
+        div class="inner is-padding-horizontal"
+          div class="grid is-gap-xl"
+            div class="column is-12"
+              div class="box"
+                h2 class="text is-strong is-xl"
+                  | Timetable
+            div class="column is-12"
+              div class="box"
+                ul class="list is-kome"
+                  li class="item is-padding-left-xs"
+                    - exclusive_session_types = this.session_types.filter(s => s.is_exclusive)
+                    | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つのみ参加可能です。
+                  li class="item is-padding-left-xs"
+                    | タイムテーブルは変更になる可能性があります。
+            - for session_type of this.session_types
+              - rooms = this.timetable.rooms.filter(r => r.used_by === session_type.name)
+              - if session_type.timetable_style === "list"
+                div class="column is-12 is-fablet-6 is-space"
+                  h3 class="text is-strong is-lg"
+                    | ${session_type.name}
+                  - for room of rooms
+                    - session = this.sessions.find(s => s.room === room.name)
+                    h4 class="text is-strong is-md"
+                      | ${session.name}
+                    ul class="list is-disc"
+                      li class="item"
+                        | 開催時刻 : ${session.begin_at} 〜 ${session.end_at}
+              - else if session_type.timetable_style === "table"
+                div class="column is-12 is-space"
+                  h3 class="text is-strong is-lg"
+                    | ${session_type.name}
+                  p class="text is-line-height-xl"
+                    | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
+                  nav
+                    ul data-tabs=""
+                      - for room of rooms
+                        - if rooms.findIndex(r => r.name === room.name) === 0
+                          li
+                            a href="#${room.name.replace(' ', '-')}" data-tabby-default=""
+                              span class="text is-strong"
+                                | ${room.name}
+                        - else
+                          li
+                            a href="#${room.name.replace(' ', '-')}"
+                              span class="text is-strong"
+                                | ${room.name}
+                  - for room of rooms
+                    div class="table-wrap" id="${room.name.replace(' ', '-')}"
+                      table class="table is-border is-stripe"
+                        thead
+                          tr class="box"
+                            th
+                              span class="text is-strong is-nowrap"
+                                | 開始時刻
+                            th
+                              span class="text is-strong is-nowrap"
+                                | セッション
+                        tbody
+                          - for window of this.timetable.windows
+                            - session = this.sessions.find(s => s.begin_at === window.begin_at && s.room === room.name)
+                            tr
+                              td
+                                span class="text is-nowrap"
+                                  | ${window.begin_at}
+                              - if session === undefined
+                                td
+                                  span class="text is-nowrap"
+                                    | &mdash;
+                              - else
+                                td
+                                  span class="text is-nowrap"
+                                    | ${session.name}
+      / Code of Conduct
+      section class="section is-feature is-wide-lg"
+        div class="inner is-padding-horizontal"
+          div class="grid is-gap-xl"
+            div class="column is-12"
+              div class="box"
+                h2 class="text is-strong is-xl"
+                  | Code of Conduct
+            div class="column is-12"
+              div class="box is-space"
+                - for line of this.code_of_conduct.description.trim().split(/\r\n|\n/)
+                  p class="text is-line-height-xl"
+                    | ${line}
+            div class="column is-12"
+              div class="box"
+                ul class="list is-disc"
+                  - for policy of this.code_of_conduct.policies
+                    li class="item"
+                      | ${policy}
+      / Contact Us
+      section class="section is-feature is-wide-lg"
+        div class="inner is-padding-horizontal"
+          div class="grid is-gap-xl"
+            div class="column is-12"
+              div class="box"
+                h2 class="text is-strong is-xl"
+                  | Contact Us
+            div class="column is-12"
+              div class="box is-space"
+                - for line of this.contact_us.description.trim().split(/\r\n|\n/)
+                  p class="text is-line-height-xl"
+                    | ${line}
+                p class="text is-line-height-xl"
+                  i class="fa-solid fa-envelope is-margin-right-xs"
+                  | ${this.contact_us.email_address}
+    footer class="footer is-padding-horizontal-safe"
+      div class="is-padding-horizontal"
+        div class="grid is-center"
+          div class="column"
+            p class="text"
+              i class="fa-regular fa-copyright is-margin-right-xs"
+              | ${this.meta.copyright}
+              span class="is-margin-horizontal"
+                | /
+              a href="https://github.com/ntt-developers/ntt-tech-conference/tree/master/${this.meta.numbering}" rel="noopener noreferrer" target="_blank"
+                i class="fa-brands fa-github is-margin-right-xs"
+                | GitHub
+    script
+      | document.addEventListener("DOMContentLoaded", () => new Tabby("[data-tabs]"));

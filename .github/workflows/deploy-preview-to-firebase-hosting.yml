@@ -3,64 +3,118 @@ on:
   pull_request:
     branches:
       - master
+    types:
+      - opened
+      - synchronize
+env:
+  NODE_VERSION: '17'
+  PREVIEW_EXPIRES: 7d
+  WORKING_DIRECTORY: '2022'
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
-    env:
-      EXPIRES: 7d
-      NUMBER: "05"
     steps:
+      # https://github.com/actions/checkout
       - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
       - uses: actions/setup-node@v2
         with:
-          node-version: "15"
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles(format('{0}/package-lock.json', env.NUMBER)) }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
         run: |
-          npm ci
-        working-directory: ${{ env.NUMBER }}
+          npm ci --production
+        working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
         run: |
           npm run build
-        working-directory: ${{ env.NUMBER }}
-      - name: firebase hosting:channel:create
-        continue-on-error: true
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+      # https://github.com/actions/upload-artifact
+      - uses: actions/upload-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: ${{ env.WORKING_DIRECTORY }}/public/*
+          retention-days: 1
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
+      # https://github.com/actions/download-artifact
+      - uses: actions/download-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: ${{ env.WORKING_DIRECTORY }}/public
+      - name: npm install
         run: |
-          $(npm bin)/firebase hosting:channel:create ${{ github.head_ref }} --token ${{ secrets.FIREBASE_TOKEN }}
-        working-directory: ${{ env.NUMBER }}
+          npm install -g firebase-tools@$(node -p -e "require('./${{ env.WORKING_DIRECTORY }}/package.json').devDependencies['firebase-tools']")
+      - name: firebase hosting:channel:create
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          firebase hosting:channel:create --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+        continue-on-error: true
+        working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: firebase hosting:channel:open
         id: firebase_hosting_channel_open
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          url=$($(npm bin)/firebase hosting:channel:open ${channel} --token ${{ secrets.FIREBASE_TOKEN }} | awk '{ print $3 }')
+          url=$(firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
           echo "::set-output name=url::${url}"
-        working-directory: ${{ env.NUMBER }}
+        working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: sed
         env:
           URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
         run: |
-          sed -i -e "s|https://ntt-developers.github.io/ntt-tech-conference/05|${URL}|g" index.html
-        working-directory: ${{ env.NUMBER }}/public
+          sed -i -e "s|https://ntt-developers.github.io/ntt-tech-conference/${{ env.WORKING_DIRECTORY }}|${URL}|g" public/index.html
+        working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: firebase hosting:channel:deploy
         run: |
-          $(npm bin)/firebase hosting:channel:deploy ${{ github.head_ref }} -e ${{ env.EXPIRES }} --token ${{ secrets.FIREBASE_TOKEN }}
-        working-directory: ${{ env.NUMBER }}
-      - uses: actions/github-script@v3
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          firebase hosting:channel:deploy -e ${{ env.PREVIEW_EXPIRES }} --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+  notify:
+    runs-on: ubuntu-latest
+    needs:
+      - deploy
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
+      - name: npm install
+        run: npm install -g firebase-tools@$(node -p -e "require('./package.json').devDependencies['firebase-tools']")
+      - name: firebase hosting:channel:open
+        id: firebase_hosting_channel_open
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          url=$(firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
+          echo "::set-output name=url::${url}"
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+      # https://github.com/actions/github-script
+      - uses: actions/github-script@v5
         env:
           URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
         with:
           script: |
             const body = `Preview: ${process.env.URL}`
 
-            const options = github.issues.listComments.endpoint.merge({
-              issue_number: context.issue.number,
+            const options = github.rest.issues.listComments.endpoint.merge({
               owner: context.repo.owner,
-              repo: context.repo.repo
+              repo: context.repo.repo,
+              issue_number: context.issue.number
             })
 
             const comments = await github.paginate(options)
@@ -70,9 +124,9 @@ jobs:
               return
             }
 
-            await github.issues.createComment({
-              issue_number: context.issue.number,
+            await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
+              issue_number: context.issue.number,
               body: body
             })

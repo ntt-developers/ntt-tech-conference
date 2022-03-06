@@ -3,52 +3,61 @@ on:
   push:
     branches:
       - master
+env:
+  NODE_VERSION: '17'
+  WORKING_DIRECTORY: '2022'
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
-    env:
-      NUMBER: "05"
     steps:
+      # https://github.com/actions/checkout
       - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
       - uses: actions/setup-node@v2
         with:
-          node-version: "15"
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles(format('{0}/package-lock.json', env.NUMBER)) }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
         run: |
           npm ci --production
-        working-directory: ${{ env.NUMBER }}
+        working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
         run: |
           npm run build
-        working-directory: ${{ env.NUMBER }}
-      - name: mkdir & cp
-        run: |
-          rm -rf ${NUMBER}_tmp
-          mkdir ${NUMBER}_tmp
-          cp -pr ${NUMBER}/public/* ${NUMBER}_tmp
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+      # https://github.com/actions/upload-artifact
+      - uses: actions/upload-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: ${{ env.WORKING_DIRECTORY }}/public/*
+          retention-days: 1
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
       - name: git config
         run: |
-          git config --local user.email 'ntt-developers@googlegroups.com'
-          git config --local user.name 'NTT Developers'
-      - name: git fetch
+          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config --local user.name "${GITHUB_ACTOR}"
+      - name: git fetch & git checkout
         run: |
           git fetch origin gh-pages
-      - name: git checkout
-        run: |
           git checkout gh-pages
           git checkout ${GITHUB_SHA} README.md
-      - name: mv & git add & git commit
+      - name: rm
         run: |
-          rm -rf ${NUMBER}
-          mv ${NUMBER}_tmp ${NUMBER}
-          git add README.md ${NUMBER}
+          rm -rf ${WORKING_DIRECTORY}
+      # https://github.com/actions/download-artifact
+      - uses: actions/download-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: ${{ env.WORKING_DIRECTORY }}
+      - name: git add & git commit & git push
+        run: |
+          git add README.md ${WORKING_DIRECTORY}
           git commit -a --amend -m 'Automatic build by GitHub Actions'
-      - name: git push
-        run: |
           git push -f origin gh-pages:gh-pages
