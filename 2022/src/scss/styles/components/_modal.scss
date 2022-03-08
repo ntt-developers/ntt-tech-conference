@@ -1,0 +1,142 @@
+//--------------------------------------------------
+// Components: Modal
+// https://gist.github.com/ghosh/4f94cf497d7090359a5c9f81caf60699
+//--------------------------------------------------
+
+$modal-animation-properties: 0.3s cubic-bezier(0, 0, 0.2, 1);
+
+.modal {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &[aria-hidden="false"] {
+    .modal-overlay {
+      animation: modalFadeIn $modal-animation-properties;
+    }
+
+    .modal-dialog {
+      animation: modalSlideIn $modal-animation-properties;
+    }
+  }
+
+  &[aria-hidden="true"] {
+    .modal-overlay {
+      animation: modalFadeOut $modal-animation-properties;
+    }
+
+    .modal-dialog {
+      animation: modalSlideOut $modal-animation-properties;
+    }
+  }
+
+  .modal-overlay {
+    align-items: center;
+    background: $convert-body-color;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    will-change: transform;
+    z-index: $global-z-index-modal-overay;
+  }
+
+  .modal-dialog {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: $meter-md;
+    width: 100%;
+
+    @include fablet() {
+      width: calc(#{$section-inner-width-fablet} / 4 * 3);
+    }
+    @include tablet() {
+      width: calc(#{$section-inner-width-tablet} / 4 * 3);
+    }
+    @include desktop() {
+      width: calc(#{$section-inner-width-desktop} / 3 * 2);
+    }
+    @include wide() {
+      width: calc(#{$section-inner-width-wide} / 3 * 2);
+    }
+
+    .modal-content {
+      max-height: 100%;
+      overflow-y: auto;
+      padding: $meter-xl;
+      width: 100%;
+
+      .modal-close {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .modal-header {
+        margin-bottom: $meter-xl;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          padding-right: calc(#{$meter-md} + 1em);
+        }
+      }
+
+      .modal-body {
+        margin-bottom: $meter-xl;
+      }
+
+      .modal-footer {
+      }
+    }
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalSlideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}

@@ -6,6 +6,7 @@
 @import "bases/_root-light.scss";
 @import "bases/_html.scss";
 
+@import "elements/_badge.scss";
 @import "elements/_button.scss";
 
 @import "layouts/_box.scss";
@@ -15,4 +16,5 @@
 @import "layouts/_section.scss";
 
 @import "components/_image.scss";
-@import "components/_tabby.scss";
+@import "components/_modal.scss";
+@import "components/_tab.scss";
