@@ -260,6 +260,15 @@ html lang="ja"
                         - for requirement of session.requirements
                           li class="item"
                             | ${requirement}
+                    - if session.references && session.references.length > 0
+                      h4 class="text is-strong"
+                        | 参考文献
+                      ul class="list is-disc"
+                        - for reference of session.references
+                          li class="item"
+                            a class="text is-primary is-link" href="${reference.url}" rel="noopener noreferrer" target="_blank"
+                              | ${reference.text}
+                              i class="fa-solid fa-arrow-up-right-from-square is-margin-left-xs"
                     - if session.speakers && session.speakers.length > 0
                       h4 class="text is-strong"
                         | 講演者
