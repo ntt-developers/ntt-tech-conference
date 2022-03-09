@@ -23,6 +23,15 @@
         "strict": false,
         "allow": ["か", "で"]
       },
+      "max-kanji-continuous-len": {
+        "allow": [
+          "科学基礎研究所",
+          "創造科学研究部",
+          "柏野多様脳特別研究室",
+          "物性科学基礎研究所"
+        ],
+        "max": 6
+      },
       "no-exclamation-question-mark": false,
       "sentence-length": {
         "max": 200
