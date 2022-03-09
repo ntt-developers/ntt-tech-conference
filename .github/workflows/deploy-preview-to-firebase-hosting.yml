@@ -7,9 +7,9 @@ on:
       - opened
       - synchronize
 env:
-  NODE_VERSION: '17'
+  NODE_VERSION: "17"
   PREVIEW_EXPIRES: 7d
-  WORKING_DIRECTORY: '2022'
+  WORKING_DIRECTORY: "2022"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
         run: |
-          npm ci --production
+          npm ci
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
         run: |
@@ -36,10 +36,36 @@ jobs:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public/*
           retention-days: 1
-  deploy:
+  lint:
     runs-on: ubuntu-latest
     needs:
       - build
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
+      # https://github.com/actions/download-artifact
+      - uses: actions/download-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: ${{ env.WORKING_DIRECTORY }}/public
+      - name: npm ci
+        run: |
+          npm ci
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+      - name: npm run lint
+        run: |
+          npm run lint
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - lint
     steps:
       # https://github.com/actions/checkout
       - uses: actions/checkout@v2
