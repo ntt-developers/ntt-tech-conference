@@ -269,8 +269,9 @@ html lang="ja"
                           span class="is-sm is-margin-left-xs"
                             | (${speaker.member_of})
                         - if speaker.description
-                          p class="text is-line-height-xl is-sm"
-                            | ${speaker.description}
+                          - for paragraph of speaker.description.split(/<br\s?\/?>/)
+                            p class="text is-line-height-xl is-sm"
+                              | ${paragraph}
                     - if session.talks && session.talks.length > 0
                       ul class="list is-disc"
                         - for talk of session.talks
