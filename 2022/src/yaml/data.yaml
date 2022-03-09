@@ -2,8 +2,10 @@
 about:
   date: 2022年3月23日 (水)
   description: |
-    NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
-    NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発を行うエンジニアがおり、本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+    NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流するためのカンファレンスです。
+    <br />
+    NTT グループ内には各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発をするエンジニアがいます。
+    本イベントではそれらのエンジニアがもつノウハウや悩みを NTT グループ内外のエンジニアと共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
   fee: 無料 (参加登録制)
   parts:
     - begin_at: 09:00
@@ -68,19 +70,90 @@ session_types:
     timetable_style: table
 sessions:
   - begin_at: 09:00
+    description: |
+      Active Directory の Kerberos 認証を利用した攻撃をツールを用いて行います。
+      また、ツールを用いた Windows Event Log の解析についてもデモを行います。
     end_at: 12:00
+    lessons:
+      - Active Directory における攻撃
+      - Kerberos 認証に対するツールを用いた攻撃
+    level: 中級
     name: Kerberos さんは、コミュ症です。
+    preparations:
+      - インターネットへの接続環境
+      - メインメモリが 16GB 程度のパソコン (下記の仮想環境を構築するため)
+      - Oracle VM VirtualBox 環境 (DetectionLab を用いて Active Directory 環境を構築するため)
     room: Hands-on 1
+    speakers:
+      - description: |
+          NTT グループの社員。
+        member_of: NTT アドバンステクノロジ
+        name: 古市 昌弘
+    tags:
+      - OSS
+      - Security
     type: Hands-on
   - begin_at: 09:30
+    description: |
+      本ハンズオンではコンテナオーケストレーションツールである Kubernetes の運用に関わる問題について、E2E (End to End) テストにフォーカスしクラスタ構成のテストを構築する方法を学習します。
+      <br />
+      プログラム (予定) : モニタリングとの違い、Terratest・Ginkgo などについて、クラスタテストの実装、クラスタアップデートとテスト実施。
     end_at: 11:30
-    name: k8s 中級者向けハンズオン
+    lessons:
+      - Kubernetes の運用に役立つクラスタテストのノウハウやツールについて
+    level: 中級
+    name: Kubernetes 中級者向けハンズオン
+    preparations:
+      - インターネットへの接続環境
+      - SSH 接続が可能で、ビデオ会議に参加可能なスペックを有するパソコン
+    requirements:
+      - Kubernetes の基本的なリソースや構成するコンポーネントについて理解していること
+      - Linux の基本的なコマンドを理解していること
+      - 業務や趣味でプログラミング経験があること (演習では Go 言語を利用しますが、Go 言語に対する理解は無くても問題ありません)
     room: Hands-on 2
+    speakers:
+      - description: |
+          イノベーションセンター GPU-k8s PJ 所属。
+        member_of: NTT コミュニケーションズ
+        name: 原田 和明
+    tags:
+      - Cloud
+      - Container
+      - OSS
+      - Programming
     type: Hands-on
   - begin_at: 10:00
+    description: |
+      デザイン思考の鍵となる「ペルソナ」。
+      このペルソナについて、実際にワークショップ内でペルソナをつくる体験を通して、
+      (1) ターゲットとペルソナの違い
+      (2) ペルソナをつくるメリット
+      (3) ペルソナをつくるときのコツは何か?
+      を学んでいきます。
+      <br />
+      Web 会議 (Microsoft Teams もしくは Zoom) でディスカッションしながら Miro を操作してペルソナをつくります。
+      【パソコンからのアクセス】または【スマホかタブレットで Web 会議 + パソコンで Miro を操作】という形で、Web 会議と Miro が同時に使用できる形で接続をお願いします。
+      <br />
+      「聴講のみ (音声によるディスカッションができない方)」は参加をご遠慮ください。
     end_at: 11:05
+    level: 初級
     name: デザイン思考の鍵「ペルソナ」をつくろう!
+    preparations:
+      - インターネットへの接続環境があること
+      - Web 会議 (Microsoft Teams もしくは Zoom) と Miro にアクセスできること
+      - イヤホンマイクなどを使って音声によるディスカッションができる環境であること
     room: Workshop
+    speakers:
+      - description: |
+          大小さまざまなソフトウェア開発、アカウント営業、イントレプレナーを経て、ビジネスと DevOps の一体化するテーマを NTT ソフトウェアイノベーションセンタ (SIC) において研究。
+          現在は、こころを動かす ICT デザイン室において、これまでの知見と UX 、デザイン思考、アジャイル開発などを駆使したこころを動かすサービスデザインに従事。
+        member_of: NTT テクノクロス
+        name: 田中 貴子
+    tags:
+      - Application
+      - DevOps
+      - UI / UX
+      - Use Case
     type: Workshop
   - begin_at: 13:15
     end_at: null
@@ -93,64 +166,292 @@ sessions:
     room: Track 1
     type: Presentation
   - begin_at: 14:05
+    description: |
+      NTT コミュニケーションズ イノベーションセンター (以下、IC) では、コロナ禍で失われた社員同士の横のつながりを新しい形で再構築するため、「IC カタリバ」という取り組みを実施しています。
+      毎週 1 ～ 2 人のスピーカーを迎え、やりがいがあった仕事や失敗談、IC についてどう思うかなど、普段仕事をしているだけではなかなか聞くことができない話や、スピーカー自身の人となりについて深堀りしていく「人を知る」施策についてご紹介します。
     end_at: 14:35
+    lessons:
+      - コロナ禍における人脈形成についての悩みやその悩みへの対策の 1 つとして、実例を学べると思います (たぶん)
+    level: 初級
     name: コロナ禍で失われた人の絆を取り戻せ! 社員が真剣に語り合う IC カタリバの取り組み
     room: Track 1
+    speakers:
+      - description: |
+          2014 年入社、2021 年度現在 8 年目。
+          ネットワークエンジニアとして勤務し、トレイニー制度でシンガポールにも。
+          2018 年より技術戦略部門にて NTT Com における技術戦略の立ち上げ海外でのスタートアップのスカウト活動もしつつ、スタートアップとお客様 / 社内組織を繋ぎ、新規ビジネスの創出に取り組む。
+          新入社員向けの研修の講師を務める中で、新入社員の人脈形成に心を痛める。
+          本業の調査担当分野は Food Tech 。
+        member_of: NTT コミュニケーションズ
+        name: 平尾 明子
+    tags:
+      - 人事育成
+      - 人脈形成
+      - 文化醸成
     type: Presentation
   - begin_at: 14:05
+    description: |
+      従来は Docker がコンテナエンジンとして幅広く利用されてきましたが、最近は Kubernetes が Docker 対応を打ち切るなど、風向きが変わってきました。
+      本セッションでは、Docker に代わって普及しつつあるコンテナエンジンである containerd について、Docker との違いや移行方法を紹介します。
+      P2P でのイメージ配布など、最新の機能についても紹介します。
     end_at: 14:35
+    lessons:
+      - Docker をそのまま使い続けてよいケース、よくないケース (Kubernetes, Docker for Mac / Win, etc)
+      - Docker から containerd に切り替えると、何が新しくできるようになるのか、あるいは何が出来なくなるのか
+      - Docker から containerd にどうやって移行するのか
+      - NTT が OSS にどう貢献しているか
+    level: 中級
     name: Docker から containerd への移行
     room: Track 2
+    speakers:
+      - description: |
+          ソフトウェアイノベーションセンタ所属。
+          containerd の Docker CLI 互換モジュール (nerdctl) や、関連プロジェクトである Lima を立ち上げ、主導している。
+        member_of: 日本電信電話
+        name: 須田 瑛大
+      - description: |
+          ソフトウェアイノベーションセンタ所属。
+          containerd のイメージ配布を高速化するモジュールである Stargz Snapshotter を立ち上げ、主導している。
+        member_of: 日本電信電話
+        name: 徳永 航平
+    tags:
+      - Container
+      - OSS
     type: Presentation
   - begin_at: 14:40
+    description: |
+      海外講演や海外ひとり旅などの活動を通じて得られた、英語力向上に一番大切なこと、自分なりの英語の取り組み方 (実際に自身が経験した悩みとその解決策) などをご紹介します。
     end_at: 15:10
+    lessons:
+      - 英語への取り組み方の 1 つの例
+    level: 初級
     name: 海外活動を通じて得た英語の学び方
     room: Track 1
+    speakers:
+      - description: |
+          公私にわたってモバイルや新しい技術の世界に没頭。
+          技術支援をしながら、講演や執筆などエバンジェリスト活動を実施中。
+          マイブームは、ランニングとアプリ開発と英語。
+        member_of: NTT テクノクロス
+        name: 神原 健一
+    tags:
+      - English
+      - Global
     type: Presentation
   - begin_at: 14:40
+    description: |
+      COTOHA Virtual Assistant (以下、COTOHA VA) では Kubernates を使用した開発をしています。
+      その中で、GitOps を行うために Argo CD を選定し使用しています。
+      Argo CD を使用して良かった事、課題感等、今後の展望についてを話したいと考えています。
     end_at: 15:10
-    name: COTOHA VA における GITOPS の取り組み
+    lessons:
+      - なぜ GitOps が注目されるようになっているのか?
+      - CI / CD における CD の部分について、COTOHA VA では、なぜ Argo CD を使用しているのか?
+      - ワークフローエンジンについても話す事が出来れば話したいです
+    level: 中級
+    name: COTOHA Virtual Assistant における GitOps の取り組み
     room: Track 2
+    speakers:
+      - description: |
+          プラットフォームサービス本部アプリケーションサービス部所属。
+        member_of: NTT コミュニケーションズ
+        name: 澤田 直哉
+    tags:
+      - Container
+      - DevOps
+      - OSS
     type: Presentation
   - begin_at: 15:15
+    description: |
+      私は R&D プロジェクトにおいて、エンジニア兼スクラムマスタとしてスクラムチーム立ち上げから日々の検証・開発業務に取り組んできました。
+      その中で感じた、チーム内でのスキル属人化を軽減できたり、各メンバーの定期的なアウトプット機会を作ることができるといった良かった点をご紹介をします。
+      また、技術検証という外部要因など不確かさを含んだタスクを実行するため、計画通り進まないことが多くあるといった悪かった点や、それに対するチームとしての取り組みもご紹介をします。
+      今後もより効果的なスクラムでの開発をトライしていきたいため、是非皆様とどのような取り組みを行なっていくべきかについて等の議論ができればと考えています。
     end_at: 15:45
+    lessons:
+      - R&D プロジェクトにおけるスクラム開発の適用事例
+    level: 初級
     name: R&D プロジェクトでスクラムでのアジャイル開発を 1 年間やってみて良かった点と悪かった点
     room: Track 1
+    speakers:
+      - description: |
+          NTT レゾナントでメディアサービスのモバイルアプリケーション開発等を行なった後、現在は NTT Com のイノベーションセンターで SR-MPLS 網を用いたネットワーク技術の検証業務や網の運用システム開発、SpoLive の開発支援業務を行なっています。
+        member_of: NTT コミュニケーションズ
+        name: 岩田 紘成
+    tags:
+      - DevOps
+      - New Normal
+      - アジャイル開発
+      - スクラム
+      - 開発プロセス
     type: Presentation
   - begin_at: 15:15
+    description: |
+      NTT コミュニケーションズは音声系サービスの内製開発に取り組んでいます。
+      社員による内製開発を実現し、迅速に商用品質でリリースするため、サーバーレスアーキテクチャを全面的に採用しました。
+      本セッションでは、音声系サービス (COTOHA Call Center / COTOHA VoiceDX Basic) の内製開発を通して得られた、サーバーレスアーキテクチャ (Google Cloud Platform) の利点と注意点について解説します。
     end_at: 15:45
+    lessons:
+      - サーバーレスアーキテクチャの利点・課題
+      - Google Cloud Platform プロダクトの活用法
+      - 内製開発を迅速に行うためのノウハウ
+    level: 中級
     name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について
     room: Track 2
+    speakers:
+      - description: |
+          NTT Com アプリケーションサービス部で、音声サービスの内製開発チームのプロジェクトリーダー、設計を担当。
+          過去には 050 plus の設計、開発、キャリアグレード NAT の国際標準化も担当。
+        member_of: NTT コミュニケーションズ
+        name: 西谷 智広
+    tags:
+      - Application
+      - Cloud
+      - Database
+      - DevOps
+      - Security
+      - Programming
     type: Presentation
   - begin_at: 15:50
+    description: |
+      昨今、テスターの知見を活かして臨機応変にテストを行うことで効率的にバグを見つける探索的テストが注目されています。
+      しかし従来の探索的テスト手法には、実施したテスト内容の振り返りが難しいという問題がありました。
+      この問題を解決するべく、我々は Web アプリを対象にテスト活動を収集・分析・可視化するツール LatteArt を開発しました。
+      LatteArt で収集したテスト活動データは様々なことに活用でき、例えば自動回帰テストのためのスクリプト生成を実現しています。
+      究極的には、大量のテスト活動データの学習による AI 自動テストも目指せる...?
+      2021 年 11 月より LatteArt OSS 公開中! コントリビュータ募集!
     end_at: 16:20
+    lessons:
+      - 探索的テストとは
+      - テスト活動分析ツール LatteArt による探索的テストの改善
+      - さらなるテスト活動データの活用
+    level: 初級
     name: "LatteArt : テスト活動を収集・分析・可視化する NTT 発の OSS"
     room: Track 1
+    speakers:
+      - description: |
+          NTT 東日本、NTT NS 研を経て、2020 年よりソフトウェアイノベーションセンタ所属。
+          ソフトウェアテストや自動プログラミングに関する研究開発に従事。
+        member_of: 日本電信電話
+        name: 但馬 将貴
+      - description: |
+          主にソフトウェアテストの研究開発に従事しているが、設計や実装にも興味あり。
+          LatteArt の生みの親。
+        member_of: 日本電信電話
+        name: 切貫 弘之
+      - description: |
+          ソフトウェアイノベーションセンタ所属。
+          2009 年入社以来、ソフトウェアテスト、デバッグの効率化など、ソフトウェア開発支援に関する研究開発に取り組んでいます。
+        member_of: 日本電信電話
+        name: 丹野 治門
+    tags:
+      - Application
+      - DevOps
+      - OSS
     type: Presentation
   - begin_at: 15:50
+    description: |
+      現在我々のチームでは、Multi-AS Segment Routing の検証環境を作成し、大規模なオーバレイ検証を実施しています。
+      取り組みを進める中で、インターフェース状態や Best-Path などのネットワーク状態の確認が難しい、多数の機器に複数人がコンフィグを投入するためトラブルシューティングが難しくなるなど、様々な課題が生まれてきました。
+      この課題に対し、オペレータが行う検証・運用業務の改善を目的として、可視化とオーバレイ制御を実現するネットワークコントローラを作成しています。
+      本セッションでは運用改善に資するコントローラ機能の整理・提案や、Telemetry や BGP-LS を活用したトポロジ可視化機構の作成方法とオーバレイ制御を実現する PCEP の実装など、コントローラ作成に関する知見を共有します。
+      日頃からネットワークの運用や技術検証に携わられている方、コントローラや可視化に興味のある方と是非議論をさせてください。
     end_at: 16:20
+    lessons:
+      - 運用改善に資するコントローラ機能
+      - ネットワーク運用に関する知見
+      - コントローラ作成に関する要素技術、など
+    level: 中級
     name: 大規模網の運用・検証業務改善を実現するネットワークコントローラの開発
     room: Track 2
+    speakers:
+      - description: |
+          イノベーションセンター テクノロジー部門所属。
+          普段の業務では SRv6 / SR-MPLS / Telemetry などの技術検証をしています。
+        member_of: NTT コミュニケーションズ
+        name: 三島 航
+    tags:
+      - Network
+      - OSS
     type: Presentation
   - begin_at: 16:25
+    description: |
+      昨年のアドベントカレンダーに同名の記事を書いたところ、思いがけず多くの方に見ていただいたので、これを機に SIer にて技術キャリアに歩む中で意識したほうが良いと思うことをかいつまんでお話しします。
     end_at: 16:55
+    lessons:
+      - SIer (またはそれに準じる職場) にて技術キャリアに歩む中で意識したほうが良いこと
+    level: 初級
     name: SIer で幸せな技術キャリアを築くために
     room: Track 1
+    speakers:
+      - description: |
+          ビジネスインキュベーション本部 AI・データサイエンス推進室にて、技術アセット開発を担当。
+        member_of: NTT コムウェア
+        name: 古西 孝成
+    tags:
+      - Engineering Careers
     type: Presentation
   - begin_at: 16:25
+    description: |
+      ネットワークモデルを定義し、実機の設定と Recondile Loop を回すことで設計意図を反映した収束を目指して、沖縄オープンラボラトリの元で TIS・BIGLOBE と 3 社プロジェクトとして開発しています。
+      価格や開発面でハードルが高くなりがちなベンダー製品ではなく、OSS をベースとした CI / CD パイプラインを作成中です。
+      この仕組みを使うことで、実機の設定や状態を吸い上げモデルを作成し、机上でトレーニングや障害シミュレーションをするデモを行います。
+      また、ネットワークのモデル定義について参加者の方と議論を深められると幸いです。
     end_at: 16:55
-    name: NW 運用におけるモデル定義と Reconciliation Loop への挑戦
+    lessons:
+      - 現実のネットワークをモデルとして再現することで、定義しやすくなるだけでなく各種のチェックなどができるという考え方
+      - その実現に必要な技術
+    level: 中級
+    name: ネットワーク運用におけるモデル定義と Reconciliation Loop への挑戦
     room: Track 2
+    speakers:
+      - description: |
+          SI 系 R&D を経て 2019 年から現職。
+          現在はキャリアバックボーンのルーティング設計・開発に従事。
+        member_of: NTT コミュニケーションズ
+        name: 田島 照久
+    tags:
+      - Network
+      - OSS
     type: Presentation
   - begin_at: 17:10
+    description: |
+      Amazon Web Services のサービスと CDK + CloudFormation のインテグレーションについて調査した内容を紹介します。
     end_at: 17:40
-    name: とある AWS サービス の検証報告
+    lessons:
+      - Amazon Web Services のサービスと CDK による Amazon Web Services サービスの Infrastructure as Code 化について
+    level: 中級
+    name: とある Amazon Web Services サービス の検証報告
     room: Track 1
+    speakers:
+      - description: |
+          イノベーションセンター AI インフラ PJ 所属。
+        member_of: NTT コミュニケーションズ
+        name: 福田 優真
+    tags:
+      - Cloud
+      - DevOps
+      - OSS
+      - Programming
     type: Presentation
   - begin_at: 17:10
     end_at: 17:40
+    level: 初級
     name: Lightning Talks
     room: Track 2
+    talks:
+      - name: クラウドオーケストレーターを使ってみよう
+        speakers:
+          - member_of: DOCOMO Innovations, Inc.
+            name: 直井 康広
+      - name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。
+        speakers:
+          - member_of: NTTPC コミュニケーションズ
+            name: 星野 智子
+      - name: クラウド利用者として考えるサステナビリティ
+        speakers:
+          - member_of: DOCOMO Innovations, Inc.
+            name: 守屋 裕樹
     type: Presentation
   - begin_at: 17:45
     end_at: null

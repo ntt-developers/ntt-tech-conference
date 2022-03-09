@@ -6,6 +6,7 @@
   "scripts": {
     "build": "gulp",
     "deploy": "",
+    "lint": "prettier -w public/index.html && textlint public/index.html",
     "preview": "gulp preview"
   },
   "repository": {
@@ -31,7 +32,12 @@
   },
   "devDependencies": {
     "firebase-tools": "^10.2.1",
-    "npm-force-resolutions": "^0.0.10"
+    "npm-force-resolutions": "^0.0.10",
+    "prettier": "^2.5.1",
+    "textlint": "^12.1.1",
+    "textlint-plugin-html": "^0.3.0np",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
   },
   "resolutions": {
     "glob-parent": "^5.1.2"
