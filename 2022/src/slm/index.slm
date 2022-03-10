@@ -114,10 +114,12 @@ html lang="ja"
                 div class="column is-12 is-space"
                   h3 class="text is-strong is-lg"
                     | ${session_type.name}
-                  p class="text is-line-height-xl"
-                    | 2 Track に分けて実施します。
-                  p class="text is-line-height-xl"
-                    | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
+                  ul class="list is-kome"
+                    - if rooms.length > 1
+                      li class="item is-padding-left-xs"
+                        | ${rooms.length} Track に分けて実施します。
+                    li class="item is-padding-left-xs"
+                      | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
                   nav
                     ul data-tabs=""
                       - for room of rooms
