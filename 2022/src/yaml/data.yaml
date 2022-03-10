@@ -38,7 +38,7 @@ meta:
   copyright: 2022 NTT Developers
   numbering: 2022
 ogp:
-  description: NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流を行うためのカンファレンスです。
+  description: NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流するためのカンファレンスです。
   image: images/banner.png
 registration:
   description: |
