@@ -115,6 +115,8 @@ html lang="ja"
                   h3 class="text is-strong is-lg"
                     | ${session_type.name}
                   p class="text is-line-height-xl"
+                    | 2 Track に分けて実施します。
+                  p class="text is-line-height-xl"
                     | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
                   nav
                     ul data-tabs=""
