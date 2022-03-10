@@ -39,7 +39,7 @@ meta:
   copyright: 2022 NTT Developers
   numbering: 2022
 ogp:
-  description: NTT Tech Conference は、NTT グループのエンジニアたちが一堂に会し、NTT グループ内外のエンジニアたちと技術交流するためのカンファレンスです。
+  description: NTT Tech Conference は、NTTグループのエンジニア有志が開催するエンジニアたちの技術交流を目的としたカンファレンスです。
   image: images/banner.png
 registration:
   description: |
@@ -434,7 +434,7 @@ sessions:
     type: Presentation
   - begin_at: 17:10
     description: |
-      Amazon Web Services のとあるサービスで使用するリソースを Infrastructure as Code で管理する方法について調査した内容を紹介します
+      Amazon Web Services のとあるサービスで使用するリソースを Infrastructure as Code で管理する方法について調査した内容を紹介します。
     end_at: 17:40
     lessons:
       - Amazon Web Services のとあるサービスで利用するリソースを Infrastructure as Code 化する方法についてとその注意点
