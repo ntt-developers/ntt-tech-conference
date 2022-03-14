@@ -73,7 +73,7 @@ sessions:
   - begin_at: 09:00
     description: |
       Active Directory の Kerberos 認証を利用した攻撃をツールを用いて行います。
-      また、ツールを用いた Windows Event Log の解析についてもデモを時間が余れば行います。
+      また、ツールを用いた Windows Event Log の解析についても、時間が余ればデモを行います。
     end_at: 12:00
     lessons:
       - Active Directory における攻撃
