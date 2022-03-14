@@ -73,7 +73,7 @@ sessions:
   - begin_at: 09:00
     description: |
       Active Directory の Kerberos 認証を利用した攻撃をツールを用いて行います。
-      また、ツールを用いた Windows Event Log の解析についてもデモを行います。
+      また、ツールを用いた Windows Event Log の解析についてもデモを時間が余れば行います。
     end_at: 12:00
     lessons:
       - Active Directory における攻撃
@@ -83,7 +83,8 @@ sessions:
     preparations:
       - インターネットへの接続環境
       - メインメモリが 16GB 程度のパソコン (下記の仮想環境を構築するため)
-      - Oracle VM VirtualBox 環境 (DetectionLab を用いて Active Directory 環境を構築するため)
+      - Oracle VM VirtualBox 環境 (DetectionLab を用いて Active Directory 環境を構築するため。VMwareでも問題ありません)
+      - https://detectionlab.network/deployment/ に従って DetectionLab (https://github.com/clong/DetectionLab) が構築された環境
     room: Hands-on 1
     speakers:
       - description: |
