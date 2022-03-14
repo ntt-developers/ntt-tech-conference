@@ -83,7 +83,7 @@ sessions:
     preparations:
       - インターネットへの接続環境
       - メインメモリが 16GB 程度のパソコン (下記の仮想環境を構築するため)
-      - Oracle VM VirtualBox 環境 (DetectionLab を用いて Active Directory 環境を構築するため。VMwareでも問題ありません)
+      - Oracle VM VirtualBox または VMware Fusion / Workstation (DetectionLab を用いて Active Directory 環境を構築するため)
       - 下記の参考文献に従って DetectionLab の仮想マシンが構築された環境
     references:
       - text: clong/DetectionLab: Automate the creation of a lab environment complete with security tooling and logging best practices
