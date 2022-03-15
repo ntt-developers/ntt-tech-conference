@@ -448,6 +448,9 @@ sessions:
       - AWS Outposts 上で動かすリソースを AWS CDK によって IaC 管理する方法
     level: 中級
     name: AWS Outposts を AWS CDK で管理する話
+    references:
+      - text: 【日本初導入】 AWS Outposts ラックを徹底解説 第 1 回 〜導入・利用方法の概要〜 - NTT Communications Engineers' Blog
+        url: https://engineers.ntt.com/entry/2022/03/15/102459
     room: Track 1
     speakers:
       - description: |
