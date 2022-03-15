@@ -440,7 +440,7 @@ sessions:
     type: Presentation
   - begin_at: 17:10
     description: |
-      NTT Com で日本初導入した AWS Outposts で動かすサービスを AWS Cloud Development Kit (AWS CDK) によって Infrastructure as Code (IaC) 管理する方法について紹介します。
+      NTT コミュニケーションズで日本初導入した AWS Outposts で動かすサービスを AWS Cloud Development Kit (AWS CDK) によって Infrastructure as Code (IaC) 管理する方法について紹介します。
     end_at: 17:40
     lessons:
       - AWS Outposts とはどんなものなのか
