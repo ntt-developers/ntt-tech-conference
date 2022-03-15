@@ -440,12 +440,12 @@ sessions:
     type: Presentation
   - begin_at: 17:10
     description: |
-      Amazon Web Services のとあるサービスで使用するリソースを Infrastructure as Code で管理する方法について調査した内容を紹介します。
+      NTT Com で日本初導入した AWS Outposts で動かすサービスを AWS Cloud Development Kit (AWS CDK) によって Infrastructure as Code (IaC) 管理する方法について紹介します。
     end_at: 17:40
     lessons:
-      - Amazon Web Services のとあるサービスで利用するリソースを Infrastructure as Code 化する方法についてとその注意点
+      - AWS Outposts とはどんなものなのか、AWS CDK で AWS リソースを管理するにはどうするのかを学びつつ、 AWS Outposts 上で動かすリソースを AWS CDK によって IaC 管理する方法を学ぶことができます。
     level: 中級
-    name: とある Amazon Web Services サービス の検証報告
+    name: AWS Outposts を AWS CDK で管理する話
     room: Track 1
     speakers:
       - description: |
