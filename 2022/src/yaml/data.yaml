@@ -451,6 +451,8 @@ sessions:
     references:
       - text: 【日本初導入】 AWS Outposts ラックを徹底解説 第 1 回 〜導入・利用方法の概要〜 - NTT Communications Engineers' Blog
         url: https://engineers.ntt.com/entry/2022/03/15/102459
+      - text: 【日本初導入】 AWS Outposts ラックを徹底解説 第 2 回 〜AWS CDK による Infrastructure as Code〜 - NTT Communications Engineers' Blog
+        url: https://engineers.ntt.com/entry/2022/03/16/100309
     room: Track 1
     speakers:
       - description: |
