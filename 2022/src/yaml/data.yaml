@@ -453,6 +453,8 @@ sessions:
         url: https://engineers.ntt.com/entry/2022/03/15/102459
       - text: 【日本初導入】 AWS Outposts ラックを徹底解説 第 2 回 〜AWS CDK による Infrastructure as Code〜 - NTT Communications Engineers' Blog
         url: https://engineers.ntt.com/entry/2022/03/16/100309
+      - text: 【日本初導入】 AWS Outposts ラックを徹底解説 第 3 回 〜Terraform による Private EKS 構築〜 - NTT Communications Engineers' Blog
+        url: https://engineers.ntt.com/entry/2022/03/17/094254
     room: Track 1
     speakers:
       - description: |
