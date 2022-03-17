@@ -235,7 +235,7 @@ html lang="ja"
                         | ${session.level}
                       - if session.tags && session.tags.length > 0
                         - for tag of session.tags
-                          span class="badge is-plain is-info is-margin-right-xs"
+                          span class="badge is-plain is-info is-margin-bottom-xs is-margin-right-xs"
                             i class="fa-solid fa-hashtag is-margin-right-xs"
                             | ${tag}
                   div class="modal-body is-space" id="modal-${id}-content"
