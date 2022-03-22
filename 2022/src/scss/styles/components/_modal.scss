@@ -77,9 +77,18 @@ $modal-animation-properties: 0.3s cubic-bezier(0, 0, 0.2, 1);
         background: transparent;
         border: none;
         cursor: pointer;
+        padding: 0;
         position: absolute;
         right: 0;
         top: 0;
+
+        // https://stackoverflow.com/questions/16472224/add-onclick-event-to-svg-element#answer-43941732
+        .icon-wrapper {
+          height: 100%;
+          position: absolute;
+          width: 100%;
+          z-index: 1;
+        }
       }
 
       .modal-header {
