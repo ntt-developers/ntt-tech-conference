@@ -274,6 +274,15 @@ html lang="ja"
                             a class="text is-primary is-link" href="${reference.url}" rel="noopener noreferrer" target="_blank"
                               | ${reference.text}
                               i class="fa-solid fa-arrow-up-right-from-square is-margin-left-xs"
+                    - if session.materials && session.materials.length > 0
+                      h4 class="text is-strong"
+                        | 資料
+                      ul class="list is-disc"
+                        - for material of session.materials
+                          li class="item"
+                            a class="text is-primary is-link" href="${material.url}" rel="noopener noreferrer" target="_blank"
+                              | ${material.text}
+                              i class="fa-solid fa-arrow-up-right-from-square is-margin-left-xs"
                     - if session.speakers && session.speakers.length > 0
                       h4 class="text is-strong"
                         | 講演者
