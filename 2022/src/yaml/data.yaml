@@ -386,6 +386,9 @@ sessions:
       - ネットワーク運用に関する知見
       - コントローラ作成に関する要素技術、など
     level: 中級
+    materials:
+      - text: 大規模 SR 網の運用を効率化するネットワークコントローラの開発 (NTT Tech Conference 2022) - Speaker Deck
+        url: https://speakerdeck.com/watal/da-gui-mo-srwang-falseyun-yong-woxiao-lu-hua-surunetutowakukontororafalsekai-fa-ntt-tech-conference-2022
     name: 大規模網の運用・検証業務改善を実現するネットワークコントローラの開発
     room: Track 2
     speakers:
@@ -426,6 +429,9 @@ sessions:
       - 現実のネットワークをモデルとして再現することで、定義しやすくなるだけでなく各種のチェックなどができるという考え方
       - その実現に必要な技術
     level: 中級
+    materials:
+      - text: NW 運用におけるモデル定義と Reconciliation Loop への挑戦 - Speaker Deck
+        url: https://speakerdeck.com/tjmtrhs/nwyun-yong-niokerumoderuding-yi-toreconciliation-loophefalsetiao-zhan
     name: ネットワーク運用におけるモデル定義と Reconciliation Loop への挑戦
     room: Track 2
     speakers:
