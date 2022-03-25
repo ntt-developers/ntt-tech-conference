@@ -225,6 +225,9 @@ sessions:
       - Docker から containerd にどうやって移行するのか
       - NTT が OSS にどう貢献しているか
     level: 中級
+    materials:
+      - text: Docker から containerd への移行 - Speaker Deck
+        url: https://speakerdeck.com/ktock/dockerkaracontainerdhefalseyi-xing
     name: Docker から containerd への移行
     room: Track 2
     speakers:
