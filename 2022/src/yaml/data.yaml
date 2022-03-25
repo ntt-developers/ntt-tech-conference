@@ -327,8 +327,8 @@ sessions:
       - 内製開発を迅速に行うためのノウハウ
     level: 中級
     materials:
-      name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について - Speaker Deck
-      url: https://speakerdeck.com/toremoro21/yin-sheng-xi-sabisuniokeru-sabaresuakitekutiyafalse-huo-yong-nituite
+      - text: 音声系サービスにおけるサーバーレスアーキテクチャの活用について - Speaker Deck
+        url: https://speakerdeck.com/toremoro21/yin-sheng-xi-sabisuniokeru-sabaresuakitekutiyafalse-huo-yong-nituite
     name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について
     room: Track 2
     speakers:
