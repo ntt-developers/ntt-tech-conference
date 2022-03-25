@@ -1,6 +1,6 @@
 ---
 about:
-  date: 2022年3月23日 (水)
+  date: 2022 年 3 月 23 日 (水)
   description: |
     NTT Tech Conference は、NTT グループのエンジニア有志が開催するカンファレンスです。
     NTT グループ各社が開催するイベントとは異なり、NTT グループのエンジニアたちがやりたいこと・話したいことを通じて、エンジニア同士が技術交流するためのイベントです。
@@ -252,6 +252,9 @@ sessions:
     lessons:
       - 英語への取り組み方の 1 つの例
     level: 初級
+    materials:
+      - text: 海外活動を通じて得た英語の学び方 - Speaker Deck
+        url: https://speakerdeck.com/korodroid/hai-wai-huo-dong-wotong-zitede-taying-yu-falsexue-bifang
     name: 海外活動を通じて得た英語の学び方
     room: Track 1
     speakers:
@@ -323,6 +326,9 @@ sessions:
       - Google Cloud Platform プロダクトの活用法
       - 内製開発を迅速に行うためのノウハウ
     level: 中級
+    materials:
+      - text: 音声系サービスにおけるサーバーレスアーキテクチャの活用について - Speaker Deck
+        url: https://speakerdeck.com/toremoro21/yin-sheng-xi-sabisuniokeru-sabaresuakitekutiyafalse-huo-yong-nituite
     name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について
     room: Track 2
     speakers:
@@ -482,7 +488,10 @@ sessions:
     name: Lightning Talks
     room: Track 2
     talks:
-      - name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。
+      - materials:
+          - text: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。 - Speaker Deck
+            url: https://speakerdeck.com/hoshis/kodoshu-kitakunainarabie-nishu-kanakutemoiindayo-toyan-waretawatasifalsehua
+        name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。
         speakers:
           - member_of: NTTPC コミュニケーションズ
             name: 星野 智子
@@ -490,7 +499,10 @@ sessions:
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 直井 康広
-      - name: クラウド利用者として考えるサステナビリティ
+      - materials:
+          - text: クラウド利用者として考えるサステナビリティ
+            url: https://www.slideshare.net/HirokiMoriya/ss-251419654
+        name: クラウド利用者として考えるサステナビリティ
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 守屋 裕樹

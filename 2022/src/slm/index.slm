@@ -300,6 +300,13 @@ html lang="ja"
                         - for talk of session.talks
                           li class="item"
                             | ${talk.name}
+                            - if talk.materials && talk.materials.length > 0
+                              ul class="list is-disc"
+                                - for material of talk.materials
+                                  li class="item"
+                                    a class="text is-primary is-link" href="${material.url}" rel="noopener noreferrer" target="_blank"
+                                      | ${material.text}
+                                      i class="fa-solid fa-arrow-up-right-from-square is-margin-left-xs"
                             - if talk.speakers && talk.speakers.length > 0
                               ul class="list is-disc"
                                 - for speaker of talk.speakers
