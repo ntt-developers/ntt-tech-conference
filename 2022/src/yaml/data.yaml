@@ -252,6 +252,9 @@ sessions:
     lessons:
       - 英語への取り組み方の 1 つの例
     level: 初級
+    materials:
+      - text: 海外活動を通じて得た英語の学び方 - Speaker Deck
+        url: https://speakerdeck.com/korodroid/hai-wai-huo-dong-wotong-zitede-taying-yu-falsexue-bifang
     name: 海外活動を通じて得た英語の学び方
     room: Track 1
     speakers:
@@ -323,6 +326,9 @@ sessions:
       - Google Cloud Platform プロダクトの活用法
       - 内製開発を迅速に行うためのノウハウ
     level: 中級
+    materials:
+      name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について - Speaker Deck
+      url: https://speakerdeck.com/toremoro21/yin-sheng-xi-sabisuniokeru-sabaresuakitekutiyafalse-huo-yong-nituite
     name: 音声系サービスにおけるサーバーレスアーキテクチャの活用について
     room: Track 2
     speakers:
@@ -486,11 +492,17 @@ sessions:
         speakers:
           - member_of: NTTPC コミュニケーションズ
             name: 星野 智子
+        materials:
+          name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。 - Speaker Deck
+          url: https://speakerdeck.com/hoshis/kodoshu-kitakunainarabie-nishu-kanakutemoiindayo-toyan-waretawatasifalsehua
       - name: クラウドオーケストレーターを使ってみよう
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 直井 康広
       - name: クラウド利用者として考えるサステナビリティ
+        materials:
+          name: クラウド利用者として考えるサステナビリティ
+          url: https://www.slideshare.net/HirokiMoriya/ss-251419654
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 守屋 裕樹
