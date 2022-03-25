@@ -493,8 +493,8 @@ sessions:
           - member_of: NTTPC コミュニケーションズ
             name: 星野 智子
         materials:
-          name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。 - Speaker Deck
-          url: https://speakerdeck.com/hoshis/kodoshu-kitakunainarabie-nishu-kanakutemoiindayo-toyan-waretawatasifalsehua
+      - text: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。 - Speaker Deck
+        url: https://speakerdeck.com/hoshis/kodoshu-kitakunainarabie-nishu-kanakutemoiindayo-toyan-waretawatasifalsehua
       - name: クラウドオーケストレーターを使ってみよう
         speakers:
           - member_of: DOCOMO Innovations, Inc.
