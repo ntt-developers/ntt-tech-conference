@@ -501,8 +501,8 @@ sessions:
             name: 直井 康広
       - name: クラウド利用者として考えるサステナビリティ
         materials:
-          name: クラウド利用者として考えるサステナビリティ
-          url: https://www.slideshare.net/HirokiMoriya/ss-251419654
+      - text クラウド利用者として考えるサステナビリティ
+        url: https://www.slideshare.net/HirokiMoriya/ss-251419654
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 守屋 裕樹
