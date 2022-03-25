@@ -488,21 +488,21 @@ sessions:
     name: Lightning Talks
     room: Track 2
     talks:
-      - name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。
+      - materials:
+          - text: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。 - Speaker Deck
+            url: https://speakerdeck.com/hoshis/kodoshu-kitakunainarabie-nishu-kanakutemoiindayo-toyan-waretawatasifalsehua
+        name: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。
         speakers:
           - member_of: NTTPC コミュニケーションズ
             name: 星野 智子
-        materials:
-          - text: 「コード書きたくないなら書かなくていいんだよ」と言われたわたしの話。 - Speaker Deck
-            url: https://speakerdeck.com/hoshis/kodoshu-kitakunainarabie-nishu-kanakutemoiindayo-toyan-waretawatasifalsehua
       - name: クラウドオーケストレーターを使ってみよう
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 直井 康広
-      - name: クラウド利用者として考えるサステナビリティ
-        materials:
+      - materials:
           - text: クラウド利用者として考えるサステナビリティ
             url: https://www.slideshare.net/HirokiMoriya/ss-251419654
+        name: クラウド利用者として考えるサステナビリティ
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 守屋 裕樹
