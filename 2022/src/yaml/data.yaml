@@ -301,6 +301,9 @@ sessions:
     lessons:
       - R&D プロジェクトにおけるスクラム開発の適用事例
     level: 初級
+    materials:
+      - text: R&D プロジェクトで スクラム開発を 1年間やってみて感じた良かった事・難しかった事 - Speaker Deck
+        url: https://speakerdeck.com/shirobrak/r-and-d-puroziekutode-sukuramukai-fa-wo-1nian-jian-yatutemitegan-zitaliang-katutashi-nan-sikatutashi
     name: R&D プロジェクトでスクラムでのアジャイル開発を 1 年間やってみて良かった点と悪かった点
     room: Track 1
     speakers:
@@ -359,6 +362,9 @@ sessions:
       - テスト活動分析ツール LatteArt による探索的テストの改善
       - さらなるテスト活動データの活用
     level: 初級
+    materials:
+      - text: "LatteArt : テスト活動を収集・分析・可視化する NTT 発の OSS"
+        url: materials/LatteArt.pdf
     name: "LatteArt : テスト活動を収集・分析・可視化する NTT 発の OSS"
     room: Track 1
     speakers:
@@ -501,7 +507,10 @@ sessions:
         speakers:
           - member_of: NTTPC コミュニケーションズ
             name: 星野 智子
-      - name: クラウドオーケストレーターを使ってみよう
+      - materials:
+          - text: クラウドオーケストレーターを使ってみよう
+            url: https://www.slideshare.net/yasnaoi/ss-251457501
+        name: クラウドオーケストレーターを使ってみよう
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 直井 康広
