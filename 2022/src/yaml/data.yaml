@@ -498,7 +498,10 @@ sessions:
         speakers:
           - member_of: NTTPC コミュニケーションズ
             name: 星野 智子
-      - name: クラウドオーケストレーターを使ってみよう
+      - materials:
+          - text: クラウドオーケストレーターを使ってみよう
+            url: https://www.slideshare.net/yasnaoi/ss-251457501
+        name: クラウドオーケストレーターを使ってみよう
         speakers:
           - member_of: DOCOMO Innovations, Inc.
             name: 直井 康広
