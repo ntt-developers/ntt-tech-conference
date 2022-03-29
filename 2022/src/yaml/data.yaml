@@ -417,6 +417,9 @@ sessions:
     lessons:
       - SIer (またはそれに準じる職場) にて技術キャリアに歩む中で意識したほうが良いこと
     level: 初級
+    materials:
+      - text: SIerで幸せな技術キャリアを気づくために
+        url: https://www.slideshare.net/takanarikonishi7/sierr7pdf
     name: SIer で幸せな技術キャリアを築くために
     room: Track 1
     speakers:
