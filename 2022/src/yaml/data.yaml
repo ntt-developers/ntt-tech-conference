@@ -462,6 +462,9 @@ sessions:
       - AWS CDK で AWS リソースを管理するにはどうするのか
       - AWS Outposts 上で動かすリソースを AWS CDK によって IaC 管理する方法
     level: 中級
+    materials:
+      - text: AWS Outposts を AWS CDK で管理する話 - Speaker Deck
+        url: https://speakerdeck.com/moba/aws-outposts-wo-aws-cdk-deguan-li-suruhua
     name: AWS Outposts を AWS CDK で管理する話
     references:
       - text: 【日本初導入】 AWS Outposts ラックを徹底解説 第 1 回 〜導入・利用方法の概要〜 - NTT Communications Engineers' Blog
