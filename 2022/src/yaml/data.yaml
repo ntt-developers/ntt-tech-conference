@@ -359,6 +359,9 @@ sessions:
       - テスト活動分析ツール LatteArt による探索的テストの改善
       - さらなるテスト活動データの活用
     level: 初級
+    materials:
+      - text: "LatteArt : テスト活動を収集・分析・可視化する NTT 発の OSS"
+        url: materials/LatteArt.pdf
     name: "LatteArt : テスト活動を収集・分析・可視化する NTT 発の OSS"
     room: Track 1
     speakers:
