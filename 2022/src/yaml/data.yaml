@@ -301,6 +301,9 @@ sessions:
     lessons:
       - R&D プロジェクトにおけるスクラム開発の適用事例
     level: 初級
+    materials:
+      - text: R&D プロジェクトで スクラム開発を 1年間やってみて感じた良かった事・難しかった事 - Speaker Deck
+        url: https://speakerdeck.com/shirobrak/r-and-d-puroziekutode-sukuramukai-fa-wo-1nian-jian-yatutemitegan-zitaliang-katutashi-nan-sikatutashi
     name: R&D プロジェクトでスクラムでのアジャイル開発を 1 年間やってみて良かった点と悪かった点
     room: Track 1
     speakers:
