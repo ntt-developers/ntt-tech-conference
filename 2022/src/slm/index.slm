@@ -78,6 +78,27 @@ html lang="ja"
                   i class="fa-solid fa-arrow-up-right-from-square is-margin-right-xs"
                   span class="text is-strong"
                     | ${form.session_types.join(" / ")} に参加登録する
+                br
+      / Archive
+      section class="section is-feature is-wide-lg"
+        div class="inner is-padding-horizontal"
+          div class="grid is-gap-xl"
+            div class="column is-12"
+              div class="box"
+                h2 class="text is-strong is-xl"
+                  | Archive
+            div class="column is-12 is-desktop-6"
+              div class="box is-space"
+                - for paragraph of this.archives.description.split(/<br\s?\/?>/)
+                  p class="text is-line-height-xl"
+                    | ${paragraph}
+            div class="column is-12 is-desktop-6 is-space"
+              - for link of this.archives.links
+                a class="button is-plain is-primary  is-margin-right" href="${link.url}" rel="noopener noreferrer" target="_blank"
+                  i class="fa-solid fa-arrow-up-right-from-square is-margin-right-xs"
+                  span class="text is-strong"
+                    | ${link.text} を視聴する
+                br
       / Timetable
       section class="section is-feature is-wide-lg"
         div class="inner is-padding-horizontal"

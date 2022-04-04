@@ -21,6 +21,15 @@ about:
       time: 13:15 〜 18:00
   organizer: NTT Developers
   place: オンライン
+archives:
+  description: |
+    講演の動画を YouTube で視聴可能です (講演の資料はタイムテーブルをご覧ください)。
+    現段階で公開されていないものについては講演者の意向により非公開となっております。
+  links:
+    - text: Track 1
+      url: https://www.youtube.com/watch?v=XcaklYtWhoQ
+    - text: Track 2
+      url: https://www.youtube.com/watch?v=56UMhyXg6hQ
 code_of_conduct:
   description: |
     以下の行為は禁止します。
