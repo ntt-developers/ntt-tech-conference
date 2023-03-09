@@ -121,6 +121,11 @@ sessions:
       - 主にソフトウェア開発におけるドキュメントの作成・評価・運用方法の概要
     level: 初級
     name: エンジニアのためのドキュメントライティング - Docs for Developers
+    references:
+      - text: エンジニアのためのドキュメントライティング
+        url: https://pub.jmam.co.jp/book/b622627.html
+      - text: fukabori.fm
+        url: https://fukabori.fm/
     room: Track 1
     speakers:
       - description: |
