@@ -78,7 +78,7 @@ session_types:
 sessions:
   - begin_at: 09:00
     description: |
-      本ハンズオンでは ElastcStack (Elasticsearch, Kibana, Beats) を用いたログの収集・可視化に関して、Docker を用いた環境の立ち上げからサンプルログの取り込み、エージェントを用いたメトリクスの収集、可視化項目の作成までを一気通貫に学習します。
+      本ハンズオンでは Elastic Stack (Elasticsticsearch, Kibana, Beats) を用いたログの収集・可視化に関して、Docker を用いた環境の立ち上げからサンプルログの取り込み、エージェントを用いたメトリクスの収集、可視化項目の作成までを一気通貫に学習します。
     end_at: 12:00
     lessons:
       - ログの収集・活用がなぜ必要か？Elastic Stackがどう貢献するかの概要 (オブザーバビリティの概要と必要性、実用例)
@@ -87,14 +87,14 @@ sessions:
     name: Elastic Stack 初心者向けハンズオン 〜いまからはじめるオブザーバービリティ〜
     preparations:
       - インターネットへの接続環境
-      - 
+      -
         - メインメモリが 16GB 程度で Docker がインストール済みのパソコン
-        - 
+        -
           - ホスト OS は問わないがデモ環境は Windows + WSL2 で構築
           - 複数のコンテナを立ち上げるため、ディスクサイズも余裕がある状態が望ましい
-      - 
+      -
         - 以下の Docker Image を Pull しておくこと (時間短縮のため)
-        - 
+        -
           - docker.elastic.co/elasticsearch/elasticsearch:8.5.3
           - docker.elastic.co/kibana/kibana:8.5.3
           - docker.elastic.co/beats/elastic-agent:8.5.3
@@ -186,7 +186,7 @@ sessions:
     end_at: 15:20
     lessons:
       - ネットワークインフラ企業のソフトウェア開発チーム立ち上げの一例
-      -  DevOps プラットフォーム Qmonus の概要 
+      -  DevOps プラットフォーム Qmonus の概要
     level: 初級
     name: グループ内製のフレームワークを使ってインフラ自動化のアジャイル開発に取り組んでいる話
     room: Track 1
@@ -254,7 +254,7 @@ sessions:
     room: Track 1
     speakers:
       - description: |
-          イノベーションセンター テクノロジー部門所属。 
+          イノベーションセンター テクノロジー部門所属。
           普段は Segment Routing に関する技術検証や、検証環境の構築の自動化などを行なっています。
         member_of: NTT コミュニケーションズ
         name: 竹中 幹
