@@ -78,7 +78,7 @@ session_types:
 sessions:
   - begin_at: 09:00
     description: |
-      本ハンズオンでは ElastcStack (Elasticsearch, Kibana, Beats) を用いたログの収集・可視化に関して、Docker を用いた環境の立ち上げからサンプルログの取り込み、エージェントを用いたメトリクスの収集、可視化項目の作成までを一気通貫に学習します。
+      本ハンズオンでは Elastic Stack (Elasticsticsearch, Kibana, Beats) を用いたログの収集・可視化に関して、Docker を用いた環境の立ち上げからサンプルログの取り込み、エージェントを用いたメトリクスの収集、可視化項目の作成までを一気通貫に学習します。
     end_at: 12:00
     lessons:
       - ログの収集・活用がなぜ必要か？Elastic Stackがどう貢献するかの概要 (オブザーバビリティの概要と必要性、実用例)
@@ -87,14 +87,14 @@ sessions:
     name: Elastic Stack 初心者向けハンズオン 〜いまからはじめるオブザーバービリティ〜
     preparations:
       - インターネットへの接続環境
-      - 
+      -
         - メインメモリが 16GB 程度で Docker がインストール済みのパソコン
-        - 
+        -
           - ホスト OS は問わないがデモ環境は Windows + WSL2 で構築
           - 複数のコンテナを立ち上げるため、ディスクサイズも余裕がある状態が望ましい
-      - 
+      -
         - 以下の Docker Image を Pull しておくこと (時間短縮のため)
-        - 
+        -
           - docker.elastic.co/elasticsearch/elasticsearch:8.5.3
           - docker.elastic.co/kibana/kibana:8.5.3
           - docker.elastic.co/beats/elastic-agent:8.5.3
@@ -121,6 +121,11 @@ sessions:
       - 主にソフトウェア開発におけるドキュメントの作成・評価・運用方法の概要
     level: 初級
     name: エンジニアのためのドキュメントライティング - Docs for Developers
+    references:
+      - text: エンジニアのためのドキュメントライティング
+        url: https://pub.jmam.co.jp/book/b622627.html
+      - text: fukabori.fm
+        url: https://fukabori.fm/
     room: Track 1
     speakers:
       - description: |
@@ -136,7 +141,7 @@ sessions:
     type: Presentation
   - begin_at: 14:15
     description: |
-      現在、ドコモ初の社員内製のコンシューマ向けアプリとしてリリースした「マイトレード」の開発しています。
+      現在、ドコモ初の社員内製で開発しているコンシューマ向けアプリ「マイトレード」をリリースしています。
       マイトレードは主に Google Cloud や Go 、Flutter を利用しています。
       今回はマイトレードの中でも特に広告流入計測に焦点を当ててお話します。
       <br />
@@ -151,7 +156,7 @@ sessions:
       マイトレードでは Adjust を使って流入計測をし、導入に際して Flutter アプリへの Adjust SDK の実装及び各広告媒体との連携を設定しました。
       また、流入計測したデータを独自に分析できるよう、Adjust から Cloud Functions を利用して BigQuery に保存しています。
       <br />
-      本セッションでは上記の経験を元に 1. モバイルアプリの広告流入測定の仕組み、2. 導入や利用方法、3. Raw Data Export を利用した計測データの BigQuery への集積方法、4. 集積情報をどのようにマイトレードで活用しているのか、について紹介します。
+      本セッションでは上記の経験を元に、モバイルアプリの広告流入測定の仕組み、導入や利用方法、Raw Data Export を利用した計測データの BigQuery への集積方法、集積情報をどのようにマイトレードで活用しているのかについて紹介します。
     end_at: 14:45
     lessons:
       - モバイルアプリにおける広告流入測定の仕組み
@@ -160,6 +165,8 @@ sessions:
     level: 中級
     name: Adjust を利用したモバイルアプリの流入計測について
     references:
+      - text: マイトレード｜個人投資家のための投資管理アプリ
+        url: https://mytrade-app.jp/
       - text: Adjust
         url: https://www.adjust.com/
       - text: AppsFlyer
@@ -171,7 +178,7 @@ sessions:
       - description: |
            元々は Java を使って OSS の活動としてブロックチェーンシミュレータ (SimBlock) の作成などをしていました。
            業務では主に投資管理アプリ「マイトレード」のバックエンド開発を行なっています。
-           業務で主につ使っている言語は Go です。
+           業務で主に使っている言語は Go です。
         member_of: NTT ドコモ
         name: 大月 魁
     tags:
@@ -186,7 +193,7 @@ sessions:
     end_at: 15:20
     lessons:
       - ネットワークインフラ企業のソフトウェア開発チーム立ち上げの一例
-      -  DevOps プラットフォーム Qmonus の概要 
+      -  DevOps プラットフォーム Qmonus の概要
     level: 初級
     name: グループ内製のフレームワークを使ってインフラ自動化のアジャイル開発に取り組んでいる話
     room: Track 1
@@ -205,7 +212,7 @@ sessions:
     description: |
       保守や拡張作業で本番環境に何らかの変更を加えるとき、事前に別環境で検証したいと考えます。
       しかしネットワークの場合においては、検証環境を準備するためのコストが大きく、運用速度のボトルネックになります。
-      そこで私たちはコンテナルータやオープンソースソフトを組み合わせて、本番環境を検証環境として再現するシステムを作成しました。
+      そこで私たちはコンテナルータやオープンソースソフトウェアを組み合わせて、本番環境を検証環境として再現するシステムを作成しました。
       システムの中で重要なネットワーク設定の変換と移植については、あらかじめトポロジを抽象化し解決しました。
       これにより数分オーダといった短時間で検証環境を用意できるようになりました。
       <br />
@@ -222,7 +229,7 @@ sessions:
     speakers:
       - description: |
           SI 系 R&D を経て 2019 年から現職。
-          キャリア IP バックボーンの検証開発をしつつ、コム検証網の AS / L3 / L2 / WLAN 運用に従事。
+          キャリア IP バックボーンの検証開発をしつつ、NTT Com 検証網の AS / L3 / L2 / WLAN 運用に従事。
         member_of: NTT コミュニケーションズ
         name: 田島 照久
     tags:
@@ -234,7 +241,7 @@ sessions:
     description: |
       本セッションでは、RFC/I-D 準拠なネットワークコントローラの開発方法やマルチベンダな機器を相互接続するための工夫点、OSS 運用の知見をご紹介します。
       <br />
-      前回の Tech Conference では我々のチームが開発したネットワークコントローラについて、設計の共有や議論をさせていただきました。
+      前回の NTT Tech Conference 2022 では我々のチームが開発したネットワークコントローラについて、設計の共有や議論をさせていただきました。
       そして現在、ネットワークコントローラにおいて経路制御を実現する、Path Computation Element を NTT Com から OSS として公開しています。
       開発においては、通信プロトコルが一部 RFC 未定義のためベンダーごとに独自実装が行われている部分もあり、マルチベンダで動作させるにあたって差分を吸収するための実装をしました。
       また、公開においては、コードの理解やコントリビューションが行いやすいようにコードのリファクタリングや GitHub リポジトリの整備をしました。
@@ -254,7 +261,7 @@ sessions:
     room: Track 1
     speakers:
       - description: |
-          イノベーションセンター テクノロジー部門所属。 
+          イノベーションセンター テクノロジー部門所属。
           普段は Segment Routing に関する技術検証や、検証環境の構築の自動化などを行なっています。
         member_of: NTT コミュニケーションズ
         name: 竹中 幹
