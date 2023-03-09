@@ -141,7 +141,7 @@ sessions:
     type: Presentation
   - begin_at: 14:15
     description: |
-      現在、ドコモ初の社員内製のコンシューマ向けアプリとしてリリースした「マイトレード」の開発しています。
+      現在、ドコモ初の社員内製で開発しているコンシューマ向けアプリ「マイトレード」をリリースしています。
       マイトレードは主に Google Cloud や Go 、Flutter を利用しています。
       今回はマイトレードの中でも特に広告流入計測に焦点を当ててお話します。
       <br />
@@ -156,7 +156,12 @@ sessions:
       マイトレードでは Adjust を使って流入計測をし、導入に際して Flutter アプリへの Adjust SDK の実装及び各広告媒体との連携を設定しました。
       また、流入計測したデータを独自に分析できるよう、Adjust から Cloud Functions を利用して BigQuery に保存しています。
       <br />
-      本セッションでは上記の経験を元に 1. モバイルアプリの広告流入測定の仕組み、2. 導入や利用方法、3. Raw Data Export を利用した計測データの BigQuery への集積方法、4. 集積情報をどのようにマイトレードで活用しているのか、について紹介します。
+      本セッションでは上記の経験を元に<br />
+      1. モバイルアプリの広告流入測定の仕組み<br />
+      2. 導入や利用方法<br />
+      3. Raw Data Export を利用した計測データの BigQuery への集積方法<br />
+      4. 集積情報をどのようにマイトレードで活用しているのか<br />
+      について紹介します。
     end_at: 14:45
     lessons:
       - モバイルアプリにおける広告流入測定の仕組み
@@ -165,6 +170,8 @@ sessions:
     level: 中級
     name: Adjust を利用したモバイルアプリの流入計測について
     references:
+      - text: マイトレード｜個人投資家のための投資管理アプリ
+        url: https://mytrade-app.jp/
       - text: Adjust
         url: https://www.adjust.com/
       - text: AppsFlyer
@@ -176,7 +183,7 @@ sessions:
       - description: |
            元々は Java を使って OSS の活動としてブロックチェーンシミュレータ (SimBlock) の作成などをしていました。
            業務では主に投資管理アプリ「マイトレード」のバックエンド開発を行なっています。
-           業務で主につ使っている言語は Go です。
+           業務で主に使っている言語は Go です。
         member_of: NTT ドコモ
         name: 大月 魁
     tags:
