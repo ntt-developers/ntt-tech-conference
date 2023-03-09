@@ -1,0 +1,39 @@
+{
+  "plugins": {
+    "html": true
+  },
+  "rules": {
+    "preset-ja-spacing": {
+      "ja-no-space-between-full-width": false,
+      "ja-space-around-code": {
+        "after": true,
+        "before": true
+      },
+      "ja-space-between-half-and-full-width": {
+        "exceptPunctuation": true,
+        "space": "always"
+      }
+    },
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [":"]
+      },
+      "ja-no-weak-phrase": false,
+      "no-doubled-joshi": {
+        "strict": false,
+        "allow": ["か", "で"]
+      },
+      "max-kanji-continuous-len": {
+        "allow": [
+          "音楽学習指導実現",
+          "回情報科学技術"
+        ],
+        "max": 6
+      },
+      "no-exclamation-question-mark": false,
+      "sentence-length": {
+        "max": 200
+      }
+    }
+  }
+}
