@@ -325,14 +325,14 @@ sessions:
         name: 最知 庸
       - member_of: NTT 東日本
         name: 小林 丈之
-      - member_of: NTT 東日本
-        name: 阪内 澄宇
       - member_of: 東音企画
         name: 笹生 恵理
       - member_of: ピティナ
         name: 山内 竣平
       - member_of: ピティナ
         name: 野口 啓之
+      - member_of: NTT 東日本
+        name: 阪内 澄宇
     tags:
       - Application
       - DX
