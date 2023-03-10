@@ -4,16 +4,16 @@ on:
     branches:
       - master
 env:
-  NODE_VERSION: "17"
-  WORKING_DIRECTORY: "2022"
+  NODE_VERSION: 19
+  WORKING_DIRECTORY: "2023"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
@@ -27,7 +27,7 @@ jobs:
           npm run build
         working-directory: ${{ env.WORKING_DIRECTORY }}
       # https://github.com/actions/upload-artifact
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public/*
@@ -38,7 +38,7 @@ jobs:
       - build
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: git config
         run: |
           git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
@@ -52,7 +52,7 @@ jobs:
         run: |
           rm -rf ${WORKING_DIRECTORY}
       # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}

@@ -7,31 +7,29 @@ on:
       - opened
       - synchronize
 env:
-  NODE_VERSION: "17"
+  NODE_VERSION: 19
   PREVIEW_EXPIRES: 7d
-  WORKING_DIRECTORY: "2022"
+  WORKING_DIRECTORY: "2023"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
-        run: |
-          npm ci
+        run: npm ci --production
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
-        run: |
-          npm run build
+        run: npm run build
         working-directory: ${{ env.WORKING_DIRECTORY }}
       # https://github.com/actions/upload-artifact
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public/*
@@ -42,25 +40,23 @@ jobs:
       - build
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public
       - name: npm ci
-        run: |
-          npm ci
+        run: npm ci
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run lint
-        run: |
-          npm run lint
+        run: npm run lint
         working-directory: ${{ env.WORKING_DIRECTORY }}
   deploy:
     runs-on: ubuntu-latest
@@ -68,44 +64,47 @@ jobs:
       - lint
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public
+      # https://github.com/google-github-actions/auth
+      - uses: google-github-actions/auth@v1
+        with:
+          create_credentials_file: true
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
       - name: npm install
-        run: |
-          npm install -g firebase-tools@$(node -p -e "require('./${{ env.WORKING_DIRECTORY }}/package.json').devDependencies['firebase-tools']")
+        run: npm install -g firebase-tools@$(node -p -e "require('./${{ env.WORKING_DIRECTORY }}/package.json').devDependencies['firebase-tools']")
       - name: firebase hosting:channel:create
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          firebase hosting:channel:create --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+          firebase hosting:channel:create ${channel}
         continue-on-error: true
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: firebase hosting:channel:open
         id: firebase_hosting_channel_open
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          url=$(firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
-          echo "::set-output name=url::${url}"
+          url=$(firebase hosting:channel:open ${channel} | awk '{ print $3 }')
+          echo "url=${url}" >> ${GITHUB_OUTPUT}
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: sed
         env:
           URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
-        run: |
-          sed -i -e "s|https://ntt-developers.github.io/ntt-tech-conference/${{ env.WORKING_DIRECTORY }}|${URL}|g" public/index.html
+        run: sed -i -e "s|https://ntt-developers.github.io/ntt-tech-conference/${{ env.WORKING_DIRECTORY }}|${URL}|g" public/index.html
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: firebase hosting:channel:deploy
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          firebase hosting:channel:deploy -e ${{ env.PREVIEW_EXPIRES }} --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+          firebase hosting:channel:deploy -e ${{ env.PREVIEW_EXPIRES }} ${channel}
         working-directory: ${{ env.WORKING_DIRECTORY }}
   notify:
     runs-on: ubuntu-latest
@@ -113,24 +112,29 @@ jobs:
       - deploy
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
+      # https://github.com/google-github-actions/auth
+      - uses: google-github-actions/auth@v1
+        with:
+          create_credentials_file: true
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
       - name: npm install
         run: npm install -g firebase-tools@$(node -p -e "require('./package.json').devDependencies['firebase-tools']")
       - name: firebase hosting:channel:open
         id: firebase_hosting_channel_open
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          url=$(firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
-          echo "::set-output name=url::${url}"
+          url=$(firebase hosting:channel:open ${channel} | awk '{ print $3 }')
+          echo "url=${url}" >> ${GITHUB_OUTPUT}
         working-directory: ${{ env.WORKING_DIRECTORY }}
       # https://github.com/actions/github-script
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         env:
           URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
         with:
