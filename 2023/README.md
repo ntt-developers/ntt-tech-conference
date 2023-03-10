@@ -1,7 +1,7 @@
 ## NTT Tech Conference 2023
 
-- https://ntt-techconf.connpass.com/event/123456/
-- https://ntt-techconf.connpass.com/event/123456/
+- https://ntt-techconf.connpass.com/event/277705/
+- https://ntt-techconf.connpass.com/event/277708/
 
 ### How to build
 

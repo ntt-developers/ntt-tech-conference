@@ -55,10 +55,10 @@ registration:
   forms:
     - session_types:
         - Hands-on
-      url: https://ntt-techconf.connpass.com/event/123456/
+      url: https://ntt-techconf.connpass.com/event/277705/
     - session_types:
         - Presentation
-      url: https://ntt-techconf.connpass.com/event/123456/
+      url: https://ntt-techconf.connpass.com/event/277708/
 session_types:
   - description: |
       特定テーマに対して参加者に実際に手を動かしてもらうことで技術を学び取得する。
