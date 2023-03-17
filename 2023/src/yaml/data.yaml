@@ -385,6 +385,14 @@ sessions:
         speakers:
           - member_of: NTT コミュニケーションズ
             name: 岩田 紘成
+      - name: IoTデータ分析基盤を設計・構築する際の考慮点紹介
+        speakers:
+          - member_of: NTT データ
+            name: 江波 和輝
+      - name: 研究所内で社会人博士の支援策を実行してみた
+        speakers:
+          - member_of: 日本電信電話
+            name: 小宮 賢士
     type: Presentation
 settings:
   fontawesome:
