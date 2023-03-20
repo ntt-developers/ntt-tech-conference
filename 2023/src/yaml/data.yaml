@@ -385,7 +385,7 @@ sessions:
         speakers:
           - member_of: NTT コミュニケーションズ
             name: 岩田 紘成
-      - name: IoTデータ分析基盤を設計・構築する際の考慮点紹介
+      - name: IoT データ分析基盤を設計・構築する際の考慮点紹介
         speakers:
           - member_of: NTT データ
             name: 江波 和輝
