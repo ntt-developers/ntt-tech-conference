@@ -120,6 +120,9 @@ sessions:
     lessons:
       - 主にソフトウェア開発におけるドキュメントの作成・評価・運用方法の概要
     level: 初級
+    materials:
+      - text: エンジニアのためのドキュメントライティング / Docs for Developers and Paragraph Writing - Speaker Deck
+        url: https://speakerdeck.com/nttcom/docs-for-developers-and-paragraph-writing
     name: エンジニアのためのドキュメントライティング - Docs for Developers
     references:
       - text: エンジニアのためのドキュメントライティング
@@ -163,6 +166,9 @@ sessions:
       - 広告流入測定のアプリへの導入について (SDK のアプリへの実装、各広告媒体との連携について、流入データの集積の方法)
       - 得たデータをどのように収集活用しているか
     level: 中級
+    materials:
+      - text: Adjust を利用した mobile app tracking 公開用資料 at NTT Tech Conference 2023 - Speaker Deck
+        url: https://speakerdeck.com/dtitkaio/adjustwoli-yong-sitamobile-app-tracking-gong-kai-yong-zi-liao-at-ntt-tech-conference-2023
     name: Adjust を利用したモバイルアプリの流入計測について
     references:
       - text: マイトレード｜個人投資家のための投資管理アプリ
@@ -224,6 +230,9 @@ sessions:
       - ネットワーク設定を抽象化する考え方と、その利点
       - 検証環境の設定に応用するシステム例
     level: 中級
+    materials:
+      - text: ネットワーク設定の抽象化とコンテナルータを用いた検証環境の立ち上げ支援 - Speaker Deck
+        url: https://speakerdeck.com/tjmtrhs/ntt-tech-conf-2023
     name: ネットワーク設定の抽象化とコンテナルータを用いた検証環境の立ち上げ支援
     room: Track 1
     speakers:
@@ -254,6 +263,9 @@ sessions:
       - マルチベンダな機器を相互接続するための工夫点
       - OSS 運用の知見
     level: 中級
+    materials:
+      - text: マルチベンダに対応したネットワークコントローラを OSS として公開している話 (NTT Tech Conference 2023) - Speaker Deck
+        url: https://speakerdeck.com/motok1/marutibendadui-ying-nanetutowakukontororawo-oss-tositegong-kai-siteiruhua-ntt-tech-conference-2023
     name: マルチベンダに対応したネットワークコントローラを開発し OSS として公開した話
     references:
       - text: Pola PCE
@@ -283,6 +295,9 @@ sessions:
       - IT エンジニアの生き方 (例)
       - 独自施策の立ち上げ方 (例)
     level: 初級
+    materials:
+      - text: IT エンジニアとして大切にしている 3 つのこと - Speaker Deck
+        url: https://speakerdeck.com/korodroid/itensiniatositeda-qie-nisiteiru3tunokoto
     name: IT エンジニアとして大切にしている 3 つのこと
     room: Track 2
     speakers:
@@ -311,6 +326,9 @@ sessions:
       - 教育・文化に関する DX の音楽教育分野における 1 つの事例
       - 音楽情報処理によるピアノ AI 採点の 1 つの方法
     level: 中級
+    materials:
+      - text: "trueroad/tr-NTTtech2023: 「ピアノ宿題練習のための AI 採点ご紹介およびデモ」資料 --- NTT Tech Conrefence 2023"
+        url: https://github.com/trueroad/tr-NTTtech2023
     name: ピアノ宿題練習のための AI 採点ご紹介およびデモ
     references:
       - text: 音楽教育業界におけるDXを活用した音楽学習指導実現に向けた取り組み
@@ -377,15 +395,24 @@ sessions:
     name: Lightning Talks
     room: Track 2
     talks:
-      - name: AWS Mac も IaC したい!
+      - materials:
+          - text: AWS Mac も IaC したい! / AWS Mac also wants to IaC! - Speaker Deck
+            url: https://speakerdeck.com/nttcom/aws-mac-also-wants-to-iac
+        name: AWS Mac も IaC したい!
         speakers:
           - member_of: NTT コミュニケーションズ
             name: 福田 優真
-      - name: チームで定期的にブログを書けるようにした
+      - materials:
+          - text: チームで定期的にブログを書けるようにした / Tips for writing regular technical blog posts with your team - Speaker Deck
+            url: https://speakerdeck.com/nttcom/tips-for-writing-regular-technical-blog-posts-with-your-team
+        name: チームで定期的にブログを書けるようにした
         speakers:
           - member_of: NTT コミュニケーションズ
             name: 岩田 紘成
-      - name: IoT データ分析基盤を設計・構築する際の考慮点紹介
+      - materials:
+          - text: 【NTT_Tech_Conference2023】IoT データ分析基盤を設計・構築する際の考慮点紹介.pptx
+            url: https://www.slideshare.net/KazukiEnami1/ntttechconference2023iotpptx-256812365
+        name: IoT データ分析基盤を設計・構築する際の考慮点紹介
         speakers:
           - member_of: NTT データ
             name: 江波 和輝
