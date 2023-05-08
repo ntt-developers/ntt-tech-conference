@@ -19,15 +19,15 @@ about:
         - Presentation
   organizer: NTT Developers
   place: オンライン
-# archives:
-#   description: |
-#     講演の動画を YouTube で視聴可能です (講演の資料はタイムテーブルをご覧ください)。
-#     現段階で公開されていないものについては講演者の意向により非公開となっております。
-#   links:
-#     - text: Track 1
-#       url: https://www.youtube.com/watch?v=
-#     - text: Track 2
-#       url: https://www.youtube.com/watch?v=
+archives:
+  description: |
+    講演の動画を YouTube で視聴可能です (講演の資料はタイムテーブルをご覧ください)。
+    現段階で公開されていないものについては講演者の意向により非公開となっております。
+  links:
+    - text: Track 1
+      url: https://www.youtube.com/watch?v=t-stcOTkZLI
+    - text: Track 2
+      url: https://www.youtube.com/watch?v=sBriGtPQj9Q
 code_of_conduct:
   description: |
     以下の行為は禁止します。
