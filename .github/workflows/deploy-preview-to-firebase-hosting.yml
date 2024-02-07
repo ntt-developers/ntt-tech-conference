@@ -7,17 +7,17 @@ on:
       - opened
       - synchronize
 env:
-  NODE_VERSION: 19
+  NODE_VERSION: 20
   PREVIEW_EXPIRES: 7d
-  WORKING_DIRECTORY: "2023"
+  WORKING_DIRECTORY: "2024"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
@@ -29,7 +29,7 @@ jobs:
         run: npm run build
         working-directory: ${{ env.WORKING_DIRECTORY }}
       # https://github.com/actions/upload-artifact
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public/*
@@ -40,15 +40,15 @@ jobs:
       - build
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public
@@ -64,20 +64,20 @@ jobs:
       - lint
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public
       # https://github.com/google-github-actions/auth
-      - uses: google-github-actions/auth@v1
+      - uses: google-github-actions/auth@v2
         with:
           create_credentials_file: true
           credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
@@ -112,15 +112,15 @@ jobs:
       - deploy
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       # https://github.com/google-github-actions/auth
-      - uses: google-github-actions/auth@v1
+      - uses: google-github-actions/auth@v2
         with:
           create_credentials_file: true
           credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
@@ -134,7 +134,7 @@ jobs:
           echo "url=${url}" >> ${GITHUB_OUTPUT}
         working-directory: ${{ env.WORKING_DIRECTORY }}
       # https://github.com/actions/github-script
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v7
         env:
           URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
         with:
