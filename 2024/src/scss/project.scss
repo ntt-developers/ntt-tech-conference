@@ -1,0 +1,32 @@
+//--------------------------------------------------
+// Project
+//--------------------------------------------------
+
+@import url(https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;700&display=swap);
+
+//--------------------------------------------------
+// / Override
+//--------------------------------------------------
+
+$font-sans: "M PLUS 2", sans-serif;
+$option-css-variables: true;
+$selector-root-dark: "body";
+$selector-root-dark-attr: '&[data-theme="dark"]';
+$selector-root-light: "body";
+$selector-root-light-attr: '&[data-theme="light"]';
+$theme-info: #cce6ed;
+$theme-primary: #4f8bc2;
+
+//--------------------------------------------------
+// / Configs
+//--------------------------------------------------
+
+@import "musubii/src/scss/configs/_import.scss";
+@import "configs/_import.scss";
+
+//--------------------------------------------------
+// / Styles
+//--------------------------------------------------
+
+@import "musubii/src/scss/styles/_import.scss";
+@import "styles/_import.scss";

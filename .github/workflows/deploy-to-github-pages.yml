@@ -4,30 +4,28 @@ on:
     branches:
       - master
 env:
-  NODE_VERSION: 19
-  WORKING_DIRECTORY: "2023"
+  NODE_VERSION: 20
+  WORKING_DIRECTORY: "2024"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
-        run: |
-          npm ci --production
+        run: npm ci --production
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
-        run: |
-          npm run build
+        run: npm run build
         working-directory: ${{ env.WORKING_DIRECTORY }}
       # https://github.com/actions/upload-artifact
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}/public/*
@@ -38,21 +36,19 @@ jobs:
       - build
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
       - name: git config
         run: |
           git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git config --local user.name "${GITHUB_ACTOR}"
-      - name: git fetch & git checkout
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          git checkout ${GITHUB_SHA} README.md
+      - name: git checkout
+        run: git checkout ${GITHUB_SHA} README.md
       - name: rm
-        run: |
-          rm -rf ${WORKING_DIRECTORY}
+        run: rm -rf ${WORKING_DIRECTORY}
       # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: public_${{ github.sha }}
           path: ${{ env.WORKING_DIRECTORY }}
@@ -60,4 +56,4 @@ jobs:
         run: |
           git add README.md ${WORKING_DIRECTORY}
           git commit -a --amend -m 'Automatic build by GitHub Actions'
-          git push -f origin gh-pages:gh-pages
+          git push -fu origin gh-pages

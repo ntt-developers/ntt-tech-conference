@@ -1,0 +1,132 @@
+---
+about:
+  date: 2024 年 3 月 11 日 (月)
+  description: |
+    NTT Tech Conference は、NTT グループのエンジニア有志が開催するカンファレンスです。
+    NTT グループ各社が開催するイベントとは異なり、NTT グループのエンジニアたちがやりたいこと・話したいことを通じて、エンジニア同士が技術交流するためのイベントです。
+    <br />
+    NTT グループには各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発をするエンジニアがいます。
+    本イベントではそれらのエンジニアがもつノウハウや悩みを参加者と共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
+  fee: 無料 (参加登録制)
+  parts:
+    - begin_at: 13:30
+      end_at: 18:00
+      session_types: []
+    # - begin_at: ??:??
+    #   end_at: ??:??
+    #   session_types:
+    #     - Hands-on
+    # - begin_at: ??:??
+    #   end_at: ??:??
+    #   session_types:
+    #     - Workshop
+    # - begin_at: ??:??
+    #   end_at: ??:??
+    #   session_types:
+    #     - Presentation
+  organizer: NTT Developers
+  place:
+    text: docomo R&D OPEN LAB ODAIBA
+    url: https://docomo-openlab.jp/about/#access
+# archives:
+#   description: |
+#     講演の動画を YouTube で視聴可能です (講演の資料はタイムテーブルをご覧ください)。
+#     現段階で公開されていないものについては講演者の意向により非公開となっております。
+#   links:
+#     - text: Track 1
+#       url: https://www.youtube.com/watch?v=
+#     - text: Track 2
+#       url: https://www.youtube.com/watch?v=
+code_of_conduct:
+  description: |
+    以下の行為は禁止します。
+    これらに該当すると見なされる行為をされた場合、ご退場いただく場合がございますので、予めご確認ください。
+  policies:
+    - 個人、宗教団体、人材会社等による勧誘行為、宣伝行為、ヘッドハンティングまたはこれに類似する行為
+    - 営利を目的とした営業行為、宣伝行為、またはこれに類似する行為
+    - 過度な大声、騒音、各種ハラスメント等、他の参加者の迷惑になる行為
+    - 法令に違反する、またはそのおそれのある行為
+    - その他、不適切と主催者が判断する行為、目的での参加
+contact_us:
+  description: |
+    本イベントに関するお問い合わせ先は以下となります。
+  email_address: techconf-staff@ntt.com
+meta:
+  copyright: 2024 NTT Developers
+  numbering: 2024
+ogp:
+  description: NTT Tech Conference は、NTTグループのエンジニア有志が開催するエンジニアたちの技術交流を目的としたカンファレンスです。
+  image: images/banner.png
+registration:
+  description: |
+    NTT Tech Conference への参加には、事前に参加登録が必要です。
+    NTT グループのエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか?
+  forms: []
+    # - session_types:
+    #     - Hands-on
+    #   url: https://ntt-techconf.connpass.com/event/123456/
+    # - session_types:
+    #     - Workshop
+    #   url: https://ntt-techconf.connpass.com/event/123456/
+    # - session_types:
+    #     - Presentation
+    #   url: https://ntt-techconf.connpass.com/event/123456/
+session_types: []
+  # - description: |
+  #     特定テーマに対して参加者に実際に手を動かしてもらうことで技術を学び取得する。
+  #   is_exclusive: true
+  #   name: Hands-on
+  #   timetable_style: list
+  # - description: |
+  #     特定のテーマに対してグループワークを通じて学びを取得する。
+  #   is_exclusive: true
+  #   name: Workshop
+  #   timetable_style: list
+  # - description: |
+  #     発表者による特定テーマに関する発表・質疑応答を行う。
+  #   is_exclusive: false
+  #   name: Presentation
+  #   timetable_style: table
+sessions: []
+  # - begin_at: ??:??
+  #   description: |
+  #     サンプル
+  #   end_at: ??:??
+  #   lessons:
+  #     - サンプル
+  #   level: 初級
+  #   name: サンプル
+  #   references:
+  #     - text: サンプル
+  #       url: https://example.com/
+  #   room: Track 1
+  #   speakers:
+  #     - description: |
+  #         サンプル
+  #       member_of: NTT コミュニケーションズ
+  #       name: 堀内 晨彦
+  #   tags:
+  #     - Sample
+  #   type: Presentation
+settings:
+  fontawesome:
+    # domains:
+    #   - ntt-developers.github.io
+    #   - *.web.app (Firebase Hosting)
+    # format: svg
+    # plan: pro
+    # version: 6.x
+    kit: e298378c10
+timetable:
+  break_time_min: 5
+  rooms: []
+    # - name: Hands-on
+    #   used_by: Hands-on
+    # - name: Workshop
+    #   used_by: Workshop
+    # - name: Track 1
+    #   used_by: Presentation
+    # - name: Track 2
+    #   used_by: Presentation
+  windows: []
+    # - begin_at: ??:??
