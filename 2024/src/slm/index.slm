@@ -133,7 +133,7 @@ html lang="ja"
               - for session_type of this.session_types
                 - rooms = this.timetable.rooms.filter(r => r.used_by === session_type.name)
                 - if session_type.timetable_style === "list"
-                  div class="column is-12 is-fablet-6 is-space"
+                  div class="column is-12 is-space"
                     h3 class="text is-strong is-lg"
                       | ${session_type.name}
                     - for room of rooms
