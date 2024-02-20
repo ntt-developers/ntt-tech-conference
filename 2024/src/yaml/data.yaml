@@ -83,15 +83,15 @@ session_types:
   #   name: Workshop
   #   timetable_style: list
   - description: |
-      発表者による特定テーマに関する発表・質疑応答を行う。
-    is_exclusive: false
-    name: Presentation
-    timetable_style: table
-  - description: |
       発表者による展示・質疑応答を行う。
     is_exclusive: false
     name: Showcase
     timetable_style: list
+  - description: |
+      発表者による特定テーマに関する発表・質疑応答を行う。
+    is_exclusive: false
+    name: Presentation
+    timetable_style: table
 sessions:
   - begin_at: 13:30
     end_at: null

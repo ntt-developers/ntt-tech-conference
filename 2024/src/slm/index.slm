@@ -56,7 +56,7 @@ html lang="ja"
                             | ${part.session_types.join(" / ")} : ${part.begin_at} 〜 ${part.end_at}
                         - else
                           li class="item"
-                            | ${part.begin_at} 〜 ${part.end_at} (予定)
+                            | ${part.begin_at} 〜 ${part.end_at}
                   li class="item"
                     | 会場 :
                     a class="text is-primary is-link is-margin-left-xs" href="${this.about.place.url}" rel="noopener noreferrer" target="_blank"
