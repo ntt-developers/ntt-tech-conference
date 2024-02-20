@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp",
     "deploy": "",
-    "lint": "prettier -w public/index.html && textlint public/index.html",
+    "lint": "prettier -w public/index.html && textlint public/index.html && textlint src/yaml/data.yml",
     "preview": "gulp preview"
   },
   "repository": {

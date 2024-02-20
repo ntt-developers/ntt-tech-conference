@@ -126,7 +126,8 @@ html lang="ja"
                   ul class="list is-kome"
                     li class="item is-padding-left-xs"
                       - exclusive_session_types = this.session_types.filter(s => s.is_exclusive)
-                      | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つのみ参加可能です。
+                        - if exclusive_session_types.size > 0
+                        | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つの参加となります。
                     li class="item is-padding-left-xs"
                       | タイムテーブルは変更になる可能性があります。
               - for session_type of this.session_types
@@ -152,7 +153,7 @@ html lang="ja"
                     ul class="list is-kome"
                       - if rooms.length > 1
                         li class="item is-padding-left-xs"
-                          | ${rooms.length} Track に分けて実施します。
+                          | ${rooms.length} Track に分けての実施となります。
                       li class="item is-padding-left-xs"
                         | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
                     nav

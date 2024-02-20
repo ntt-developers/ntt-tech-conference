@@ -89,7 +89,7 @@ session_types:
     timetable_style: table
   - description: |
       発表者による展示・質疑応答を行う。
-    is_exclusive: true
+    is_exclusive: false
     name: Showcase
     timetable_style: list
 sessions:
@@ -286,7 +286,7 @@ sessions:
     room: BRIDGE
     speakers:
       - description: |
-          メイン案件でソフトウェア開発をしながら，docomo グループ内のいくつかの案件でデザイナーのようなロールの動きをしています
+          メイン案件でソフトウェア開発をしながら，docomo グループ内のいくつかの案件でデザイナーのようなロールの動きをしています。
         member_of: NTTPCコミュニケーションズ SC 本部
         name: 山本卓嗣
     tags:

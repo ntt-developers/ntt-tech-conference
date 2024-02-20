@@ -40,9 +40,7 @@
     },
     "preset-ja-technical-writing": {
       "ja-no-abusage": true,
-      "ja-no-mixed-period": {
-        "allowPeriodMarks": [":"]
-      },
+      "ja-no-mixed-period": false,
       "ja-no-redundant-expression": true,
       "ja-unnatural-alphabet": true,
       "ja-no-weak-phrase": false,
@@ -51,6 +49,7 @@
         "strict": false
       },
       "no-exclamation-question-mark": false,
+      "no-mix-dearu-desumasu": false,
       "no-unmatched-pair": true,
       "max-kanji-continuous-len": {
         "allow": [],
