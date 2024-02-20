@@ -37,14 +37,15 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - uses: actions/checkout@v4
-        with:
-          ref: gh-pages
       - name: git config
         run: |
           git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git config --local user.name "${GITHUB_ACTOR}"
-      - name: git checkout
-        run: git checkout ${GITHUB_SHA} README.md
+      - name: git fetch & git checkout
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          git checkout ${GITHUB_SHA} README.md
       - name: rm
         run: rm -rf ${WORKING_DIRECTORY}
       # https://github.com/actions/download-artifact
