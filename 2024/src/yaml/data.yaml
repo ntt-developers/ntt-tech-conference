@@ -5,13 +5,10 @@ about:
     NTT Tech Conference は、NTT グループのエンジニア有志が開催するカンファレンスです。
     NTT グループ各社が開催するイベントとは異なり、NTT グループのエンジニアたちがやりたいこと・話したいことを通じて、エンジニア同士が技術交流するためのイベントです。
     <br />
-    NTT グループには各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社の様々な案件でシステム開発をするエンジニアがいます。
+    NTT グループには各種 OSS のコミッタ、メンテナ、コントリビュータをはじめとしたエンジニアや、各社のさまざまな案件でシステム開発をするエンジニアがいます。
     本イベントではそれらのエンジニアがもつノウハウや悩みを参加者と共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
   fee: 無料 (参加登録制)
   parts:
-    - begin_at: 13:30
-      end_at: 18:00
-      session_types: []
     # - begin_at: ??:??
     #   end_at: ??:??
     #   session_types:
@@ -20,10 +17,14 @@ about:
     #   end_at: ??:??
     #   session_types:
     #     - Workshop
-    # - begin_at: ??:??
-    #   end_at: ??:??
-    #   session_types:
-    #     - Presentation
+    - begin_at: 13:30
+      end_at: 18:00
+      session_types:
+        - Presentation
+    - begin_at: 14:20
+      end_at: 17:40
+      session_types:
+        - Showcase
   organizer: NTT Developers
   place:
     text: docomo R&D OPEN LAB ODAIBA
@@ -71,7 +72,7 @@ registration:
     # - session_types:
     #     - Presentation
     #   url: https://ntt-techconf.connpass.com/event/123456/
-session_types: []
+session_types:
   # - description: |
   #     特定テーマに対して参加者に実際に手を動かしてもらうことで技術を学び取得する。
   #   is_exclusive: true
@@ -82,32 +83,315 @@ session_types: []
   #   is_exclusive: true
   #   name: Workshop
   #   timetable_style: list
-  # - description: |
-  #     発表者による特定テーマに関する発表・質疑応答を行う。
-  #   is_exclusive: false
-  #   name: Presentation
-  #   timetable_style: table
-sessions: []
-  # - begin_at: ??:??
-  #   description: |
-  #     サンプル
-  #   end_at: ??:??
-  #   lessons:
-  #     - サンプル
-  #   level: 初級
-  #   name: サンプル
-  #   references:
-  #     - text: サンプル
-  #       url: https://example.com/
-  #   room: Track 1
-  #   speakers:
-  #     - description: |
-  #         サンプル
-  #       member_of: NTT コミュニケーションズ
-  #       name: 堀内 晨彦
-  #   tags:
-  #     - Sample
-  #   type: Presentation
+  - description: |
+      発表者による展示・質疑応答を行う。
+    is_exclusive: false
+    name: Showcase
+    timetable_style: list
+  - description: |
+      発表者による特定テーマに関する発表・質疑応答を行う。
+    is_exclusive: false
+    name: Presentation
+    timetable_style: table
+sessions:
+  - begin_at: 13:30
+    end_at: null
+    name: Opening
+    room: BRIDGE
+    type: Presentation
+  - begin_at: 14:20
+    description: |
+      X で少し話題になっていたネタを自分でも遊んで見たかったので実際に Web 作ってリリースしてみたら想定以上に反響が大きかった話です、三部構成の予定です。
+      <br>
+      ＜第１部＞<br>
+      AlphaGo で話題になった AlphaZero という AI のモデルを利用してブラウザで囲碁 AI を動かすための技術的な話。<br>
+      ＜第２部＞<br>
+      実際にリリースした後に Web ニュースや NHK 囲碁番組に取り上げられたり、それらの活動を通じて、さまざまな人とのつながりができた話。<br>
+      ＜第３部＞<br>
+      これらの経験が仕事にどう生きてくるかの話。
+    end_at: 14:50
+    lessons:
+      - 趣味でサービスをリリースする方法
+      - GPU を利用するような AI モデルをブラウザで効率的に動かす方法
+      - 趣味を仕事で生かす方法
+    level: 中級
+    name: 趣味で AI を使った Web サービスをリリースしたら 30 万アクセスきた話
+    references: []
+    room: BRIDGE
+    speakers:
+    - description: |
+        2012 年 NTTコムウェア入社、固定回線管理システムの方式・設計担当を経て、光 BOX、植物工場管理システム、
+        d払い開発等多種多様な開発プロジェクトに従事し、現在はドコモ GrLLM 付加価値基盤開発にてテックリード・チームリードを兼任中。
+        オフにおいても興味の赴くままサービス企画・開発を実施するのが趣味。
+      member_of: NTTコムウェア NTT IT 戦略事業本部
+      name: 藤平俊輔
+    tags:
+      - AI
+      - Application
+      - Cloud
+      - Machine Learning
+      - UI/UX
+    type: Presentation
+  - begin_at: 14:20
+    description: |
+      一般的なピアノ教室では、生徒は教室で指導者から週 1 回 30 分程度のレッスンを受け、指導者はいくつかの練習曲を宿題として課し、生徒が自宅で毎日練習することを求めます。
+      hiketa システムはこうした指導者の負荷軽減、生徒の効果的な上達を支援するもので、ピアノ指導者と生徒を募集し 2023 年 10 月からモニターを実施しています。<br>
+      hiketa のピアノ AI 採点は自宅練習時の演奏ミスを指摘することで次のレッスンまでに正しく譜面通り演奏ができるようになり、
+      指導者は限られたレッスン時間をミスの指摘修正に費やすことなく音楽的な表情付けなどに専念できるようになります。
+      また、hiketa により生徒が自宅で何をどれぐらい練習しているか把握できるので、それを踏まえた効果的なレッスンが可能になるだけではなく、
+      自宅練習回数などによるポイント付与、指導者からのボーナスポイント付与というインセンティブにより生徒の自宅練習増加を促すことができます。<br>
+      今回はピアノを用意して本システムと、より高度な AI 採点技術をご来場された方にご試用いただきます。
+    end_at: 17:40
+    lessons:
+      - 教育・文化に関する DX の音楽教育分野における 1 つの事例
+      - 音楽情報処理によるピアノ AI 採点の 1 つの方法
+    level: 中級
+    name: おうちのピアノ練習をサポートする「hiketa (仮称)」と AI 採点技術
+    references:
+      - text:  NTT Tech Conference 2023 講演「ピアノ宿題練習のための AI 採点ご紹介およびデモ」
+        url: https://www.youtube.com/watch?v=sBriGtPQj9Q&t=1889s
+      - text: 報道発表資料「音楽教育業界におけるDXを活用した音楽学習指導実現に向けた取り組み」
+        url: https://www.ntt-east.co.jp/release/detail/20220608_01.html
+    room: FOREST
+    speakers:
+      - description: |
+          音楽教育分野のデジタルトランスフォーメーションなどに従事。
+        member_of: NTT東日本
+        name: 細田 真道
+      - description: |
+          音楽教育分野のデジタルトランスフォーメーションなどのマネジメントに従事。
+        member_of: NTT東日本
+        name: 小林 丈之
+      - description: |
+          ピアノ学習のデジタル教材開発企画に従事。
+        member_of: 東音企画
+        name: 本村 愛眞
+      - description: |
+          一般社団法人全日本ピアノ指導者協会（ピティナ）専務理事。
+        member_of: ピティナ
+        name: 福田 成康
+    tags:
+      - AI
+      - Application
+      - UI/UX
+      - Use Case
+      - 音楽情報処理
+    type: Showcase
+  - begin_at: 14:20
+    description: |
+      SONiC は、近年データセンタを中心に急速に利用が拡大しており、オープンネットワークOS ではデファクトスタンダートとなりつつある。
+      一方で従来のキャリアオペレーションなどを考慮すると機能改善すべき点もあり、SONiC にキャリア向け機能の追加や既存機能の改善に取り組んでいる。
+    end_at: 14:50
+    lessons:
+      - オープンネットワークOS SONiC の概要について
+      - SONiC のルーティング機能と FIB の効率化をするために追加実装した機能について
+      - SONiC の光伝送デバイスサポートについて
+    level: 初級
+    name: オープンネットワークOS SONiCへの取り組み
+    references: []
+    room: PARK
+    speakers:
+    - description: |
+        オープンネットワークOS SONiC の研究開発活動をしています。
+      member_of: 日本電信電話 NTTネットワークイノベーションセンタ
+      name: 中野寛二
+    - description: |
+      member_of: 日本電信電話 NTTネットワークイノベーションセンタ
+      name: 杉園幸司
+    tags:
+      - Network
+      - OSS
+    type: Presentation
+  - begin_at: 15:00
+    description: |
+      カオスエンジアリングは、システムを中心としたプロダクト開発における障害対策の一手法で、
+      本番環境へ故意に問題を発生させて復旧までのプロセスを検証するものです。<br>
+      そんなカオスエンジアリングを、ネットワークオペレーションにも導入した我々の取り組みを紹介します。
+      しかし対象システムがクラウド基盤上に展開するアプリである場合と、実体のルータで構成されるネットワークでは大きな差があり、我々がその差をどう考えて工夫したのか共有します。
+    end_at: 15:30
+    lessons:
+      - 少しずつ始めるカオスエンジアリングのユースケース
+      - 一見単純そうな、ネットワークの障害試験の難しさ事情
+    level: 初級
+    name: 皆がすなるカオスエンジアリングといふものを、ネットワークオペレーションでもしてみむとてするなり
+    references: []
+    room: BRIDGE
+    speakers:
+      - description: |
+          SI 系 R&D を経て 2019 年から現職。 キャリア IP バックボーンの検証開発をしつつ、NTT Com 検証網の AS/L3/L2/WLAN 運用に従事。
+        member_of: NTTコミュニケーションズ イノベーションセンター
+        name: 田島照久
+    tags:
+      - Operation
+      - DevOps
+    type: Presentation
+  - begin_at: 15:00
+    description: |
+      NTTコミュニケーションズでは Node-AI (https://app.nodeai.io/) という WEB アプリケーションを内製開発しています。
+      そしてつい先日、Node-AI のフロントエンドは Vue.js v2.x を捨て去り React (Next.js) に完全移行を果たしました。<br>
+      本セッションでは Node-AI の新しいフロントエンドを支えている技術スタックや設計・アーキテクチャについてお話したいと思います。
+    end_at: 15:30
+    lessons:
+      - フロントエンド
+      - React
+      - Next.js
+      - 設計
+      - アーキテクチャ
+      - リアルタイム通信
+      - 複数人同時共同編集
+      - SVG
+      - UNDO/REDO
+    level: 中級
+    name: Node-AI のリッチな WEB フロントエンドを支える技術
+    references: []
+    room: PARK
+    speakers:
+      - description: |
+        member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
+        name: 成冨志優
+    tags:
+      - Application
+      - OSS
+    type: Presentation
+  - begin_at: 15:30
+    end_at: 15:50
+    name: 休憩
+    room: BRIDGE
+    type: Presentation
+  - begin_at: 15:30
+    end_at: 15:50
+    name: 休憩
+    room: PARK
+    type: Presentation
+  - begin_at: 15:50
+    description: |
+      - サービス開発にデザインツールを導入することによる効果<br>
+      - ステークホルダーとの合意形成方法(よくある方法)<br>
+      - 課題<br>
+      - デザインツールを導入した合意形成方法<br>
+      - 効果<br>
+      - ユーザビリティテストを実施してみて，学んだこと<br>
+      - KA 法の説明および課題<br>
+      - 分析をグループワークで実施することの重要性<br>
+      - グループワークの落とし穴(時間がかかる)<br>
+      - 時期感等に応じて、分析方法を選ぼうといった内容
+    end_at: 16:20
+    lessons:
+      - サービス開発にデザインツールを導入することによる効果
+      - いくつかのユーザビリティテスト分析手法とそれらの注意点
+    level: 初級
+    name: サービス開発にデザインツールやユーザビリティテストを導入してよかったこと，気をつけること
+    references: []
+      # - text:
+      #   url:
+    room: BRIDGE
+    speakers:
+      - description: |
+          メイン案件でソフトウェア開発をしながら，docomo グループ内のいくつかの案件でデザイナーのようなロールの動きをしています。
+        member_of: NTTPCコミュニケーションズ SC 本部
+        name: 山本卓嗣
+    tags:
+      - UI/UX
+      - Agile
+    type: Presentation
+  - begin_at: 15:50
+    description: |
+      NTTデータグループ技術開発本部では、PLATEAU など都市の 3D地図整備に向けた取り組みとして、3D点群データの計測や位置精度向上に取り組んでいます。<br>
+      本セッションでは、この取り組みに関して関連技術や活用ユースケースについてご紹介します。
+    end_at: 16:20
+    lessons:
+      - 3D点群データの特性、活用ユースケース
+    level: 初級
+    name: 3D点群データの位置精度向上と活用ユースケース
+    references: []
+    room: PARK
+    speakers:
+      - description: |
+        member_of: NTTデータグループ 技術開発本部
+        name: 福田裕大
+    tags:
+      - Use Case
+      - AI
+      - Application
+      - Machine Learning
+    type: Presentation
+  - begin_at: 16:30
+    description: |
+      今年度取り組んだ、GitHub Copilot を中心とした生成 AI の活用によるソフトウェア開発効率向上の成果について共有したいと考えています。<br>
+      主なトピックは以下の通りです。<br>
+        - 弊担当が抱えている課題<br>
+        - 生成 AI に期待すること<br>
+        - GitHub Copilot のコーディング時間短縮効果測定結果の共有<br>
+        - GitHub Copilot Chat / ChatGPT の活用事例<br>
+        - 利用者アンケートにもとづく開発者体験の変化<br>
+    end_at: 17:00
+    lessons:
+      - GitHub Copilot(Chat 含む)、ChatGPT がソフトウェア開発にどのような恩恵をもたらすか。
+    level: 初級
+    name: 生成 AI を活用したソフトウェア開発効率向上の取り組み紹介
+    references: []
+    room: BRIDGE
+    speakers:
+    - description: |
+        2007 年度入社。以降ソフトウェア開発部隊でバックエンドシステムの開発に従事しています。
+        現在はチームリーダーとしてさまざまな案件をこなしつつ、サービス開発プロセスの改善活動も行っています。
+      member_of: NTTPCコミュニケーションズ サービスクリエーション本部 第一サービスクリエーション部 サービスクリエーション担当
+      name: 川尻 真寛
+    tags:
+      - AI
+      - Work Style
+    type: Presentation
+  - begin_at: 16:30
+    description: |
+        Kubernetes クラスタに対して、管理者・開発者・運用者など立場の異なる人々がアクセスする状況では、
+        それぞれの立場に応じた適切な権限を与えることが必要です。<br>
+        本セッションでは、Kubernetes の標準機能である Role Based Access Control (RBAC) について調べた内容と、
+        GitOps ツールである ArgoCD と RBAC を組み合わせて動かしてみた結果についてご紹介します。
+    end_at: 17:00
+    lessons:
+      - Kubernetes における認可の基本
+      - Kubernetes における権限テスト方法
+      - ArgoCD と RBAC を組み合わせた使い方の例
+    level: 初級
+    name: Kubernetes 認可周り事始め
+    references: []
+    room: PARK
+    speakers:
+    - description: |
+      member_of: NTTデータグループ 技術革新統括本部
+      name: 川崎健人
+    tags:
+      - Container
+      - OSS
+      - Security
+    type: Presentation
+  - begin_at: 17:10
+    description: |
+        NTT コミュニケーションズで提供している NeWork において、それまで実施していた毎週のリリースにおける課題を解決するため、
+        リリース頻度を毎日にした取り組みについてご紹介します。
+    end_at: 17:40
+    lessons:
+      - リリースプロセスの一例
+      - ブランチ運用の一例
+    level: 初級
+    name: リリース頻度を毎週から毎日にしてみた
+    references: []
+    room: BRIDGE
+    speakers:
+      - description: |
+          2013 年 NTT コミュニケーションズ入社。2021 年から現職。NeWork の開発全体のリーダーとして、開発・運用に従事。
+        member_of: NTTコミュニケーションズ C&A部
+        name: 藤野晴樹
+    tags:
+      - Agile
+      - DevOps
+      - Use Case
+    type: Presentation
+  - begin_at: 17:45
+    end_at: null
+    name: Closing
+    room: BRIDGE
+    type: Presentation
 settings:
   fontawesome:
     # domains:
@@ -118,15 +402,21 @@ settings:
     # version: 6.x
     kit: e298378c10
 timetable:
-  break_time_min: 5
-  rooms: []
-    # - name: Hands-on
-    #   used_by: Hands-on
-    # - name: Workshop
-    #   used_by: Workshop
-    # - name: Track 1
-    #   used_by: Presentation
-    # - name: Track 2
-    #   used_by: Presentation
-  windows: []
-    # - begin_at: ??:??
+  break_time_min: 10
+  rooms:
+    - name: BRIDGE
+      used_by: Presentation
+    - name: FOREST
+      used_by: Showcase
+    - name: PARK
+      used_by: Presentation
+  windows:
+    - begin_at: 13:30
+    - begin_at: 13:40
+    - begin_at: 14:20
+    - begin_at: 15:00
+    - begin_at: 15:30
+    - begin_at: 15:50
+    - begin_at: 16:30
+    - begin_at: 17:10
+    - begin_at: 17:45

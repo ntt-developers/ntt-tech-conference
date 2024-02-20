@@ -51,7 +51,7 @@ html lang="ja"
                     | 日時 : ${this.about.date}
                     ul class="list is-disc"
                       - for part of this.about.parts
-                        - if part.session_types.length > 1
+                        - if part.session_types.length > 0
                           li class="item"
                             | ${part.session_types.join(" / ")} : ${part.begin_at} 〜 ${part.end_at}
                         - else
@@ -126,13 +126,14 @@ html lang="ja"
                   ul class="list is-kome"
                     li class="item is-padding-left-xs"
                       - exclusive_session_types = this.session_types.filter(s => s.is_exclusive)
-                      | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つのみ参加可能です。
+                        - if exclusive_session_types.size > 0
+                        | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つの参加となります。
                     li class="item is-padding-left-xs"
                       | タイムテーブルは変更になる可能性があります。
               - for session_type of this.session_types
                 - rooms = this.timetable.rooms.filter(r => r.used_by === session_type.name)
                 - if session_type.timetable_style === "list"
-                  div class="column is-12 is-fablet-6 is-space"
+                  div class="column is-12 is-space"
                     h3 class="text is-strong is-lg"
                       | ${session_type.name}
                     - for room of rooms
@@ -152,7 +153,7 @@ html lang="ja"
                     ul class="list is-kome"
                       - if rooms.length > 1
                         li class="item is-padding-left-xs"
-                          | ${rooms.length} Track に分けて実施します。
+                          | ${rooms.length} Track に分けての実施となります。
                       li class="item is-padding-left-xs"
                         | 各セッションの間に ${this.timetable.break_time_min} 分の休憩を予定しております。
                     nav

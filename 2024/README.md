@@ -4,7 +4,19 @@
 
 ```
 $ npm install
-$ npm run-script build
+$ npm run build
+```
+
+### How to local preview
+
+```
+$ npm run preview
+```
+
+### How to lint
+
+```
+$ npm run lint
 ```
 
 ### How to deploy
