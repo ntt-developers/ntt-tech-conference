@@ -87,6 +87,11 @@ session_types:
     is_exclusive: false
     name: Presentation
     timetable_style: table
+  - description: |
+      発表者による展示・質疑応答を行う。
+    is_exclusive: true
+    name: Showcase
+    timetable_style: list
 sessions:
   - begin_at: 13:30
     end_at: null
@@ -170,7 +175,7 @@ sessions:
       - UI/UX
       - Use Case
       - 音楽情報処理
-    type: Presentation
+    type: Showcase
   - begin_at: 14:20
     description: |
       SONiC は、近年データセンタを中心に急速に利用が拡大しており、オープンネットワークOS ではデファクトスタンダートとなりつつある。
@@ -401,7 +406,7 @@ timetable:
     - name: BRIDGE
       used_by: Presentation
     - name: FOREST
-      used_by: Presentation
+      used_by: Showcase
     - name: PARK
       used_by: Presentation
   windows:
