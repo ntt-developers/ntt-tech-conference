@@ -9,9 +9,6 @@ about:
     本イベントではそれらのエンジニアがもつノウハウや悩みを参加者と共有・議論することで、参加者がもっとおもしろいエンジニアになることを目的としています。
   fee: 無料 (参加登録制)
   parts:
-    - begin_at: 13:30
-      end_at: 18:00
-      session_types:
     # - begin_at: ??:??
     #   end_at: ??:??
     #   session_types:
@@ -20,10 +17,14 @@ about:
     #   end_at: ??:??
     #   session_types:
     #     - Workshop
-        - begin_at: 13:30
-          end_at: 18:00
-          session_types:
-            - Presentation
+    - begin_at: 13:30
+      end_at: 18:00
+      session_types:
+        - Presentation
+    - begin_at: 14:20
+      end_at: 17:40
+      session_types:
+        - Showcase
   organizer: NTT Developers
   place:
     text: docomo R&D OPEN LAB ODAIBA

@@ -51,12 +51,12 @@ html lang="ja"
                     | 日時 : ${this.about.date}
                     ul class="list is-disc"
                       - for part of this.about.parts
-                        - if part.session_types.length > 1
+                        - if part.session_types.length > 0
                           li class="item"
                             | ${part.session_types.join(" / ")} : ${part.begin_at} 〜 ${part.end_at}
                         - else
                           li class="item"
-                            | ${part.begin_at} 〜 ${part.end_at}
+                            | ${part.begin_at} 〜 ${part.end_at} (予定)
                   li class="item"
                     | 会場 :
                     a class="text is-primary is-link is-margin-left-xs" href="${this.about.place.url}" rel="noopener noreferrer" target="_blank"
