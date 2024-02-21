@@ -62,16 +62,16 @@ registration:
   description: |
     NTT Tech Conference への参加には、事前に参加登録が必要です。
     NTT グループのエンジニアと交流して、一緒に「もっとおもしろいエンジニア」を目指しませんか?
-  forms: []
+  forms:
     # - session_types:
     #     - Hands-on
     #   url: https://ntt-techconf.connpass.com/event/123456/
     # - session_types:
     #     - Workshop
     #   url: https://ntt-techconf.connpass.com/event/123456/
-    # - session_types:
-    #     - Presentation
-    #   url: https://ntt-techconf.connpass.com/event/123456/
+    - session_types:
+        - Presentation
+      url: https://ntt-techconf.connpass.com/event/311194/
 session_types:
   # - description: |
   #     特定テーマに対して参加者に実際に手を動かしてもらうことで技術を学び取得する。
