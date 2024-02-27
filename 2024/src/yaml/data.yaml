@@ -227,7 +227,7 @@ sessions:
     type: Presentation
   - begin_at: 15:00
     description: |
-      NTTコミュニケーションズでは Node-AI (https://app.nodeai.io/) という WEB アプリケーションを内製開発しています。
+      NTTコミュニケーションズでは Node-AI という WEB アプリケーションを内製開発しています。
       そしてつい先日、Node-AI のフロントエンドは Vue.js v2.x を捨て去り React (Next.js) に完全移行を果たしました。<br>
       本セッションでは Node-AI の新しいフロントエンドを支えている技術スタックや設計・アーキテクチャについてお話したいと思います。
     end_at: 15:30
@@ -243,12 +243,14 @@ sessions:
       - UNDO/REDO
     level: 中級
     name: Node-AI のリッチな WEB フロントエンドを支える技術
-    references: []
+    references:
+      - text: Node-AI
+        url: https://app.nodeai.io/
     room: PARK
     speakers:
       - description: |
         member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
-        name: 成冨志優
+        name: 何縫ねの。
     tags:
       - Application
       - OSS
