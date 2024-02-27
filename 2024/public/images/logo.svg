@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <defs>
   <symbol id="logo" viewBox="0 0 400 150">
     <g>
       <g>
@@ -88,7 +87,6 @@
         <path fill="var(--body-color)"
           d="M236.11,126.41v10.74h1.94v1.19h-1.94v3.48h-1.19v-3.48h-9.44l-.24-1.43,8.91-10.5h1.96Zm-1.19,.88l-8.41,9.86h8.41v-9.86Z" />
       </g>
-    </g>
     </g>
   </symbol>
 </svg>
