@@ -99,6 +99,30 @@ sessions:
     name: Opening
     room: BRIDGE
     type: Presentation
+  - begin_at: 13:40
+    description: |
+      EC サイトを含め、公開システムを開発する場合、機能要件に目が行きがちになりますが、
+      アプリケーションの規模が大きくなればなるほど、非機能要件のアップデート容易性への考慮が重要になると感じています。<br>
+      今回のカンファレンスでは、実際のアプリケーション開発現場での課題や検討事項を共有させていただきます。
+    end_at: 14:20
+    lessons:
+      - 社外向けサイト開発における現場の状況
+    level: 初級
+    name: アプリケーション動作環境のアップデート効率化に向けた検討
+    references:
+      - text: コミックシーモア
+        url: https://www.cmoa.jp/
+    room: BRIDGE
+    speakers:
+    - description: |
+        1999 年入社。2019 年より現在の NTTソルマーレ電子書籍事業部にて、電子コミックに関するシステム開発に携わっています。
+        仕事が終わったら、ダイエットのため、ウォーキングに多くの時間を費やしています。
+      member_of: NTTソルマーレ 電子書籍事業部
+      name: 掛井恒彦
+    tags:
+      - Operation
+      - Security
+    type: Presentation
   - begin_at: 14:20
     description: |
       X で少し話題になっていたネタを自分でも遊んで見たかったので実際に Web 作ってリリースしてみたら想定以上に反響が大きかった話です、三部構成の予定です。
