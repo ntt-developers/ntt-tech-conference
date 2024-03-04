@@ -413,6 +413,29 @@ sessions:
       - DevOps
       - Use Case
     type: Presentation
+  - begin_at: 17:10
+    end_at: 17:40
+    level: 初級
+    name: Lightning Talks
+    room: PARK
+    talks:
+      - name: タテ割りを打破するために社内コミュニティを立ち上げた話
+        speakers:
+          - member_of: NTTテクノクロス
+            name: 川崎裕香(かわちゃき)
+      - name: 俺はどうしても結婚式でイントロクイズがしたい
+        speakers:
+          - member_of: NTT東日本
+            name: 長嶋圭太(SPA)
+      - name: Qmonus Value Stream の利用者を社外にも広げようとしてる話
+        speakers:
+          - member_of: NTTコミュニケーションズ
+            name: 松本博文
+      - name: 祝 10 周年！ AWS Lambda のトレンドを 5 分で見てみよう
+        speakers:
+          - member_of: NTTテクノクロス
+            name: 渡邉洋平
+    type: Presentation
   - begin_at: 17:45
     end_at: null
     name: Closing
