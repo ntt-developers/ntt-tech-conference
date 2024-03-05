@@ -108,7 +108,7 @@ sessions:
     lessons:
       - 社外向けサイト開発における現場の状況
     level: 初級
-    name: アプリケーション動作環境のアップデート効率化に向けた検討
+    name: コミックシーモアにおけるアプリケーション動作環境のアップデート効率化に向けた検討
     references:
       - text: コミックシーモア
         url: https://www.cmoa.jp/
