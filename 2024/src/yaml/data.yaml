@@ -435,6 +435,10 @@ sessions:
         speakers:
           - member_of: NTTテクノクロス
             name: 渡邉洋平
+      - name: 開発者が楽しく使えるラボをできるだけ手作りで作った話
+        speakers:
+          - member_of: NTTドコモ
+            name: 和田充史
     type: Presentation
   - begin_at: 17:45
     end_at: null
