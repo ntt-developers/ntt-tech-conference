@@ -281,7 +281,7 @@ sessions:
     type: Presentation
   - begin_at: 15:30
     end_at: 15:50
-    name: 休憩
+    name: 休憩 (配信：おうちのピアノ練習をサポートする「hiketa (仮称)」と AI 採点技術)
     room: BRIDGE
     type: Presentation
   - begin_at: 15:30
