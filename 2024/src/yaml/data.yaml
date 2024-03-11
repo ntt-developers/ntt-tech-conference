@@ -289,7 +289,7 @@ sessions:
     name: 休憩
     room: PARK
     type: Presentation
-  - begin_at: 15:50
+  - begin_at: 15:55
     description: |
       NTTPCコミュニケーションズは、中小企業の SASE/ゼロトラスト推進を目的とした DNS セキュリティサービス「Secure Access Gateway(SAG)」や、
       NW サービスの「InfoSphere」をリリースしております。
@@ -300,7 +300,7 @@ sessions:
       - 開発にデザインツールを導入してよかったこと<br>
       - ユーザビリティテストを回す際に気をつけたほうが良いなと思ったこと<br>
       に関する学びがありましたので、皆さんにも共有できればと思います。
-    end_at: 16:20
+    end_at: 16:25
     lessons:
       - サービス開発にデザインツールを導入することによる効果
       - ユーザビリティテスト手法
@@ -322,11 +322,11 @@ sessions:
       - UI/UX
       - Agile
     type: Presentation
-  - begin_at: 15:50
+  - begin_at: 15:55
     description: |
       NTTデータグループ技術開発本部では、PLATEAU など都市の 3D地図整備に向けた取り組みとして、3D点群データの計測や位置精度向上に取り組んでいます。<br>
       本セッションでは、この取り組みに関して関連技術や活用ユースケースについてご紹介します。
-    end_at: 16:20
+    end_at: 16:25
     lessons:
       - 3D点群データの特性、活用ユースケース
     level: 初級
@@ -343,7 +343,7 @@ sessions:
       - Application
       - Machine Learning
     type: Presentation
-  - begin_at: 16:30
+  - begin_at: 16:35
     description: |
       今年度取り組んだ、GitHub Copilot を中心とした生成 AI の活用によるソフトウェア開発効率向上の成果について共有したいと考えています。<br>
       主なトピックは以下の通りです。<br>
@@ -352,7 +352,7 @@ sessions:
         - GitHub Copilot のコーディング時間短縮効果測定結果の共有<br>
         - GitHub Copilot Chat / ChatGPT の活用事例<br>
         - 利用者アンケートにもとづく開発者体験の変化<br>
-    end_at: 17:00
+    end_at: 17:05
     lessons:
       - GitHub Copilot(Chat 含む)、ChatGPT がソフトウェア開発にどのような恩恵をもたらすか。
     level: 初級
@@ -369,13 +369,13 @@ sessions:
       - AI
       - Work Style
     type: Presentation
-  - begin_at: 16:30
+  - begin_at: 16:35
     description: |
         Kubernetes クラスタに対して、管理者・開発者・運用者など立場の異なる人々がアクセスする状況では、
         それぞれの立場に応じた適切な権限を与えることが必要です。<br>
         本セッションでは、Kubernetes の標準機能である Role Based Access Control (RBAC) について調べた内容と、
         GitOps ツールである ArgoCD と RBAC を組み合わせて動かしてみた結果についてご紹介します。
-    end_at: 17:00
+    end_at: 17:05
     lessons:
       - Kubernetes における認可の基本
       - Kubernetes における権限テスト方法
@@ -393,11 +393,11 @@ sessions:
       - OSS
       - Security
     type: Presentation
-  - begin_at: 17:10
+  - begin_at: 17:15
     description: |
         NTT コミュニケーションズで提供している NeWork において、それまで実施していた毎週のリリースにおける課題を解決するため、
         リリース頻度を毎日にした取り組みについてご紹介します。
-    end_at: 17:40
+    end_at: 17:45
     lessons:
       - リリースプロセスの一例
       - ブランチ運用の一例
@@ -415,8 +415,8 @@ sessions:
       - DevOps
       - Use Case
     type: Presentation
-  - begin_at: 17:10
-    end_at: 17:40
+  - begin_at: 17:15
+    end_at: 17:45
     level: 初級
     name: Lightning Talks
     room: PARK
@@ -442,7 +442,7 @@ sessions:
           - member_of: NTTドコモ
             name: 和田充史
     type: Presentation
-  - begin_at: 17:45
+  - begin_at: 17:50
     end_at: null
     name: Closing
     room: BRIDGE
@@ -471,7 +471,7 @@ timetable:
     - begin_at: 14:20
     - begin_at: 15:00
     - begin_at: 15:30
-    - begin_at: 15:50
-    - begin_at: 16:30
-    - begin_at: 17:10
-    - begin_at: 17:45
+    - begin_at: 15:55
+    - begin_at: 16:35
+    - begin_at: 17:15
+    - begin_at: 17:50
