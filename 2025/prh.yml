@@ -1,0 +1,58 @@
+rules:
+  - expected: GitHub
+    patterns:
+      - Github
+  - expected: NTT Com
+    patterns:
+      - NTTcom
+      - NTTCom
+      - NTTコム
+      - 弊社
+  - expected: いたします
+    patterns:
+      - 致します
+  - expected: いただけます
+    patterns:
+      - 頂けます
+  - expected: お客さま
+    patterns:
+      - お客様
+      - おきゃくさま
+  - expected: きっかけ
+    patterns:
+      - 切っ掛け
+  - expected: このたび
+    patterns:
+      - この度
+  - expected: さまざま
+    patterns:
+      - 様々
+  - expected: さらに
+    patterns:
+      - 更に
+  - expected: スクラム
+    patterns:
+        - スクラム開発
+        - Scrum開発
+  - expected: すでに
+    patterns:
+      - 既に
+  - expected: たいした
+    patterns:
+      - 大した
+  - expected: つめ
+    patterns:
+      - つ目
+  - expected: できる
+    patterns:
+      - 出来る
+  - expected: トラフィック
+    patterns:
+      - トラヒック
+  - expected: 皆さま
+    patterns:
+      - 皆様
+      - みなさま
+  - expected: もとづく
+    patterns:
+      - 基づく

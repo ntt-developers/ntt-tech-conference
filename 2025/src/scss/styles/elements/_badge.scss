@@ -1,0 +1,25 @@
+//--------------------------------------------------
+// Elements: Badge
+//--------------------------------------------------
+
+body {
+  &[data-theme="dark"] {
+    .badge {
+      &.is-plain {
+        &.is-info {
+          color: $card-background-color;
+        }
+      }
+    }
+  }
+
+  &[data-theme="light"] {
+    .badge {
+      &.is-plain {
+        &.is-info {
+          color: $convert-body-color;
+        }
+      }
+    }
+  }
+}

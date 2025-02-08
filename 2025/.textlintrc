@@ -1,0 +1,69 @@
+{
+  "plugins": {
+    "html": true,
+    "yaml": true
+  },
+  "filters": {
+    "allowlist": {
+      "allow": [
+        "3D点群データ",
+        "3D地図",
+        "d払い",
+        "NTTPCコミュニケーションズ",
+        "NTTコミュニケーションズ",
+        "NTTコムウェア",
+        "NTTソルマーレ",
+        "NTTデータ",
+        "ネットワークOS",
+        "変更に",
+        "開発等多種多様",
+        "付加価値基盤開発",
+        "音楽学習指導実現",
+        "一般社団法人全日本",
+        "複数人同時共同編集",
+        "時間短縮効果測定結果",
+        "技術革新統括本部",
+        "日本電信電話株式会社",
+        "電子書籍事業部"
+      ]
+    }
+  },
+  "rules": {
+    "preset-ja-spacing": {
+      "ja-no-space-between-full-width": false,
+      "ja-space-around-code": {
+        "after": true,
+        "before": true
+      },
+      "ja-space-between-half-and-full-width": {
+        "exceptPunctuation": true,
+        "space": "always"
+      }
+    },
+    "preset-ja-technical-writing": {
+      "ja-no-abusage": true,
+      "ja-no-mixed-period": false,
+      "ja-no-redundant-expression": true,
+      "ja-unnatural-alphabet": true,
+      "ja-no-weak-phrase": false,
+      "no-doubled-joshi": {
+        "allow": ["か", "で"],
+        "strict": false
+      },
+      "no-exclamation-question-mark": false,
+      "no-mix-dearu-desumasu": false,
+      "no-unmatched-pair": true,
+      "max-kanji-continuous-len": {
+        "allow": [],
+        "max": 6
+      },
+      "period-in-list-item": true,
+      "sentence-length": {
+        "max": 200
+      }
+    },
+    "prh": {
+      "rulePaths": ["./prh.yml"]
+    }
+  }
+}
