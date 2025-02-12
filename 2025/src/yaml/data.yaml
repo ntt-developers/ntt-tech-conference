@@ -21,7 +21,7 @@ about:
       end_at: 18:00
       session_types:
         - Presentation
-    - begin_at: 13:40
+    - begin_at: 13:50
       end_at: 17:50
       session_types:
         - Showcase
@@ -71,7 +71,7 @@ registration:
     #   url: https://ntt-techconf.connpass.com/event/123456/
     - session_types:
         - Presentation
-      url: https://ntt-techconf.connpass.com/event/311194/
+      url: https://ntt-techconf.connpass.com/event/345284/
 session_types:
   # - description: |
   #     特定テーマに対して参加者に実際に手を動かしてもらうことで技術を学び取得する。
@@ -115,324 +115,403 @@ sessions:
       name: 調整中
     tags: []
     type: Presentation
-  - begin_at: 14:20
+  - begin_at: 13:50
     description: |
-      X で少し話題になっていたネタを自分でも遊んで見たかったので実際に Web 作ってリリースしてみたら想定以上に反響が大きかった話です、三部構成の予定です。
-      <br>
-      ＜第１部＞<br>
-      AlphaGo で話題になった AlphaZero という AI のモデルを利用してブラウザで囲碁 AI を動かすための技術的な話。<br>
-      ＜第２部＞<br>
-      実際にリリースした後に Web ニュースや NHK 囲碁番組に取り上げられたり、それらの活動を通じて、さまざまな人とのつながりができた話。<br>
-      ＜第３部＞<br>
-      これらの経験が仕事にどう生きてくるかの話。
-    end_at: 14:50
+      DCをまたいだk8sのGPUクラスタを構築した際のつまづきを赤裸々に紹介します。
+    end_at: 14:20
     lessons:
-      - 趣味でサービスをリリースする方法
-      - GPU を利用するような AI モデルをブラウザで効率的に動かす方法
-      - 趣味を仕事で生かす方法
-    level: 中級
-    name: 趣味で AI を使った Web サービスをリリースしたら 30 万アクセスきた話
+      - RoCEやGDRDMAを使った分散学習基盤の構築例、GPU kubernetes基盤の運用方法
+      - APN (All photonics Network)のユースケース
+    level: 中級者向け
+    name: IOWNを活用したデータセンター間 マルチGPU分散学習への挑戦 〜暗黒編〜
     references: []
     room: BRIDGE
     speakers:
     - description: |
-        2012 年 NTTコムウェア入社、固定回線管理システムの方式・設計担当を経て、光 BOX、植物工場管理システム、
-        d払い開発等多種多様な開発プロジェクトに従事し、現在はドコモ GrLLM 付加価値基盤開発にてテックリード・チームリードを兼任中。
-        オフにおいても興味の赴くままサービス企画・開発を実施するのが趣味。
-      member_of: NTTコムウェア NTT IT 戦略事業本部
-      name: 藤平俊輔
+        GPUとk8s使った基盤を運用してます
+      member_of: NTTコミュニケーションズ イノベーションセンター
+      name: 原田和明
     tags:
-      - AI
-      - Application
-      - Cloud
       - Machine Learning
-      - UI/UX
-    type: Presentation
-  - begin_at: 14:20
-    description: |
-      一般的なピアノ教室では、生徒は教室で指導者から週 1 回 30 分程度のレッスンを受け、指導者はいくつかの練習曲を宿題として課し、生徒が自宅で毎日練習することを求めます。
-      hiketa システムはこうした指導者の負荷軽減、生徒の効果的な上達を支援するもので、ピアノ指導者と生徒を募集し 2023 年 10 月からモニターを実施しています。<br>
-      hiketa のピアノ AI 採点は自宅練習時の演奏ミスを指摘することで次のレッスンまでに正しく譜面通り演奏ができるようになり、
-      指導者は限られたレッスン時間をミスの指摘修正に費やすことなく音楽的な表情付けなどに専念できるようになります。
-      また、hiketa により生徒が自宅で何をどれぐらい練習しているか把握できるので、それを踏まえた効果的なレッスンが可能になるだけではなく、
-      自宅練習回数などによるポイント付与、指導者からのボーナスポイント付与というインセンティブにより生徒の自宅練習増加を促すことができます。<br>
-      今回はピアノを用意して本システムと、より高度な AI 採点技術をご来場された方にご試用いただきます。
-    end_at: 17:40
-    lessons:
-      - 教育・文化に関する DX の音楽教育分野における 1 つの事例
-      - 音楽情報処理によるピアノ AI 採点の 1 つの方法
-    level: 中級
-    name: おうちのピアノ練習をサポートする「hiketa (仮称)」と AI 採点技術
-    references:
-      - text:  NTT Tech Conference 2023 講演「ピアノ宿題練習のための AI 採点ご紹介およびデモ」
-        url: https://www.youtube.com/watch?v=sBriGtPQj9Q&t=1889s
-      - text: 報道発表資料「音楽教育業界におけるDXを活用した音楽学習指導実現に向けた取り組み」
-        url: https://www.ntt-east.co.jp/release/detail/20220608_01.html
-    room: FOREST
-    speakers:
-      - description: |
-          音楽教育分野のデジタルトランスフォーメーションなどに従事。
-        member_of: NTT東日本
-        name: 細田 真道
-      - description: |
-          音楽教育分野のデジタルトランスフォーメーションなどのマネジメントに従事。
-        member_of: NTT東日本
-        name: 小林 丈之
-      - description: |
-          ピアノ学習のデジタル教材開発企画に従事。
-        member_of: 東音企画
-        name: 本村 愛眞
-      - description: |
-          一般社団法人全日本ピアノ指導者協会（ピティナ）専務理事。
-        member_of: ピティナ
-        name: 福田 成康
-    tags:
-      - AI
-      - Application
-      - UI/UX
-      - Use Case
-      - 音楽情報処理
-    type: Showcase
-  - begin_at: 14:20
-    description: |
-      SONiC は、近年データセンタを中心に急速に利用が拡大しており、オープンネットワークOS ではデファクトスタンダートとなりつつある。
-      一方で従来のキャリアオペレーションなどを考慮すると機能改善すべき点もあり、SONiC にキャリア向け機能の追加や既存機能の改善に取り組んでいる。
-    end_at: 14:50
-    lessons:
-      - オープンネットワークOS SONiC の概要について
-      - SONiC のルーティング機能と FIB の効率化をするために追加実装した機能について
-      - SONiC の光伝送デバイスサポートについて
-    level: 初級
-    name: オープンネットワークOS SONiCへの取り組み
-    references: []
-    room: PARK
-    speakers:
-    - description: |
-        オープンネットワークOS SONiC の研究開発活動をしています。
-      member_of: 日本電信電話 NTTネットワークイノベーションセンタ
-      name: 中野寛二
-    - description: |
-      member_of: 日本電信電話 NTTネットワークイノベーションセンタ
-      name: 杉園幸司
-    tags:
       - Network
       - OSS
+      - Use Case
+      - Container
     type: Presentation
-  - begin_at: 15:00
+  - begin_at: 13:50
     description: |
-      カオスエンジアリングは、システムを中心としたプロダクト開発における障害対策の一手法で、
-      本番環境へ故意に問題を発生させて復旧までのプロセスを検証するものです。<br>
-      そんなカオスエンジアリングを、ネットワークオペレーションにも導入した我々の取り組みを紹介します。
-      しかし対象システムがクラウド基盤上に展開するアプリである場合と、実体のルータで構成されるネットワークでは大きな差があり、我々がその差をどう考えて工夫したのか共有します。
-    end_at: 15:30
+      ロボット部部員が夜な夜な製作している作品を展示してます
+    end_at: 17:50
     lessons:
-      - 少しずつ始めるカオスエンジアリングのユースケース
-      - 一見単純そうな、ネットワークの障害試験の難しさ事情
-    level: 初級
-    name: 皆がすなるカオスエンジアリングといふものを、ネットワークオペレーションでもしてみむとてするなり
-    references: []
-    room: BRIDGE
+      - ものづくりに使えるAIやデジタルファブリケーション
+    level: 初級者向け
+    name: あつまれ ロボットの森
+    references:
+      - text: 子ども向けロボット教室で懐中電灯で操作するロボットを作った話
+        url: https://engineers.ntt.com/entry/202411-familyday2024_ai_robot_club/entry
+    room: FOREST1
     speakers:
       - description: |
-          SI 系 R&D を経て 2019 年から現職。 キャリア IP バックボーンの検証開発をしつつ、NTT Com 検証網の AS/L3/L2/WLAN 運用に従事。
-        member_of: NTTコミュニケーションズ イノベーションセンター
-        name: 田島照久
+        member_of: NTT コミュニケーションズ  AI・ロボット部 (社内サークル)
+        name: 浅野秀平
+      - description: |
+          NTTコミュニケーションズで活動している社内のものづくりサークルです。イベント展示や子ども向けロボット教室などをやっています。
+        member_of: NTT コミュニケーションズ  AI・ロボット部 (社内サークル)
+        name: 有賀唯貴
     tags:
-      - Operation
-      - DevOps
-    type: Presentation
-  - begin_at: 15:00
+      - AI
+      - Robot
+    type: Showcase
+  - begin_at: 13:50
     description: |
-      NTTコミュニケーションズでは Node-AI という WEB アプリケーションを内製開発しています。
-      そしてつい先日、Node-AI のフロントエンドは Vue.js v2.x を捨て去り React (Next.js) に完全移行を果たしました。<br>
-      本セッションでは Node-AI の新しいフロントエンドを支えている技術スタックや設計・アーキテクチャについてお話したいと思います。
-    end_at: 15:30
+      初心者は楽器練習中に自分の演奏が正しいか間違いか分からないことがあります
+      指導者がいれば指摘できますが、自宅練習では指摘できる人がおらず間違った練習を続けて上達の妨げになることがあります。
+      そこで、演奏間違いを検出してどのような間違いがあったか楽譜上で指摘する表示をするツールを作ってみました。<br>
+      指摘する方法として、技術的にはピアノロール表示を応用するのが簡単そうです。
+      とはいえ、ピアノロールはDTMに親しんでいる方なら容易に理解できそうですが、一般的とは言えず理解が難しい方が多数います。
+      一方、ピアノなど鍵盤楽器においては五線譜という楽譜が共通言語であり、初心者にも楽譜が読めるようになるための指導がされます。
+      そこで、楽譜の上にどのような間違いをしたかの指摘を重ねて表示することで、初心者本人だけでなく指導者や保護者にとっても共通言語により理解しやすいようにしています。<br>
+      また、楽譜上に指摘表示するためには、すべての音符がそれぞれどの位置に表示されているかの情報が必要になりますが、手作業でいちいち指定していくのは大変です。
+      そこで、楽譜作成プログラムLilyPondを使い、表示用の楽譜と位置情報の両方を同時に自動生成することにより省力化が図れるようにしています。
+      今回は鍵盤楽器を用意してご来場された方にご試用いただきます。
+    end_at: 17:50
     lessons:
-      - フロントエンド
-      - React
-      - Next.js
-      - 設計
-      - アーキテクチャ
-      - リアルタイム通信
-      - 複数人同時共同編集
-      - SVG
-      - UNDO/REDO
-    level: 中級
-    name: Node-AI のリッチな WEB フロントエンドを支える技術
-    references:
-      - text: Node-AI
-        url: https://app.nodeai.io/
+      - 音楽情報処理における1つの技術
+    level: 中級者向け
+    name: 演奏間違いを検出して楽譜上に指摘の表示をしてみる
+    references: []
+    room: FOREST2
+    speakers:
+    - description: |
+        NTTグループのどこかでデータドリブンな仕事をしていますが、今回は仕事ではなく個人的にやっている音楽情報処理技術のデモをします。<br>
+        ・楽譜作成プログラムLilyPondコミッタ<br>
+        ・GNU公式文書フォーマットTexinfoコミッタ<br>
+        ・TeXデフォルト和文フォントの原ノ味フォント主宰<br>
+        ・第10回 日本OSS奨励賞受賞
+      member_of: "-"
+      name: 細田真道
+    tags:
+      - AI
+      - Application
+      - UI/UX
+      - 音楽情報処理
+    type: Showcase
+  - begin_at: 13:50
+    description: |
+      固定電話が珍しくなった昨今で、さらに珍しくなったダイヤル式の電話機（黒電話）と押しボタン式電話機（プッシュホン）に触れるコーナーです。
+      準備が整うようであれば動態展示（内線）を計画しており、ダイヤル、呼び出し、通話の段階を体験いただけます。<br>
+      また電話に関する質問にその場でお答えします。
+    end_at: 17:50
+    lessons:
+      - 固定電話機そのものの仕組み
+      - 電話交換の仕組み（通話先選択、呼び出し）
+      - そのほか電話に対する疑問に対する答え
+    level: 初級者向け
+    name: 黒電話・プッシュホンを触ってみよう
+    references: []
+    room: FOREST3
+    speakers:
+      - description: |
+          NTTコミュニケーションズ イノベーションセンターの小林です。入社前から電話交換に関する興味があり、入社後VoIPのエンジニアとして4年半ほど働いていました。
+        member_of: NTTコミュニケーションズ イノベーションセンター
+        name: 小林泰大
+    tags:
+      - Network
+    type: Showcase
+  - begin_at: 13:50
+    description: |
+      地理空間データを扱う上で、座標参照系は欠かせない重要な仕組みです。座標参照系とは、地球上の位置を数値的に表現するための枠組みであり、測地系や座標系、高さの基準といった要素で構成されています。
+      しかし、実務では「測地系の違いによってデータ同士の位置がずれる」や「高さ基準が揃わず解析が正確に行えない」といった座標参照系に関連するトラブルが発生することも少なくありません。<br>
+      そこで本セッションでは、このような課題に対応できるようにするために、座標参照系の基本的な構造や概念について、日々の業務で直面しやすい事例を交えながらご紹介します。
+    end_at: 14:20
+    lessons:
+      - 地理空間データを扱う上での座標参照系の重要性
+      - 座標参照系の基本的な構造や概念
+      - 異なる座標参照系間の変換方法
+      - 座標参照系に関するトラブル事例とその解決策
+    level: 初級者向け
+    name: 地理空間データの関連業務で使える座標参照系の基礎
+    references: []
     room: PARK
     speakers:
-      - description: |
-        member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
-        name: 何縫ねの。
+    - description: |
+        NTTデータグループの福田裕大です
+      member_of: NTTデータグループ Innovation技術部
+      name: 福田裕大
     tags:
       - Application
       - OSS
+      - Use Case
     type: Presentation
-  - begin_at: 15:30
-    end_at: 15:50
-    name: 休憩 (配信：おうちのピアノ練習をサポートする「hiketa (仮称)」と AI 採点技術)
+  - begin_at: 14:30
+    description: |
+      動作中のコンテナやプロセスのチェックポイントを取得し、
+      それを後から復元し再開できるOSSのCRIU（Checkpoint/Restore In Userspace）は今や様々なLinuxディストリビューションでは標準パッケージとして利用可能です。<br>
+      主要なコンテナランタイムがCRIUへの対応を進めているのはもちろんのこと、Kubernetesにおいてもそれらを活用したチェックポイント機能が実装されつつあります。<br>
+      また、コンテナ以外の領域でもCRIUの活用が進んでおり、Javaのオープンソース実装であるOpenJDKでもチェックポイント／レストア機能の追加が検討されています。<br>
+      さらに、それらを活用したマネージドサービスを提供するクラウドプロバイダも存在します。<br>
+      このように実は身近に存在するCRIUを使ったチェックポイント／レストア機能、使ったことありますか？<br>
+      使うとどんないいことがあるのでしょうか？そもそもどこで・どのように使えばいいのでしょうか？それらについてサンプルコードを交えながらご紹介します。
+    end_at: 15:00
+    lessons:
+      - CRIUの特徴、採用のメリット
+      - Javaにおけるチェックポイント／レストアの利用
+      - Kubernetesにおけるチェックポイント／レストアの利用
+    level: 中級者向け
+    name: 実はアナタの身近にある！？Linuxのチェックポイント／レストア機能
+    references: []
+    room: BRIDGE
+    speakers:
+    - description: |
+        NTTデータとGreen Software Foundation（GSF）でグリーンソフトウェアに取り組みつつ、たまにOpenJDK開発コミュニティでReviewerやってるサンデープログラマー。<br>
+        マシンの性能を引き出すプログラムが書けるようになることを目指して修行中…
+      member_of: NTTデータグループ 技術革新統括本部 Innovation技術部 IOWN推進室
+      name: 末永恭正
+    tags:
+      - Application
+      - Container
+      - OSS
+    type: Presentation
+  - begin_at: 14:30
+    description: |
+      ネットワークに接続された自動運転車が普及した社会において、
+      ある車両が故障等で緊急停止した際に同じレーンを走行する後続車両に対してのみ衝突回避のために減速や停止制御を行うような次世代のサービス実現においては、
+      車などの位置と時刻が紐つけられた時空間データを高速に収集、蓄積し、ある時刻にある特定の空間に存在する時空間データを高速に検索する技術が必要になります。<br>
+      これらを実現する技術である、高速時空間データ管理技術「Axispot」に株式会社NTTデータグループは取り組んでいます。
+      従来のAxispotでは２次元の位置情報しか扱えませんでしたが、昨年高さ対応が行われ３次元の位置情報を扱えるようになりました。
+      この最新のAxispotではIPAが公開する「4次元時空間情報基盤 ガイドライン」で定義されている空間IDに対応した点が特徴になります。<br>
+      本セッションでは従来のAxispotの概要、高さ対応、及び、空間IDについてご紹介します。
+    end_at: 15:00
+    lessons:
+      - 高速時空間データ管理技術の概要、活用ユースケース
+    level: 初級者向け
+    name: 高速時空間データ管理技術「Axispot」のご紹介
+    references: []
+    room: PARK
+    speakers:
+    - description: |
+        株式会社NTTデータグループの熊谷 康太です
+      member_of: 株式会社NTTデータグループ 技術革新統括本部
+      name: 熊谷 康太
+    tags:
+      - Database
+    type: Presentation
+  - begin_at: 15:10
+    end_at: 15:40
+    level: 初級
+    name: Lightning Talks
+    room: BRIDGE
+    talks:
+      - name: プロキシを 作って学ぶ WireGuard
+        speakers:
+          - member_of: NTTコミュニケーションズ イノベーションセンター
+            name: 上田高寛
+      - name: GitHub Copilotを使ってソースコードの解説資料を作ってみた話
+        speakers:
+          - member_of: NTTPCコミュニケーションズ サービスクリエーション本部
+            name: 村上満美
+      - name: データモデルYANGの処理系を再発明した話
+        speakers:
+          - member_of: NTTコミュニケーションズ イノベーションセンター
+            name: 田島照久
+      - name: 内製開発 SaaS のマーケティング分析に LLM を活用する話
+        speakers:
+          - member_of: NTTコミュニケーションズ イノベーションセンター
+            name: 杉本海人
+      - name: あつまれ ロボットの森
+        speakers:
+          - member_of: NTT コミュニケーションズ  AI・ロボット部 (社内サークル)
+            name: 浅野秀平
+          - member_of: NTT コミュニケーションズ  AI・ロボット部 (社内サークル)
+            name: 有賀唯貴
+      - name: 演奏間違いを検出して楽譜上に指摘の表示をしてみる
+        speakers:
+          - member_of: '-'
+            name: 細田真道
+    type: Presentation
+  - begin_at: 15:10
+    description: |
+      NTTコミュニケーションズでは、開発者ブログ "NTT Communications Engineers’ Blog" を運営しています。
+      現在の運営体制になってから5年半、現行のプラットフォームに移行して3年半が経過していますが、順調に記事の掲載を続けています。<br>
+      このセッションでは、こうした安定した運営に至るまでの経緯や、新たに開発者ブログを立ち上げようとする際に運営メンバーとして注意すべき点について発表します。
+    end_at: 15:40
+    lessons:
+      - NTTコミュニケーションズの開発者ブログの運営方法
+      - オウンドメディアとしての開発者ブログを立ち上げようとする際の心構え
+    level: 初級者向け
+    name: 開発者ブログを3年半運営した振り返り
+    references: []
+    room: PARK
+    speakers:
+    - description: |
+        NTTコミュニケーションズ イノベーションセンターの小林です。NTT Communications Engineers’ Blogの運営を担っています。
+      member_of: NTTコミュニケーションズ イノベーションセンター
+      name: 小林泰大
+    tags:
+      - Work Style
+    type: Presentation
+  - begin_at: 16:00
+    description: |
+      最新の3D再構成技術である”3D Gaussian Splatting”を用いて、NTT東日本が制作したねぶたの3Dモデルを作成し従来のフォトグラメトリ技術との比較を行った。<br>
+      両手法を”モデルの破綻”、”モデルの色表現の違い”に関して比較検討し、3D Gaussianの活用事例を検討した
+    end_at: 16:30
+    lessons:
+      - 最新の3D再構成技術である”3D Gaussian Splatting”の概要と従来手法との比較
+    level: 初級者向け
+    name: 3D Gaussian Splattingを用いたねぶた3Dモデルの作成とフォトグラメトリとの比較
+    references: []
+    room: BRIDGE
+    speakers:
+    - description: |
+        勝村玲音です
+      member_of: NTT東日本 先端テクノロジー部 オープンイノベーションセンタ
+      name: 勝村玲音
+    tags:
+      - AI
+      - 3D scan
+    type: Presentation
+  - begin_at: 16:00
+    description: |
+      NetBox という IPAM や DCIM を実施するためのアプリケーションがあります。<br>
+      私達は日々この NetBox を利用してリソースの管理を実施しています。<br>
+      以前はこの NetBox をオンプレミスのサーバー上で Docker Compose を利用していて管理していました。<br>
+      しかし、オンプレミスのサーバーが法定停電を実施しなければならない場所に設置していたため、法定停電があると NetBox 上のリソースが見えなくなるという問題がありました。<br>
+      また、冗長構成やバックアップが考慮していなかったためいつでもデータロストの危険性やサービスの継続不可能性を孕んでいました。<br>
+      <br>
+      そのため、冗長性やバックアップ性能を確保しつつ常に NetBox をサービスとして稼動させるため、 AWS へ移行を実施しました。<br>
+      その際に得られた知見や冗長性やバックアップアーキテクチャ、運用方法等について共有します。<br>
+    end_at: 16:30
+    lessons:
+      - オンプレミスのサービスを AWS へ移行するノウハウや AWS 上での Web サービスの構築におけるベストプラクティス
+    level: 中級者向け
+    name: NetBox をオンプレから AWS へ移してみた
+    references: []
+    room: PARK
+    speakers:
+    - description: |
+        NTT コミュニケーションズ/イノベーションセンター/AI インフラグループ/クラウド CoE プロジェクト 福田優真です。
+      member_of: NTTコミュニケーションズ イノベーションセンター
+      name: 福田優真
+    tags:
+      - DevOps
+      - Database
+      - Container
+      - Cloud
+      - Application
+    type: Presentation
+  - begin_at: 16:40
+    description: |
+      さまざまな社内業務のデータドリブン化に取り組んできた事例などをご紹介します。<br>
+      NTT東日本では、全社的な取り組みとして、各組織が自らデータを可視化・分析・活用できるセルフサービスBI基盤によりレポート業務を効率化し、
+      いつどこからでも必要なデータにアクセス可能なポータル環境により、意思決定者が適時・迅速な情報把握を可能にし、会議運営の効率化とデータに基づく意思決定を行うことで、経営マネジメントのデータドリブン化に取り組んでいます。<br>
+      私たちは、これを具体的に実現するプラットフォームの構築から社内への展開について取り組んでいます。
+      これを実現して価値創造していくためには、「データ」、システム・ツール等の「データ活用環境」、
+      そして「人材・ノウハウ」の3要素を欠けることなく整備・強化することが必要となり、こうした取り組みの事例をご紹介します。
+    end_at: 17:10
+    lessons:
+      - データドリブン化の事例、各組織への展開・人材育成などの事例
+    level: 初級者向け
+    name: さまざまな社内業務のデータドリブン化に取り組んで
+    references: 
+      - text: '松本 裕: “経営マネジメントのデータドリブン化でスピーディな意思決定と生産性向上をめざす”, NTT技術ジャーナル, Vol. 36, No. 11, pp. 68-71, 2024年11月'
+        url: https://doi.org/10.60249/24111201
+    room: BRIDGE
+    speakers:
+      - description: |
+          経営マネジメントをはじめとしたさまざまな社内業務のデータドリブン化に従事
+        member_of: NTT東日本 デジタル革新本部 企画部 データドリブン推進部門 アナリティクス推進担当
+        name: 川本 貴之, 阿部 裕人, 安松 昂祐, 細田 真道, 松本 裕
+    tags:
+      - AI
+      - Use Case
+      - データドリブン
+    type: Presentation
+  - begin_at: 16:40
+    description: |
+      ・自己紹介<br>
+      ・グループの取組みの紹介「マルチパス通信技術、映像伝送技術、NW品質予測技術」の紹介<br>
+      ・検証の課題と解決方法としてのエミュレーション<br>
+      ・映像伝送のエミュレーションの難しさと工夫点<br>
+      ・AWS導入の際の工夫(マルチアカウント管理/勉強会の実施/IaCの管理/GPUインスタンスの活用)
+    end_at: 17:10
+    lessons:
+      - 弊グループの取り組み（：もし親和性が高い事業をされている方がいればぜひ一緒にしたい）
+      - ネットワークエミュレーションの手法
+      - AWS Control Towerのメリット
+      - AWSでGPUインスタンスを活用する方法と注意点等
+    level: 中級者向け
+    name: モバイルネットワークをエミュレーションした検証環境をAWSに構築した話
+    references: []
+    room: PARK
+    speakers:
+    - description: |
+        NTTの鳥井隆史です。
+      member_of: 日本電信電話株式会社 ネットワークサービスシステム研究所
+      name: 鳥井隆史
+    tags:
+      - Cloud
+      - Network
+    type: Presentation
+  - begin_at: 17:20
+    description: |
+      本セッションでは、複雑な図表もしっかり読み解き情報量が膨大な資料にも対応するための生成AI技術を紹介します。
+      また技術の内部を一部ご紹介します。
+    end_at: 17:50
+    lessons:
+      - RAGによるLLMの活用術
+      - ベクトルストアやチャンキングなどのRAGに関する構造
+      - Vision LLM
+    level: 中級者向け
+    name: 膨大な資料を読み解くための日本語特化の生成AI 技術紹介
+    references: []
+    room: BRIDGE
+    speakers:
+    - description: |
+        WebアプリケーションやAIシステムの開発に従事し、2024年より現職。<br>
+        普段の業務では主に、生成AIを扱っており、LLMのファインチューニング検証や評価、生成AIを円滑に取り合うためのプロダクト開発も行っています。
+        OOPにこだわりあり
+      member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
+      name: 小川 雄司
+    tags:
+      - AI
+      - Application
+      - Machine Learning
+    type: Presentation
+  - begin_at: 15:40
+    end_at: 16:00
+    name: 休憩
     room: BRIDGE
     type: Presentation
-  - begin_at: 15:30
-    end_at: 15:50
+  - begin_at: 15:40
+    end_at: 16:00
     name: 休憩
     room: PARK
     type: Presentation
-  - begin_at: 15:55
+  - begin_at: 17:20
     description: |
-      NTTPCコミュニケーションズは、中小企業の SASE/ゼロトラスト推進を目的とした DNS セキュリティサービス「Secure Access Gateway(SAG)」や、
-      NW サービスの「InfoSphere」をリリースしております。
-      これらのサービスの申し込みや契約情報を確認する Web アプリケーションの開発では、お客さまのユーザ価値を向上させるために、
-      デザインツールの導入やユーザビリティテストの実施を積極的に行い始めました。
-      <br>
-      本セッションでは、上記 Web アプリケーションの開発業務の経験から、<br>
-      - 開発にデザインツールを導入してよかったこと<br>
-      - ユーザビリティテストを回す際に気をつけたほうが良いなと思ったこと<br>
-      に関する学びがありましたので、皆さんにも共有できればと思います。
-    end_at: 16:25
+      CloudflareはもともとCDNを提供する企業として知られていましたが、現在ではWeb開発やセキュリティに関連する多彩なリソースを提供するプラットフォームへと進化しています。<br>
+      本セッションでは、そんなCloudflare Platformを活用した開発体験や、便利すぎるが故にサイバー犯罪者にも愛用されてしまっている事例を紹介します。<br>
+      このセッションを通じて、開発者にはCloudflareを活用することで得られる新しい選択肢を知っていただき、より柔軟な開発への一助となれば幸いです。
+    end_at: 17:50
     lessons:
-      - サービス開発にデザインツールを導入することによる効果
-      - ユーザビリティテスト手法
-      - ユーザビリティテストを実施する際に気をつけること
-    level: 初級
-    name: サービス開発にデザインツールやユーザビリティテストを導入してよかったこと、気をつけること
-    references: []
-      # - text:
-      #   url:
-    room: BRIDGE
-    speakers:
-      - description: |
-          2020 年 NTT コミュニケーションズ入社 & NTTPC コミュニケーションズ出向。
-          初期配属から現職。2 つのメイン案件で Web アプリケーションの開発/運用をしながら、
-          docomo グループ内のいくつかの案件でデザイナーのようなロールの動きをしています。
-        member_of: NTTPCコミュニケーションズ SC 本部
-        name: 山本卓嗣
-    tags:
-      - UI/UX
-      - Agile
-    type: Presentation
-  - begin_at: 15:55
-    description: |
-      NTTデータグループ技術開発本部では、PLATEAU など都市の 3D地図整備に向けた取り組みとして、3D点群データの計測や位置精度向上に取り組んでいます。<br>
-      本セッションでは、この取り組みに関して関連技術や活用ユースケースについてご紹介します。
-    end_at: 16:25
-    lessons:
-      - 3D点群データの特性、活用ユースケース
-    level: 初級
-    name: 3D点群データの位置精度向上と活用ユースケース
-    references: []
-    room: PARK
-    speakers:
-      - description: |
-        member_of: NTTデータグループ 技術開発本部
-        name: 福田裕大
-    tags:
-      - Use Case
-      - AI
-      - Application
-      - Machine Learning
-    type: Presentation
-  - begin_at: 16:35
-    description: |
-      今年度取り組んだ、GitHub Copilot を中心とした生成 AI の活用によるソフトウェア開発効率向上の成果について共有したいと考えています。<br>
-      主なトピックは以下の通りです。<br>
-        - 弊担当が抱えている課題<br>
-        - 生成 AI に期待すること<br>
-        - GitHub Copilot のコーディング時間短縮効果測定結果の共有<br>
-        - GitHub Copilot Chat / ChatGPT の活用事例<br>
-        - 利用者アンケートにもとづく開発者体験の変化<br>
-    end_at: 17:05
-    lessons:
-      - GitHub Copilot(Chat 含む)、ChatGPT がソフトウェア開発にどのような恩恵をもたらすか。
-    level: 初級
-    name: 生成 AI を活用したソフトウェア開発効率向上の取り組み紹介
-    references: []
-    room: BRIDGE
-    speakers:
-    - description: |
-        2007 年度入社。以降ソフトウェア開発部隊でバックエンドシステムの開発に従事しています。
-        現在はチームリーダーとしてさまざまな案件をこなしつつ、サービス開発プロセスの改善活動も行っています。
-      member_of: NTTPCコミュニケーションズ サービスクリエーション本部 第一サービスクリエーション部 サービスクリエーション担当
-      name: 川尻 真寛
-    tags:
-      - AI
-      - Work Style
-    type: Presentation
-  - begin_at: 16:35
-    description: |
-        Kubernetes クラスタに対して、管理者・開発者・運用者など立場の異なる人々がアクセスする状況では、
-        それぞれの立場に応じた適切な権限を与えることが必要です。<br>
-        本セッションでは、Kubernetes の標準機能である Role Based Access Control (RBAC) について調べた内容と、
-        GitOps ツールである ArgoCD と RBAC を組み合わせて動かしてみた結果についてご紹介します。
-    end_at: 17:05
-    lessons:
-      - Kubernetes における認可の基本
-      - Kubernetes における権限テスト方法
-      - ArgoCD と RBAC を組み合わせた使い方の例
-    level: 初級
-    name: Kubernetes 認可周り事始め
+      - Cloudflareを使ったサーバーレスアーキテクチャや静的サイトホスティングの方法
+      - Cloudflare Tunnelでローカルホストをセキュアにインターネット公開する方法
+      - サイバー攻撃者がCloudflareを悪用する事例
+    level: 初級者向け
+    name: 最近勢いを増しているCloudflare Platformで遊んでみた。〜開発者目線とセキュリティリサーチャー目線から〜
     references: []
     room: PARK
     speakers:
     - description: |
-      member_of: NTTデータグループ 技術革新統括本部
-      name: 川崎健人
+        2020年入社。関西在住。<br>
+        普段はNetwork Analytics for Security PJ という脅威インテリジェンスのチームで、セキュリティリサーチャーとして活動中。<br>
+        趣味個人開発者。自宅サーバーのことは盆栽だと思っている。
+        最近の悩みはいつ住居を東京に移すか。
+      member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
+      name: 竹﨑彬隼
     tags:
-      - Container
-      - OSS
+      - Cloud
       - Security
-    type: Presentation
-  - begin_at: 17:15
-    description: |
-        NTT コミュニケーションズで提供している NeWork において、それまで実施していた毎週のリリースにおける課題を解決するため、
-        リリース頻度を毎日にした取り組みについてご紹介します。
-    end_at: 17:45
-    lessons:
-      - リリースプロセスの一例
-      - ブランチ運用の一例
-    level: 初級
-    name: リリース頻度を毎週から毎日にしてみた
-    references: []
-    room: BRIDGE
-    speakers:
-      - description: |
-          2013 年 NTT コミュニケーションズ入社。2021 年から現職。NeWork の開発全体のリーダーとして、開発・運用に従事。
-        member_of: NTTコミュニケーションズ C&A部
-        name: 藤野晴樹
-    tags:
-      - Agile
-      - DevOps
-      - Use Case
-    type: Presentation
-  - begin_at: 17:15
-    end_at: 17:45
-    level: 初級
-    name: Lightning Talks
-    room: PARK
-    talks:
-      - name: タテ割りを打破するために社内コミュニティを立ち上げた話
-        speakers:
-          - member_of: NTTテクノクロス
-            name: 川崎裕香(かわちゃき)
-      - name: 俺はどうしても結婚式でイントロクイズがしたい
-        speakers:
-          - member_of: NTT東日本
-            name: 長嶋圭太(SPA)
-      - name: Qmonus Value Stream の利用者を社外にも広げようとしてる話
-        speakers:
-          - member_of: NTTコミュニケーションズ
-            name: 松本博文
-      - name: 祝 10 周年！ AWS Lambda のトレンドを 5 分で見てみよう
-        speakers:
-          - member_of: NTTテクノクロス
-            name: 渡邉洋平
-      - name: 開発者が楽しく使えるラボをできるだけ手作りで作った話
-        speakers:
-          - member_of: NTTドコモ
-            name: 和田充史
     type: Presentation
   - begin_at: 17:50
     end_at: null
@@ -453,7 +532,11 @@ timetable:
   rooms:
     - name: BRIDGE
       used_by: Presentation
-    - name: FOREST
+    - name: FOREST1
+      used_by: Showcase
+    - name: FOREST2
+      used_by: Showcase
+    - name: FOREST3
       used_by: Showcase
     - name: PARK
       used_by: Presentation
@@ -463,6 +546,7 @@ timetable:
     - begin_at: 13:50
     - begin_at: 14:30
     - begin_at: 15:10
+    - begin_at: 15:40
     - begin_at: 16:00
     - begin_at: 16:40
     - begin_at: 17:20
