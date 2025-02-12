@@ -1,6 +1,6 @@
 ---
 about:
-  date: 2024 年 3 月 11 日 (月)
+  date: 2025 年 3 月 5 日 (水)
   description: |
     NTT Tech Conference は、NTT グループのエンジニア有志が開催するカンファレンスです。
     NTT グループ各社が開催するイベントとは異なり、NTT グループのエンジニアたちがやりたいこと・話したいことを通じて、エンジニア同士が技術交流するためのイベントです。
@@ -17,12 +17,12 @@ about:
     #   end_at: ??:??
     #   session_types:
     #     - Workshop
-    - begin_at: 13:30
+    - begin_at: 13:00
       end_at: 18:00
       session_types:
         - Presentation
-    - begin_at: 14:20
-      end_at: 17:40
+    - begin_at: 13:40
+      end_at: 17:50
       session_types:
         - Showcase
   organizer: NTT Developers
@@ -53,8 +53,8 @@ contact_us:
     本イベントに関するお問い合わせ先は以下となります。
   email_address: techconf-staff@ntt.com
 meta:
-  copyright: 2024 NTT Developers
-  numbering: 2024
+  copyright: 2025 NTT Developers
+  numbering: 2025
 ogp:
   description: NTT Tech Conference は、NTTグループのエンジニア有志が開催するエンジニアたちの技術交流を目的としたカンファレンスです。
   image: images/banner.png
@@ -94,34 +94,26 @@ session_types:
     name: Presentation
     timetable_style: table
 sessions:
-  - begin_at: 13:30
-    end_at: null
+  - begin_at: 13:00
+    end_at: 13:10
     name: Opening
     room: BRIDGE
     type: Presentation
-  - begin_at: 13:40
-    description: |
-      EC サイトを含め、公開システムを開発する場合、機能要件に目が行きがちになりますが、
-      アプリケーションの規模が大きくなればなるほど、非機能要件のアップデート容易性への考慮が重要になると感じています。<br>
-      今回のカンファレンスでは、実際のアプリケーション開発現場での課題や検討事項を共有させていただきます。
-    end_at: 14:20
-    lessons:
-      - 社外向けサイト開発における現場の状況
+  - begin_at: 13:10
+    description: 調整中
+    end_at: 13:40
+    lessons: []
     level: 初級
-    name: コミックシーモアにおけるアプリケーション動作環境のアップデート効率化に向けた検討
-    references:
-      - text: コミックシーモア
-        url: https://www.cmoa.jp/
+    name: 調整中
+    references: []
+      # - text: 
+      #   url: 
     room: BRIDGE
     speakers:
-    - description: |
-        1999 年入社。2019 年より現在の NTTソルマーレ電子書籍事業部にて、電子コミックに関するシステム開発に携わっています。
-        仕事が終わったら、ダイエットのため、ウォーキングに多くの時間を費やしています。
-      member_of: NTTソルマーレ 電子書籍事業部
-      name: 掛井恒彦
-    tags:
-      - Operation
-      - Security
+    - description: 調整中
+      member_of: 調整中
+      name: 調整中
+    tags: []
     type: Presentation
   - begin_at: 14:20
     description: |
@@ -466,12 +458,12 @@ timetable:
     - name: PARK
       used_by: Presentation
   windows:
-    - begin_at: 13:30
-    - begin_at: 13:40
-    - begin_at: 14:20
-    - begin_at: 15:00
-    - begin_at: 15:30
-    - begin_at: 15:55
-    - begin_at: 16:35
-    - begin_at: 17:15
+    - begin_at: 13:00
+    - begin_at: 13:10
+    - begin_at: 13:50
+    - begin_at: 14:30
+    - begin_at: 15:10
+    - begin_at: 16:00
+    - begin_at: 16:40
+    - begin_at: 17:20
     - begin_at: 17:50

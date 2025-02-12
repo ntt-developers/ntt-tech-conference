@@ -27,7 +27,7 @@ html lang="ja"
             div class="column"
               h2 class="is-none"
                 | Logo
-              svg class="image is-logo" role="img" aria-label="Logo" viewBox="0 0 400 150"
+              svg class="image is-logo" role="img" aria-label="Logo" viewBox="0 0 381 190"
                 use xlink:href="images/logo.svg#logo"
       / About
       section class="section is-feature is-wide-lg"
