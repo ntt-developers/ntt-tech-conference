@@ -1,4 +1,4 @@
-## NTT Tech Conference 2024
+## NTT Tech Conference 2025
 
 ### How to build
 
