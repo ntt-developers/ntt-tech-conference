@@ -8,3 +8,4 @@
 - [NTT Tech Conference 2022](https://ntt-developers.github.io/ntt-tech-conference/2022/)
 - [NTT Tech Conference 2023](https://ntt-developers.github.io/ntt-tech-conference/2023/)
 - [NTT Tech Conference 2024](https://ntt-developers.github.io/ntt-tech-conference/2024/)
+- [NTT Tech Conference 2025](https://ntt-developers.github.io/ntt-tech-conference/2025/)
