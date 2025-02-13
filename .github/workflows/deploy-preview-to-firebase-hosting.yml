@@ -9,7 +9,7 @@ on:
 env:
   NODE_VERSION: 20
   PREVIEW_EXPIRES: 7d
-  WORKING_DIRECTORY: "2024"
+  WORKING_DIRECTORY: "2025"
 jobs:
   build:
     runs-on: ubuntu-latest
