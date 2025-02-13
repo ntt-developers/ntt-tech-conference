@@ -70,7 +70,7 @@ registration:
     #     - Workshop
     #   url: https://ntt-techconf.connpass.com/event/123456/
     - session_types:
-        - Presentation
+        - イベント
       url: https://ntt-techconf.connpass.com/event/345284/
 session_types:
   # - description: |
