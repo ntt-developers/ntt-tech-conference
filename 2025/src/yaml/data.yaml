@@ -235,7 +235,7 @@ sessions:
     room: PARK
     speakers:
     - description: |
-        NTTデータグループの福田裕大です
+        2021 年に NTTデータへ入社。デジタルツインに関わる 3 次元データ分析や画像分析などの技術開発・PoC を担当。
       member_of: NTTデータグループ Innovation 技術部
       name: 福田裕大
     tags:
