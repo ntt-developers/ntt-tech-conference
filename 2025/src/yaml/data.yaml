@@ -100,19 +100,29 @@ sessions:
     room: BRIDGE
     type: Presentation
   - begin_at: 13:10
-    description: 調整中
+    description: |
+      研究所の R&D 技術を使ってメーカにも、プロバイダーにもなろうとしているベンチャーのソフトウェ開発についてご紹介します。<br>
+      ・NTTソノリティの紹介（技術、ビジネス）<br>
+      ・NTTソノリティでのソフトウェア開発について
     end_at: 13:40
-    lessons: []
+    lessons:
+      - 自分でハードを作っている会社でのソフトウェア開発の実態、苦労話など
     level: 初級
-    name: 調整中
-    references: []
-      # - text: 
-      #   url: 
+    name: NTTソノリティの挑戦 - 研究所 R&D 技術を使ってメーカにもプロバイダにもなろうとしているベンチャーのソフトウェア開発 -
+    references:
+      - text: NTTソノリティ株式会社
+        url: https://ntt-sonority.com/
+      - text: nwm
+        url: https://nwm.global/
     room: BRIDGE
     speakers:
-    - description: 調整中
-      member_of: 調整中
-      name: 調整中
+    - description: |
+        研究所（NS 研→ PF 研→ SIC）→持株プロデュース→ NTTソノリティ<br>
+        入社してすぐにコテコテの交換機ソフトウェア開発。
+        中堅になって情報系にうつって NTT Com のクラウド（OpenStack ベース）の開発 PM を経て、
+        研究所成果のビジネス化を担う役割に...
+      member_of: NTTソノリティ
+      name: 坂井博
     tags: []
     type: Presentation
   - begin_at: 13:50
@@ -414,7 +424,7 @@ sessions:
       - データドリブン化の事例、各組織への展開・人材育成などの事例
     level: 初級者向け
     name: さまざまな社内業務のデータドリブン化に取り組んで
-    references: 
+    references:
       - text: '松本 裕 (2024). “経営マネジメントのデータドリブン化でスピーディな意思決定と生産性向上をめざす” NTT技術ジャーナル Vol. 36, No. 11, pp. 68-71.'
         url: https://doi.org/10.60249/24111201
     room: BRIDGE
