@@ -363,18 +363,20 @@ sessions:
     type: Presentation
   - begin_at: 16:00
     description: |
-      最新の 3D 再構成技術である "3D Gaussian Splatting" を用いて、NTT東日本が制作したねぶたの 3D モデルを作成し従来のフォトグラメトリ技術との比較した。<br>
-      両手法を”モデルの破綻”、”モデルの色表現の違い”に関して比較検討し、3D Gaussian の活用事例を検討した
+      最新の 3D 再構成技術である "3D Gaussian Splatting" の技術検証を実施しました。<br>
+      NTT東日本は地方自治体の課題解決に 3D モデルの活用を目指しており、今回は青森で NTT東日本が作成した「ねぶた」を撮影し、「フォトグラメトリ」と「3D Gaussian Splatting」の 2 種類の 3D モデルを作成しました。<br>
+      両手法を"モデルの破綻"、"モデルの色表現の違い"などに注目して比較検討を実施し活用事例を検討しました。
     end_at: 16:30
     lessons:
-      - 最新の 3D 再構成技術である "3D Gaussian Splatting" の概要と従来手法との比較
+      - 最新の 3D 再構成技術である "3D Gaussian Splatting" の概要と「フォトグラメトリ」との比較
+      - 発光物である「ねぶた」を対象とすることでの実利用を想定した見え方の比較
     level: 初級者向け
     name: 3D Gaussian Splatting を用いたねぶた 3D モデルの作成とフォトグラメトリとの比較
     references: []
     room: BRIDGE
     speakers:
     - description: |
-        勝村玲音です
+        2023 年 10 月にオープンイノベーションセンタが創設され、そのメンバーの一人として最新技術の調査・検証に取り組んでいます！
       member_of: NTT東日本 先端テクノロジー部 オープンイノベーションセンタ
       name: 勝村玲音
     tags:
