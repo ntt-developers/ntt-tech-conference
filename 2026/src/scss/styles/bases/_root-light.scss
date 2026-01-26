@@ -1,0 +1,9 @@
+//--------------------------------------------------
+// Bases: Root Light
+//--------------------------------------------------
+
+#{$selector-root-light} {
+  @include generate-root($theme-light-id, $selector-root-light-attr) {
+    --section-background-color-grey-wind: #{$theme-light-section-background-color-grey-wind};
+  }
+}

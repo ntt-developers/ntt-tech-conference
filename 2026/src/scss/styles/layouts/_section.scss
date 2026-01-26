@@ -1,0 +1,25 @@
+//--------------------------------------------------
+// Layouts: Section
+//--------------------------------------------------
+
+.section {
+  &.is-feature {
+    padding-bottom: 3em;
+    padding-top: 3em;
+
+    &:nth-child(even) {
+      background-color: $convert-section-background-color-grey-wind;
+
+      [role="tab"] {
+        &[aria-selected="true"] {
+          border-bottom-color: $convert-section-background-color-grey-wind;
+        }
+      }
+    }
+  }
+
+  &.is-hero {
+    padding-bottom: 6em;
+    padding-top: 6em;
+  }
+}

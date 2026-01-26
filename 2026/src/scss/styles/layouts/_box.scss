@@ -1,0 +1,27 @@
+//--------------------------------------------------
+// Layouts: Box
+//--------------------------------------------------
+
+.box.is-actions {
+  position: fixed;
+  z-index: $global-z-index-box-actions;
+
+  &.is-top-right {
+    left: calc(100% - #{$meter-sm});
+    top: calc(#{$meter-sm} * 3);
+    transform: translate(-100%, -50%);
+
+    @include fablet() {
+      left: calc(50% + #{$section-inner-width-fablet} / 2 - #{$meter-sm});
+    }
+    @include tablet() {
+      left: calc(50% + #{$section-inner-width-tablet} / 2 - #{$meter-sm});
+    }
+    @include desktop() {
+      left: calc(50% + #{$section-inner-width-desktop} / 2 - #{$meter-sm});
+    }
+    @include wide() {
+      left: calc(50% + #{$section-inner-width-wide} / 2 - #{$meter-sm});
+    }
+  }
+}

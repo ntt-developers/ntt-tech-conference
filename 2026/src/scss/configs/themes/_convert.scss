@@ -1,0 +1,29 @@
+//--------------------------------------------------
+// Themes: Convert
+//--------------------------------------------------
+
+//--------------------------------------------------
+// / CSS Variables
+//--------------------------------------------------
+
+$convert-section-background-color-grey-wind: if(
+  $option-css-variables == true,
+  var(--section-background-color-grey-wind),
+  null
+) !default;
+
+//--------------------------------------------------
+// / Theme Default - Dark
+//--------------------------------------------------
+
+$convert-section-background-color-grey-wind: if(
+  $option-theme-default == $theme-dark-id,
+  $theme-dark-section-background-color-grey-wind,
+  null
+) !default;
+
+//--------------------------------------------------
+// / Theme Default - Light
+//--------------------------------------------------
+
+$convert-section-background-color-grey-wind: $theme-light-section-background-color-grey-wind !default;
