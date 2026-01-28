@@ -99,79 +99,123 @@ sessions:
     name: Opening
     room: BRIDGE
     type: Presentation
+
   - begin_at: 13:10
     description: |
-      研究所の R&D 技術を使ってメーカにも、プロバイダーにもなろうとしているベンチャーのソフトウェ開発についてご紹介します。<br>
-      ・NTTソノリティの紹介（技術、ビジネス）<br>
-      ・NTTソノリティでのソフトウェア開発について
+      ドコモでは2013年頃からクラウドを組織的に上手く利用するための活動を実施してきています。<br>
+      立ち上げ時期から今までの取り組み内容、考え方・方針の変遷をご紹介すると共に現在取り組んでいること、今後取り組んでいこうと考えていることについてもご紹介させていただきます<br>
     end_at: 13:40
     lessons:
-      - 自分でハードを作っている会社でのソフトウェア開発の実態、苦労話など
+      - これからCCoEを立ち上げようという人、今CCoEをやっていて色々悩みがある人、SaaSが乱立しすぎてどうしたら良いかわからなくなっているCCoEや情シス、情セキ部門の人、等についてドコモおよびドコモグループでどうやっているかという事例紹介と今後の方針検討に役立つものと思います
     level: 初級
-    name: NTTソノリティの挑戦 - 研究所 R&D 技術を使ってメーカにもプロバイダにもなろうとしているベンチャーのソフトウェア開発 -
+    name: NTTドコモCCoEのこれまでとこれから
     references:
-      - text: NTTソノリティ株式会社
-        url: https://ntt-sonority.com/
-      - text: nwm
-        url: https://nwm.global/
+      - text: 株式会社NTTドコモ
+        url: https://docomo.ne.jp/
     room: BRIDGE
     speakers:
-    - description: |
-        研究所（NS 研→ PF 研→ SIC）→持株プロデュース→ NTTソノリティ<br>
-        入社してすぐにコテコテの交換機ソフトウェア開発。
-        中堅になって情報系にうつって NTT Com のクラウド（OpenStack ベース）の開発 PM を経て、
-        研究所成果のビジネス化を担う役割に...
-      member_of: NTTソノリティ
-      name: 坂井博
+      - description: |
+          米国西海岸勤務時の2011年よりクラウドに関連する各種業務に従事。<br>
+          クラウドの本格利用に伴い、2013年頃からドコモCCoEを立ち上げ、セキュリティ、ガバナンス、ハイブリッドアーキテクチャの実現、等を主導。
+          SaaSを含めた多くのパブリッククラウドを共通基盤として整備、管理、運用する仕組みを構築。<br>
+          2018年〜2021年はチームを離れセキュリティ政策等の研究に従事するため米国東海岸勤務。<br>
+          2021年7月より再びCCoEチームを主導。博士（学術）、CISSP
+        member_of: NTTドコモ
+        name: 森谷 優貴
     tags: []
     type: Presentation
+
   - begin_at: 13:50
     description: |
-      DC をまたいだ k8s の GPU クラスタを構築した際のつまづきを赤裸々に紹介します。
+      パブリッククラウドは基本的に従量課金制であり、使ったら使った分だけ利用料金が発生します。そのため、不要なリソースが存在すると、その分も利用料金が発生し続けてしまいます。不要なリソース1つ1つは小さくても、放置し続けているとチリツモで思わぬ浪費に繋がります。<br>
+      ドコモCCoEではドコモグループで利用している2,400以上のAWSアカウントを管理しています。そこで、塵を山にして可視化するべく、ドコモCCoEで管理している全AWSアカウントを対象に、不要なリソースと削減可能額を可視化するダッシュボードを作って全社公開してみました。ダッシュボードの構築は生成AIを活用しつつ、1人で1ヶ月程度で実施しました。<br><br>
+      このセッションでは、
+      - 「クラウドの不要なリソース」とは何なのか
+      - 「クラウドの不要なリソースと削減可能額を可視化するダッシュボード」はどのようなものなのか
+      - ダッシュボードをどのように構築したのか
+      などについてお話しします。
     end_at: 14:20
     lessons:
-      - RoCE や GDRDMA を使った分散学習基盤の構築例、GPU Kubernetes 基盤の運用方法
-      - APN (All photonics Network)のユースケース
-    level: 中級者向け
-    name: IOWN を活用したデータセンター間 マルチ GPU 分散学習への挑戦 〜暗黒編〜
-    references: []
+      - クラウド利用におけるコスト削減のポイント
+      - ドコモCCoEにおけるクラウドコスト最適化の取り組み
+    level: 初級
+    name: クラウドの不要なリソースと削減可能額を可視化するダッシュボードを作って全社公開した話
+    references:
+      - text: ドコモ・テクノロジ株式会社
+        url: https://www.docomo-tech.co.jp/
     room: BRIDGE
     speakers:
-    - description: |
-        GPU と k8s 使った基盤を運用してます
-      member_of: NTTコミュニケーションズ イノベーションセンター
-      name: 原田和明
-    tags:
-      - Machine Learning
-      - Network
-      - OSS
-      - Use Case
-      - Container
+      - description: |
+          NTTドコモのCCoE（Cloud Center of Excellence）をしている奥田です。とにかく無駄をなくして、クラウド（特にAWS）のコスト最適化を推進したい人です。
+        member_of: ドコモ・テクノロジ株式会社
+        name: 奥田 絢香
+    tags: []
     type: Presentation
-  - begin_at: 13:50
+
+  - begin_at: 14:30
     description: |
-      ロボット部部員が夜な夜な製作している作品を展示してます
-    end_at: 17:50
+      ドコモグループのクラウドCoE（Cloud Center of Excellence）は、組織横断的なクラウド活用推進と開発者体験向上を担っています。この活動の一環として、開発者向けAIツール Amazon Q Developer Pro (Kiro) の組織的な利用を可能にする共通基盤整備を行いました。<br>
+      CCoEの取り組みは、社内の規定を満たしつつ、使いたいユーザーが特別な障壁なしにすぐに利用を開始できる共通基盤をOrganization環境で構築することでした。<br>
+      本セッションでは、この組織的な利用を可能にしたCCoEによる共通アクセス基盤の設計と、持続的な運用を支える戦略を共有します。また、この基盤を前提として進められているKiroを活用した開発の取り組みについても、参考情報としてご紹介します。<br>
+    end_at: 15:00
     lessons:
-      - ものづくりに使える AI やデジタルファブリケーション
-    level: 初級者向け
-    name: あつまれ ロボットの森
+      - IdCを使って組織でAmazon Q Developer Proを運用するコツ
+      - Kiroを使った仕様駆動開発の事例
+    level: 中級者向け
+    name: ドコモグループにおけるAmazon Q Developer Proの基盤構築によるAI利用促進への貢献
     references:
-      - text: 子ども向けロボット教室で懐中電灯で操作するロボットを作った話
-        url: https://engineers.ntt.com/entry/202411-familyday2024_ai_robot_club/entry
-    room: FOREST1
+      - text: ドコモ・テクノロジ株式会社
+        url: https://www.docomo-tech.co.jp/
+    room: BRIDGE
     speakers:
       - description: |
-        member_of: NTTコミュニケーションズ AI・ロボット部 (社内サークル)
-        name: 浅野秀平
-      - description: |
-          NTTコミュニケーションズで活動している社内のものづくりサークルです。イベント展示や子ども向けロボット教室などをやっています。
-        member_of: NTTコミュニケーションズ AI・ロボット部 (社内サークル)
-        name: 有賀唯貴
-    tags:
-      - AI
-      - Robot
-    type: Showcase
+          ドコモ・テクノロジの神崎由紀です。
+        member_of: ドコモ・テクノロジ株式会社
+        name: 神崎 由紀
+    tags: []
+    type: Presentation
+
+  - begin_at: 15:10
+    end_at: 15:40
+    level: 初級
+    name: Lightning Talks
+    room: BRIDGE
+    talks:
+      - name: いつでもどこでもつながる回線を実現したい！
+        description: |
+          自動運転を筆頭に、切れない無線、途切れない回線のニーズが高まっています。<br>
+          本セッションでは、各レイヤー毎の「切れない」を定義・検討し、
+          どのような手法を用いることで、いつでもどこでもつながる回線を実現できるのか妄想してみました。
+        speakers:
+          - member_of: NTTドコモビジネス イノベーションセンター
+            name: 谷崎 雄太
+
+      - name: ChatGPTの利用コスト削減、試して分かったこと
+        speakers:
+          - member_of: NTTドコモ マーケティングメディア部
+            name: 岩田 正彦
+
+      - name: 既存のログ監視システムをクラウドっぽく実装してみた
+        speakers:
+          - member_of: NTTドコモビジネス イノベーションセンター
+            name: 原田 和明
+
+      - name: 5分でわかるKubernetesのPVとPVC
+        speakers:
+          - member_of: 株式会社NTTデータグループ　技術革新統括本部Innovation技術部IOWN推進室
+            name: 原田 和馬
+
+      - name: AWSで挑む！CIDR重複とセキュリティ要件を両立する開発環境設計
+        speakers:
+          - member_of: NTTドコモ コアネットワークデザイン部
+            name: 開発 秀星
+
+      - name: AIエージェントを用いたマルチクラウド環境管理
+        speakers:
+          - member_of: NTT東日本 先端テクノロジー部 デジタル技術部門
+            name: 尾座本 耕平
+    type: Presentation
+
   - begin_at: 13:50
     description: |
       初心者は楽器練習中に自分の演奏が正しいか間違いか分からないことがあります。
@@ -195,14 +239,14 @@ sessions:
         url: https://github.com/trueroad/tr-NTTtech2025
     room: FOREST2
     speakers:
-    - description: |
-        NTT グループのどこかでデータドリブンな仕事をしていますが、今回は仕事ではなく個人的にやっている音楽情報処理技術のデモをします。<br>
-        ・楽譜作成プログラム LilyPond コミッタ<br>
-        ・GNU 公式文書フォーマット Texinfo コミッタ<br>
-        ・TeX デフォルト和文フォントの原ノ味フォント主宰<br>
-        ・第 10 回 日本 OSS 奨励賞受賞
-      member_of: "-"
-      name: 細田真道
+      - description: |
+          NTT グループのどこかでデータドリブンな仕事をしていますが、今回は仕事ではなく個人的にやっている音楽情報処理技術のデモをします。<br>
+          ・楽譜作成プログラム LilyPond コミッタ<br>
+          ・GNU 公式文書フォーマット Texinfo コミッタ<br>
+          ・TeX デフォルト和文フォントの原ノ味フォント主宰<br>
+          ・第 10 回 日本 OSS 奨励賞受賞
+        member_of: "-"
+        name: 細田真道
     tags:
       - AI
       - Application
@@ -248,10 +292,10 @@ sessions:
     references: []
     room: PARK
     speakers:
-    - description: |
-        2021 年に NTTデータへ入社。デジタルツインに関わる 3 次元データ分析や画像分析などの技術開発・PoC を担当。
-      member_of: NTTデータグループ Innovation 技術部
-      name: 福田裕大
+      - description: |
+          2021 年に NTTデータへ入社。デジタルツインに関わる 3 次元データ分析や画像分析などの技術開発・PoC を担当。
+        member_of: NTTデータグループ Innovation 技術部
+        name: 福田裕大
     tags:
       - Application
       - OSS
@@ -276,11 +320,11 @@ sessions:
     references: []
     room: BRIDGE
     speakers:
-    - description: |
-        NTTデータと Green Software Foundation（GSF）でグリーンソフトウェアに取り組みつつ、たまに OpenJDK 開発コミュニティで Reviewer やってるサンデープログラマー。<br>
-        マシンの性能を引き出すプログラムが書けるようになることを目指して修行中…
-      member_of: NTTデータグループ 技術革新統括本部 Innovation 技術部 IOWN 推進室
-      name: 末永恭正
+      - description: |
+          NTTデータと Green Software Foundation（GSF）でグリーンソフトウェアに取り組みつつ、たまに OpenJDK 開発コミュニティで Reviewer やってるサンデープログラマー。<br>
+          マシンの性能を引き出すプログラムが書けるようになることを目指して修行中…
+        member_of: NTTデータグループ 技術革新統括本部 Innovation 技術部 IOWN 推進室
+        name: 末永恭正
     tags:
       - Application
       - Container
@@ -303,45 +347,12 @@ sessions:
     references: []
     room: PARK
     speakers:
-    - description: |
-        株式会社 NTTデータグループの熊谷 康太です
-      member_of: 株式会社 NTTデータグループ 技術革新統括本部
-      name: 熊谷 康太
+      - description: |
+          株式会社 NTTデータグループの熊谷 康太です
+        member_of: 株式会社 NTTデータグループ 技術革新統括本部
+        name: 熊谷 康太
     tags:
       - Database
-    type: Presentation
-  - begin_at: 15:10
-    end_at: 15:40
-    level: 初級
-    name: Lightning Talks
-    room: BRIDGE
-    talks:
-      - name: プロキシを 作って学ぶ WireGuard
-        speakers:
-          - member_of: NTTコミュニケーションズ イノベーションセンター
-            name: 上田高寛
-      - name: GitHub Copilot を使ってソースコードの解説資料を作ってみた話
-        speakers:
-          - member_of: NTTPCコミュニケーションズ サービスクリエーション本部
-            name: 村上満美
-      - name: データモデル YANG の処理系を再発明した話
-        speakers:
-          - member_of: NTTコミュニケーションズ イノベーションセンター
-            name: 田島照久
-      - name: 内製開発 SaaS のマーケティング分析に LLM を活用する話
-        speakers:
-          - member_of: NTTコミュニケーションズ イノベーションセンター
-            name: 杉本海人
-      - name: あつまれ ロボットの森
-        speakers:
-          - member_of: NTTコミュニケーションズ AI・ロボット部 (社内サークル)
-            name: 浅野秀平
-          - member_of: NTTコミュニケーションズ AI・ロボット部 (社内サークル)
-            name: 有賀唯貴
-      - name: 演奏間違いを検出して楽譜上に指摘の表示をしてみる
-        speakers:
-          - member_of: '-'
-            name: 細田真道
     type: Presentation
   - begin_at: 15:10
     description: |
@@ -357,10 +368,10 @@ sessions:
     references: []
     room: PARK
     speakers:
-    - description: |
-        NTTコミュニケーションズ イノベーションセンターの小林です。NTT Communications Engineers’ Blog の運営を担っています。
-      member_of: NTTコミュニケーションズ イノベーションセンター
-      name: 小林泰大
+      - description: |
+          NTTコミュニケーションズ イノベーションセンターの小林です。NTT Communications Engineers’ Blog の運営を担っています。
+        member_of: NTTコミュニケーションズ イノベーションセンター
+        name: 小林泰大
     tags:
       - Work Style
     type: Presentation
@@ -378,10 +389,10 @@ sessions:
     references: []
     room: BRIDGE
     speakers:
-    - description: |
-        2023 年 10 月にオープンイノベーションセンタが創設され、そのメンバーの一人として最新技術の調査・検証に取り組んでいます！
-      member_of: NTT東日本 先端テクノロジー部 オープンイノベーションセンタ
-      name: 勝村玲音
+      - description: |
+          2023 年 10 月にオープンイノベーションセンタが創設され、そのメンバーの一人として最新技術の調査・検証に取り組んでいます！
+        member_of: NTT東日本 先端テクノロジー部 オープンイノベーションセンタ
+        name: 勝村玲音
     tags:
       - AI
       - 3D scan
@@ -404,10 +415,10 @@ sessions:
     references: []
     room: PARK
     speakers:
-    - description: |
-        NTTコミュニケーションズ イノベーションセンター AI インフラグループ クラウド CoE プロジェクト 福田優真です。
-      member_of: NTTコミュニケーションズ イノベーションセンター
-      name: 福田優真
+      - description: |
+          NTTコミュニケーションズ イノベーションセンター AI インフラグループ クラウド CoE プロジェクト 福田優真です。
+        member_of: NTTコミュニケーションズ イノベーションセンター
+        name: 福田優真
     tags:
       - DevOps
       - Database
@@ -434,7 +445,7 @@ sessions:
     level: 初級者向け
     name: さまざまな社内業務のデータドリブン化に取り組んで
     references:
-      - text: '松本 裕 (2024). “経営マネジメントのデータドリブン化でスピーディな意思決定と生産性向上をめざす” NTT技術ジャーナル Vol. 36, No. 11, pp. 68-71.'
+      - text: "松本 裕 (2024). “経営マネジメントのデータドリブン化でスピーディな意思決定と生産性向上をめざす” NTT技術ジャーナル Vol. 36, No. 11, pp. 68-71."
         url: https://doi.org/10.60249/24111201
     room: BRIDGE
     speakers:
@@ -465,10 +476,10 @@ sessions:
     references: []
     room: PARK
     speakers:
-    - description: |
-        NTT の鳥井隆史です。
-      member_of: 日本電信電話株式会社 ネットワークサービスシステム研究所
-      name: 鳥井隆史
+      - description: |
+          NTT の鳥井隆史です。
+        member_of: 日本電信電話株式会社 ネットワークサービスシステム研究所
+        name: 鳥井隆史
     tags:
       - Cloud
       - Network
@@ -487,12 +498,12 @@ sessions:
     references: []
     room: BRIDGE
     speakers:
-    - description: |
-        Web アプリケーションや AI システムの開発に従事し、2024 年より現職。<br>
-        普段の業務では主に、生成 AI を扱っており、LLM のファインチューニング検証や評価、生成 AI を円滑に取り合うためのプロダクト開発も行っています。
-        OOP にこだわりあり
-      member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
-      name: 小川 雄司
+      - description: |
+          Web アプリケーションや AI システムの開発に従事し、2024 年より現職。<br>
+          普段の業務では主に、生成 AI を扱っており、LLM のファインチューニング検証や評価、生成 AI を円滑に取り合うためのプロダクト開発も行っています。
+          OOP にこだわりあり
+        member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
+        name: 小川 雄司
     tags:
       - AI
       - Application
@@ -523,13 +534,13 @@ sessions:
     references: []
     room: PARK
     speakers:
-    - description: |
-        2020 年入社。関西在住。<br>
-        普段は Network Analytics for Security PJ という脅威インテリジェンスのチームで、セキュリティリサーチャーとして活動中。<br>
-        趣味個人開発者。自宅サーバーのことは盆栽だと思っている。
-        最近の悩みはいつ住居を東京に移すか。
-      member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
-      name: 竹﨑彬隼
+      - description: |
+          2020 年入社。関西在住。<br>
+          普段は Network Analytics for Security PJ という脅威インテリジェンスのチームで、セキュリティリサーチャーとして活動中。<br>
+          趣味個人開発者。自宅サーバーのことは盆栽だと思っている。
+          最近の悩みはいつ住居を東京に移すか。
+        member_of: NTTコミュニケーションズ イノベーションセンター テクノロジー部門
+        name: 竹﨑彬隼
     tags:
       - Cloud
       - Security
