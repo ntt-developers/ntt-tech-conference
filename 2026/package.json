@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp",
-    "deploy": "",
+    "deploy": "firebase deploy",
     "lint": "prettier -w public/index.html && textlint public/index.html && textlint src/yaml/data.yml",
     "preview": "gulp preview"
   },
@@ -19,22 +19,25 @@
   },
   "homepage": "https://github.com/ntt-developers/ntt-tech-conference#readme",
   "dependencies": {
-    "gulp": "^5.0.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-slm": "^1.2.3",
-    "gulp-uglify": "^3.0.2",
-    "js-yaml": "^4.1.0",
     "musubii": "^7.2.0",
-    "sass": "^1.70.0",
-    "textlint-rule-prh": "^6.0.0"
+    "raw-body": "^3.0.2",
+    "tar": "^7.5.7",
+    "textlint-rule-prh": "^6.0.0",
+    "trim": "^1.0.1"
   },
   "devDependencies": {
-    "firebase-tools": "^13.2.0",
-    "npm-force-resolutions": "^0.0.10",
+    "firebase-tools": "^15.4.0",
+    "gulp": "^5.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-slm": "^1.2.4",
+    "gulp-uglify": "^3.0.2",
+    "js-yaml": "^4.1.1",
     "prettier": "^3.2.5",
+    "sass": "^1.97.3",
+    "sass-embedded": "^1.97.3",
     "textlint": "^14.0.1",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-plugin-html": "^1.0.0",
@@ -43,7 +46,11 @@
     "textlint-rule-preset-ja-technical-writing": "^10.0.1",
     "textlint-rule-prh": "^6.0.0"
   },
-  "resolutions": {
-    "glob-parent": "^5.1.2"
+  "overrides": {
+    "send": "^1.1.0",
+    "trim": "^1.0.1"
+  },
+  "engines": {
+  "node": ">=18 <21"
   }
 }

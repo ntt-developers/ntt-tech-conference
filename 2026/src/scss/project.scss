@@ -21,12 +21,14 @@ $theme-primary: #E65100;
 // / Configs
 //--------------------------------------------------
 
-@import "musubii/src/scss/configs/_import.scss";
+//@import "musubii/src/scss/configs/_import.scss";
+@import "../../node_modules/musubii/src/scss/configs/import";
 @import "configs/_import.scss";
 
 //--------------------------------------------------
 // / Styles
 //--------------------------------------------------
 
-@import "musubii/src/scss/styles/_import.scss";
+//@import "musubii/src/scss/styles/_import.scss";
+@import "../../node_modules/musubii/src/scss/styles/import";
 @import "styles/_import.scss";

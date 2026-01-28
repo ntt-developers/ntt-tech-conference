@@ -29,7 +29,6 @@ html lang="ja"
                 | Logo
               svg class="image is-logo" role="img" aria-label="Logo" viewBox="0 0 381 190"
                 use xlink:href="images/logo.svg#logo"
-
       / About
       section class="section is-feature is-wide-lg"
         div class="inner is-padding-horizontal"
@@ -67,7 +66,6 @@ html lang="ja"
                     | 主催 : ${this.about.organizer}
                   li class="item"
                     | 参加費 : ${this.about.fee}
-
       / Registration
       section class="section is-feature is-wide-lg"
         div class="inner is-padding-horizontal"
@@ -94,7 +92,6 @@ html lang="ja"
                   i class="fa-solid fa-arrow-up-right-from-square is-margin-right-xs"
                   span class="text is-strong"
                     | 準備中
-
       / Archive
       / section class="section is-feature is-wide-lg"
       /   div class="inner is-padding-horizontal"
@@ -129,36 +126,26 @@ html lang="ja"
                   ul class="list is-kome"
                     li class="item is-padding-left-xs"
                       - exclusive_session_types = this.session_types.filter(s => s.is_exclusive)
-                      - if exclusive_session_types.size > 0
+                        - if exclusive_session_types.size > 0
                         | ${exclusive_session_types.map(s => s.name).join(" / ")} のセッションについては、いずれか 1 つの参加となります。
                     li class="item is-padding-left-xs"
                       | タイムテーブルは変更になる可能性があります。
-
               - for session_type of this.session_types
                 - rooms = this.timetable.rooms.filter(r => r.used_by === session_type.name)
-
                 - if session_type.timetable_style === "list"
                   div class="column is-12 is-space"
                     h3 class="text is-strong is-lg"
                       | ${session_type.name}
-
                     - for room of rooms
                       - session = this.sessions.find(s => s.room === room.name)
-
-                      - if session
-                        - id = `${session.room.replace(/[ -]/g, '').toLowerCase()}-${session.begin_at.replace(/:/, '')}`
-                        p class="text"
-                          a class="text is-primary is-strong is-link is-md" data-micromodal-trigger="modal-${id}"
-                            | ${session.name}
-                            i class="fa-solid fa-arrow-up-from-square is-margin-left-xs"
-                        ul class="list is-disc"
-                          li class="item"
-                            | 開催時刻 : ${session.begin_at} 〜 ${session.end_at}
-                      - else
-                        // FIX: セッション未定義時のガード
-                        p class="text is-sm"
-                          | （セッション情報未確定）
-
+                      - id = `${session.room.replace(/[ -]/g, '').toLowerCase()}-${session.begin_at.replace(/:/, '')}`
+                      p class="text"
+                        a class="text is-primary is-strong is-link is-md" data-micromodal-trigger="modal-${id}"
+                          | ${session.name}
+                          i class="fa-solid fa-arrow-up-from-square is-margin-left-xs"
+                      ul class="list is-disc"
+                        li class="item"
+                          | 開催時刻 : ${session.begin_at} 〜 ${session.end_at}
                 - else if session_type.timetable_style === "table"
                   div class="column is-12 is-space"
                     h3 class="text is-strong is-lg"
@@ -295,14 +282,9 @@ html lang="ja"
                             | ${tag}
                   div class="modal-body is-space" id="modal-${id}-content"
                     - if session.description
-                      - if typeof session.description === "string"
-                        - for paragraph of session.description.split(/<br\s?\/?>/)
-                          p class="text is-line-height-xl"
-                            | ${paragraph}
-                      - else if Array.isArray(session.description)
-                        - for paragraph of session.description
-                          p class="text is-line-height-xl"
-                            | ${paragraph}
+                      - for paragraph of session.description.split(/<br\s?\/?>/)
+                        p class="text is-line-height-xl"
+                          | ${paragraph}
                     - if session.lessons && session.lessons.length > 0
                       h4 class="text is-strong"
                         | 学べること
@@ -390,4 +372,3 @@ html lang="ja"
       |   MicroModal.init({ awaitCloseAnimation: true, disableFocus: true });
       |   new Tabby("[data-tabs]");
       | });
-
