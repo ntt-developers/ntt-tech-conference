@@ -121,7 +121,11 @@ sessions:
           2021年7月より再びCCoEチームを主導。博士（学術）、CISSP
         member_of: NTTドコモ
         name: 森谷 優貴
-    tags: []
+    tags:
+      - Cloud
+      - Security
+      - Operation
+      - Use Case
     type: Presentation
   - begin_at: 13:50
     description: |
@@ -147,7 +151,10 @@ sessions:
           NTTドコモのCCoE（Cloud Center of Excellence）をしている奥田です。とにかく無駄をなくして、クラウド（特にAWS）のコスト最適化を推進したい人です。
         member_of: ドコモ・テクノロジ株式会社
         name: 奥田 絢香
-    tags: []
+    tags:
+      - AI
+      - Cloud
+      - コスト最適化
     type: Presentation
   - begin_at: 14:30
     description: |
@@ -169,7 +176,10 @@ sessions:
           ドコモ・テクノロジの神崎由紀です。
         member_of: ドコモ・テクノロジ株式会社
         name: 神崎 由紀
-    tags: []
+    tags:
+      - AI
+      - Cloud
+      - Use Case
     type: Presentation
   - begin_at: 15:10
     end_at: 15:40
@@ -240,7 +250,11 @@ sessions:
         name:
           - 福田優真
           - 村田圭
-    tags: []
+    tags:
+      - DevOps
+      - Operation
+      - OSS
+      - Security
     type: Presentation
   - begin_at: 16:40
     description: |
@@ -269,7 +283,10 @@ sessions:
         name:
           - 舟山 空良
           - 福嶋 章悟
-    tags: []
+    tags:
+      - AI
+      - Operation
+      - DevOps
     type: Presentation
   - begin_at: 17:20
     description: |
@@ -294,7 +311,8 @@ sessions:
           2018年に NTT ドコモに入社。社内向けのデータ分析基盤の開発運用に携わりクラウドエンジニアとして AWS・GoogleCloud の経験を積む。現在は NTT ドコモビジネスのノーコード AI 開発ツール「Node-AI」チームにソフトウェアエンジニアとして参画し、フロントやクラウドをメインに日々奮闘中。
         member_of: NTTドコモビジネス イノベーションセンター
         name: 林 知範
-    tags: []
+    tags:
+      - Architecture
     type: Presentation
   - begin_at: 17:50
     end_at: 18:00
@@ -320,7 +338,10 @@ sessions:
           NTTドコモビジネス イノベーションセンターテクノロジー部門の谷崎です
         member_of: NTTドコモビジネス イノベーションセンター
         name: 谷崎 雄太
-    tags: []
+    tags:
+      - Network
+      - Use Case
+      - Wireless
   - begin_at: 13:50
     end_at: 14:20
     room: PARK
@@ -340,7 +361,9 @@ sessions:
           2023年入社以降、モバイルネットワークの国際標準化プロジェクト3GPPにおいて、コアネットワーク仕様策定業務に従事。日々英語や長大な仕様書、目まぐるしく変わる世の中と格闘中。
         member_of: NTTドコモ
         name: 野﨑航平
-    tags: []
+    tags:
+      - AI
+      - Network
   - begin_at: 14:30
     end_at: 15:00
     room: PARK
@@ -369,13 +392,25 @@ sessions:
           市販ネットワークコントローラーの検証やネットワークコントローラーの内製開発に従事しています。
         member_of: NTTドコモビジネス イノベーションセンター
         name: 坂井 立晟
-    tags: []
+    tags:
+      - Network
+      - Operation
+      - OSS
   - begin_at: 15:10
     end_at: 15:40
     room: PARK
     type: Presentation
     name: 社内にAI・データ活用を広げるための仕組みづくり
-    description: []
+    description: |
+      社内にAI・データ活用を広げるための仕組みづくりについてご紹介します。<br>
+      NTT東日本では、各組織が自発的にデータを活用し、経営マネジメントのデータドリブン化に向けた全社的な取り組みを進めています。
+      私たちは全社的な取り組みの実現に向け、データ活用を担う人材育成・ノウハウの整備・強化を担っています。<br>
+      具体的には、ユースケース創出から企画化までのプロセスを体験的に学ぶワークショップ型の研修と、
+      研修で企画したユースケースを、伴走型の支援を通じて現場が自ら回せる状態へとつなげていく取り組みをおこなっています。<br>
+      また、コールセンタにおける失注理由分析の自走化支援や、
+      現場のニーズに基づいた課題解決だけでなく、
+      AI・データ活用技術がどのような業務課題に適用できるかをシーズ志向で探索する取り組みも進めています。
+      発表ではこれらの取り組みについてご紹介します。
     lessons:
       - AI・データ活用の事例
       - 各組織への展開・人材育成などの事例
@@ -388,7 +423,11 @@ sessions:
           経営マネジメントをはじめとしたさまざまな社内業務のデータドリブン化に従事
         member_of: NTT東日本 デジタル革新本部 企画部 データドリブン推進部門 アナリティクス推進担当
         name: 羽山 美優, 河野 友里, 清水さつき, 増田 大輝
-    tags: []
+    tags:
+      - AI
+      - Use Case
+      - データドリブン
+      - 人材育成
   - begin_at: 16:00
     end_at: 16:30
     room: PARK
@@ -426,7 +465,11 @@ sessions:
           ネットワーク運用の効率化と品質向上に取り組むエンジニア<br>
         member_of: NTTドコモ コアネットワークデザイン部, NTTドコモビジネス イノベーションセンター
         name: 舟山 空良, 中川 綾太, 新谷 翔, 滕 文娜
-    tags: []
+    tags:
+      - Cloud
+      - Container
+      - Network
+      - Edge Computing
   - begin_at: 16:40
     end_at: 17:10
     room: PARK
@@ -449,7 +492,11 @@ sessions:
           2021年にNTTデータへ入社。デジタルツインに関わる3次元データ分析や画像処理などのコンピュータビジョン分野の技術開発・PoCを担当。
         member_of: NTTデータグループ Innovation 技術部
         name: 福田 裕大
-    tags: []
+    tags:
+      - AI
+      - Application
+      - Machine Learning
+      - Use Case
   - begin_at: 17:20
     end_at: 17:50
     room: PARK
@@ -476,7 +523,12 @@ sessions:
           NTTセキュリティ・ジャパン株式会社にて、インシデントレスポンスに従事。その知見を活かし、脅威インテリジェンスプロジェクトNetwork Analytics for Security （NA4Sec）にも従事している.<br>
         member_of: NTTドコモビジネス株式会社, NTTセキュリティ・ジャパン株式会社
         name: 冨樫 良介, 戸祭 隆行
-    tags: []
+    tags:
+      - Security
+      - Use Case
+      - Network
+      - Operation
+      - Mail
 settings:
   fontawesome:
     # domains:
