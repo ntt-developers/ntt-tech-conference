@@ -86,8 +86,8 @@ session_types:
   - description: |
       発表者による展示・質疑応答を行う。
     is_exclusive: false
-#    name: Showcase
-#    timetable_style: list
+  #    name: Showcase
+  #    timetable_style: list
   - description: |
       発表者による特定テーマに関する発表・質疑応答を行う。
     is_exclusive: false
@@ -224,9 +224,9 @@ sessions:
       具体的には、NetBox(ネットワーク構成管理)、Snipe-IT(資産管理)、FreeRADIUS + PrivacyIDEA(認証基盤)という3つのツールを使った管理の実践事例です。
       各ツールの特徴や連携方法、導入時の注意点を実例とともに解説し、解決方法までの道のりや運用での工夫点を交えながら、同様の課題を抱える組織への参考となる知見を共有します。
     end_at: 16:30
-    lessons: |
-      IT基盤の情報管理においてOSSを活用したネットワーク構成、物理資産、認証基盤の効率的な管理手法を実例を通して学べます。
-      さらに、今回紹介するOSSがどのように管理業務を効率化するのか、実際の画面や運用フローを交えながら具体的な活用方法と実現可能な管理業務について学ぶことができます。
+    lessons:
+      - IT基盤の情報管理においてOSSを活用したネットワーク構成、物理資産、認証基盤の効率的な管理手法を実例を通して学べます。
+      - 今回紹介するOSSがどのように管理業務を効率化するのか、実際の画面や運用フローを交えながら具体的な活用方法と実現可能な管理業務について学ぶことができます。
     level: 中級者向け
     name: OSSで構築するIT基盤管理実践事例：NetBox・Snipe-IT・FreeRADIUS+PrivacyIDEA
     references:
@@ -249,21 +249,12 @@ sessions:
       具体的には、AWS Bedrock (Knowledge Base/Agents) を採用し、アラート分析から原因特定・推奨手順の提案までを自律的に行うAIエージェントシステムのアーキテクチャや、その構築理由（セキュリティ、マネージドの利点など）を解説します。<br>
       また、AI導入における「嘘（ハルシネーション）」への対策や、社内セキュリティ基準のクリア、AIと人間の役割分担といった、現場ならではの苦労と解決策についても赤裸々にお話しします。
     end_at: 17:10
-    lessons: |
-      生成AI（AIOps）の実践的導入事例<br>
-      <ul>
-      <li>ネットワーク運用監視における、AWS BedrockとAWS Lambdaを組み合わせたサーバーレスなAIエージェントの構成例 
-      <li>RAG（検索拡張生成）を用いた、社内マニュアルや過去事例に基づく高精度なトラブルシューティング自動化の仕組み 
-      </ul>
-      企業におけるAI導入の壁と乗り越え方<br>
-      <ul>
-      <li>「社外にデータを学習させない」ためのセキュリティ対策とAWS選定の理由 
-      <li>AIに「何を任せ、何を任せないか」という役割分担の設計と、AIを育てるためのプロセス 
-      </ul>
-      自律運用（NoOps）へのロードマップ<br>
-      <ul>
-      <li>現在の「優秀なアシスタント」フェーズから、将来的な「自律して動く専門家チーム」への進化に向けた展望
-      </ul>
+    lessons:
+      - ネットワーク運用監視における、AWS BedrockとAWS Lambdaを組み合わせたサーバーレスなAIエージェントの構成例
+      - RAG（検索拡張生成）を用いた、社内マニュアルや過去事例に基づく高精度なトラブルシューティング自動化の仕組み
+      - 「社外にデータを学習させない」ためのセキュリティ対策とAWS選定の理由
+      - AIに「何を任せ、何を任せないか」という役割分担の設計と、AIを育てるためのプロセス
+      - 現在の「優秀なアシスタント」フェーズから、将来的な「自律して動く専門家チーム」への進化に向けた展望
     level: 中級者向け
     name: さらば、単純作業！AWSで実現する、"人間が人間らしく働く" ためのネットワーク運用自動化
     references:
@@ -376,7 +367,7 @@ sessions:
       - description: |
           NTTドコモビジネス イノベーションセンター所属の坂井です。
           市販ネットワークコントローラーの検証やネットワークコントローラーの内製開発に従事しています。
-        member_of: NTTドコモビジネス イノベーションセンター 
+        member_of: NTTドコモビジネス イノベーションセンター
         name: 坂井 立晟
     tags: []
   - begin_at: 15:10
@@ -398,49 +389,43 @@ sessions:
         member_of: NTT東日本 デジタル革新本部 企画部 データドリブン推進部門 アナリティクス推進担当
         name: 羽山 美優, 河野 友里, 清水さつき, 増田 大輝
     tags: []
-  - begin_at: 15:40
-    end_at: 16:00
-    room: PARK
-    type: Presentation
-    name: 休憩
-    description: []
   - begin_at: 16:00
     end_at: 16:30
     room: PARK
     type: Presentation
-    name: 地理の力で遅延を制す！ ～MECの“近さ”を活かす選択と切替のリアル～ 
+    name: 地理の力で遅延を制す！ ～MECの“近さ”を活かす選択と切替のリアル～
     description: |
       5Gの低遅延を最大限に活かすには、端末近くにサーバを配置するMECの活用が不可欠です。 
       従来のクラウドでは伝送距離が長く、遅延が課題でしたが、MECにより距離を短縮し、遅延を最小化できます。<br>
       しかし、従来のdocomo MECは事前設定された拠点のサーバにしかアクセスできず、位置情報に応じた最適接続や柔軟なリソース割り当てが困難でした。 <br>
-      そこで、我々は「Edge-as-a-Service（EaaS）」を考案し、拠点を意識せず利用できる仕組みを構築しました。本発表では、EaaS基盤を用いたメタバースアプリの検証結果と、今後のエッジコンピューティングの方向性について説明します。 
+      そこで、我々は「Edge-as-a-Service（EaaS）」を考案し、拠点を意識せず利用できる仕組みを構築しました。本発表では、EaaS基盤を用いたメタバースアプリの検証結果と、今後のエッジコンピューティングの方向性について説明します。
     lessons:
-      - MECの基本的な仕組みとdocomo MECが抱えている課題 
-      - EaaSを実現するうえでの設計思想と技術的工夫 
+      - MECの基本的な仕組みとdocomo MECが抱えている課題
+      - EaaSを実現するうえでの設計思想と技術的工夫
     level: 中級者向け
     references:
       - text: NTTドコモ, NTTドコモビジネス
         url: https://docomo.ne.jp/, https://www.ntt.com/
     speakers:
       - description: |
-          <pre>（舟山） 
+          （舟山） 
           NTTドコモにてインフラエンジニアとして従事。 
-          法人系サービス（アクセスプレミアムFMAやdocomo MEC等）にかかわるコアネットワーク装置の開発に取り組んでいる。 
+          法人系サービス（アクセスプレミアムFMAやdocomo MEC等）にかかわるコアネットワーク装置の開発に取り組んでいる。 <br>
 
           （中川） 
           NTTドコモにてインフラエンジニアとして従事。 
-          法人系サービス（アクセスプレミアムFMAやdocomo MEC等）にかかわるコアネットワーク装置の開発に取り組んでいる。
-  
+          法人系サービス（アクセスプレミアムFMAやdocomo MEC等）にかかわるコアネットワーク装置の開発に取り組んでいる。<br>
+
           （新谷） 
           NTTドコモビジネスにて開発エンジニアとして従事。 
-          クラウドネイティブ技術を活用したエッジ基盤の開発・設計をメインとし、インフラ設計からPoC開発を行っている。    
+          クラウドネイティブ技術を活用したエッジ基盤の開発・設計をメインとし、インフラ設計からPoC開発を行っている。<br>
 
           （滕） 
-          NTTドコモビジネスにて開発エンジニアとして従事。   
+          NTTドコモビジネスにて開発エンジニアとして従事。
           通信・ITインフラ業界で約10年のキャリアを歩んできて現在、同社の「フィジカルAI戦略」の中核を担い、エッジコンピューティング基盤技術の開発に情熱を注いでいます。 
-          ネットワーク運用の効率化と品質向上に取り組むエンジニア</pre>
+          ネットワーク運用の効率化と品質向上に取り組むエンジニア<br>
         member_of: NTTドコモ コアネットワークデザイン部, NTTドコモビジネス イノベーションセンター
-        name: 舟山 空良, 中川 綾太, 新谷 翔, 滕 文娜 
+        name: 舟山 空良, 中川 綾太, 新谷 翔, 滕 文娜
     tags: []
   - begin_at: 16:40
     end_at: 17:10
@@ -484,11 +469,11 @@ sessions:
         url: https://www.ntt.com/, https://www.nttsecurity.jp/
     speakers:
       - description: |
-          <pre>冨樫：
-          NTTドコモビジネス株式会社にて、脅威インテリジェンスプロジェクトNetwork Analytics for Security （NA4Sec） PJのメンバーとして活動し、自社で保有する利用終了ドメイン名に関する分析に従事。
+          冨樫：
+          NTTドコモビジネス株式会社にて、脅威インテリジェンスプロジェクトNetwork Analytics for Security （NA4Sec） PJのメンバーとして活動し、自社で保有する利用終了ドメイン名に関する分析に従事。<br>
 
           戸祭：
-          NTTセキュリティ・ジャパン株式会社にて、インシデントレスポンスに従事。その知見を活かし、脅威インテリジェンスプロジェクトNetwork Analytics for Security （NA4Sec）にも従事している.</pre>
+          NTTセキュリティ・ジャパン株式会社にて、インシデントレスポンスに従事。その知見を活かし、脅威インテリジェンスプロジェクトNetwork Analytics for Security （NA4Sec）にも従事している.<br>
         member_of: NTTドコモビジネス株式会社, NTTセキュリティ・ジャパン株式会社
         name: 冨樫 良介, 戸祭 隆行
     tags: []
@@ -506,12 +491,12 @@ timetable:
   rooms:
     - name: BRIDGE
       used_by: Presentation
-#    - name: FOREST1
-#      used_by: Showcase
-#    - name: FOREST2
-#      used_by: Showcase
-#    - name: FOREST3
-#      used_by: Showcase
+    #    - name: FOREST1
+    #      used_by: Showcase
+    #    - name: FOREST2
+    #      used_by: Showcase
+    #    - name: FOREST3
+    #      used_by: Showcase
     - name: PARK
       used_by: Presentation
   windows:
