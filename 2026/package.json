@@ -19,14 +19,6 @@
   },
   "homepage": "https://github.com/ntt-developers/ntt-tech-conference#readme",
   "dependencies": {
-    "musubii": "^7.2.0",
-    "raw-body": "^3.0.2",
-    "tar": "^7.5.7",
-    "textlint-rule-prh": "^6.0.0",
-    "trim": "^1.0.1"
-  },
-  "devDependencies": {
-    "firebase-tools": "^15.4.0",
     "gulp": "^5.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
@@ -35,9 +27,15 @@
     "gulp-slm": "^1.2.4",
     "gulp-uglify": "^3.0.2",
     "js-yaml": "^4.1.1",
-    "prettier": "^3.2.5",
+    "musubii": "^7.2.0",
+    "raw-body": "^3.0.2",
     "sass": "^1.97.3",
     "sass-embedded": "^1.97.3",
+    "textlint-rule-prh": "^6.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.4.0",
+    "prettier": "^3.2.5",
     "textlint": "^14.0.1",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-plugin-html": "^1.0.0",
@@ -47,8 +45,7 @@
     "textlint-rule-prh": "^6.0.0"
   },
   "overrides": {
-    "send": "^1.1.0",
-    "trim": "^1.0.1"
+    "send": "^1.1.0"
   },
   "engines": {
   "node": ">=18 <21"
