@@ -108,9 +108,7 @@ sessions:
       - これからCCoEを立ち上げようという人、今CCoEをやっていて色々悩みがある人、SaaSが乱立しすぎてどうしたら良いかわからなくなっているCCoEや情シス、情セキ部門の人、等についてドコモおよびドコモグループでどうやっているかという事例紹介と今後の方針検討に役立つものと思います
     level: 初級
     name: NTTドコモCCoEのこれまでとこれから
-    references:
-      - text: 株式会社NTTドコモ
-        url: https://docomo.ne.jp/
+    references: []
     room: BRIDGE
     speakers:
       - description: |
@@ -142,9 +140,7 @@ sessions:
       - ドコモCCoEにおけるクラウドコスト最適化の取り組み
     level: 初級
     name: クラウドの不要なリソースと削減可能額を可視化するダッシュボードを作って全社公開した話
-    references:
-      - text: ドコモ・テクノロジ株式会社
-        url: https://www.docomo-tech.co.jp/
+    references: []
     room: BRIDGE
     speakers:
       - description: |
@@ -167,9 +163,7 @@ sessions:
       - Kiroを使った仕様駆動開発の事例
     level: 中級者向け
     name: ドコモグループにおけるAmazon Q Developer Proの基盤構築によるAI利用促進への貢献
-    references:
-      - text: ドコモ・テクノロジ株式会社
-        url: https://www.docomo-tech.co.jp/
+    references: []
     room: BRIDGE
     speakers:
       - description: |
@@ -239,9 +233,7 @@ sessions:
       - 今回紹介するOSSがどのように管理業務を効率化するのか、実際の画面や運用フローを交えながら具体的な活用方法と実現可能な管理業務について学ぶことができます。
     level: 中級者向け
     name: OSSで構築するIT基盤管理実践事例：NetBox・Snipe-IT・FreeRADIUS+PrivacyIDEA
-    references:
-      - text: NTT ドコモビジネス
-        url: https://www.ntt.com/
+    references: []
     room: BRIDGE
     speakers:
       - description: |
@@ -271,9 +263,7 @@ sessions:
       - 現在の「優秀なアシスタント」フェーズから、将来的な「自律して動く専門家チーム」への進化に向けた展望
     level: 中級者向け
     name: さらば、単純作業！AWSで実現する、"人間が人間らしく働く" ためのネットワーク運用自動化
-    references:
-      - text: NTTドコモ
-        url: https://docomo.ne.jp/
+    references: []
     room: BRIDGE
     speakers:
       - description: |
@@ -302,9 +292,7 @@ sessions:
       - アーキテクチャにはトレードオフがつきまとうという気づき
     level: 中級者向け
     name: ビジネス要望の翻訳が生むアーキテクチャの複雑性とトレードオフ
-    references:
-      - text: NTTドコモビジネス
-        url: https://www.ntt.com/
+    references: []
     room: BRIDGE
     speakers:
       - description: |
@@ -353,9 +341,7 @@ sessions:
       - ドコモの標準化の取り組み、6G国際標準化業務
       - （ローカル）LLMを利用する際のコツ
     level: 初級者向け
-    references:
-      - text: NTTドコモ
-        url: https://docomo.ne.jp/
+    references: []
     speakers:
       - description: |
           2023年入社以降、モバイルネットワークの国際標準化プロジェクト3GPPにおいて、コアネットワーク仕様策定業務に従事。日々英語や長大な仕様書、目まぐるしく変わる世の中と格闘中。
@@ -383,9 +369,7 @@ sessions:
       - ネットワークコントローラー/ネットワーク管理システムにおける内部データの状態管理手法
       - ネットワーク自動化におけるオペレーター介入の必要性・バランス
     level: 中級者向け
-    references:
-      - text: NTTドコモビジネス
-        url: https://www.ntt.com/
+    references: []
     speakers:
       - description: |
           NTTドコモビジネス イノベーションセンター所属の坂井です。
@@ -415,9 +399,7 @@ sessions:
       - AI・データ活用の事例
       - 各組織への展開・人材育成などの事例
     level: 初級者向け
-    references:
-      - text: NTT東日本
-        url: https://www.ntt-east.co.jp/
+    references: []
     speakers:
       - description: |
           経営マネジメントをはじめとしたさまざまな社内業務のデータドリブン化に従事
@@ -442,9 +424,7 @@ sessions:
       - MECの基本的な仕組みとdocomo MECが抱えている課題
       - EaaSを実現するうえでの設計思想と技術的工夫
     level: 中級者向け
-    references:
-      - text: NTTドコモ, NTTドコモビジネス
-        url: https://docomo.ne.jp/, https://www.ntt.com/
+    references: []
     speakers:
       - description: |
           （舟山） 
@@ -484,9 +464,7 @@ sessions:
       - 自己位置推定の全体像と代表的な手法
       - 自己位置推定手法の活用ユースケース
     level: 初級者向け
-    references:
-      - text: NTTデータ
-        url: https://www.nttdata.com/jp/ja/
+    references: []
     speakers:
       - description: |
           2021年にNTTデータへ入社。デジタルツインに関わる3次元データ分析や画像処理などのコンピュータビジョン分野の技術開発・PoCを担当。
@@ -511,9 +489,7 @@ sessions:
       - レンタルサーバでメールサービスを利用する際の注意点
       - リソース共用型サービスと一部のメールセキュリティ技術の相性問題で発生しうるリスク
     level: 中級者向け
-    references:
-      - text: NTTドコモビジネス, NTTセキュリティ・ジャパン
-        url: https://www.ntt.com/, https://www.nttsecurity.jp/
+    references: []
     speakers:
       - description: |
           冨樫：
