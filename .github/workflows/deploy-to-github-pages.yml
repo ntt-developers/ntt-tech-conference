@@ -19,7 +19,7 @@ jobs:
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
-        run: npm ci --production
+        run: npm ci --omit=dev
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
         run: npm run build
