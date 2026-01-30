@@ -17,8 +17,9 @@ html lang="ja"
   body
     header class="header is-padding-horizontal-safe"
       div class="box is-actions is-top-right"
-        button class="button is-plain is-bg-body is-circle" onclick="toggleTheme()"
-          i class="fa-solid fa-lg" id="theme-icon"
+       / テーマ切り替えボタンを一時的に非表示にする
+       / button class="button is-plain is-bg-body is-circle" onclick="toggleTheme()"
+       /  i class="fa-solid fa-lg" id="theme-icon"
     main class="main is-padding-horizontal-safe"
       / Logo
       section class="section is-hero"
@@ -27,8 +28,12 @@ html lang="ja"
             div class="column"
               h2 class="is-none"
                 | Logo
+                
               svg class="image is-logo" role="img" aria-label="Logo" viewBox="0 0 381 190"
-                use xlink:href="images/logo.svg#logo"
+              use xlink:href="images/logo.svg#logo"
+
+              / PNG ロゴを使用する場合
+              / img class="image is-logo" src="images/banner.png" alt="Logo"
 
       / About
       section class="section is-feature is-wide-lg"
