@@ -14,14 +14,11 @@ html lang="ja"
     meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference/${this.meta.numbering}/"
     script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
     script defer="" src="app.min.js"
-    / Darkモード固定
-    script defer="" src="no.dark.js"
   body
     header class="header is-padding-horizontal-safe"
       div class="box is-actions is-top-right"
-       / テーマ切り替えボタンを一時的に非表示にする
-       / button class="button is-plain is-bg-body is-circle" onclick="toggleTheme()"
-       /  i class="fa-solid fa-lg" id="theme-icon"
+        button class="button is-plain is-bg-body is-circle" onclick="toggleTheme()"
+          i class="fa-solid fa-lg" id="theme-icon"
     main class="main is-padding-horizontal-safe"
       / Logo
       section class="section is-hero"
