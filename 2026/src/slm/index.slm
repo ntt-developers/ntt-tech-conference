@@ -14,6 +14,8 @@ html lang="ja"
     meta property="og:url" content="https://ntt-developers.github.io/ntt-tech-conference/${this.meta.numbering}/"
     script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
     script defer="" src="app.min.js"
+    / Darkモード固定
+    script defer="" src="no.dark.js"
   body
     header class="header is-padding-horizontal-safe"
       div class="box is-actions is-top-right"
@@ -28,9 +30,8 @@ html lang="ja"
             div class="column"
               h2 class="is-none"
                 | Logo
-                
               svg class="image is-logo" role="img" aria-label="Logo" viewBox="0 0 381 190"
-              use xlink:href="images/logo.svg#logo"
+                use xlink:href="images/logo.svg#logo"
 
               / PNG ロゴを使用する場合
               / img class="image is-logo" src="images/banner.png" alt="Logo"
