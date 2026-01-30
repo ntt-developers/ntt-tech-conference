@@ -268,10 +268,13 @@ sessions:
     speakers:
       - description: |
           NTTドコモの舟山空良です
-          福嶋章悟です。
         member_of: NTTドコモ コアネットワークデザイン部
         name:
           - 舟山 空良
+      - description: |
+          NTTドコモの福嶋章悟です。
+        member_of: NTTドコモ コアネットワークデザイン部
+        name:
           - 福嶋 章悟
     tags:
       - AI
@@ -323,9 +326,21 @@ sessions:
         url: https://www.ntt.com/
     speakers:
       - description: |
-          NTTドコモビジネス イノベーションセンターテクノロジー部門の谷崎です
+          ワイヤレス技術全般の検証に従事
         member_of: NTTドコモビジネス イノベーションセンター
-        name: 谷崎 雄太
+        name: 梶江 俊樹
+      - description: |
+          ワイヤレス技術全般の検証に従事
+        member_of: NTTドコモビジネス イノベーションセンター
+        name: 佐瀨 寛人
+      - description: |
+          ワイヤレス技術全般の検証に従事
+        member_of: NTTドコモビジネス イノベーションセンター
+        name: 太田 和彦
+      - description: |
+          ワイヤレス技術を用いたユースケース共創に従事
+        member_of: NTTドコモビジネス イノベーションセンター
+        name: 中山 章太
     tags:
       - Network
       - Use Case
