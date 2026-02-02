@@ -1,0 +1,48 @@
+//--------------------------------------------------
+// Components: Tab
+// https://github.com/cferdinandi/tabby/blob/master/dist/css/tabby-ui.css
+//--------------------------------------------------
+
+[role="tablist"] {
+  border-bottom: $button-border-width solid $button-outline-primary-border-color;
+  list-style: none;
+
+  li {
+    display: inline-flex;
+
+    &:not(:first-child) {
+      [role="tab"] {
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+
+[role="tab"] {
+  border: $button-border-width solid transparent;
+  border-top-left-radius: $button-border-radius;
+  border-top-right-radius: $button-border-radius;
+  color: $button-outline-primary-color;
+  display: inline-flex;
+  margin-bottom: -$button-border-width;
+  padding: $button-padding;
+  text-decoration: none;
+  transition: $button-transition;
+
+  &:hover:not([aria-selected="true"]) {
+    background-color: $button-outline-primary-hover-background-color;
+    border-color: transparent;
+    color: $button-paint-color;
+  }
+
+  &[aria-selected="true"] {
+    border-bottom-color: $convert-body-background-color;
+    border-left-color: $button-outline-primary-border-color;
+    border-right-color: $button-outline-primary-border-color;
+    border-top-color: $button-outline-primary-border-color;
+  }
+}
+
+[hidden] {
+  display: none;
+}

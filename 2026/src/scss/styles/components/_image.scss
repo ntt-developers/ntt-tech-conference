@@ -1,0 +1,26 @@
+//--------------------------------------------------
+// Components: Image
+//--------------------------------------------------
+
+$image-logo-mobile-width: 90vw;
+$image-logo-tablet-width: 100vw / 3 * 2;
+$image-logo-desktop-width: 24em;
+$image-logo-wide-width: 36em;
+
+.image {
+  display: block;
+
+  &.is-logo {
+    width: $image-logo-mobile-width;
+
+    @include tablet() {
+      width: $image-logo-tablet-width;
+    }
+    @include desktop() {
+      width: $image-logo-desktop-width;
+    }
+    @include wide() {
+      width: $image-logo-wide-width;
+    }
+  }
+}

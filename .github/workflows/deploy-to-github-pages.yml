@@ -5,7 +5,7 @@ on:
       - master
 env:
   NODE_VERSION: 20
-  WORKING_DIRECTORY: "2025"
+  WORKING_DIRECTORY: "2026"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
           cache: npm
           cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - name: npm ci
-        run: npm ci --production
+        run: npm ci --omit=dev
         working-directory: ${{ env.WORKING_DIRECTORY }}
       - name: npm run build
         run: npm run build

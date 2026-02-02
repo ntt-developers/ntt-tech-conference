@@ -1,0 +1,53 @@
+{
+  "name": "ntt-tech-conference",
+  "version": "1.0.0",
+  "description": "https://ntt-developers.github.io/ntt-tech-conference/2026/",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "deploy": "firebase deploy",
+    "lint": "prettier -w public/index.html && textlint public/index.html && textlint src/yaml/data.yml",
+    "preview": "gulp preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntt-developers/ntt-tech-conference.git"
+  },
+  "author": "NTT Developers",
+  "bugs": {
+    "url": "https://github.com/ntt-developers/ntt-tech-conference/issues"
+  },
+  "homepage": "https://github.com/ntt-developers/ntt-tech-conference#readme",
+  "dependencies": {
+    "gulp": "^5.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-slm": "^1.2.4",
+    "gulp-uglify": "^3.0.2",
+    "js-yaml": "^4.1.1",
+    "musubii": "^7.2.0",
+    "raw-body": "^3.0.2",
+    "sass": "^1.97.3",
+    "sass-embedded": "^1.97.3",
+    "textlint-rule-prh": "^6.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.4.0",
+    "prettier": "^3.2.5",
+    "textlint": "^14.0.1",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-plugin-html": "^1.0.0",
+    "textlint-plugin-yaml": "^0.0.1",
+    "textlint-rule-preset-ja-spacing": "^2.3.0",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1",
+    "textlint-rule-prh": "^6.0.0"
+  },
+  "overrides": {
+    "send": "^1.1.0"
+  },
+  "engines": {
+  "node": ">=18 <21"
+  }
+}
