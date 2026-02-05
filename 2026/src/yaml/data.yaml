@@ -413,7 +413,7 @@ sessions:
       - name: 既存のログ監視システムをクラウドっぽく実装してみた
         speakers:
           - member_of: NTTドコモビジネス イノベーションセンター
-            name: 原田 和明
+            name: 田島 照久
 
       - name: 5 分でわかる Kubernetes の PV と PVC
         speakers:
